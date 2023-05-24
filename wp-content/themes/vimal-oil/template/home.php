@@ -591,10 +591,27 @@
                     <div class="h4-title">
                         <h4>Aloo Patties</h4>
                     </div>
-                    <div class="submit-button text-center">
-                        <button class="btn-effect" type="submit">
-                            Let's Explore
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="cook-video">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
+                        <button aria-label="Video Play" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/earth.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
                         </button>
+                    </div>
+                    <div class="h4-title">
+                        <h4>Aloo Patties</h4>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="cook-video">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
+                        <button aria-label="Video Play" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/earth.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
+                    </div>
+                    <div class="h4-title">
+                        <h4>Aloo Patties</h4>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 ">
@@ -607,42 +624,11 @@
                     <div class="h4-title">
                         <h4>Aloo Patties</h4>
                     </div>
-                    <div class="submit-button text-center">
-                        <button class="btn-effect" type="submit">
-                            Let's Explore
-                        </button>
-                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="cook-video">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
-                        <button aria-label="Video Play" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/earth.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
-                    </div>
-                    <div class="h4-title">
-                        <h4>Aloo Patties</h4>
-                    </div>
-                    <div class="submit-button text-center">
-                        <button class="btn-effect" type="submit">
-                            Let's Explore
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="cook-video">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
-                        <button aria-label="Video Play" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/earth.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
-                        </button>
-                    </div>
-                    <div class="h4-title">
-                        <h4>Aloo Patties</h4>
-                    </div>
-                    <div class="submit-button text-center">
-                        <button class="btn-effect" type="submit">
-                            Let's Explore
-                        </button>
-                    </div>
+                <div class="submit-button text-center">
+                    <button class="btn-effect" type="submit">
+                        Let's Explore
+                    </button>
                 </div>
             </div>
 
@@ -653,7 +639,7 @@
     <!-- module-9 social-presence  -->
     <div class="social-presence default-section">
         <div class="container">
-            <div class="h1-title">
+            <div class="h2-title">
                 <h2 class="text-noeffect">Our Digital Presence</h2>
             </div>
             <div class="row align-items-center">
