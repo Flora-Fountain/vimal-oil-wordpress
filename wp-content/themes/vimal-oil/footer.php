@@ -1,5 +1,5 @@
 <!-- footer section  -->
-    <div class="footer" id="footer">
+    <div class="footer footer-bg-blue" id="footer">
         <div class="container">
             <div class="ft-top">
                 <div class="row">

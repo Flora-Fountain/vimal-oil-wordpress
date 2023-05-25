@@ -5,7 +5,7 @@
 <?php echo get_header();?>
 
     <!--module-2 hero banner html code  -->
-    <div class="hero-banner default-section">
+    <div class="hero-banner default-section blue-bg-banner">
         <div class="back-pattern">
             <div class="container">
                 <div class="banner-slider owl-carousel owl-theme">
@@ -234,7 +234,7 @@
             </div>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="h2-title">
+                    <div class="h2-white">
                         <h2 class="text-noeffect">
                             All natural & nutrition retained!
                         </h2>
@@ -285,7 +285,7 @@
     <div class="product-section default-section">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="h2-title">
+                <div class="h2-blue">
                     <h2 class="text-noeffect">Make Healthy Choice</h2>
                 </div>
                 <div class="home-prod-sldr owl-carousel owl-theme">
@@ -370,7 +370,7 @@
             <div class="container">
                 <div class="align-items-center">
                     <div class="nrt-top">
-                        <div class="h2-title">
+                        <div class="h2-blue">
                             <h2 class="text-noeffect">
                                 All natural & nutrition retained!
                             </h2>
@@ -406,10 +406,10 @@
     </div>
 
     <!-- module-6 journey section  -->
-    <div class="vimal-journey default-section">
+    <div class="vimal-journey default-section blue-bg">
         <div class="container">
             <div class="row align-items-center">
-                <div class="h2-title">
+                <div class="h2-blue">
                     <h2 class="text-noeffect">The journey <br/>of Health & Happiness!</h2>
                 </div>
                 <div class="jorney-main">
@@ -578,7 +578,7 @@
     <div class="recipe-section default-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="h2-title">
+                <div class="h2-white">
                     <h2 class="text-noeffect">Cook Healthy With Vimal Oils</h2>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 ">
@@ -637,9 +637,9 @@
     </div>
 
     <!-- module-9 social-presence  -->
-    <div class="social-presence default-section">
+    <div class="social-presence default-section blue-bg">
         <div class="container">
-            <div class="h2-title">
+            <div class="h2-blue">
                 <h2 class="text-noeffect">Our Digital Presence</h2>
             </div>
             <div class="row align-items-center">
@@ -734,42 +734,42 @@
     </div>
 
     <!-- module-10 form-section  -->
-    <div id="form-section" class="form-section default-section">
+    <div id="form-section" class="form-section default-section footer-before">
         <div class="container">
             <div class="form-part">
                 <div class="form-image-part">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-dress-kiara.png" alt="Form Kiara Image">
                 </div>
-                    <div class="form">
-                        <div class="h2-title">
-                            <h2 class="text-noeffect">
-                                Have Question? Ask Away
-                            </h2>
-                        </div>
-                        <div class="form-group">
+                <div class="h2-title">
+                    <h2 class="text-noeffect">
+                        Have Question? Ask Away
+                    </h2>
+                </div>
+                <div class="form">
+                    <div class="form-group">
                                 <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
                         </div>
-                        <div class="form-group">
+                    <div class="form-group">
                                 <input type="email" class="form-control" name="name" placeholder="Email ID" required="">
                         </div>
-                        <div class="form-group state-select">
+                    <div class="form-group state-select">
                                 <select name="State" id="state" class="form-control">
                                     <option value="gujrat">Gujrat</option>
                                     <option value="rajsthan">Rajsthan</option>
                                     <option value="panjab">Panjab</option>
                                 </select>
                         </div>
-                        <div class="form-group state-select">
+                    <div class="form-group state-select">
                             <select name="State" id="state" class="form-control">
                                 <option value="ahmedabad">Ahmedabad</option>
                                 <option value="rajkot">Rajkot</option>
                                 <option value="surat">Surat</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                    <div class="form-group">
                             <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
                         </div>
-                        <div class="submit-button text-center">
+                    <div class="iimg text-center">
                             <button class="btn-effect" type="submit">
                                 Share
                             </button>
