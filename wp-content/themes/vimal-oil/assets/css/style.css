@@ -1925,3 +1925,17 @@ a:focus{
 	background-color: #0c56a1;
 	height: 100vh;
 }
+
+.privacy-banner .content-part .h1-title{
+	color: #FFDD00;
+	font-weight: 600;
+	font-size: 55px;	
+}
+
+.privacy-banner .image-part img{
+	width: 100%;
+} 
+
+.privacy-policy{
+	padding: 25px 0 25px 0;
+}
