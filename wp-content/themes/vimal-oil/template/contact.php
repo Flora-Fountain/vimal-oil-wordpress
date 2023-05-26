@@ -100,7 +100,7 @@ echo get_header();
                             <p>Chat to sales</p>
                         </div>
                         <div class="contact-para">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <div class="info">
                             <a href="#">mail@vimaloil.com</a>
@@ -118,7 +118,7 @@ echo get_header();
                             <p>Visit us</p>
                         </div>
                         <div class="contact-para">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@ echo get_header();
                             <p>Call us</p>
                         </div>
                         <div class="contact-para">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <div class="info">
                             <a href="#">(+91)xxxxx-xxxxx</a>

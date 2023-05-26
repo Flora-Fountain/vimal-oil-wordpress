@@ -23,6 +23,7 @@ h1,h2,h3,h4,h5,h6,a{
 }
 p{
 	font-family:'Raleway', sans-serif;
+	margin: 0 !important;
 }
 ol,ul{
     line-height:1.4;
@@ -59,12 +60,12 @@ a:focus{
     padding: 100px 0px;
     position: relative;
 }
-.h1-title{
-    text-align: center;
-    text-transform: uppercase;
-    color: #0c54a0;
-    font-size: 36px;
-    line-height: 1.1;
+.h1-title {
+	color: #ffdd00;
+	text-transform: capitalize;
+	font-size: 100px;
+	line-height: 1.2;
+	font-weight: 600;
 }
 .h1-title span {
 	display: block;
@@ -366,13 +367,6 @@ a:focus{
     100%{
         transform: scale(1) rotate(15deg);
     }
-}
-.hero-banner .banner-right .h1-title {
-	color: #ffdd00;
-	text-transform: capitalize;
-	font-size: 100px;
-	line-height: 1.2;
-	font-weight: 600;
 }
 .hero-banner .banner-right .h1-title span {
 	display: block;
@@ -916,6 +910,8 @@ a:focus{
 }
 .nrt-section .h1-title {
 	margin-bottom: 30px;
+    text-align: center;
+    color: #0c56a1;
 }
 .nrt-section.default-section {
 	padding: 60px 0 100px;
@@ -1800,14 +1796,6 @@ a:focus{
 	text-align: center;
 }
 
-.common-banner .h1-title{
-	color: #ffdd00;
-    text-transform: capitalize;
-    font-size: 60px;
-    line-height: 1.2;
-    font-weight: 600;
-}
-
 .common-banner .banner-para{
 	font-size: 18px;
 	font-style: 'Raleway', sans-serif;
@@ -1917,6 +1905,19 @@ a:focus{
 .contact-details .contact-icon span img{
 	width: 40px;
 	height: 40px;
+}
+
+.contact-details .para-title p{
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.contact-details .contact-para p{
+	font-size: 18px;
+	padding-bottom: 0px;
+}
+.contact-details .contact{
+	margin: 8px 0;
 }
 
 
