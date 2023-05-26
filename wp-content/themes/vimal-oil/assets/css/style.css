@@ -1573,32 +1573,6 @@ a:focus{
       100% 100%,
       0% 100%
     );
-    }
-	20%{
-		clip-path: polygon(
-      0% 14%,
-      17% 15%,
-      34% 20%,
-      56% 25%,
-      69% 26%,
-      86% 24%,
-      100% 15%,
-      100% 100%,
-      0% 100%
-    );	
-	} 
-	40%{
-		clip-path: polygon(
-      0% 18%,
-      17% 22%,
-      34% 24%,
-      56% 25%,
-      69% 26%,
-      86% 24%,
-      100% 15%,
-      100% 100%,
-      0% 100%
-    );
 	}
     50% {
     clip-path: polygon(
@@ -1613,36 +1587,7 @@ a:focus{
         0% 100%
     ); 
     }
-	60%{
-		clip-path: polygon(
-      0% 18%,
-      17% 22%,
-      34% 24%,
-      56% 25%,
-      69% 26%,
-      86% 24%,
-      100% 15%,
-      100% 100%,
-      0% 100%
-    );
-	}
-	80%{
-		clip-path: polygon(
-      0% 14%,
-      17% 15%,
-      34% 20%,
-      56% 25%,
-      69% 26%,
-      86% 24%,
-      100% 15%,
-      100% 100%,
-      0% 100%
-    );
-	}
-
 }
-
-
 .footer .social-icon{
     margin-top: 20px;
 }
@@ -1779,8 +1724,6 @@ a:focus{
 	box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 
-
-
 /* career page css code */
 .common-banner{
 	height: 100vh;
@@ -1808,19 +1751,6 @@ a:focus{
 	border-radius: 10px;
 	margin-top: 20px;
 }
-
-/* .grow-section::before{
-	position: absolute;
-	content: '';
-	width: 0;
-	height: 0;
-	border-bottom: 45px solid #0c56a1;
-	border-left: 100vw solid transparent;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 2;
-} */
 
 .grow-section .grow-para{
 	padding: 10px 60px;
