@@ -99,10 +99,8 @@
 <div id="videoPlaypopup" class="wl-modal wl-modal-lg wl-video-modal">
     <div class="wl-modal-content">
         <span class="wl-m-close">&times;</span>
-        <div class="wl-modal-body">
-            <video autoplay controls>
-                <source src="/">
-            </video>
+        <div class="wl-modal-body"> 
+        <iframe class="video-play-box" width="100%" height="100%" src=""  id="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
 </div>

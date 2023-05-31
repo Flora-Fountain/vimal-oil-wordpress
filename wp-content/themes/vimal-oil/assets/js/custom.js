@@ -167,9 +167,13 @@ if ($(window).width() > 0) {
         }
     });
 }
- // Video Play Button
+
+
+$(document).ready(function(){
+     // Video Play Button
  if ($(".wl-modal-btn").length > 0) {
     $(".wl-modal-btn").click(function() {
+        console.log("hello");
         var modalPopup = $(this).attr("data-modal");
         $(".wl-modal").removeClass("wl-modal-open");
         $("#" + modalPopup).addClass("wl-modal-open");
@@ -202,7 +206,7 @@ if ($("#videoPlaypopup").length > 0) {
         var vBox2 = $(".wl-video-modal");
         var vPlay2 = $(".video-play-box");
 
-        var Video2 = $(this).find("video");
+        var Video2 = $(this).find("#video");
         var Source2 = $(this).find("source");
         var playStopBtn2 = $(this).find("button") && $(vBox2);
 
@@ -210,7 +214,7 @@ if ($("#videoPlaypopup").length > 0) {
             var vPath2 = $(this).attr("data-src");
             Video2.trigger("load");
             Video2.trigger("play");
-            vBox2.find(Source2).attr("src", vPath2);
+            vPlay2.attr("src",vPath2 );
         });
 
         playStopBtn2.click(function() {
@@ -241,31 +245,4 @@ if ($("#videoPlaypopup").length > 0) {
         });
     });
 }
-
-//Page cursors
-(function($) { "use strict";
-    document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
-        t.style.left = n.clientX + "px", 
-		t.style.top = n.clientY + "px", 
-		e.style.left = n.clientX + "px", 
-		e.style.top = n.clientY + "px", 
-		i.style.left = n.clientX + "px", 
-		i.style.top = n.clientY + "px"
-    });
-    var t = document.getElementById("cursor"),
-        e = document.getElementById("cursor2"),
-        i = document.getElementById("cursor3");
-    function n(t) {
-        e.classList.add("hover"), i.classList.add("hover")
-    }
-    function s(t) {
-        e.classList.remove("hover"), i.classList.remove("hover")
-    }
-    s();
-    for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
-        o(r[a])
-    }
-    function o(t) {
-        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
-    }
-})($); 
+});

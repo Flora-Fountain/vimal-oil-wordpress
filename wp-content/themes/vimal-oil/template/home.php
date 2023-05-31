@@ -7,207 +7,99 @@
     <!--module-2 hero banner html code  -->
     <div class="hero-banner default-section blue-bg-banner">
         <div class="back-pattern">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="banner-slider owl-carousel owl-theme">
                     <div class="item">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="banner-left">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kiara-banner.png" alt="kiara-banner" />
-                                    <div class="banner-heart">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                    </div>
-                                    <div class="banner-oil-cont mob">
-                                        <div class="bnr-oil left">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-banner.png" alt="vimal-cottonseed-banner"/>
-                                        </div>
-                                        <div class="bnr-oil center">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahart-banner.png" alt="vimal-soyahart-banner"/>
-                                        </div>
-                                        <div class="bnr-oil right">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-banner.png" alt="vimal-pure-banner"/>
+                        <div class="banner-info">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="banner-right">
+                                        <div class="h1-title">
+                                            <h1 class="text-noeffect">Your Secret <span>to Health &amp; Happiness!</span></h1>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="banner-right">
-                                    <div class="h1-title">
-                                        <h1 class="text-noeffect">Your Secret <span>to Health &amp; Happiness!</span></h1>
+                                    <div class="hash-sec">
+                                        <span>#ChangeForHeath</span>
+                                    </div>
+                                    <div class="submit-button text-center">
+                                        <button class="btn-effect" type="submit">Buy Now</button>
                                     </div>
                                 </div>
-                                <div class="hash-sec">
-                                    <span>#ChangeForHeath</span>
-                                </div>
-                                <div class="banner-oil-cont desk">
-                                    <div class="bnr-oil left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-banner.png" alt="vimal-cottonseed-banner"/>
-                                    </div>
-                                    <div class="bnr-oil center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahart-banner.png" alt="vimal-soyahart-banner"/>
-                                    </div>
-                                    <div class="bnr-oil right">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-banner.png" alt="vimal-pure-banner"/>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="banner-left">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/privacy-policy.webp" alt="kiara-banner" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="banner-left">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kiara-banner.png" alt="kiara-banner" />
-                                    <div class="banner-heart">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                    </div>
-                                    <div class="banner-oil-cont mob">
-                                        <div class="bnr-oil left">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-banner.png" alt="vimal-cottonseed-banner"/>
-                                        </div>
-                                        <div class="bnr-oil center">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahart-banner.png" alt="vimal-soyahart-banner"/>
-                                        </div>
-                                        <div class="bnr-oil right">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-banner.png" alt="vimal-pure-banner"/>
+                        <div class="banner-info">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="banner-right">
+                                        <div class="h1-title">
+                                            <h1 class="text-noeffect">Your Secret <span>to Health &amp; Happiness!</span></h1>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="banner-right">
-                                    <div class="h1-title">
-                                        <h1 class="text-noeffect">Your Secret <span>to Health &amp; Happiness!</span></h1>
+                                    <div class="hash-sec">
+                                        <span>#ChangeForHeath</span>
+                                    </div>
+                                    <div class="submit-button text-center">
+                                        <button class="btn-effect" type="submit">Buy Now</button>
                                     </div>
                                 </div>
-                                <div class="hash-sec">
-                                    <span>#ChangeForHeath</span>
-                                </div>
-                                <div class="banner-oil-cont desk">
-                                    <div class="bnr-oil left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-banner.png" alt="vimal-cottonseed-banner"/>
-                                    </div>
-                                    <div class="bnr-oil center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahart-banner.png" alt="vimal-soyahart-banner"/>
-                                    </div>
-                                    <div class="bnr-oil right">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-banner.png" alt="vimal-pure-banner"/>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="banner-left">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/privacy-policy.webp" alt="kiara-banner" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="banner-left">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kiara-banner.png" alt="kiara-banner" />
-                                    <div class="banner-heart">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                    </div>
-                                    <div class="banner-oil-cont mob">
-                                        <div class="bnr-oil left">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-banner.png" alt="vimal-cottonseed-banner"/>
-                                        </div>
-                                        <div class="bnr-oil center">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahart-banner.png" alt="vimal-soyahart-banner"/>
-                                        </div>
-                                        <div class="bnr-oil right">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-banner.png" alt="vimal-pure-banner"/>
+                        <div class="banner-info">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="banner-right">
+                                        <div class="h1-title">
+                                            <h1 class="text-noeffect">Your Secret <span>to Health &amp; Happiness!</span></h1>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="banner-right">
-                                    <div class="h1-title">
-                                        <h1 class="text-noeffect">Your Secret <span>to Health &amp; Happiness!</span></h1>
+                                    <div class="hash-sec">
+                                        <span>#ChangeForHeath</span>
+                                    </div>
+                                    <div class="submit-button text-center">
+                                        <button class="btn-effect" type="submit">Buy Now</button>
                                     </div>
                                 </div>
-                                <div class="hash-sec">
-                                    <span>#ChangeForHeath</span>
-                                </div>
-                                <div class="banner-oil-cont desk">
-                                    <div class="bnr-oil left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-banner.png" alt="vimal-cottonseed-banner"/>
-                                    </div>
-                                    <div class="bnr-oil center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahart-banner.png" alt="vimal-soyahart-banner"/>
-                                    </div>
-                                    <div class="bnr-oil right">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-banner.png" alt="vimal-pure-banner"/>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="banner-left">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/privacy-policy.webp" alt="kiara-banner" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="banner-left">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kiara-banner.png" alt="kiara-banner" />
-                                    <div class="banner-heart">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart.png" alt="heart" />
-                                    </div>
-                                    <div class="banner-oil-cont mob">
-                                        <div class="bnr-oil left">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-banner.png" alt="vimal-cottonseed-banner"/>
-                                        </div>
-                                        <div class="bnr-oil center">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahart-banner.png" alt="vimal-soyahart-banner"/>
-                                        </div>
-                                        <div class="bnr-oil right">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-banner.png" alt="vimal-pure-banner"/>
+                        <div class="banner-info">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="banner-right">
+                                        <div class="h1-title">
+                                            <h1 class="text-noeffect">Your Secret <span>to Health &amp; Happiness!</span></h1>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="banner-right">
-                                    <div class="h1-title">
-                                        <h1 class="text-noeffect">Your Secret <span>to Health &amp; Happiness!</span></h1>
+                                    <div class="hash-sec">
+                                        <span>#ChangeForHeath</span>
+                                    </div>
+                                    <div class="submit-button text-center">
+                                        <button class="btn-effect" type="submit">Buy Now</button>
                                     </div>
                                 </div>
-                                <div class="hash-sec">
-                                    <span>#ChangeForHeath</span>
-                                </div>
-                                <div class="banner-oil-cont desk">
-                                    <div class="bnr-oil left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-banner.png" alt="vimal-cottonseed-banner"/>
-                                    </div>
-                                    <div class="bnr-oil center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahart-banner.png" alt="vimal-soyahart-banner"/>
-                                    </div>
-                                    <div class="bnr-oil right">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-banner.png" alt="vimal-pure-banner"/>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="banner-left">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/privacy-policy.webp" alt="kiara-banner" />
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +139,7 @@
                             <div class="item">
                                 <div class="video-sld">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/video-thumbnail.jpg" width="366" height="720"/>
-                                    <button aria-label="Video Play" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/earth.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                                    <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
                                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
                                     </button>
                                 </div>
@@ -255,7 +147,7 @@
                             <div class="item">
                                 <div class="video-sld">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/video-thumbnail.jpg" width="366" height="720"/>
-                                    <button aria-label="Video Play" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/earth.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                                    <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
                                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
                                     </button>
                                 </div>
@@ -263,7 +155,7 @@
                             <div class="item">
                                 <div class="video-sld">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/video-thumbnail.jpg" width="366" height="720"/>
-                                    <button aria-label="Video Play" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/earth.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                                    <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
                                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
                                     </button>
                                 </div>
@@ -544,13 +436,47 @@
 
     <!-- module-7 oil-quiz  -->
     <div class="oil-quiz default-section">
+        <div class="droplets">
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-blur-drop.png" alt="left-blur-drop"/>
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/right-blur-drop.png" alt="left-blur-drop"/>
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
+            </div>
+        </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="oil-quiz-left">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/quiz-heart.png" width="434" height="651">
                     </div>
-
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="oil-quiz-right">
@@ -584,7 +510,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 ">
                     <div class="cook-video">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
-                        <button aria-label="Video Play" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/earth.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                        <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
                             <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
                         </button>
                     </div>
@@ -595,7 +521,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 ">
                     <div class="cook-video">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
-                        <button aria-label="Video Play" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/earth.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                        <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
                             <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
                         </button>
                     </div>
@@ -607,17 +533,18 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 ">
                     <div class="cook-video">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
-                        <button aria-label="Video Play" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/earth.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                        <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
                             <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
                     </div>
                     <div class="h4-title">
                         <h4>Aloo Patties</h4>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-md-6 col-sm-12 ">
                     <div class="cook-video">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
-                        <button aria-label="Video Play" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/earth.mp4" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                        <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
                             <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
                         </button>
                     </div>
@@ -735,47 +662,64 @@
 
     <!-- module-10 form-section  -->
     <div id="form-section" class="form-section default-section footer-before">
-        <div class="container">
-            <div class="form-part">
-                <div class="form-image-part">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-dress-kiara.png" alt="Form Kiara Image">
-                </div>
-                <div class="h2-title">
-                    <h2 class="text-noeffect">
-                        Have Question? Ask Away
-                    </h2>
-                </div>
-                <div class="form">
-                    <div class="form-group">
-                                <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
+        <div class="container-fluid">
+            <div class="btm-cta">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="form-left">
+                            <div class="h2-white">
+                                <h2 class="text-noeffect">Lorem ipsum Lorem ipsum dolor</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
-                    <div class="form-group">
-                                <input type="email" class="form-control" name="name" placeholder="Email ID" required="">
-                        </div>
-                    <div class="form-group state-select">
-                                <select name="State" id="state" class="form-control">
-                                    <option value="gujrat">Gujrat</option>
-                                    <option value="rajsthan">Rajsthan</option>
-                                    <option value="panjab">Panjab</option>
-                                </select>
-                        </div>
-                    <div class="form-group state-select">
-                            <select name="State" id="state" class="form-control">
-                                <option value="ahmedabad">Ahmedabad</option>
-                                <option value="rajkot">Rajkot</option>
-                                <option value="surat">Surat</option>
-                            </select>
-                        </div>
-                    <div class="form-group">
-                            <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
-                        </div>
-                    <div class="iimg text-center">
-                            <button class="btn-effect" type="submit">
-                                Share
-                            </button>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        <div class="form-part">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-7 col-sm-12">
+                                        <div class="h2-title">
+                                        <h2 class="text-noeffect">Have Question? Ask Away</h2>
+                                    </div>
+                                    <div class="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="name" placeholder="Email ID" required="">
+                                        </div>
+                                        <div class="form-group state-select">
+                                            <select name="State" id="state" class="form-control">
+                                                <option value="gujrat">Gujrat</option>
+                                                <option value="rajsthan">Rajsthan</option>
+                                                <option value="panjab">Panjab</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group state-select">
+                                            <select name="State" id="state" class="form-control">
+                                                <option value="ahmedabad">Ahmedabad</option>
+                                                <option value="rajkot">Rajkot</option>
+                                                <option value="surat">Surat</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
+                                        </div>
+                                        <div class="iimg text-center">
+                                            <button class="btn-effect" type="submit">Share</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-12">
+                                    <div class="form-image-part">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-dress-kiara.png" alt="Form Kiara Image">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 <?php get_footer(); ?>
