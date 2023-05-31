@@ -125,15 +125,13 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="h2-white">
-                        <h2 class="text-noeffect">
-                            All natural & nutrition retained!
-                        </h2>
-                    </div>
-                    <div class="sub-text">
-                        <p>Make the #ChangeForHealth with Vimal healthy cooking oils, 100% pure and natural with maximum nutrition retained!</p>
-                    </div>
+                <div class="h2-white">
+                    <h2 class="text-noeffect">All natural & nutrition retained!</h2>
+                </div>
+                <div class="sub-text">
+                    <p>Make the #ChangeForHealth with Vimal healthy cooking oils, 100% pure and natural with maximum nutrition retained!</p>
+                </div>
+                <div class="align-items-center">
                     <div class="owl">
                         <div class="pro-vdo-sld owl-carousel owl-theme">
                             <div class="item">
@@ -507,60 +505,57 @@
                 <div class="h2-white">
                     <h2 class="text-noeffect">Cook Healthy With Vimal Oils</h2>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="cook-video">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
-                        <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
-                        </button>
-                    </div>
-                    <div class="h4-title">
-                        <h4>Aloo Patties</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="cook-video">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
-                        <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
-                        </button>
-                    </div>
-                    <div class="h4-title">
-                        <h4>Aloo Patties</h4>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="cook-video">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
-                        <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
-                    </div>
-                    <div class="h4-title">
-                        <h4>Aloo Patties</h4>
-                    </div>
-                </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="cook-video">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
-                        <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
-                        </button>
+
+                <div class="cook-sldr owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="cook-video">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
+                            <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
+                            </button>
+                        </div>
+                        <div class="h4-title">
+                            <h4>Aloo Patties</h4>
+                        </div>
                     </div>
-                    <div class="h4-title">
-                        <h4>Aloo Patties</h4>
+                    <div class="item">
+                        <div class="cook-video">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
+                            <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
+                            </button>
+                        </div>
+                        <div class="h4-title">
+                            <h4>Aloo Patties</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="cook-video">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
+                            <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
+                        </div>
+                        <div class="h4-title">
+                            <h4>Aloo Patties</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="cook-video">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" />
+                            <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
+                        </div>
+                        <div class="h4-title">
+                            <h4>Aloo Patties</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="submit-button text-center">
-                    <button class="btn-effect" type="submit">
-                        Let's Explore
-                    </button>
+                    <button class="btn-effect" type="submit">Let's Explore</button>
                 </div>
             </div>
-
         </div>
-
     </div>
 
     <!-- module-9 social-presence  -->
@@ -664,7 +659,7 @@
     <div id="form-section" class="form-section default-section footer-before">
         <div class="container-fluid">
             <div class="btm-cta">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="form-left">
                             <div class="h2-white">
@@ -677,42 +672,43 @@
                         <div class="form-part">
                             <div class="row">
                                 <div class="col-lg-7 col-md-7 col-sm-12">
-                                        <div class="h2-title">
-                                        <h2 class="text-noeffect">Have Question? Ask Away</h2>
-                                    </div>
-                                    <div class="form">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
+                                    <div class="form-inner">
+                                        <div class="h2-white">
+                                            <h2 class="text-noeffect">Have Question? Ask Away</h2>
                                         </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="name" placeholder="Email ID" required="">
-                                        </div>
-                                        <div class="form-group state-select">
-                                            <select name="State" id="state" class="form-control">
-                                                <option value="gujrat">Gujrat</option>
-                                                <option value="rajsthan">Rajsthan</option>
-                                                <option value="panjab">Panjab</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group state-select">
-                                            <select name="State" id="state" class="form-control">
-                                                <option value="ahmedabad">Ahmedabad</option>
-                                                <option value="rajkot">Rajkot</option>
-                                                <option value="surat">Surat</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
-                                        </div>
-                                        <div class="iimg text-center">
-                                            <button class="btn-effect" type="submit">Share</button>
-                                        </div>
+                                        <div class="form">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="name" placeholder="Email ID" required="">
+                                            </div>
+                                            <div class="form-group state-select">
+                                                <select name="State" id="state" class="form-control">
+                                                    <option value="gujrat">Gujrat</option>
+                                                    <option value="rajsthan">Rajsthan</option>
+                                                    <option value="panjab">Panjab</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group state-select">
+                                                <select name="State" id="state" class="form-control">
+                                                    <option value="ahmedabad">Ahmedabad</option>
+                                                    <option value="rajkot">Rajkot</option>
+                                                    <option value="surat">Surat</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
+                                            </div>
+                                            <div class="iimg text-center">
+                                                <button class="btn-effect" type="submit">Share</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-5 col-md-5 col-sm-12">
                                     <div class="form-image-part">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-dress-kiara.png" alt="Form Kiara Image">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/form-img.png" alt="Form Kiara Image">
                                     </div>
                                 </div>
                             </div>

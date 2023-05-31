@@ -31,18 +31,16 @@
 </head>
 <body>
     <!-- module-1 header html code  -->
-    <header class="header">
-        <div class="navbar">
-            <div class="container-fluid">
-                <div class="nav-menu">
-                    <div class="logo" id="logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="vimal oil">
-                    </div>
-                    <div class="menu-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+    <header class="header" id="header">
+        <div class="container-fluid">
+            <div class="nav-menu">
+                <div class="logo" id="logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="vimal oil">
+                </div>
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>

@@ -103,18 +103,67 @@ $(document).ready(function(){
         }
         
     })
+    // cook healthy slider
+    $('.cook-sldr').owlCarousel({
+        loop: false,
+        autoplay: false,
+        responsiveClass: true,
+        nav: false,
+        margin: 30,    
+        autoplayTimeout: 4000,
+        smartSpeed: 400,
+        center: false,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 10, 
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            480: {
+                items: 1,
+                margin: 10, 
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            575: {
+                items: 2,
+                margin: 10, 
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            768: {
+                items: 3,
+                margin: 10, 
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            992: {
+                items: 4,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            1200: {
+                items: 4
+            }
+        }
+    });
 
     $(".menu-btn").on("click", function(e) {
         $(".menu-float").toggleClass("m-open"), e.preventDefault()
     }), $(".close-btn").on("click", function(e) {
         $(".menu-float").removeClass("m-open"), e.preventDefault()
     })
-
-    
-    // Set time imterval to pop the heart in the banner
-    setInterval(function(){ 
-        $('.banner-heart').addClass("pop")
-    }, 3000);
 
     // Instagram slider
     function detect_active() {
@@ -157,21 +206,19 @@ $(document).ready(function(){
       });
 });
 // Sticky Header JS Starts
-if ($(window).width() > 0) {
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 20) {
-            $("header").addClass("sticky");
-        } else {
-            $("header").removeClass("sticky");
-        }
-    });
-}
-
-
+// if ($(window).width() > 0) {
+//     $(window).scroll(function() {
+//         var scroll = $(window).scrollTop();
+//         if (scroll >= 20) {
+//             $("header").addClass("sticky");
+//         } else {
+//             $("header").removeClass("sticky");
+//         }
+//     });
+// }
 $(document).ready(function(){
      // Video Play Button
- if ($(".wl-modal-btn").length > 0) {
+    if ($(".wl-modal-btn").length > 0) {
     $(".wl-modal-btn").click(function() {
         console.log("hello");
         var modalPopup = $(this).attr("data-modal");
@@ -198,51 +245,107 @@ $(document).ready(function(){
             $("body").removeClass("wl-modal-active");
         }
     });
-}
-// Video Popup
-if ($("#videoPlaypopup").length > 0) {
-    $("#videoPlaypopup").each(function() {
-        var playBtn2 = $(".video-play-btn");
-        var vBox2 = $(".wl-video-modal");
-        var vPlay2 = $(".video-play-box");
+    }
+    // Video Popup
+    if ($("#videoPlaypopup").length > 0) {
+        $("#videoPlaypopup").each(function() {
+            var playBtn2 = $(".video-play-btn");
+            var vBox2 = $(".wl-video-modal");
+            var vPlay2 = $(".video-play-box");
 
-        var Video2 = $(this).find("#video");
-        var Source2 = $(this).find("source");
-        var playStopBtn2 = $(this).find("button") && $(vBox2);
+            var Video2 = $(this).find("#video");
+            var Source2 = $(this).find("source");
+            var playStopBtn2 = $(this).find("button") && $(vBox2);
 
-        playBtn2.click(function() {
-            var vPath2 = $(this).attr("data-src");
-            Video2.trigger("load");
-            Video2.trigger("play");
-            vPlay2.attr("src",vPath2 );
-        });
+            playBtn2.click(function() {
+                var vPath2 = $(this).attr("data-src");
+                Video2.trigger("load");
+                Video2.trigger("play");
+                vPlay2.attr("src",vPath2 );
+            });
 
-        playStopBtn2.click(function() {
-            Source2.attr("src", "/");
-            Video2.trigger("pause");
-            vBox2.removeClass("wl-modal-open");
-            $("body").removeClass("modal-open");
-        });
-
-        Video2.click(function() {
-            event.stopPropagation();
-        });
-
-        Video2.on("ended", function() {
-            Source2.attr("src", "/");
-            Video2.trigger("pause");
-            vBox2.removeClass("wl-modal-open");
-            vPlay2.removeClass("video-play");
-            $("body").removeClass("modal-open");
-        });
-
-        $(document).on("keydown", function(event) {
-            if (event.key === "Escape") {
+            playStopBtn2.click(function() {
                 Source2.attr("src", "/");
                 Video2.trigger("pause");
+                vBox2.removeClass("wl-modal-open");
+                $("body").removeClass("modal-open");
+            });
+
+            Video2.click(function() {
+                event.stopPropagation();
+            });
+
+            Video2.on("ended", function() {
+                Source2.attr("src", "/");
+                Video2.trigger("pause");
+                vBox2.removeClass("wl-modal-open");
                 vPlay2.removeClass("video-play");
+                $("body").removeClass("modal-open");
+            });
+
+            $(document).on("keydown", function(event) {
+                if (event.key === "Escape") {
+                    Source2.attr("src", "/");
+                    Video2.trigger("pause");
+                    vPlay2.removeClass("video-play");
+                }
+            });
+        });
+    }
+    
+    // Hide header on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 150;
+    var navbarHeight = $('header').outerHeight();
+
+    $(window).scroll(function(event){
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+        
+        // Make scroll more than delta
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+        
+        // If scrolled down and past the navbar, add class .nav-up.
+        if (st > lastScrollTop && st > navbarHeight){
+            // Scroll Down
+            $('header').removeClass('nav-down').addClass('nav-up');
+        } else {
+            // Scroll Up
+            if(st + $(window).height() < $(document).height()) {
+                $('header').removeClass('nav-up').addClass('nav-down');
+            }
+        }
+        lastScrollTop = st;
+    }
+
+    // Add class on scroll for NRT section smooth scroll homepage
+    $(window).scroll(function(){
+        inViewport();
+    });
+    $(window).resize(function(){
+        inViewport();
+    });
+    function inViewport(){
+        $('.nrt-ills').each(function(){
+            var divPos = $(this).offset().top,
+                topOfWindow = $(window).scrollTop();
+            
+            if( divPos < topOfWindow+400 ){
+                $(this).addClass('slip-sec');
             }
         });
-    });
-}
+    }
+      
 });
