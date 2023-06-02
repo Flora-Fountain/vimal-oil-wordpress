@@ -1,10 +1,5 @@
-
-
-
 /* font-family: 'Quicksand', sans-serif;
 font-family: 'Raleway', sans-serif; */
-
-
 *{
     margin: 0;
     padding: 0;
@@ -533,7 +528,6 @@ a:focus{
         top: 110%;
         transform:translateX(-20px) rotate(225deg);
     }
-    
 }
 .health-section .owl {
 	margin-bottom: 40px;
@@ -761,6 +755,142 @@ a:focus{
 /* module-5 nrt-section css code  */
 .nrt-section{
     background-color: #ffffff;
+}
+.nrt-section::before {
+	position: absolute;
+	content: '';
+	background: url(../images/sun-flower.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 260px;
+	height: 270px;
+	right: -120px;
+	top: 0;
+	animation: fl-rotate 20s infinite linear;
+	z-index: 0;
+}
+.nrt-bottom {
+	position: relative;
+	z-index: 2;
+}
+.nrt-section::after,.form-section::after {
+	position: absolute;
+	content: '';
+	background: url(../images/green-leaf.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 111px;
+	height: 222px;
+	left: 0;
+	top: -30px;
+	z-index: 1;
+	animation:windy 5s infinite forwards;
+	transform-origin:left bottom
+}
+@keyframes windy{
+	0% {
+		transform: skewY(-10deg);
+	}
+	50% {
+		transform: skewY(5deg) ;
+	}
+	100% {
+		transform: skewY(-10deg);
+	}
+}
+.floating-ele {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
+.floating-ele img{
+	position: absolute;
+	z-index: -1;
+}
+.floating-ele img:nth-child(1) {
+	bottom: 30%;
+	left: 0;
+}
+.floating-ele img:nth-child(2) {
+	bottom: 10%;
+	left: 20%;
+	animation: fl-rotate 50s infinite linear reverse;
+}
+.floating-ele img:nth-child(3) {
+	top: 12%;
+	left: 25%;
+	animation: up-down 6s infinite linear;
+	animation-delay: 2s;
+}
+.floating-ele.right img:nth-child(1) {
+	left: 70%;
+	top: -15%;
+	bottom: auto;
+	animation: fl-rotate 50s infinite linear;
+}
+.floating-ele.right img:nth-child(2) {
+	top: 32%;
+	left: 72%;
+	animation: up-down 5s infinite linear;
+}
+@keyframes up-down{
+	0%{transform: translateY(0);}
+	50%{transform: translateY(-20px);}
+	100%{transform: translateY(0);}
+}
+.floating-ele.right img:nth-child(3) {
+	bottom: 10%;
+	left: 75%;
+	top: auto;
+	animation: side-by-side 6s infinite linear;
+	transform-origin: center center;
+}
+@keyframes side-by-side{
+	0%{transform: rotate(0deg);}
+	25%{transform: rotate(15deg);}
+	50%{transform: rotate(-15deg);}
+	100%{transform: rotate(0deg);}
+}
+.floating-ele.right img:nth-child(4) {
+	top: 45%;
+	left: 86%;
+	animation: leaf-fall 7s infinite linear;
+}
+
+@keyframes leaf-fall{
+    0%{
+        opacity:0;
+        top: 0%;
+        transform:translateX(20px) rotate(0deg);
+    }
+    10%{
+        opacity:1;
+    }
+    20%{
+        transform:translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform:translateX(-20px) rotate(90deg);
+    }
+    60%{
+        transform:translateX(20px) rotate(180deg);
+    }
+    80%{
+        transform:translateX(-20px) rotate(180deg);
+			opacity: 0.5;
+    }
+    100%{
+        top: 90%;
+        transform:translateX(-20px) rotate(225deg);
+			   opacity: 0;
+    }
+}
+.floating-ele.right img:nth-child(5) {
+	bottom: 7%;
+	right: 0;
 }
 .nrt-section .h2-title {
 	color: #0c56a1;
@@ -1062,8 +1192,7 @@ a:focus{
       top: 0;
       opacity: 1;
     }
-  }
-
+}
 .jorney-main .nav-pills .nav-link img {
 	width: 80%;
 	height: auto;
@@ -1156,7 +1285,6 @@ a:focus{
     margin-bottom: 30px;
 	color: #0c54a0;
 }
-
 .recipe-section .head-para{
     color: #0c54a0;
     margin-bottom: 40px;
@@ -1176,15 +1304,13 @@ a:focus{
     position: relative;
     perspective: 1000px;
     height: 100%;
-}
-  
+} 
 .dp-slider {
     height: 100%;
     width: 100%;
     position: absolute;
     transform-style: preserve-3d;
 }
-  
 .dp-slider div {
     transform-style: preserve-3d;
 }
@@ -1318,6 +1444,61 @@ a:focus{
 .form-section{
     background-color: #ffffff;
 }
+.form-section::after {
+	top: 40%;
+}
+.floating-obj {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 0;
+}
+.floating-obj img {
+	position: absolute;
+	z-index: -1;
+}
+.floating-obj img:nth-child(1) {
+	left: 15%;
+	top: 3%;
+}
+.floating-obj img:nth-child(2) {
+	left: 56%;
+	top: 0;
+}
+.floating-obj img:nth-child(3) {
+	left: 80%;
+	top: -19px;
+}
+.floating-obj img:nth-child(4) {
+	bottom: 10%;
+	left: 15%;
+}
+.floating-obj img:nth-child(5) {
+	bottom: -5%;
+	left: 42%;
+}
+.floating-obj img:nth-child(6) {
+	bottom: 2%;
+	right: 30%;
+}
+.floating-obj img:nth-child(7) {
+	right:-5px;
+	top: 60%;
+	animation: windy-rev 5s infinite forwards;
+}
+@keyframes windy-rev{
+	0% {
+		transform: skewX(-7deg) rotateY(180deg);
+	}
+	50% {
+		transform: skewX(0deg) rotateY(180deg);
+	}
+	100% {
+		transform: skewX(-7deg) rotateY(180deg);
+	}
+}
 .form-control:focus {
     outline: 0;
     box-shadow: none;
@@ -1357,12 +1538,12 @@ a:focus{
 	padding: 0;
 	border: none;
 	border-radius: 10px;
-	box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 60px 4px rgba(0,0,0,0.1);
 	max-width: 890px;
 	margin: 0 auto;
 }
 .form-part .form-inner {
-	padding: 30px 50px;
+	padding: 50px 50px;
 }
 .form-inner .h2-white {
 	font-size: 32px;
@@ -1398,12 +1579,21 @@ a:focus{
 }
 .form-section .btm-cta {
 	padding: 0 60px;
+	position: relative;
+	z-index: 2;
 }
 .form-left {
 	color: #0c56a1;
 	text-align: center;
 }
-
+.form-left .h2-white {
+	line-height: 1.04;
+	letter-spacing: 3px;
+}
+.form-left p {
+	font-size: 30px;
+	font-weight: 400;
+}
 /* module-11 footer section css code */
 .footer{
     background-color: #0c56a1;
@@ -1463,7 +1653,6 @@ a:focus{
     resize: vertical;
     color: #fff;
 }
-
 /* @keyframes wave {
     0%,
     100% {
@@ -1493,7 +1682,6 @@ a:focus{
     ); 
     }
 } */
-
 @keyframes wave {
     0%,
     100% {
@@ -1658,14 +1846,12 @@ a:focus{
 	background: rgba(255,255,255,.1);
 	box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
-
 /* career page css code */
 .common-banner{
 	height: 100vh;
 	background-color: #0c56a1;
 	position: relative;
 }
-
 .common-banner .cb-content{
 	position: absolute;
 	top: 50%;
@@ -1673,7 +1859,6 @@ a:focus{
 	transform: translate(-50%,-50%);
 	text-align: center;
 }
-
 .common-banner .banner-para{
 	font-size: 18px;
 	font-style: 'Raleway', sans-serif;
@@ -1686,32 +1871,26 @@ a:focus{
 	border-radius: 10px;
 	margin-top: 20px;
 }
-
 .grow-section .grow-para{
 	padding: 10px 60px;
 }
-
 .grow-section .grow-para p{
 	margin-top: 10px;
 }
-
 .current-opening{
 	background-color: #0c56a1;
 }
-
 .job-opening .job-card{
 	background: #fff;
 	padding: 10px 20px;
 	border-radius: 10px;
 }
-
 .job-opening .job-card .office{
 	display: flex;
 	justify-content: space-between;
 	font-size: 18px;
 	font-weight: 500;
 }
-
 .job-opening .job-link{
 	display: flex;
 	gap: 5px;
@@ -1722,15 +1901,12 @@ a:focus{
 	width: 25px;
 	height: 25px;
 }
-
 .job-opening .job-link:hover span img{
 	transform: rotateZ(45deg);
 }
-
 .job-opening .job-card .h3-title{
 	font-size:  20px;	
 }
-
 .job-opening .job-card .timing p{
 	display: flex;
 	gap: 5px;
@@ -1738,12 +1914,10 @@ a:focus{
 	font-size: 18px;
 	font-weight: 500;
 }
-
 .job-opening .job-card .timing p span img{
 	width: 25px;
 	height: 25px;
 }
-
 /* contact page css code  */
 .contact-map{
 	padding: 50px 0;
@@ -1754,11 +1928,9 @@ a:focus{
 	box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.2);
 	width: 100%;
 }
-
 .contact-details{
 	padding: 50px 0;
 }
-
 .contact-details .contact-icon span {
 	background-color: #0c56a1;
 	display: inline-flex;
@@ -1766,17 +1938,14 @@ a:focus{
 	padding: 5px 5px;
 	border-radius: 10px;
 }
-
 .contact-details .contact-icon span img{
 	width: 40px;
 	height: 40px;
 }
-
 .contact-details .para-title p{
 	font-size: 20px;
 	font-weight: 400;
 }
-
 .contact-details .contact-para p{
 	font-size: 18px;
 	padding-bottom: 0px;
@@ -1784,24 +1953,19 @@ a:focus{
 .contact-details .contact{
 	margin: 8px 0;
 }
-
-
 /* privacy policy style  */
 .privacy-banner{
 	background-color: #0c56a1;
 	height: 100vh;
 }
-
 .privacy-banner .content-part .h1-title{
 	color: #FFDD00;
 	font-weight: 600;
 	font-size: 55px;	
 }
-
 .privacy-banner .image-part img{
 	width: 100%;
 } 
-
 .privacy-policy{
 	padding: 25px 0 25px 0;
 }

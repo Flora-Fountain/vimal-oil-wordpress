@@ -275,6 +275,18 @@
         </div>
     </div>
     <div class="nrt-section default-section">
+        <div class="floating-ele">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/yellow-flower.png" alt="yellow-flower" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-flower.png" alt="white-flower" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-blur.png" alt="groundnut-blur" />
+        </div>
+        <div class="floating-ele right">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-flower-blur.png" alt="white-flower-blur" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="peanut" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/yellow-flower-refl.png" alt="yellow-flower-refl" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/leaf-blur.png" alt="leaf-blur" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="groundnut-clear" />
+        </div>
         <div class="container">
             <div class="align-items-center">
                 <div class="nrt-bottom">
@@ -593,10 +605,10 @@
                                 </div>
                             </div>
                             <span id="dp-next">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 15v-4H7v-2h5V7l5 5-5 5z"></path></svg>
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/></svg>
                             </span>
                             <span id="dp-prev">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-5v4l-5-5 5-5v4h5v2z"/></svg>
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/></svg>
                             </span>
                         </div>
                     </div>
@@ -657,10 +669,19 @@
 
     <!-- module-10 form-section  -->
     <div id="form-section" class="form-section default-section footer-before">
+        <div class="floating-obj">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-f.png" alt="groundnut-f"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="peanut.png"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear-frm.png" alt="groundnut-clear-frm"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-blur-frm.png" alt="groundnut-blur-frm"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut-small.png" alt="peanut-small"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ground-nut-blur-frm.png" alt="ground-nut-blur-frm"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/green-leaf.png" alt="green-leaf"/>
+        </div>
         <div class="container-fluid">
             <div class="btm-cta">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="form-left">
                             <div class="h2-white">
                                 <h2 class="text-noeffect">Lorem ipsum Lorem ipsum dolor</h2>
@@ -668,7 +689,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
                         <div class="form-part">
                             <div class="row">
                                 <div class="col-lg-7 col-md-7 col-sm-12">

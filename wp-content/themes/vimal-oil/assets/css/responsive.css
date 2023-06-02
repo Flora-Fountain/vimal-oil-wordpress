@@ -51,6 +51,13 @@
     .form-part .form-inner {
         padding: 30px 40px;
     }
+    .form-left .h2-white {
+        letter-spacing: 2px;
+        font-size: 39px;
+    }
+    .form-left p {
+        font-size: 22px;
+    }
 }
 @media screen and (max-width:1399px) {
     .hero-banner .banner-left {
@@ -100,11 +107,11 @@
         width: 150px;
         height: 150px;
     }
-    .leaf-sec::before,.leaf-sec::after {
+    .leaf-sec::before,.leaf-sec::after,.nrt-section::before {
         width: 220px;
         height: 210px;
     }
-    .leaf-sec::before{
+    .leaf-sec::before,.nrt-section::before{
         top: 50px;
     }
     .pro-sld-main img {
@@ -144,7 +151,7 @@
     .jorney-main .tab-content .j-para .j-year {
         font-size: 70px;
     }
-    .leaf-sec::before, .leaf-sec::after {
+    .leaf-sec::before, .leaf-sec::after,.nrt-section::before {
         width: 170px;
         height: 170px;
         right: -100px;
@@ -152,6 +159,10 @@
     .leaf-sec::after {
         right: auto;
         left: -110px;
+    }
+    .nrt-section::before{
+        right: -100px;
+        left: auto;
     }
     .falling-leaf > div:nth-child(1) img {
         width: 50px;
@@ -170,6 +181,72 @@
     }
     .oil-quiz-left img {
         max-width: 300px;
+    }
+    .dp_item {
+        right: 17%;
+    }
+    .nrt-section::after {
+        width: 71px;
+        height: 182px;
+    }
+    .floating-ele img:nth-child(1) {
+        width: 120px;
+    }
+    .floating-ele img:nth-child(2) {
+        width: 150px;
+        left: 13%;
+    }
+    .floating-ele img:nth-child(3) {
+        width: 70px;
+    }
+    .floating-ele.right img:nth-child(1) {
+        width: 64px;
+    }
+    .floating-ele.right img:nth-child(2) {
+        width: 120px;
+    }
+    .floating-ele.right img:nth-child(3) {
+        width: 32px;
+    }
+    .floating-ele.right img:nth-child(4) {
+        width: 63px;
+    }
+    .floating-ele.right img:nth-child(5) {
+        width: 100px;
+    }
+    
+    .animate-text {
+       max-width: 490px;
+    }
+    .animate-text span {
+        font-size: 48px;
+    }
+    .floating-obj img:nth-child(1) {
+        left: 15%;
+        top: 10%;
+        width: 110px;
+    }
+    .floating-obj img:nth-child(2) {
+        left: 45%;
+        width: 110px;
+    }
+    .floating-obj img:nth-child(3) {
+        left: 90%;
+        top: 10px;
+        width: 140px;
+    }
+    .floating-obj img:nth-child(4) {
+        width: 80px;
+    }
+    .floating-obj img:nth-child(5) {
+        bottom: -2%;
+        left: 37%;
+        width: 100px;
+    }
+    .floating-obj img:nth-child(6) {
+        bottom: 4%;
+        right: 20%;
+        width: 70px;
     }
 }
 @media screen and (max-width:1299px) {
@@ -212,6 +289,9 @@
     #dp-slider, .dp-img img {
         height: 240px;
     }
+    .floating-obj img:nth-child(5) {
+        bottom: -30px;
+    }
 }
 @media screen and (max-width:1199px) {
     .header {
@@ -226,7 +306,7 @@
     .hero-banner .banner-right .h1-title span {
         font-size: 28px;
     }
-    .header {
+    .header,.header.nav-down {
         padding: 10px 15px;
     }
     .hash-sec span {
@@ -340,6 +420,36 @@
         line-height: 1.4;
         max-width: 380px;
     }
+    .dp_item {
+        width: 300px;
+    }
+    #dp-next, #dp-prev {
+        height: 50px;
+        width: 50px;
+    }
+    .floating-ele.right img:nth-child(1) {
+        top: -5%;
+    }
+    .floating-ele img:nth-child(2) {
+        left: 9%;
+    }
+    .nrt-section p {
+        font-size: 24px;
+        max-width: 540px;
+    }
+    .form-part .form-image-part img {
+        max-width: 190px;
+    }
+    .floating-obj img:nth-child(1) {
+        top:1%;
+    }
+    .form-left .h2-white {
+        letter-spacing: 1px;
+        font-size: 27px;
+    }
+    .form-left p {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width:991px) {
     .pro-vdo-sld.owl-carousel .owl-stage {
@@ -436,16 +546,63 @@
     .nrt-section .h1-title {
         margin-bottom: 10px;
     }
+    .dp_item {
+        width: 460px;
+    }
+    .social-sec {
+        margin-top: 50px;
+    }
+    .floating-ele img:nth-child(1) {
+        width: 100px;
+    }
+    .floating-ele img:nth-child(2) {
+        width: 100px;
+    }
+    .floating-ele img:nth-child(3) {
+        width: 50px;
+        left: 15%;
+    }
+    .floating-ele.right img:nth-child(1) {
+        width: 44px;
+    }
+    .floating-ele.right img:nth-child(2) {
+        width: 80px;
+        left: 75%;
+    }
+    .floating-ele.right img:nth-child(4) {
+        width: 43px;
+    }
+    .floating-ele.right img:nth-child(5) {
+        width: 70px;
+    }
 }
 @media screen and (max-width:767px) {
+    .header, .header.nav-down {
+        padding: 10px 0;
+    }
+    .hero-banner .banner-left img {
+        max-width: 400px;
+    }
+    .hash-sec {
+        margin: 20px 0;
+    }
+    .leaf-sec::before, .leaf-sec::after {
+        width: 120px;
+        height: 120px;
+        right: -68px;
+    }
+    .leaf-sec::after {
+        right: auto;
+        left: -70px;
+    }
+    .oil-quiz-left img {
+        max-width: 220px;
+    }
     .h1-title {
         font-size: 60px;
     }
     .nrt-section .h1-title, .vimal-journey .h1-title, .recipe-section .h1-title {
         font-size: 54px;
-    }
-    .h2-blue,.h2-white {
-        font-size: 26px;
     }
     .hero-banner .banner-info {
         padding: 30px 0px 70px;
@@ -487,8 +644,11 @@
     .nrt-section .h2-title {
         font-size: 40px;
     }
-    .h2-title, .oil-quiz .h2-title, .animate-text span {
+    .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white {
         font-size: 35px;
+    }
+    .h4-title h4 {
+        font-size: 22px;
     }
     .animate-text {
         max-width: 350px;
@@ -601,7 +761,7 @@
         font-size: 20px;
     }
     .nrt-ills::before, .nrt-ills::after {
-        height: calc(100% - 391px);
+        height: calc(100% - 374px);
     }
     .droplets {
         top: 110px;
@@ -612,7 +772,7 @@
     }
     .nrt-logo {
         max-width: 180px;
-        margin: 180px auto 0;
+        margin: 240px auto 0;
         padding: 30px;
     }
     .pro-vdo-sld .video-sld img {
@@ -644,19 +804,107 @@
     }
     .jorney-main .nav-pills .nav-link {
         width: 33.33%;
+        padding: 0;
+    }
+    .jorney-main .slide-img img {
+        width: 100%;
+        max-width: 270px;
+    }
+    .jorney-main .nav-pills .nav-link:nth-last-child(-n+3) {
+        margin-top: 20px;
     }
     .jorney-main .nav {
         margin: 30px 0;
     }
     .recipe-section .submit-button {
-        margin: 30px 0;
+        margin: 10px 0;
     }
 
     /* contact-page css  */
     .map-part{
         margin-top: 25px;
     }
-
+    .dp_item {
+        width: 340px;
+    }
+    .dp-wrap {
+        margin: 20px auto 50px;
+    }
+    .default-section.blue-bg {
+        padding-top: 70px;
+    }
+    .jorney-main .tab-content .j-para .j-year {
+        font-size: 40px;
+    }
+    .form-section .btm-cta {
+        padding: 0;
+    }
+    .form-left {
+        max-width: 400px;
+        margin: 30px auto;
+    }
+    .form-part .form-image-part {
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .form-part .row {
+        flex-direction: column-reverse;
+    }
+    .form-part .form-image-part img {
+        max-width: 170px;
+        margin-top: 30px;
+    }
+    .form-part {
+        max-width: 400px;
+        margin: 0 auto 50px;
+    }
+    .nrt-section::before {
+        right: -68px;
+        left: auto;
+        width: 120px;
+        height: 120px;
+    }
+    .nrt-section::after {
+        width: 51px;
+        height: 142px;
+        top: 20px;
+    }
+    .form-section::after {
+        width: 51px;
+        height: 142px;
+        top: 20%;
+    }
+    .floating-obj img:nth-child(7) {
+        width: 51px;
+        height: 142px;
+    }
+    .floating-obj img:nth-child(1) {
+        top: 1%;
+        left: 0%;
+    }
+    .floating-obj img:nth-child(2) {
+        width: 80px;
+    }
+    .floating-obj img:nth-child(3) {
+        left: 80%;
+        width: 90px;
+    }
+    .floating-obj img:nth-child(4) {
+        width: 50px;
+        bottom: 2%;
+        left: 7%;
+    }
+    .floating-obj img:nth-child(5) {
+        bottom: 0;
+        left: 37%;
+        width: 70px;
+    }
+    .floating-obj img:nth-child(6) {
+        bottom: 3%;
+        right: 10%;
+        width: 50px;
+    }
 }
 @media screen and (max-width:575px) {
     .pro-sld-main a {
@@ -665,14 +913,14 @@
     }
     .nrt-logo {
         max-width: 162px;
-        margin: 180px auto 0;
+        margin: 244px auto 0;
         padding: 20px;
     }
     .white-sec::before {
         height: 198px;
     }
     .nrt-ills::before, .nrt-ills::after {
-        height: calc(100% - 376px);
+        height: calc(100% - 359px);
     }
     .droplets > div:nth-child(1) img,.droplets > div:nth-child(2) img {
         width: 20px;
@@ -692,6 +940,45 @@
     .droplets > div:nth-child(11) img {
         width: 20px;
     }
+    .dp_item {
+        width: 100%;
+        right: 0;
+    }
+    #dp-slider, .dp-img img {
+        max-width: 270px;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .floating-ele img:nth-child(1) {
+        width: 70px;
+    }
+    .floating-ele img:nth-child(2) {
+        width: 70px;
+        left: 9%;
+    }
+    .floating-ele img:nth-child(3) {
+        width: 30px;
+        left: 8%;
+    }
+    .floating-ele.right img:nth-child(1) {
+        width: 34px;
+        top: 0;
+    }
+    .floating-ele.right img:nth-child(2) {
+        width: 60px;
+        left: 80%;
+    }
+    .floating-ele.right img:nth-child(3) {
+        width: 26px;
+    }
+    .floating-ele.right img:nth-child(4) {
+        width: 33px;
+        left: 90%;
+    }
+    .floating-ele.right img:nth-child(5) {
+        width: 50px;
+    }
 }
 @media screen and (max-width:479px) {
     .pro-sld-main a {
@@ -699,14 +986,15 @@
         max-width: 140px;
     }
     .nrt-ills::before, .nrt-ills::after {
-        height: calc(100% - 318px);
-        top: 212px;
+        height: calc(100% - 316px);
+        top: 215px;
     }
     .white-sec::before {
         height: 188px;
     }
     .nrt-logo {
-        margin: 280px auto 0;
+        margin: 390px auto 0;
+        max-width: 164px;
     }
     .nrt-top .text-center {
         font-size: 18px;
@@ -716,6 +1004,25 @@
     }
     .footer .footer-quick-links ul li a {
         font-size: 15px;
+    }
+    #dp-slider, .dp-img img {
+        max-width: 230px;
+    }
+    .socials li a {
+        width: 40px;
+        height: 40px;
+    }
+    .nrt-section::after {
+        width: 30px;
+        height: 102px;
+        top: 10px;
+    }
+    .floating-ele img:nth-child(1) {
+        bottom: 17%;
+        left: 0;
+    }
+    .floating-ele img:nth-child(2) {
+        bottom: 5%;
     }
 }
 @media screen and (max-width:359px) {
@@ -731,9 +1038,15 @@
     }
     .nrt-ills::before, .nrt-ills::after {
         height: calc(100% - 375px);
-        top: 250px;
+        top: 260px;
     }
     .nrt-section .h1-title, .vimal-journey .h1-title, .recipe-section .h1-title {
         font-size: 48px;
+    }
+    .nrt-logo {
+        max-width: 166px;
+    }
+    #dp-slider, .dp-img img {
+        max-width: 190px;
     }
 }
