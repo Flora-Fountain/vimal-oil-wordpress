@@ -114,19 +114,32 @@ echo get_header();
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="healt-picture">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/health-kiara.png" alt="Change for Health"/>
+                    <div class="healt-picture text-center">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/health-kiara.png" alt="Change for Health" height="600px"/>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="health-content">
-
+                        <div class="h2-blue" style="text-align: start;">
+                            <h2 class="text-noeffect">
+                                #ChangeForHealth
+                            </h2>
+                        </div>
+                        <div class="para">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, tempora totam. Sunt tempore a voluptate accusantium neque ipsa impedit, libero aperiam officiis dolorem porro ut, nihil voluptates iure ab, repellat quia aspernatur! Rem architecto doloremque fugiat nihil sed amet laudantium suscipit excepturi asperiores est, numquam perferendis quos nemo incidunt quibusdam officia nobis ratione</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, tempora totam. Sunt tempore a voluptate accusantium neque ipsa impedit, libero aperiam officiis dolorem porro ut, nihil voluptates iure ab, repellat quia aspernatur! Rem architecto doloremque fugiat nihil sed amet laudantium suscipit excepturi asperiores est, numquam perferendis quos nemo incidunt quibusdam officia nobis ratione</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="tvc-section">
+        <div class="container">
+            
+        </div>
+    </div>
     
     <!-- module-6 billbooard section  -->
     <div class="default-section footer-before">
