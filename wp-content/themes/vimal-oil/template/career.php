@@ -154,6 +154,26 @@ echo get_header();
                         </div>
                     </div>
                 </div>
+                <div class="job-card">
+                    <div class="role-title">
+                        <h2 class="text-noeffect">Sales Manager</h2>
+                    </div>
+                    <div class="role-small-details">
+                        <div class="time">
+                            <p>Full-time</p>
+                        </div>
+                        <div class="department">
+                            <p>Sales Department</p>
+                        </div>
+                        <div class="view-button">
+                            <a href="#">View Job
+                            <span>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="">
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
