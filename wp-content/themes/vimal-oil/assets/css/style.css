@@ -1880,44 +1880,49 @@ a:focus{
 .current-opening{
 	background-color: #0c56a1;
 }
+
 .job-opening .job-card{
 	background: #fff;
 	padding: 10px 20px;
 	border-radius: 10px;
+	margin: 12px 0;
 }
-.job-opening .job-card .office{
+.job-opening .job-card{
 	display: flex;
-	justify-content: space-between;
-	font-size: 18px;
-	font-weight: 500;
-}
-.job-opening .job-link{
-	display: flex;
-	gap: 5px;
-	color: #0c56a1;
-	text-decoration: none;
-}
-.job-opening .job-link span img{
-	width: 25px;
-	height: 25px;
-}
-.job-opening .job-link:hover span img{
-	transform: rotateZ(45deg);
-}
-.job-opening .job-card .h3-title{
-	font-size:  20px;	
-}
-.job-opening .job-card .timing p{
-	display: flex;
-	gap: 5px;
 	align-items: center;
+	justify-content: space-between;
+}
+.job-opening .job-card .role-small-details{
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+.job-opening .job-card .role-small-details p{
+	margin: 0;
 	font-size: 18px;
+}
+.role-small-details .view-button{
+	display: flex;
+	gap: 10px;
+}
+
+.job-opening .job-card .role-title{
+	font-size: 26px;
+	font-weight: 600;
+	color: #0c56a1;
+}
+
+.role-small-details .view-button a span img{
+	width: 22px;
+	height: 22px;
+}
+
+.role-small-details .view-button p{
 	font-weight: 500;
+	color: #0c56a1;
 }
-.job-opening .job-card .timing p span img{
-	width: 25px;
-	height: 25px;
-}
+
+
 /* contact page css code  */
 .contact-map{
 	padding: 50px 0;
