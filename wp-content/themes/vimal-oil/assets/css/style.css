@@ -1903,7 +1903,7 @@ a:focus{
 	color: #0c56a1;
 }
 
-.role-small-details .view-button a span img{
+.role-small-details .view-button a span svg{
 	width: 22px;
 	height: 22px;
 }
@@ -1981,6 +1981,11 @@ a:focus{
 	padding: 3px;
 	border-radius: 12px;
 	/* transform: rotateZ(-5deg); */
+}
+
+.social-post .post img{
+	height: 180px;
+	width: 180px;
 }
 
 .social-post .post-2,.social-post .post-5{

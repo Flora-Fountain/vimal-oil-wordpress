@@ -68,7 +68,7 @@ echo get_header();
                         <div class="view-button">
                             <a href="#">View Job
                             <span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="">
+                                <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#0c56a1;}</style></defs><path id="arrow-right" class="cls-1" d="M21.353,12.354l-7,7a.5.5,0,0,1-.708-.708L19.793,12.5H3a.5.5,0,0,1,0-1H19.793L13.646,5.354a.5.5,0,0,1,.708-.708l7,7a.5.5,0,0,1,0,.708Z"/></svg>
                             </span>
                             </a>
                         </div>
@@ -88,7 +88,7 @@ echo get_header();
                         <div class="view-button">
                             <a href="#">View Job
                             <span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="">
+                                <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#0c56a1;}</style></defs><path id="arrow-right" class="cls-1" d="M21.353,12.354l-7,7a.5.5,0,0,1-.708-.708L19.793,12.5H3a.5.5,0,0,1,0-1H19.793L13.646,5.354a.5.5,0,0,1,.708-.708l7,7a.5.5,0,0,1,0,.708Z"/></svg>
                             </span>
                             </a>
                         </div>
@@ -108,7 +108,7 @@ echo get_header();
                         <div class="view-button">
                             <a href="#">View Job
                             <span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="">
+                                <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#0c56a1;}</style></defs><path id="arrow-right" class="cls-1" d="M21.353,12.354l-7,7a.5.5,0,0,1-.708-.708L19.793,12.5H3a.5.5,0,0,1,0-1H19.793L13.646,5.354a.5.5,0,0,1,.708-.708l7,7a.5.5,0,0,1,0,.708Z"/></svg>
                             </span>
                             </a>
                         </div>
@@ -128,7 +128,7 @@ echo get_header();
                         <div class="view-button">
                             <a href="#">View Job
                             <span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="">
+                                <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#0c56a1;}</style></defs><path id="arrow-right" class="cls-1" d="M21.353,12.354l-7,7a.5.5,0,0,1-.708-.708L19.793,12.5H3a.5.5,0,0,1,0-1H19.793L13.646,5.354a.5.5,0,0,1,.708-.708l7,7a.5.5,0,0,1,0,.708Z"/></svg>
                             </span>
                             </a>
                         </div>
@@ -148,7 +148,7 @@ echo get_header();
                         <div class="view-button">
                             <a href="#">View Job
                             <span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="">
+                                <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#0c56a1;}</style></defs><path id="arrow-right" class="cls-1" d="M21.353,12.354l-7,7a.5.5,0,0,1-.708-.708L19.793,12.5H3a.5.5,0,0,1,0-1H19.793L13.646,5.354a.5.5,0,0,1,.708-.708l7,7a.5.5,0,0,1,0,.708Z"/></svg>
                             </span>
                             </a>
                         </div>
@@ -168,7 +168,7 @@ echo get_header();
                         <div class="view-button">
                             <a href="#">View Job
                             <span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right.svg" alt="">
+                                <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#0c56a1;}</style></defs><path id="arrow-right" class="cls-1" d="M21.353,12.354l-7,7a.5.5,0,0,1-.708-.708L19.793,12.5H3a.5.5,0,0,1,0-1H19.793L13.646,5.354a.5.5,0,0,1,.708-.708l7,7a.5.5,0,0,1,0,.708Z"/></svg>
                             </span>
                             </a>
                         </div>
