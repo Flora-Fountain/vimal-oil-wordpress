@@ -397,22 +397,10 @@ a:focus{
 	background-color: #fff;
 	padding-top: 100px;
 }
-<<<<<<< HEAD
+
 .product-section.blue-bg::before {
 	display: none;
 }
-=======
-/* .health-section::before {
-	content: '';
-	width: 0;
-	height: 0;
-	border-bottom: 50px solid #0c56a1;
-	border-left: 100vw solid transparent;
-	position: absolute;
-	bottom: 0;
-	z-index: 1;
-} */
->>>>>>> 8adc660e42115546f41d5bf2580881afcd67fb9c
 .health-section .h2-title, .form-section .form .h2-title{
     color: #0c54a0;
 }
@@ -1991,7 +1979,7 @@ a:focus{
 .privacy-policy{
 	padding: 25px 0 25px 0;
 }
-<<<<<<< HEAD
+
 /* About Us page CSS */
 .video-banner {
 	height: 100vh;
@@ -2087,7 +2075,7 @@ a:focus{
 }
 .blue-bg p{
 	color: #fff;
-=======
+}
 
 
 /* branding page css  */
@@ -2113,5 +2101,5 @@ a:focus{
 
 .social-post .post-2,.social-post .post-5{
 	transform: translateY(-30px);
->>>>>>> 8adc660e42115546f41d5bf2580881afcd67fb9c
+
 }
