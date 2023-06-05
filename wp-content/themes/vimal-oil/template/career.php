@@ -54,163 +54,123 @@ echo get_header();
                 </h2>
             </div>
             <div class="job-opening">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="job-card">
-                            <div class="office view-button">
-                                <p>Office</p>
-                                <a href="#" class="job-link">
-                                    <span>View Job</span>
-                                    <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-up-right-small.svg" alt="arrow up right">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="h3-title">
-                                <h3>Sales Manager</h3>
-                            </div>
-                            <div class="timing">
-                                <p>
-                                    <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/time-forward.svg" alt="time">
-                                    </span>
-                                    <span>
-                                        Full time
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
+                <div class="job-card">
+                    <div class="role-title">
+                        <h2 class="text-noeffect">Sales Manager</h2>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="job-card">
-                            <div class="office view-button">
-                                <p>Office</p>
-                                <a href="#" class="job-link">
-                                    <span>View Job</span>
-                                    <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-up-right-small.svg" alt="arrow up right">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="h3-title">
-                                <h3>Sales Manager</h3>
-                            </div>
-                            <div class="timing">
-                                <p>
-                                    <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/time-forward.svg" alt="time">
-                                    </span>
-                                    <span>
-                                        Full time
-                                    </span>
-                                </p>
-                            </div>
+                    <div class="role-small-details">
+                        <div class="time">
+                            <p>Full-time</p>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="job-card">
-                            <div class="office view-button">
-                                <p>Office</p>
-                                <a href="#" class="job-link">
-                                    <span>View Job</span>
-                                    <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-up-right-small.svg" alt="arrow up right">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="h3-title">
-                                <h3>Sales Manager</h3>
-                            </div>
-                            <div class="timing">
-                                <p>
-                                    <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/time-forward.svg" alt="time">
-                                    </span>
-                                    <span>
-                                        Full time
-                                    </span>
-                                </p>
-                            </div>
+                        <div class="department">
+                            <p>Sales Department</p>
+                        </div>
+                        <div class="view-button">
+                            <a href="#">View Job
+                            <span>
+                                <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#0c56a1;}</style></defs><path id="arrow-right" class="cls-1" d="M21.353,12.354l-7,7a.5.5,0,0,1-.708-.708L19.793,12.5H3a.5.5,0,0,1,0-1H19.793L13.646,5.354a.5.5,0,0,1,.708-.708l7,7a.5.5,0,0,1,0,.708Z"/></svg>
+                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="job-card">
-                            <div class="office view-button">
-                                <p>Office</p>
-                                <a href="#" class="job-link">
-                                    <span>View Job</span>
-                                    <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-up-right-small.svg" alt="arrow up right">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="h3-title">
-                                <h3>Sales Manager</h3>
-                            </div>
-                            <div class="timing">
-                                <p>
-                                    <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/time-forward.svg" alt="time">
-                                    </span>
-                                    <span>
-                                        Full time
-                                    </span>
-                                </p>
-                            </div>
+                <div class="job-card">
+                    <div class="role-title">
+                        <h2 class="text-noeffect">Sales Manager</h2>
+                    </div>
+                    <div class="role-small-details">
+                        <div class="time">
+                            <p>Full-time</p>
+                        </div>
+                        <div class="department">
+                            <p>Sales Department</p>
+                        </div>
+                        <div class="view-button">
+                            <a href="#">View Job
+                            <span>
+                                <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#0c56a1;}</style></defs><path id="arrow-right" class="cls-1" d="M21.353,12.354l-7,7a.5.5,0,0,1-.708-.708L19.793,12.5H3a.5.5,0,0,1,0-1H19.793L13.646,5.354a.5.5,0,0,1,.708-.708l7,7a.5.5,0,0,1,0,.708Z"/></svg>
+                            </span>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="job-card">
-                            <div class="office view-button">
-                                <p>Office</p>
-                                <a href="#" class="job-link">
-                                    <span>View Job</span>
-                                    <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-up-right-small.svg" alt="arrow up right">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="h3-title">
-                                <h3>Sales Manager</h3>
-                            </div>
-                            <div class="timing">
-                                <p>
-                                    <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/time-forward.svg" alt="time">
-                                    </span>
-                                    <span>
-                                        Full time
-                                    </span>
-                                </p>
-                            </div>
+                </div>
+                <div class="job-card">
+                    <div class="role-title">
+                        <h2 class="text-noeffect">Sales Manager</h2>
+                    </div>
+                    <div class="role-small-details">
+                        <div class="time">
+                            <p>Full-time</p>
+                        </div>
+                        <div class="department">
+                            <p>Sales Department</p>
+                        </div>
+                        <div class="view-button">
+                            <a href="#">View Job
+                            <span>
+                                <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#0c56a1;}</style></defs><path id="arrow-right" class="cls-1" d="M21.353,12.354l-7,7a.5.5,0,0,1-.708-.708L19.793,12.5H3a.5.5,0,0,1,0-1H19.793L13.646,5.354a.5.5,0,0,1,.708-.708l7,7a.5.5,0,0,1,0,.708Z"/></svg>
+                            </span>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="job-card">
-                            <div class="office view-button">
-                                <p>Office</p>
-                                <a href="#" class="job-link">
-                                    <span>View Job</span>
-                                    <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-up-right-small.svg" alt="arrow up right">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="h3-title">
-                                <h3>Sales Manager</h3>
-                            </div>
-                            <div class="timing">
-                                <p>
-                                    <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/time-forward.svg" alt="time">
-                                    </span>
-                                    <span>
-                                        Full time
-                                    </span>
-                                </p>
-                            </div>
+                </div>
+                <div class="job-card">
+                    <div class="role-title">
+                        <h2 class="text-noeffect">Sales Manager</h2>
+                    </div>
+                    <div class="role-small-details">
+                        <div class="time">
+                            <p>Full-time</p>
+                        </div>
+                        <div class="department">
+                            <p>Sales Department</p>
+                        </div>
+                        <div class="view-button">
+                            <a href="#">View Job
+                            <span>
+                                <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#0c56a1;}</style></defs><path id="arrow-right" class="cls-1" d="M21.353,12.354l-7,7a.5.5,0,0,1-.708-.708L19.793,12.5H3a.5.5,0,0,1,0-1H19.793L13.646,5.354a.5.5,0,0,1,.708-.708l7,7a.5.5,0,0,1,0,.708Z"/></svg>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-card">
+                    <div class="role-title">
+                        <h2 class="text-noeffect">Sales Manager</h2>
+                    </div>
+                    <div class="role-small-details">
+                        <div class="time">
+                            <p>Full-time</p>
+                        </div>
+                        <div class="department">
+                            <p>Sales Department</p>
+                        </div>
+                        <div class="view-button">
+                            <a href="#">View Job
+                            <span>
+                                <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#0c56a1;}</style></defs><path id="arrow-right" class="cls-1" d="M21.353,12.354l-7,7a.5.5,0,0,1-.708-.708L19.793,12.5H3a.5.5,0,0,1,0-1H19.793L13.646,5.354a.5.5,0,0,1,.708-.708l7,7a.5.5,0,0,1,0,.708Z"/></svg>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-card">
+                    <div class="role-title">
+                        <h2 class="text-noeffect">Sales Manager</h2>
+                    </div>
+                    <div class="role-small-details">
+                        <div class="time">
+                            <p>Full-time</p>
+                        </div>
+                        <div class="department">
+                            <p>Sales Department</p>
+                        </div>
+                        <div class="view-button">
+                            <a href="#">View Job
+                            <span>
+                                <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#0c56a1;}</style></defs><path id="arrow-right" class="cls-1" d="M21.353,12.354l-7,7a.5.5,0,0,1-.708-.708L19.793,12.5H3a.5.5,0,0,1,0-1H19.793L13.646,5.354a.5.5,0,0,1,.708-.708l7,7a.5.5,0,0,1,0,.708Z"/></svg>
+                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -111,7 +111,7 @@
     </div>
 
     <!-- module-3 health section -->
-    <div class="health-section default-section">
+    <div class="health-section default-section blue-bg-health ">
         <div class="leaf-sec">
             <div class="falling-leaf">
                 <div>

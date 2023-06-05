@@ -57,6 +57,7 @@ a:focus{
 	font-size: 100px;
 	line-height: 1.2;
 	font-weight: 600;
+	text-align: center;
 }
 .h1-title span {
 	display: block;
@@ -118,7 +119,16 @@ a:focus{
 	right: 0;
 	z-index: 2;
 }
-
+.blue-bg-health::before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-bottom: 50px solid #0c56a1;
+	border-left: 100vw solid transparent;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+}
 .blue-bg-banner::before{
 	position: absolute;
 	content: '';
@@ -387,9 +397,22 @@ a:focus{
 	background-color: #fff;
 	padding-top: 100px;
 }
+<<<<<<< HEAD
 .product-section.blue-bg::before {
 	display: none;
 }
+=======
+/* .health-section::before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-bottom: 50px solid #0c56a1;
+	border-left: 100vw solid transparent;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+} */
+>>>>>>> 8adc660e42115546f41d5bf2580881afcd67fb9c
 .health-section .h2-title, .form-section .form .h2-title{
     color: #0c54a0;
 }
@@ -1646,32 +1669,12 @@ a:focus{
 /* @keyframes wave {
     0%,
     100% {
-        clip-path: polygon(
-      0% 46%,
-      17% 45%,
-      34% 50%,
-      56% 61%,
-      69% 62%,
-      86% 60%,
-      100% 51%,
-      100% 100%,
-      0% 100%
-    );
+        clip-path: polygon(0 13%, 18% 17%, 38% 14%, 59% 17%, 80% 19%, 100% 14%, 100% 100%, 0% 100%, 0% 100%);
     }
     50% {
-    clip-path: polygon(
-        0% 59%,
-        16% 64%,
-        33% 65%,
-        52% 61%,
-        70% 52%,
-        85% 47%,
-        100% 48%,
-        100% 100%,
-        0% 100%
-    ); 
+		clip-path: polygon(0 18%, 18% 17%, 40% 16%, 60% 19%, 79% 16%, 100% 14%, 100% 100%, 0% 100%, 0% 100%);
     }
-} */
+}  */
 @keyframes wave {
     0%,
     100% {
@@ -1700,7 +1703,7 @@ a:focus{
         0% 100%
     ); 
     }
-}
+} 
 .footer .social-icon{
     margin-top: 20px;
 }
@@ -1869,45 +1872,51 @@ a:focus{
 }
 .current-opening{
 	background-color: #0c56a1;
+	padding: 70px 10px 70px 10px;
 }
+
 .job-opening .job-card{
 	background: #fff;
 	padding: 10px 20px;
 	border-radius: 10px;
+	margin: 12px 0;
 }
-.job-opening .job-card .office{
+.job-opening .job-card{
 	display: flex;
-	justify-content: space-between;
-	font-size: 18px;
-	font-weight: 500;
-}
-.job-opening .job-link{
-	display: flex;
-	gap: 5px;
-	color: #0c56a1;
-	text-decoration: none;
-}
-.job-opening .job-link span img{
-	width: 25px;
-	height: 25px;
-}
-.job-opening .job-link:hover span img{
-	transform: rotateZ(45deg);
-}
-.job-opening .job-card .h3-title{
-	font-size:  20px;	
-}
-.job-opening .job-card .timing p{
-	display: flex;
-	gap: 5px;
 	align-items: center;
+	justify-content: space-between;
+}
+.job-opening .job-card .role-small-details{
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+.job-opening .job-card .role-small-details p{
+	margin: 0;
 	font-size: 18px;
+}
+.role-small-details .view-button{
+	display: flex;
+	gap: 10px;
+}
+
+.job-opening .job-card .role-title{
+	font-size: 26px;
+	font-weight: 600;
+	color: #0c56a1;
+}
+
+.role-small-details .view-button a span svg{
+	width: 22px;
+	height: 22px;
+}
+
+.role-small-details .view-button p{
 	font-weight: 500;
+	color: #0c56a1;
 }
-.job-opening .job-card .timing p span img{
-	width: 25px;
-	height: 25px;
-}
+
+
 /* contact page css code  */
 .contact-map{
 	padding: 50px 0;
@@ -1959,6 +1968,7 @@ a:focus{
 .privacy-policy{
 	padding: 25px 0 25px 0;
 }
+<<<<<<< HEAD
 /* About Us page CSS */
 .video-banner {
 	height: 100vh;
@@ -2054,4 +2064,31 @@ a:focus{
 }
 .blue-bg p{
 	color: #fff;
+=======
+
+
+/* branding page css  */
+
+.social-post{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 20px;
+	transform: rotateZ(-5deg);
+}
+
+.social-post .post{
+	background-color: #fff;
+	padding: 3px;
+	border-radius: 12px;
+	/* transform: rotateZ(-5deg); */
+}
+
+.social-post .post img{
+	height: 180px;
+	width: 180px;
+}
+
+.social-post .post-2,.social-post .post-5{
+	transform: translateY(-30px);
+>>>>>>> 8adc660e42115546f41d5bf2580881afcd67fb9c
 }
