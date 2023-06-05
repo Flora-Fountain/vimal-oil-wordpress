@@ -347,5 +347,42 @@ $(document).ready(function(){
             }
         });
     }
+
+    // Counter JS
+    function inVisible(e) {
+        var t = $(window).scrollTop(),
+            n = t + $(window).height(),
+            o = e.offset().top;
+        o + e.height() <= n && o >= t && animate(e)
+    }
+    
+    function animate(e) {
+        if (!e.hasClass("ms-animated")) {
+            var t = e.data("count"),
+                n = e.html();
+            e.addClass("ms-animated"), $({
+                countNum: e.html()
+            }).animate({
+                countNum: t
+            }, {
+                duration: 2e3,
+                easing: "linear",
+                step: function() {
+                    e.html(Math.floor(this.countNum) + n)
+                },
+                complete: function() {
+                    e.html(this.countNum + n)
+                }
+            })
+        }
+    }
+    $(function() {
+        $(window).scroll(function() {
+            $("div[data-count]").each(function() {
+                inVisible($(this))
+            })
+        })
+    })
+    // Counter JS Ends
       
 });
