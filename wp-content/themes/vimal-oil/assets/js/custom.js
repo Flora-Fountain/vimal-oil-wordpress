@@ -386,3 +386,51 @@ $(document).ready(function(){
     // Counter JS Ends
       
 });
+
+
+
+// tvc slider 
+$(document).ready(function() {
+    $('#tvc-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1.3,
+            },
+            425:{
+                items:2,
+            },
+            767:{
+                items:3,
+            },
+            1000:{
+                items:3,
+            }
+        }
+    })
+});
+
+// billboard slider 
+$(document).ready(function() {
+    $('#billboard-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1.3,
+            },
+            425:{
+                items:2,
+            },
+            767:{
+                items:3,
+            },
+            1000:{
+                items:3,
+            }
+        }
+    })
+});

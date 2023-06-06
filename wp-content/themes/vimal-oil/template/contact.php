@@ -7,20 +7,31 @@ echo get_header();
 ?>
     
      <!--module-2 hero banner html code  -->
-    <div class="common-banner default-section blue-bg-banner">
-        <div class="cb-content">
-            <div class="h1-title">
-                <h1 class="text-noeffect">Reach out to us!</h1>
-            </div>
-            <div class="banner-para  text-center">
-                <p class="text-noeffect">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                </p>
-            </div>
-            <div class="submit-button text-center">
-                <button class="btn-effect" type="submit">
-                    Know More
-                </button>
+    <div class="contact-banner default-section blue-bg-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="cb-content">
+                        <div class="h1-title">
+                            <h1 class="text-noeffect">Reach out to us!</h1>
+                        </div>
+                        <div class="banner-para text-center">
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            </p>
+                        </div>
+                        <div class="submit-button text-center">
+                            <a class="btn-effect" type="submit">
+                                Know More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="banner-image-part">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-banner-image.png" alt="contact us">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
