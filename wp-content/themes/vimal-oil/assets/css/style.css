@@ -1991,3 +1991,7 @@ a:focus{
 .social-post .post-2,.social-post .post-5{
 	transform: translateY(-30px);
 }
+
+.health-content .para{
+	color: #fff;
+}
