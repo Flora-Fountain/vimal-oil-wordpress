@@ -199,18 +199,18 @@ echo get_header();
         <div class="leaf-sec">
             <div class="falling-leaf">
                 <div>
-                    <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
                 </div>
                 <div>
-                    <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
                 </div>
                 <div>
-                    <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
                 </div>
             </div>
             <div class="floating-ele after-banner">
-                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/peanut.png" alt="yellow-flower">
-                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/groundnut-clear.png" alt="white-flower">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="white-flower">
             </div>
             <div class="container">
                 <div class="row align-items-center">
