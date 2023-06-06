@@ -632,6 +632,7 @@
     .nr-det ul li img {
         max-width: 100px;
     }
+
     .loc-img img {
         width: 100%;
         max-width: 300px;
@@ -644,6 +645,16 @@
     .inner-bnr-img img {
         max-width: 300px;
     }
+
+
+    /* Recipes Page */
+    .reci-sec .row >div, .reci-sec .row >div:nth-last-child(-n+4){
+        margin-top: 20px;
+    }
+    .reci-sec .row >div:nth-child(-n + 2) {
+        margin-top:0;
+    }
+
 }
 @media screen and (max-width:767px) {
     body{
@@ -907,6 +918,14 @@
     }
     .nr-det ul li:nth-last-child(-n+2) {
         margin-top: 20px;
+    }
+
+    /* REcipes Page */
+    .reci-sec .row >div:nth-child(-n + 2) {
+        margin-top:20px;
+    }
+    .reci-sec .row >div:nth-child(-n + 1) {
+        margin-top: 0px;
     }
 
     

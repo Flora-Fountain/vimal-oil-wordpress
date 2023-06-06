@@ -28,7 +28,7 @@ echo get_header();
 
 
 <!-- module-3 recipe section -->
-<div class="health-section default-section recipe-section">
+<div class="health-section default-section recipe-section reci-sec footer-before">
     <div class="container">
         <div class="h2-white">
             <h2 class="text-noeffect">Cook food with Vimal Oil</h2>
