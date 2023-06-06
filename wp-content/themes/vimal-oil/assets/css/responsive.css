@@ -283,7 +283,14 @@
     .lab-ele img:nth-child(6) {
         width: 80px;
     }
-
+    .quiz-sec .panel-footer #question {
+        font-size: 32px;
+    }
+    .quiz-sec .panel-footer #answers .options label {
+        font-size: 22px;
+        padding: 10px;
+        padding-left: 70px;
+    }
 }
 @media screen and (max-width:1299px) {
     .nrt-logo {
@@ -328,8 +335,11 @@
     .floating-obj img:nth-child(5) {
         bottom: -30px;
     }
-    .inner-banner{
+    .inner-banner,.quiz-sec{
         padding: 140px 0 60px;
+    }
+    .panel-footer #back {
+        font-size: 20px;
     }
 }
 @media screen and (max-width:1199px) {
@@ -644,6 +654,23 @@
     }
     .inner-bnr-img img {
         max-width: 300px;
+    }
+    .quiz-sec .panel-footer #question {
+        font-size: 28px;
+    }
+    .quiz-sec .panel-footer #question p {
+        letter-spacing: 2px;
+    }
+    .quiz-sec .panel-footer #answers .options label {
+        font-size: 20px;
+    }
+    .quiz-sec .panel-footer #answers .options label {
+        padding-left: 50px;
+    }
+    .quiz-sec .panel-footer #answers .options label::before,.quiz-sec .panel-footer #answers input[type="radio"]:checked ~ label::before {
+        width: 20px;
+        height: 20px;
+        left: 15px;
     }
 
 
@@ -1042,8 +1069,21 @@
     .lab-ele img:nth-child(7) {
         width: 50px;
     }
-    .inner-banner {
+    .inner-banne {
         padding: 140px 0 60px;
+    }
+    .quiz-sec{
+        padding: 60px 0 30px;
+    }
+    .quiz-sec .panel-footer #question {
+        font-size: 24px;
+    }
+    .quiz-sec .panel-footer #question p {
+        letter-spacing: 1px;
+        line-height: 1.2;
+    }
+    .quiz-sec .panel-footer #answers .options label {
+        font-size: 18px;
     }
 
 
