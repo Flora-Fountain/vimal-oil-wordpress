@@ -6,18 +6,15 @@ font-family: 'Raleway', sans-serif; */
     box-sizing: border-box;
 }
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family:'Raleway', sans-serif;
     font-size: 20px;
     font-weight:400;
     line-break: 1.3;
     overflow-x: hidden;
     -webkit-text-stroke:1px transparent;
 }
-h1,h2,h3,h4,h5,h6,a{
+h1,h2,h3,h4,h5,h6,.btn-effect{
     font-family: 'Quicksand', sans-serif;
-}
-p{
-	font-family:'Raleway', sans-serif;
 }
 ol,ul{
     line-height:1.4;
@@ -57,7 +54,7 @@ a:focus{
 .h1-title {
 	color: #ffdd00;
 	text-transform: capitalize;
-	font-size: 100px;
+	font-size: 90px;
 	line-height: 1.2;
 	font-weight: 600;
 	text-align: center;
@@ -73,7 +70,7 @@ a:focus{
 	color: #ffffff;
 	text-align: center;
 	font-size: 55px;
-	font-weight: bold;
+	font-weight: 600;
 	line-height: 1.3;
 	margin-bottom: 10px;
 	padding: 0;
@@ -84,7 +81,7 @@ a:focus{
 	color: #0c56a1;
 	text-align: center;
 	font-size: 55px;
-	font-weight: bold;
+	font-weight: 600;
 	line-height: 1.3;
 	margin-bottom: 10px;
 	padding: 0;
@@ -400,16 +397,10 @@ a:focus{
 	background-color: #fff;
 	padding-top: 100px;
 }
-/* .health-section::before {
-	content: '';
-	width: 0;
-	height: 0;
-	border-bottom: 50px solid #0c56a1;
-	border-left: 100vw solid transparent;
-	position: absolute;
-	bottom: 0;
-	z-index: 1;
-} */
+
+.product-section.blue-bg::before {
+	display: none;
+}
 .health-section .h2-title, .form-section .form .h2-title{
     color: #0c54a0;
 }
@@ -1864,9 +1855,6 @@ a:focus{
 .grow-section .grow-para{
 	padding: 10px 60px;
 }
-.grow-section .grow-para p{
-	margin-top: 10px;
-}
 .current-opening{
 	background-color: #0c56a1;
 	padding: 70px 10px 70px 10px;
@@ -1895,24 +1883,50 @@ a:focus{
 .role-small-details .view-button{
 	display: flex;
 	gap: 10px;
+	font-weight: 500;
 }
-
+.role-small-details .view-button a{
+	color: #0c56a1;
+	font-weight: 600;
+}
 .job-opening .job-card .role-title{
 	font-size: 26px;
 	font-weight: 600;
-	color: #0c56a1;
+	color: #000;
 }
-
 .role-small-details .view-button a span svg{
-	width: 22px;
-	height: 22px;
+	width: 30px;
+	height: 30px;
+	fill: #0c56a1;
 }
-
 .role-small-details .view-button p{
 	font-weight: 500;
 	color: #0c56a1;
 }
 
+/* Career Job Description */
+
+.job-desc-sec .job-expe h2{
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+.job-desc-sec .job-summary {
+	margin-bottom: 20px;
+}
+.job-desc-sec .job-summary h3, .job-desc-sec .job-description h3{
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.job-des-list ul{
+	list-style: disc;
+	padding-left: 2rem;
+}
+.job-desc-sec .job-data{
+	margin-top: 30px;
+}
+.job-desc-sec .job-data p span{
+	font-weight: 600;
+}
 
 /* contact page css code  */
 .contact-map{
@@ -1964,6 +1978,103 @@ a:focus{
 } 
 .privacy-policy{
 	padding: 25px 0 25px 0;
+}
+
+/* About Us page CSS */
+.video-banner {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 0;
+	position: relative;
+}
+.video-banner::after {
+	position: absolute;
+	content: '';
+	background: #0F5FA8;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0.43;
+}
+.video-banner video {
+	position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.text-middle {
+	position: relative;
+	z-index: 2;
+}
+.img-mx {
+	max-width: 300px;
+	margin-top: 20px;
+}
+.floating-ele.after-banner img:nth-child(1) {
+	top: 0;
+	left: 0;
+	animation: up-down 6s infinite linear;
+}
+.floating-ele img:nth-child(2) {
+	bottom: 0;
+	right: 0;
+	left: auto;
+	animation: up-down 6s infinite linear;
+}
+.stats-desc,.counter-main,.text-center,.h2-white {
+	position: relative;
+	z-index: 1;
+}
+.stats-desc .h2-white {
+	text-align: left;
+}
+.counter-main {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 25px;
+}
+.counter-main .count-box {
+	display: inline-block;
+	width: 48%;
+	background: #0C58A5;
+	border-radius: 10px;
+	padding: 40px 0;
+	text-align: center;
+}
+.counter-main .count-box .counter, .counter-main .count-box .counter + span {
+	display: inline-block;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 1;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #fff;
+}
+.counter-main .count-box .count-name {
+	font-size: 36px;
+	font-weight: 500;
+	margin-top: 10px;
+	color: #fff;
+}
+.blue-bg .submit-button.text-center .btn-effect {
+	background: #fff;
+	color: #0C58A5;
+}
+.blue-bg p{
+	color: #fff;
 }
 
 

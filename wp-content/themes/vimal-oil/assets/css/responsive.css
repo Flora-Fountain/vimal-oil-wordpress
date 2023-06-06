@@ -214,7 +214,6 @@
     .floating-ele.right img:nth-child(5) {
         width: 100px;
     }
-    
     .animate-text {
        max-width: 490px;
     }
@@ -247,6 +246,22 @@
         bottom: 4%;
         right: 20%;
         width: 70px;
+    }
+    .counter-main .count-box .counter, .counter-main .count-box .counter + span {
+        font-size: 60px;
+    }
+    .counter-main .count-box .count-name {
+        font-size: 26px;
+    }
+    .counter-main {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 15px;
+    }
+    .counter-main {
+        gap: 15px;
     }
 }
 @media screen and (max-width:1299px) {
@@ -449,6 +464,12 @@
     }
     .form-left p {
         font-size: 20px;
+    }
+    .counter-main .count-box .counter, .counter-main .count-box .counter + span {
+        font-size: 50px;
+    }
+    .counter-main .count-box .count-name {
+        font-size: 22px;
     }
 }
 @media screen and (max-width:991px) {
@@ -820,6 +841,13 @@
         margin: 10px 0;
     }
 
+    
+/* Career Detail Page */
+.job-desc-sec .job-expe h2{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
     /* contact-page css  */
     .map-part{
         margin-top: 25px;
@@ -1040,6 +1068,11 @@
     }
     .floating-ele img:nth-child(2) {
         bottom: 5%;
+    }
+    .counter-main .count-box {
+        max-width: 270px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 @media screen and (max-width:359px) {

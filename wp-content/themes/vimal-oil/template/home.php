@@ -172,7 +172,7 @@
     </div>
 
     <!-- module-4 product section  -->
-    <div class="product-section default-section">
+    <div class="product-section default-section blue-bg">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="h2-blue">
