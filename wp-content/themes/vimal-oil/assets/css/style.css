@@ -2103,10 +2103,9 @@ a:focus{
 	transform: translateY(-30px);
 }
 
-<<<<<<< Updated upstream
 .health-content .para{
 	color: #fff;
-=======
+
 }
 
 
@@ -2149,5 +2148,5 @@ a:focus{
 .recipe-section .max-para p{
 	color: #0C58A5;
 	margin-bottom: 50px;
->>>>>>> Stashed changes
+
 }
