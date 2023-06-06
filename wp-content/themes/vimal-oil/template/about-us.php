@@ -31,18 +31,18 @@ echo get_header();
         <div class="leaf-sec">
             <div class="falling-leaf">
                 <div>
-                    <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
                 </div>
                 <div>
-                    <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
                 </div>
                 <div>
-                    <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
                 </div>
             </div>
             <div class="floating-ele after-banner">
-                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/peanut.png" alt="yellow-flower">
-                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/groundnut-clear.png" alt="white-flower">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="white-flower">
             </div>
             <div class="container">
                 <div class="h2-white">
@@ -72,7 +72,7 @@ echo get_header();
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/1993-main.jpg" alt="1993-main">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main">
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -87,7 +87,7 @@ echo get_header();
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/1993-main.jpg" alt="1993-main">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main">
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -102,7 +102,7 @@ echo get_header();
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/1993-main.jpg" alt="1993-main">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main">
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -117,7 +117,7 @@ echo get_header();
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/1993-main.jpg" alt="1993-main">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main">
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -132,7 +132,7 @@ echo get_header();
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/1993-main.jpg" alt="1993-main">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main">
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -147,7 +147,7 @@ echo get_header();
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/1993-main.jpg" alt="1993-main">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main">
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -163,27 +163,27 @@ echo get_header();
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="nav flex-row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                 <button class="nav-link active" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
-                                    <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/1993.png" alt="1993">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993.png" alt="1993">
                                     <span>1993</span>
                                 </button>
                                 <button class="nav-link" id="v-pills-2010-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2010" type="button" role="tab" aria-controls="v-pills-2010" aria-selected="false" tabindex="-1">
-                                    <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/2010.png" alt="1993">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993">
                                     <span>2010</span>
                                 </button>
                                 <button class="nav-link" id="v-pills-2015-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2015" type="button" role="tab" aria-controls="v-pills-2015" aria-selected="false" tabindex="-1">
-                                    <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/2015.png" alt="1993">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993">
                                     <span>2015</span>
                                 </button>
                                 <button class="nav-link" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2018" type="button" role="tab" aria-controls="v-pills-2018" aria-selected="false" tabindex="-1">
-                                    <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/2010.png" alt="1993">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993">
                                     <span>2018</span>
                                 </button>
                                 <button class="nav-link" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2020" type="button" role="tab" aria-controls="v-pills-2020" aria-selected="false" tabindex="-1">
-                                    <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/2015.png" alt="1993">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993">
                                     <span>2020</span>
                                 </button>
                                 <button class="nav-link" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false" tabindex="-1">
-                                    <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/2015.png" alt="1993">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993">
                                     <span>2022</span>
                                 </button>
                             </div>
@@ -251,18 +251,18 @@ echo get_header();
     <div class="vimal-journey default-section blue-bg">
         <div class="falling-leaf">
             <div>
-                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
             </div>
             <div>
-                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
             </div>
             <div>
-                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
             </div>
         </div>
         <div class="floating-ele after-banner">
-            <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/peanut.png" alt="yellow-flower">
-            <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/groundnut-clear.png" alt="white-flower">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="white-flower">
         </div>
         <div class="container">
             <div class="gen-sec">
