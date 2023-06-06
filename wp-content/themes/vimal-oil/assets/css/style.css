@@ -745,6 +745,7 @@ a:focus{
     display: none;
 }
 .btn-effect{
+	display: inline-block;
     width: 100%;
     max-width: 180px;
     padding: 10px 0;
@@ -1648,7 +1649,7 @@ a:focus{
 .footer .footer-quick-links ul li a{
     font-size: 22px;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: 500;
 }
 .footer input[type=email] {
     width: 100%;
@@ -2276,6 +2277,7 @@ a:focus{
 	fill: #D9D9D9;
 }
 
+
 /* Quiz Page */
 .quiz-sec {
 	text-align: center;
@@ -2292,4 +2294,65 @@ a:focus{
 }
 .quiz-sec .panel-footer{
 	margin-top: 20px;
+}
+/* Our Network */
+.inner-banner {
+	background: #0F5FA8;
+	padding: 140px 0 100px;
+}
+.inner-banner::before {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border-bottom: 45px solid #ffffff;
+	border-left: 100vw solid transparent;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+.inner-bnr-img img {
+	width: 100%;
+}
+.text-aside .btn-effect {
+	background: #fff;
+	color: #0C58A5;
+}
+.net-cnt .counter-main {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.net-cnt .counter-main .count-box {
+	background: #fff;
+}
+.net-cnt .counter-main .count-box .counter, .net-cnt .counter-main .count-box .counter + span {
+	-webkit-text-stroke-color: #0C54A0;
+	-webkit-text-stroke-width: 2px;
+}
+.net-cnt .counter-main .count-box .count-name {
+	color: #0C54A0;
+	letter-spacing: 4px;
+}
+.loc-img img {
+	width: 100%;
+}
+.net-sec .form-part .net-form .form .form-group {
+	margin: 0 0 20px;
+}
+.net-sec .form-part .net-form .form .state-select {
+	position: relative;
+}
+.net-sec .form-part .net-form .form .state-select::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 16px solid #0a4380;
+	right: 14px;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
 }
