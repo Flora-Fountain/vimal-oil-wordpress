@@ -29,10 +29,6 @@
     .hero-banner .banner-right .h1-title span {
         font-size: 44px;
     }
-    .hero-banner::after {
-        width: 800px;
-        height: 800px;
-    }
     .white-sec::before {
         bottom: -60px;
         height: 290px;
@@ -596,8 +592,23 @@
     .floating-ele.right img:nth-child(5) {
         width: 70px;
     }
+    .nr-det ul li h4 {
+        font-size: 22px;
+    }
+    .nr-det ul li h4 span {
+        font-size: 16px;
+    }
+    .nr-det ul {
+        gap: 15px;
+    }
+    .nr-det ul li img {
+        max-width: 100px;
+    }
 }
 @media screen and (max-width:767px) {
+    body{
+        font-size: 18px;
+    }
     .header, .header.nav-down {
         padding: 10px 0;
     }
@@ -840,6 +851,23 @@
     .recipe-section .submit-button {
         margin: 10px 0;
     }
+    .nr-det ul {
+        display: inline-block;
+        width: 100%;
+    }
+    .nr-det ul li {
+        display: inline-block;
+        width: 49%;
+    }
+    .nr-det {
+        margin: 30px 0;
+    }
+    .nr-det ul li img {
+        max-width: 80px;
+    }
+    .nr-det ul li:nth-last-child(-n+2) {
+        margin-top: 20px;
+    }
 
     
 /* Career Detail Page */
@@ -933,6 +961,7 @@
         right: 10%;
         width: 50px;
     }
+
 
     /* career-page style  */
     .job-opening .job-card{
@@ -1073,6 +1102,12 @@
         max-width: 270px;
         width: 100%;
         margin: 0 auto;
+    }
+    .nr-det ul li {
+        width: 100%;
+    }
+    .nr-det ul li + li {
+        margin-top: 20px;
     }
 }
 @media screen and (max-width:359px) {
