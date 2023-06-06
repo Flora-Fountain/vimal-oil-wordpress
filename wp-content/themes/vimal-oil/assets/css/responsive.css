@@ -259,6 +259,25 @@
     .counter-main {
         gap: 15px;
     }
+    .lab-ele img:nth-child(1) {
+        width: 120px;
+    }
+    .lab-ele img:nth-child(2) {
+        width: 110px;
+    }
+    .lab-ele img:nth-child(3) {
+        width: 70px;
+    }
+    .lab-ele img:nth-child(4) {
+        width: 75px;
+    }
+    .lab-ele img:nth-child(5) {
+        width: 110px;
+    }
+    .lab-ele img:nth-child(6) {
+        width: 80px;
+    }
+
 }
 @media screen and (max-width:1299px) {
     .nrt-logo {
@@ -959,6 +978,29 @@
     .floating-obj img:nth-child(6) {
         bottom: 3%;
         right: 10%;
+        width: 50px;
+    }
+    .lab-ele img:nth-child(1) {
+        width: 80px;
+    }
+    .lab-ele img:nth-child(2) {
+        width: 70px;
+    }
+    .lab-ele img:nth-child(3) {
+        width: 50px;
+    }
+    .lab-ele img:nth-child(4) {
+        width: 45px;
+    }
+    .lab-ele img:nth-child(5) {
+        width: 70px;
+    }
+    .lab-ele img:nth-child(6) {
+        width: 60px;
+        left: 85%;
+        top: 4%;
+    }
+    .lab-ele img:nth-child(7) {
         width: 50px;
     }
 
