@@ -5,6 +5,9 @@ font-family: 'Raleway', sans-serif; */
     padding: 0;
     box-sizing: border-box;
 }
+html{
+	overflow-x: hidden;
+}
 body{
     font-family:'Raleway', sans-serif;
     font-size: 20px;
@@ -2199,6 +2202,31 @@ a:focus{
 
 }
 
+.change-for-health .health-picture img{
+	width: 100%;
+}
+
+
+
+.change-for-health .submit-button{
+	margin-top: auto;
+}
+
+.change-for-health .submit-button .btn-effect{
+	background: #fff;
+	color: #0c54a0;
+	margin: 0;
+}
+
+
+/* why choose vimal css  */
+
+.health-section-wcv p{
+	text-align: center;
+	color: #0c56a1;
+
+}
+
 
 /* Recipes Page */
 .recipes-sec .h1-title{
@@ -2239,10 +2267,12 @@ a:focus{
 .reci-sec .max-para p{
 	color: #0C58A5;
 	margin-bottom: 50px;
+
 }
 .reci-sec .row >div:nth-last-child(-n+4) {
     margin-top: 30px;
 }
 .reci-sec .recipe-video .cook-video .wl-modal-btn.video-play-btn span svg {
 	fill: #D9D9D9;
+
 }

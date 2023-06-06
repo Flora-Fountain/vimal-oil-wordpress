@@ -259,6 +259,25 @@
     .counter-main {
         gap: 15px;
     }
+    .lab-ele img:nth-child(1) {
+        width: 120px;
+    }
+    .lab-ele img:nth-child(2) {
+        width: 110px;
+    }
+    .lab-ele img:nth-child(3) {
+        width: 70px;
+    }
+    .lab-ele img:nth-child(4) {
+        width: 75px;
+    }
+    .lab-ele img:nth-child(5) {
+        width: 110px;
+    }
+    .lab-ele img:nth-child(6) {
+        width: 80px;
+    }
+
 }
 @media screen and (max-width:1299px) {
     .nrt-logo {
@@ -685,7 +704,7 @@
         font-size: 40px;
     }
     .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white {
-        font-size: 35px;
+        font-size: 36px;
     }
     .h4-title h4 {
         font-size: 22px;
@@ -977,6 +996,29 @@
         right: 10%;
         width: 50px;
     }
+    .lab-ele img:nth-child(1) {
+        width: 80px;
+    }
+    .lab-ele img:nth-child(2) {
+        width: 70px;
+    }
+    .lab-ele img:nth-child(3) {
+        width: 50px;
+    }
+    .lab-ele img:nth-child(4) {
+        width: 45px;
+    }
+    .lab-ele img:nth-child(5) {
+        width: 70px;
+    }
+    .lab-ele img:nth-child(6) {
+        width: 60px;
+        left: 85%;
+        top: 4%;
+    }
+    .lab-ele img:nth-child(7) {
+        width: 50px;
+    }
 
 
     /* career-page style  */
@@ -989,6 +1031,9 @@
 
 }
 @media screen and (max-width:575px) {
+    .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white {
+        font-size: 26px;
+    }
     .pro-sld-main a {
         font-size: 15px;
         max-width: 140px;

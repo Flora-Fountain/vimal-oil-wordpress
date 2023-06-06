@@ -117,10 +117,10 @@ echo get_header();
                     #ChangeForHealth
                 </h2>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-center p-2">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="healt-picture">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/change-for-health.png" alt="Instagram Post">
+                    <div class="health-picture">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/change-for-health.png" alt="Change For Health">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -131,6 +131,11 @@ echo get_header();
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="submit-button text-center">
+                <button class="btn-effect" type="submit">
+                    Know More
+                </button>
             </div>
         </div>
     </div>
