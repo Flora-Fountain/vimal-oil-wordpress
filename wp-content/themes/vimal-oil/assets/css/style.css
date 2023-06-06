@@ -2106,3 +2106,27 @@ a:focus{
 .health-content .para{
 	color: #fff;
 }
+
+.change-for-health .health-picture img{
+	width: 100%;
+}
+
+
+
+.change-for-health .submit-button{
+	margin-top: auto;
+}
+
+.change-for-health .submit-button .btn-effect{
+	background: #fff;
+	color: #0c54a0;
+	margin: 0;
+}
+
+
+/* why choose vimal css  */
+
+.health-section-wcv p{
+	text-align: center;
+	color: #0c56a1;
+}
