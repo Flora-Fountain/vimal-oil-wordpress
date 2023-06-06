@@ -682,7 +682,7 @@ a:focus{
 	text-align: center;
 	padding: 100px 0 80px;
 	background: #ed5839;
-	border-radius: 20px;
+	border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
@@ -920,6 +920,12 @@ a:focus{
 	margin: 40px auto;
 	line-height: 1.4;
 }
+
+.nrt-section .h2-white{
+	font-size: 64px;
+	align-items: center;
+} 
+
 .animate-text {
 	text-align: center;
 	margin: 0 auto;
@@ -1935,6 +1941,28 @@ a:focus{
 }
 
 /* contact page css code  */
+.contact-banner{
+	background: #0c56a1;
+}
+
+.contact-banner .banner-image-part{
+	padding: 20px;
+}
+.contact-banner .banner-image-part img{
+	width: 100%;
+}
+
+.contact-banner .submit-button .btn-effect{
+	background: #fff;
+	color: #0c56a1;
+	margin-top: 25px;
+}
+
+.contact-banner .banner-para{
+	color: #fff;
+	margin-top: 25px;
+}
+
 .contact-map{
 	padding: 50px 0;
 }
@@ -1972,7 +2000,6 @@ a:focus{
 /* privacy policy style  */
 .privacy-banner{
 	background-color: #0c56a1;
-	height: 100vh;
 }
 .privacy-banner .content-part .h1-title{
 	color: #FFDD00;
@@ -1983,9 +2010,12 @@ a:focus{
 	width: 100%;
 } 
 .privacy-policy{
-	padding: 25px 0 25px 0;
+	padding: 50px 0;
 }
-
+.privacy-policy .pp-para{
+	text-align: center;
+	margin-bottom: 40px;
+}
 /* About Us page CSS */
 .video-banner {
 	height: 100vh;
@@ -2219,15 +2249,77 @@ a:focus{
 	margin: 0;
 }
 
+.tvc-owl{
+	padding: 0px 10px;
+}
+
+.tvc-owl .tvc-video{
+	position: relative;
+}
+
+.tvc-owl .tvc-video .wl-modal-btn.video-play-btn{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.tvc-owl .tvc-video .wl-modal-btn.video-play-btn span{
+	width: 26px;
+    height: 26px;
+    position: relative;
+}
+.tvc-owl .tvc-video .wl-modal-btn.video-play-btn span svg{
+	position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s;
+    fill: #201b12;
+}
+
+.tvc-owl .tvc-video img{
+	border-radius: 10px;
+}
+
+.billboard-owl{
+	padding: 8px 8px;
+}
+
 
 /* why choose vimal css  */
+.health-section-wcv{
+	height: 100vh;
+}
+
+.health-section-wcv .container{
+	margin: auto;
+}
 
 .health-section-wcv p{
 	text-align: center;
 	color: #0c56a1;
-
 }
 
+.image-part{
+	padding: 60px;
+}
+
+.image-part img{
+	width: 100%;
+	border-radius: 10px;
+}
 
 /* Recipes Page */
 .recipes-sec .h1-title{
