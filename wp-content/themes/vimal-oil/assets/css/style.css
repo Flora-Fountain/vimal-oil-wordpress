@@ -2457,6 +2457,43 @@ a:focus{
 	top: 50%;
 	transform: translateY(-50%);
 }
+.quiz-sec #barra {
+	width: 100%;
+	height: 10px;
+	background-color: #ddd;
+}
+.quiz-sec #next {
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+.quiz-sec #back {
+	font-size: 26px;
+	color: #0C58A5;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	background: transparent;
+	border: 0;
+}
+.quiz-sec #startagain {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 12px 42px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.quiz-sec #div1 {
+	height: auto;
+}
+.quiz-sec #div2 {
+	height: auto;
+}
 
 /* Our Network */
 .inner-banner {
