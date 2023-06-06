@@ -52,7 +52,7 @@ echo get_header();
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="legacy-image">
+                    <div class="legacy-image image-part">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="A lagacy of trust & promice">
                     </div>
                 </div>
@@ -94,7 +94,7 @@ echo get_header();
 
     <!-- module-6 sourcing and extraction  -->
     <div class="sourcing-section default-section blue-bg">
-        <div class="container">
+            <div class="container">
             <div class="h2-blue">
                 <h2 class="text-noeffect">
                     Sourcing and Extraction
@@ -103,25 +103,7 @@ echo get_header();
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="image-part">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sorcing-1.png" alt="Souring Image">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sorcing-2.png" alt="Souring Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sorcing-3.png" alt="Souring Image">
-                                </div>
-                            </div>
-                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sourcing.png" alt="Souring and Extraction">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -132,12 +114,52 @@ echo get_header();
                 </div>
                 </div>
             </div>
-        </div>
+            </div>
     </div>
 
     <!-- module-7 NRT-section  -->
-    <div class="new-nrt-section default-section">
-        NRT section
+    <div class="nrt-sec default-section">
+        <div class="lab-ele">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hexa.png" alt="hexa"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tube.png" alt="tube"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/beaker.png" alt="beaker"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/test-tube.png" alt="test-tube"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hexa.png" alt="hexa"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/atom.png" alt="atom"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/flask.png" alt="flask"/>
+        </div>
+        <div class="container">
+            <div class="h2-white">
+                <h2 class="text-noeffect">What is Nutrition<br/> Retention Technology</h2>
+            </div>
+            <div class="text-center">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</op>
+            </div>
+            <div class="nr-det">
+                <ul>
+                    <li>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/temperature.png" alt="temperature"/>
+                        <h4>Temperature<span>Lorem Ipsum is simply dummy text of the </span></h4>
+                    </li>
+                    <li>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/time.png" alt="time"/>
+                        <h4>Time<span>Lorem Ipsum is simply dummy text of the </span></h4>
+                    </li>
+                    <li>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pressure.png" alt="pressure"/>
+                        <h4>Pressure<span>Lorem Ipsum is simply dummy text of the </span></h4>
+                    </li>
+                    <li>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vacuum.png" alt="vacuum"/>
+                        <h4>Vacuum<span>Lorem Ipsum is simply dummy text of the </span></h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="submit-button text-center">
+                <button class="btn-effect" type="submit">Know More</button>
+            </div>
+        </div>
     </div>
 
     <!-- module-8 product Slider  -->
@@ -180,9 +202,9 @@ echo get_header();
                     </div>
                 </div>
                 <div class="submit-button text-center">
-                    <button class="btn-effect" type="submit">
+                    <a href="#" class="btn-effect" type="submit">
                        All Products
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -190,7 +212,25 @@ echo get_header();
 
     <!-- module-9 location  -->
     <div class="location-section default-section footer-before">
-        Location
+        <div class="container">
+            <div class="h2-white">
+                <h2 class="text-noeffect">
+                    Our Locations
+                </h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="image-part">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/map-section.png" alt="Network Map section"/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="form">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
 <?php 

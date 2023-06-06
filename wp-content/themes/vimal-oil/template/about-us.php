@@ -286,7 +286,7 @@ echo get_header();
     </div>
 
     <!-- module-7 nrt section  -->
-    <div class="footer-before default-section">
+    <div class="nrt-sec footer-before default-section">
         <div class="lab-ele">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hexa.png" alt="hexa"/>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tube.png" alt="tube"/>

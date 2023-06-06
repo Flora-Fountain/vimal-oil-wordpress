@@ -111,7 +111,7 @@
     </div>
 
     <!-- module-3 health section -->
-    <div class="health-section default-section blue-bg-health ">
+    <div class="health-section default-section">
         <div class="leaf-sec">
             <div class="falling-leaf">
                 <div>
@@ -290,8 +290,8 @@
         <div class="container">
             <div class="align-items-center">
                 <div class="nrt-bottom">
-                    <div class="h1-title">
-                        <h1 class="text-noeffect">Why Vimal?</h1>
+                    <div class="h2-white">
+                        <h2 class="text-noeffect">Why Vimal?</h2>
                     </div>
                     <div class="animate-text">
                         <span>NUTRIENT-RICH PURE & NATURAL ANTIOXIDANT-RICH</span>
