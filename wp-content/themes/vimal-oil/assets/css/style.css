@@ -2222,10 +2222,10 @@ a:focus{
 	text-align: left;
 	font-size: 20px;
 }
-.recipe-section .cook-video img{
+.reci-sec .cook-video img{
 	border-radius: 0;
 }
-.recipe-section .recipe-video{
+.reci-sec .recipe-video{
 	box-shadow: 0px 0px 5px rgba(20, 110, 187, 0.2);
 	border-radius: 10px;
 }
@@ -2236,8 +2236,13 @@ a:focus{
 	margin-bottom: 0;
 	font-size: 18px;
 }
-.recipe-section .max-para p{
+.reci-sec .max-para p{
 	color: #0C58A5;
 	margin-bottom: 50px;
-
+}
+.reci-sec .row >div:nth-last-child(-n+4) {
+    margin-top: 30px;
+}
+.reci-sec .recipe-video .cook-video .wl-modal-btn.video-play-btn span svg {
+	fill: #D9D9D9;
 }
