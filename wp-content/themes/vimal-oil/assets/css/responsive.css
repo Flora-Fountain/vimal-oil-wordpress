@@ -696,7 +696,7 @@
         font-size: 40px;
     }
     .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white {
-        font-size: 35px;
+        font-size: 36px;
     }
     .h4-title h4 {
         font-size: 22px;
@@ -1015,6 +1015,9 @@
 
 }
 @media screen and (max-width:575px) {
+    .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white {
+        font-size: 26px;
+    }
     .pro-sld-main a {
         font-size: 15px;
         max-width: 140px;
