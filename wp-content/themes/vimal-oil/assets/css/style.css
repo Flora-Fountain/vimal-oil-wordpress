@@ -1972,7 +1972,6 @@ a:focus{
 /* privacy policy style  */
 .privacy-banner{
 	background-color: #0c56a1;
-	height: 100vh;
 }
 .privacy-banner .content-part .h1-title{
 	color: #FFDD00;
@@ -1983,9 +1982,12 @@ a:focus{
 	width: 100%;
 } 
 .privacy-policy{
-	padding: 25px 0 25px 0;
+	padding: 50px 0;
 }
-
+.privacy-policy .pp-para{
+	text-align: center;
+	margin-bottom: 40px;
+}
 /* About Us page CSS */
 .video-banner {
 	height: 100vh;
