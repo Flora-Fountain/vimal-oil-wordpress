@@ -682,6 +682,20 @@
         margin-top:0;
     }
 
+    /* branding page css  */
+    .why-content{
+        margin-top: 30px;
+    }
+    .social-post{
+        margin-top: 100px;    
+    }
+
+    /* contact page css  */
+    .cb-content{
+        margin-top: 80px;
+    }
+
+
 }
 @media screen and (max-width:767px) {
     body{
@@ -961,8 +975,11 @@
 }
 
     /* contact-page css  */
+    .cb-content{
+        margin-top: 80px;
+    }
     .map-part{
-        margin-top: 25px;
+        margin-top: 0;
     }
     .dp_item {
         width: 340px;
@@ -1114,6 +1131,20 @@
 
 
     /* branding page css  */
+    .why-content{
+        margin-top: 30px;
+    }
+    .social-post{
+        margin-top: 100px;    
+    }
+    .vimal-journey .gen-sec p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .vimal-journey .gen-sec .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .tvc-section{
         padding: 30px 0px 15px 0px;
     }
@@ -1126,6 +1157,13 @@
     .billboard-section .container{
         padding: 0 !important;
     }
+
+    /* quiz banner  css  */
+    .quiz-header-con{
+        margin-top: 30px;
+        padding: 10px 30px;
+    }
+
 
 }
 @media screen and (max-width:575px) {

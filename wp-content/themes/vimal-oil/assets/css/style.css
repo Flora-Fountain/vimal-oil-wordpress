@@ -1997,6 +1997,27 @@ a:focus{
 .contact-details .contact{
 	margin: 8px 0;
 }
+
+.contact-map .form-part .net-form  .form .form-group {
+    margin: 0 0 20px;
+}
+.contact-map .form-part .net-form .form .state-select{
+	position: relative;
+}
+.contact-map .form-part .net-form .form .state-select::before {
+	content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid #0a4380;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
 /* privacy policy style  */
 .privacy-banner{
 	background-color: #0c56a1;
@@ -2208,6 +2229,8 @@ a:focus{
 .social-post{
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
+	justify-content: center;
+	align-items: center;
 	gap: 20px;
 	transform: rotateZ(-5deg);
 }
@@ -2230,8 +2253,9 @@ a:focus{
 
 .health-content .para{
 	color: #fff;
-
 }
+
+
 
 .change-for-health .health-picture img{
 	width: 100%;
@@ -2377,6 +2401,14 @@ a:focus{
 
 
 /* Quiz Page */
+.quiz-image{
+	margin-top: 100px;
+}
+.quiz-image img{
+	width: 100%;
+}
+
+
 .quiz-sec {
 	background: url(../images/quiz-banner.png) #ffffff;
 	background-repeat: repeat;
@@ -2562,3 +2594,4 @@ a:focus{
 	transform: translateY(-50%);
 	pointer-events: none;
 }
+

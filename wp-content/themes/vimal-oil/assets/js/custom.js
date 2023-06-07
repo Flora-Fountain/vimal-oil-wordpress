@@ -399,11 +399,11 @@ $(document).ready(function() {
             0:{
                 items:1.3,
             },
-            425:{
+            575:{
                 items:2,
             },
-            767:{
-                items:3,
+            768:{
+                items:2,
             },
             1000:{
                 items:3,
@@ -422,11 +422,11 @@ $(document).ready(function() {
             0:{
                 items:1.3,
             },
-            425:{
+            575:{
                 items:2,
             },
-            767:{
-                items:3,
+            768:{
+                items:2,
             },
             1000:{
                 items:3,

@@ -9,9 +9,9 @@ echo get_header();
     <!--module-2 hero banner html code  -->
     <div class="common-banner default-section blue-bg-banner">
         <div class="container p-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="banner-content">
+            <div class="row align-items-center justify-content-center mt-5">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="banner-content why-content">
                         <div class="h1-title">
                             <h1 class="text-noeffect"><span>Our</span> Branding</h1>
                         </div>
@@ -116,9 +116,9 @@ echo get_header();
                 <div class="h2-blue">
                     <h2 class="text-noeffect">#ChangeForHealth</h2>
                 </div>
-                <div class="row justify-content-center align-items-center">
+                <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-heart.png" alt="oil heart" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-heart.png" alt="" />
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -126,7 +126,7 @@ echo get_header();
                     </div>
                 </div>
                 <div class="submit-button text-center">
-                    <button class="btn-effect" type="submit">All Products</button>
+                    <a href="#" class="btn-effect" type="submit">All Products</a>
                 </div>
             </div>
         </div>
