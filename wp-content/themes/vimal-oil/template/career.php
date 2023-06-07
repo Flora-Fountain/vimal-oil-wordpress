@@ -7,6 +7,7 @@ echo get_header();
 ?>
     
     <!--module-2 hero banner html code  -->
+
     <div class="default-section common-banner blue-bg-banner vimal-career">
         <div class="cb-content">
             <div class="h1-title">
@@ -21,6 +22,24 @@ echo get_header();
                 <button class="btn-effect" type="submit">
                     Know More
                 </button>
+
+    <div class="inner-banner default-section center-cont">
+        <div class="container">
+            <div class="align-items-center">
+                <div class="text-aside">
+                    <div class="banner-right">
+                        <div class="h1-title">
+                            <h1 class="text-noeffect">Work With <br/>Vimal</h1>
+                        </div>
+                    </div>
+                    <div class="head-para">
+                        <p class="text-center mt-3 max-wd">simply dummy text of the printing<br/> and typesetting industry. Lorem<br/> Ipsum simply dummy text of the </p>
+                    </div>
+                    <div class="submit-button text-center">
+                        <a href="#" class="btn-effect">Say hi</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

@@ -10,7 +10,7 @@ echo get_header();
     <div class="inner-banner default-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 colp-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="text-aside">
                         <div class="banner-right">
                             <div class="h1-title">
@@ -22,7 +22,7 @@ echo get_header();
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 colp-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="inner-bnr-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/network-banner.png" alt="network-banner"/>
                     </div>

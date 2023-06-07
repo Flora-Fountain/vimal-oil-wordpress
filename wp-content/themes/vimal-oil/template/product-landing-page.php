@@ -7,7 +7,8 @@ echo get_header();
 ?>
     
 <!--module-2 hero banner html code  -->
-<div class="default-section privacy-banner blue-bg-banner product-banner">
+
+<div class="inner-banner default-section product-banner">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-sm-12">
@@ -74,16 +75,32 @@ echo get_header();
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="prod-item">
+                        <div class="pro-sld-main light-blue">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-oil-slider.png" alt="vimal-cottonseed-oil-slider" width="259" height="390">
+                            <a href="#">Refined Cottonseed Oil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="prod-item">
                         <div class="pro-sld-main red">
-                            <img src="http://localhost:81/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/vimal-kachi-ghani-oil-slider.png" alt="kachi-ghani-oil" width="259" height="390">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-kachi-ghani-oil-slider.png" alt="vimal-kachi-ghani-oil-slider" width="259" height="390">
                             <a href="#">Tikha Kachi Ghani Musterd Oil</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="prod-item">
+                        <div class="pro-sld-main ylw">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-gold-groundnut-oil-slider.png" alt="vimal-pure-gold-groundnut-oil-slider" width="259" height="390">
+                            <a href="#">Pure Gold Groundnut Oil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="prod-item">
                         <div class="pro-sld-main grn">
-                            <img src="http://localhost:81/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/vimal-soyahary-soyabean-oil-slider.png" alt="vimal-soyahart-oil" width="259" height="390">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahary-soyabean-oil-slider.png" alt="vimal-soyahary-soyabean-oil-slider" width="259" height="390">
                             <a href="#">Soyahart Refined Soyabean Oil</a>
                         </div>
                     </div>
@@ -91,32 +108,16 @@ echo get_header();
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="prod-item">
                         <div class="pro-sld-main red">
-                            <img src="http://localhost:81/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/vimal-kachi-ghani-oil-slider.png" alt="kachi-ghani-oil" width="259" height="390">
-                            <a href="#">Tikha Kachi Ghani Musterd Oil</a>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-sunhart-oil-slider.png" alt="vimal-sunhart-oil-slider" width="259" height="390">
+                            <a href="#">Sunhart Refined Sunflower Oil</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="prod-item">
-                        <div class="pro-sld-main grn">
-                            <img src="http://localhost:81/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/vimal-soyahary-soyabean-oil-slider.png" alt="vimal-soyahart-oil" width="259" height="390">
-                            <a href="#">Soyahart Refined Soyabean Oil</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="prod-item">
-                        <div class="pro-sld-main red">
-                            <img src="http://localhost:81/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/vimal-kachi-ghani-oil-slider.png" alt="kachi-ghani-oil" width="259" height="390">
-                            <a href="#">Tikha Kachi Ghani Musterd Oil</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="prod-item">
-                        <div class="pro-sld-main grn">
-                            <img src="http://localhost:81/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/vimal-soyahary-soyabean-oil-slider.png" alt="vimal-soyahart-oil" width="259" height="390">
-                            <a href="#">Soyahart Refined Soyabean Oil</a>
+                        <div class="pro-sld-main light-blue">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-oil-slider.png" alt="vimal-cottonseed-oil-slider" width="259" height="390">
+                            <a href="#">Refined Cottonseed Oil</a>
                         </div>
                     </div>
                 </div>

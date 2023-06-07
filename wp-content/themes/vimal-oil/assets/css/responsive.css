@@ -160,7 +160,7 @@
     }
     .leaf-sec::after {
         right: auto;
-        left: -110px;
+        left: -90px;
     }
     .nrt-section::before{
         right: -100px;
@@ -694,6 +694,12 @@
     .cb-content{
         margin-top: 80px;
     }
+    .wl-modal-lg .wl-modal-content {
+        max-width: 600px;
+    }
+    .wl-video-modal .wl-modal-content .wl-modal-body iframe {
+        min-height: 330px;
+    }
 
 
 }
@@ -966,7 +972,6 @@
     }
 
     /* Product Landing */
-
     .product-banner{
         padding: 100px 0 0;
     }
@@ -1016,7 +1021,51 @@
         gap: 0;
     }
 
-    /* contact-page css  */
+.product-banner{
+    padding: 100px 0 0;
+}
+.product-banner .row{
+    flex-direction: column-reverse;
+}
+.prod-leaf-sec::before{
+    top: -65px;
+}
+.product-cook-oil .cook-fall-leaf > div:nth-child(3), .product-cook-oil .cook-oil-float-ele img:nth-child(1), .product-cook-oil .cook-oil-float-ele img:nth-child(2){
+    display: none;
+}
+.prod-leaf-sec::after{
+    left: 0;
+    bottom: -100px;
+}
+.product-cook-oil .cook-oil-sec-hd{
+    font-size: 20px;
+}
+.product-banner .banner-left img{
+    width: 200px;
+    margin-top: 20px;
+}
+.privacy-banner{
+    padding: 100px 0 50px;
+}
+.health-section-wcv, .quality-section, .nrt-sec, .net-sec {
+    padding: 50px 0;
+}
+.quality-section .row{
+    flex-direction: column-reverse;
+}
+.home-prod-sldr.owl-carousel .owl-dots.disabled{
+    display: none;
+}
+.product-section-1 .submit-button{
+    margin-top: 0;
+}
+    
+/* Career Detail Page */
+.job-desc-sec .job-expe h2{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+ /* contact-page css  */
     .cb-content{
         margin-top: 80px;
     }
@@ -1202,11 +1251,23 @@
     .billboard-section .container{
         padding: 0 !important;
     }
+    .buy-btn a {
+        padding: 14px 10px;
+    }
+    .nrt-sec .submit-button.text-center {
+        margin-bottom: 30px;
+    }
 
     /* quiz banner  css  */
     .quiz-header-con{
         margin-top: 30px;
         padding: 10px 30px;
+    }
+    .wl-modal-lg .wl-modal-content {
+        max-width: 90%;
+    }
+    .wl-video-modal .wl-modal-content .wl-modal-body iframe {
+        min-height: 280px;
     }
 
 
@@ -1287,6 +1348,16 @@
     .floating-ele.right img:nth-child(5) {
         width: 50px;
     }
+    /* career css  */
+    .job-opening .job-card .role-small-details{
+        display: inline-block;
+        /* flex-direction: column;
+        align-items: center; */
+        /* gap: 25px; */
+    }
+    .wl-video-modal .wl-modal-content .wl-modal-body iframe {
+        min-height: 240px;
+    }
 }
 @media screen and (max-width:479px) {
     .pro-sld-main a {
@@ -1342,6 +1413,15 @@
     }
     .nr-det ul li + li {
         margin-top: 20px;
+    }
+    .product-section .row > div {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    .product-section .prod-item {
+        max-width: 270px;
+        margin: 0 auto 10px;
     }
     .h1-title{
         font-size: 45px;
