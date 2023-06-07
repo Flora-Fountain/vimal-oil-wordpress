@@ -17,7 +17,7 @@ echo get_header();
                         </div>
                     </div>
                     <div class="head-para">
-                        <p class="text-center mt-3 max-wd">Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit</p>
+                        <p class="text-center mt-3 max-wd">simply dummy text of the printing<br/> and typesetting industry. Lorem<br/> Ipsum simply dummy text of the </p>
                     </div>
                     <div class="submit-button text-center">
                         <a href="#" class="btn-effect">Say hi</a>

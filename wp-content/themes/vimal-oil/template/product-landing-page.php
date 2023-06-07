@@ -7,7 +7,8 @@ echo get_header();
 ?>
     
 <!--module-2 hero banner html code  -->
-<div class="default-section privacy-banner blue-bg-banner product-banner">
+
+<div class="inner-banner default-section product-banner">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-sm-12">
