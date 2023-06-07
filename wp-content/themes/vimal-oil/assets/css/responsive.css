@@ -1021,44 +1021,44 @@
         gap: 0;
     }
 
-.product-banner{
-    padding: 100px 0 0;
-}
-.product-banner .row{
-    flex-direction: column-reverse;
-}
-.prod-leaf-sec::before{
-    top: -65px;
-}
-.product-cook-oil .cook-fall-leaf > div:nth-child(3), .product-cook-oil .cook-oil-float-ele img:nth-child(1), .product-cook-oil .cook-oil-float-ele img:nth-child(2){
-    display: none;
-}
-.prod-leaf-sec::after{
-    left: 0;
-    bottom: -100px;
-}
-.product-cook-oil .cook-oil-sec-hd{
-    font-size: 20px;
-}
-.product-banner .banner-left img{
-    width: 200px;
-    margin-top: 20px;
-}
-.privacy-banner{
-    padding: 100px 0 50px;
-}
-.health-section-wcv, .quality-section, .nrt-sec, .net-sec {
-    padding: 50px 0;
-}
-.quality-section .row{
-    flex-direction: column-reverse;
-}
-.home-prod-sldr.owl-carousel .owl-dots.disabled{
-    display: none;
-}
-.product-section-1 .submit-button{
-    margin-top: 0;
-}
+    .product-banner{
+        padding: 100px 0 0;
+    }
+    .product-banner .row{
+        flex-direction: column-reverse;
+    }
+    .prod-leaf-sec::before{
+        top: -65px;
+    }
+    .product-cook-oil .cook-fall-leaf > div:nth-child(3), .product-cook-oil .cook-oil-float-ele img:nth-child(1), .product-cook-oil .cook-oil-float-ele img:nth-child(2){
+        display: none;
+    }
+    .prod-leaf-sec::after{
+        left: 0;
+        bottom: -100px;
+    }
+    .product-cook-oil .cook-oil-sec-hd{
+        font-size: 20px;
+    }
+    .product-banner .banner-left img{
+        width: 200px;
+        margin-top: 20px;
+    }
+    .privacy-banner{
+        padding: 100px 0 50px;
+    }
+    .health-section-wcv, .quality-section, .nrt-sec, .net-sec {
+        padding: 50px 0;
+    }
+    .quality-section .row{
+        flex-direction: column-reverse;
+    }
+    .home-prod-sldr.owl-carousel .owl-dots.disabled{
+        display: none;
+    }
+    .product-section-1 .submit-button{
+        margin-top: 0;
+    }
     
 /* Career Detail Page */
 .job-desc-sec .job-expe h2{
@@ -1126,6 +1126,9 @@
         width: 51px;
         height: 142px;
         top: 20%;
+    }
+    .net-sec  .form-part{
+        margin-bottom: 50px;
     }
     .floating-obj img:nth-child(7) {
         width: 51px;
@@ -1201,8 +1204,6 @@
     /* career-page style  */
     .job-opening .job-card{
         display: inline-block;
-        /* flex-direction: column; */
-        /* align-items: center; */
         width: 100%;
     }
 

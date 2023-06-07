@@ -2,27 +2,10 @@
 /* 
     Template Name: Career Template 
 */
-
 echo get_header();
 ?>
     
     <!--module-2 hero banner html code  -->
-
-    <div class="default-section common-banner blue-bg-banner vimal-career">
-        <div class="cb-content">
-            <div class="h1-title">
-                <h1 class="text-noeffect">Work With <br/>Vimal</h1>
-            </div>
-            <div class="banner-para  text-center">
-                <p class="text-noeffect">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                </p>
-            </div>
-            <div class="submit-button text-center">
-                <button class="btn-effect" type="submit">
-                    Know More
-                </button>
-
     <div class="inner-banner default-section center-cont">
         <div class="container">
             <div class="align-items-center">

@@ -1164,7 +1164,6 @@ a:focus{
 }
 .head-para{
     text-align: center;
-    font-weight: 600;
     color: #ffffff;
 }
 .jorney-main .nav {
@@ -2345,7 +2344,15 @@ a:focus{
 .health-section-wcv .container{
 	margin: auto;
 }
-
+.health-section-wcv, .quality-section, .net-sec{
+	padding: 50px 0;
+}
+.nrt-sec{
+	padding: 50px 0 100px;
+}
+.sourcing-section, .legacy-section{
+	padding: 100px 0 50px;
+}
 .health-section-wcv p{
 	text-align: center;
 	color: #0c56a1;

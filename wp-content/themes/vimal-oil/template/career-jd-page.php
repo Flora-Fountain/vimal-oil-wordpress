@@ -7,16 +7,24 @@ echo get_header();
 ?>
     
     <!--module-2 hero banner html code  -->
-<div class="default-section common-banner blue-bg-banner">
-    <div class="cb-content">
-        <div class="h1-title">
-            <h1 class="text-noeffect">Sr. HR Manager</h1>
-        </div>
-        <div class="banner-para  text-center">
-            <p class="text-noeffect">Full Time</p>
+    <div class="inner-banner default-section center-cont">
+        <div class="container">
+            <div class="align-items-center">
+                <div class="text-aside">
+                    <div class="banner-right">
+                        <div class="h1-title">
+                            <h1 class="text-noeffect">Sr. HR <br/>Manager</h1>
+                        </div>
+                    </div>
+                    <div class="head-para">
+                        <p class="text-center mt-3 max-wd">Full time</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
+
 
 <div class="default-section job-desc-sec">
     <div class="container">
