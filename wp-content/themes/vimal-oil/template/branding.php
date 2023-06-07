@@ -111,6 +111,21 @@ echo get_header();
 
     <!-- module-4 journey section  -->
     <div class="vimal-journey default-section blue-bg">
+        <div class="falling-leaf">
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+            </div>
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+            </div>
+        </div>
+        <div class="floating-ele after-banner">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="white-flower">
+        </div>
         <div class="container">
             <div class="gen-sec">
                 <div class="h2-blue">
@@ -118,15 +133,15 @@ echo get_header();
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-heart.png" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-heart.png" alt="">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
                     </div>
                 </div>
                 <div class="submit-button text-center">
-                    <a href="#" class="btn-effect" type="submit">All Products</a>
+                    <button class="btn-effect" type="submit">All Products</button>
                 </div>
             </div>
         </div>
