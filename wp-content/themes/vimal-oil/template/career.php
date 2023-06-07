@@ -7,20 +7,22 @@ echo get_header();
 ?>
     
     <!--module-2 hero banner html code  -->
-    <div class="common-banner default-section blue-bg-banner">
-        <div class="cb-content">
-            <div class="h1-title">
-                <h1 class="text-noeffect">Work With Vimal</h1>
-            </div>
-            <div class="banner-para  text-center">
-                <p class="text-noeffect">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                </p>
-            </div>
-            <div class="submit-button text-center">
-                <button class="btn-effect" type="submit">
-                    Know More
-                </button>
+    <div class="inner-banner default-section center-cont">
+        <div class="container">
+            <div class="align-items-center">
+                <div class="text-aside">
+                    <div class="banner-right">
+                        <div class="h1-title">
+                            <h1 class="text-noeffect">Work With <br/>Vimal</h1>
+                        </div>
+                    </div>
+                    <div class="head-para">
+                        <p class="text-center mt-3 max-wd">Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit</p>
+                    </div>
+                    <div class="submit-button text-center">
+                        <a href="#" class="btn-effect">Say hi</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

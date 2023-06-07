@@ -7,29 +7,27 @@ echo get_header();
 ?>
     
      <!--module-2 hero banner html code  -->
-    <div class="contact-banner default-section blue-bg-banner">
+     <div class="inner-banner default-section">
         <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="cb-content">
-                        <div class="h1-title">
-                            <h1 class="text-noeffect">Reach out to us!</h1>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="text-aside">
+                        <div class="banner-right">
+                            <div class="h1-title">
+                                <h1 class="text-noeffect">Reach out to us!</h1>
+                            </div>
                         </div>
-                        <div class="banner-para text-center">
-                            <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            </p>
+                        <div class="head-para">
+                            <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit</p>
                         </div>
                         <div class="submit-button text-center">
-                            <a class="btn-effect" type="submit">
-                                Know More
-                            </a>
+                            <a href="#" class="btn-effect">Let's Connect</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="banner-image-part">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-banner-image.png" alt="contact us">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="inner-bnr-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-banner-image.png" alt="contact us">
                     </div>
                 </div>
             </div>
