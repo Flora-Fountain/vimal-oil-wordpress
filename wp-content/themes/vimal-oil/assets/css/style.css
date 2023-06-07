@@ -2595,3 +2595,27 @@ a:focus{
 	pointer-events: none;
 }
 
+
+
+/* oil calender section  */
+.quiz-end-banner{
+	height: 100vh;
+}
+.quiz-cel{
+	position: relative;
+}
+.quiz-cel .oil-cans{
+	position: absolute;
+	top: 12%;
+	left: 28%;
+	z-index: 11111;
+	width: 50%;
+	text-align: center;
+}
+.quiz-cel .oil-cans img{
+	width: 100%;
+}
+
+.quiz-cel .box-image img{
+	width: 100%;
+}

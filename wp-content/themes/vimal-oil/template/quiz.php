@@ -34,7 +34,7 @@ echo get_header();
 				</div>
 			</div>
         </div>
-    </div>
+</div>
 
 <!--module-2 hero banner html code  -->
 <div class="default-section quiz-sec footer-before" id="quiz-question">
