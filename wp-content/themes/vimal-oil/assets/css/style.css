@@ -2243,9 +2243,9 @@ a:focus{
 	/* transform: rotateZ(-5deg); */
 }
 
-.social-post .post img{
-	height: 180px;
-	width: 180px;
+.social-post .post img {
+	height: 100%;
+	width: 100%;
 }
 
 .social-post .post-2,.social-post .post-5{
