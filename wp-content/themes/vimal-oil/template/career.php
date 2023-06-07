@@ -7,6 +7,22 @@ echo get_header();
 ?>
     
     <!--module-2 hero banner html code  -->
+
+    <div class="default-section common-banner blue-bg-banner vimal-career">
+        <div class="cb-content">
+            <div class="h1-title">
+                <h1 class="text-noeffect">Work With <br/>Vimal</h1>
+            </div>
+            <div class="banner-para  text-center">
+                <p class="text-noeffect">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                </p>
+            </div>
+            <div class="submit-button text-center">
+                <button class="btn-effect" type="submit">
+                    Know More
+                </button>
+
     <div class="inner-banner default-section center-cont">
         <div class="container">
             <div class="align-items-center">
@@ -23,12 +39,13 @@ echo get_header();
                         <a href="#" class="btn-effect">Say hi</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
     <!-- module-3 grow with vimal -->
-    <div class="grow-section default-section">
+    <div class="default-section grow-section">
         <div class="container ">
             <div class="h2-white  text-center">
                 <h2 class="text-noeffect">
@@ -241,7 +258,7 @@ echo get_header();
     </div>
 
     <!-- module-5 form section  -->
-    <div class="form-section-career default-section footer-before">
+    <div class="default-section form-section-career footer-before">
         <div class="container">
             <div class="career-form">
                 <div class="h2-white">
