@@ -9,8 +9,8 @@ echo get_header();
      <!--module-2 hero banner html code  -->
     <div class="contact-banner default-section blue-bg-banner">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="cb-content">
                         <div class="h1-title">
                             <h1 class="text-noeffect">Reach out to us!</h1>
@@ -27,7 +27,7 @@ echo get_header();
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="banner-image-part">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-banner-image.png" alt="contact us">
                     </div>
@@ -40,48 +40,46 @@ echo get_header();
     <div class="contact-map default-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="form-part">
-                <div class="h2-white">
-                    <h2 class="text-noeffect">
-                        Have Question? Ask Away
-                    </h2>
-                </div>
-                <div class="form">
-                    <div class="form-group">
-                                <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
-                        </div>
-                    <div class="form-group">
-                                <input type="email" class="form-control" name="name" placeholder="Email ID" required="">
-                        </div>
-                    <div class="form-group state-select">
-                                <select name="State" id="state" class="form-control">
-                                    <option value="gujrat">Gujrat</option>
-                                    <option value="rajsthan">Rajsthan</option>
-                                    <option value="panjab">Panjab</option>
-                                </select>
-                        </div>
-                    <div class="form-group state-select">
-                            <select name="State" id="state" class="form-control">
-                                <option value="ahmedabad">Ahmedabad</option>
-                                <option value="rajkot">Rajkot</option>
-                                <option value="surat">Surat</option>
-                            </select>
-                        </div>
-                    <div class="form-group">
-                            <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
-                        </div>
-                    <div class="submit-button text-center">
-                            <button class="btn-effect" type="submit">
-                                Share
-                            </button>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="form-part">
+                        <div class="form-inner net-form form-part">
+                            <div class="h2-white">
+                                <h2 class="text-noeffect">Have Question? Ask Away</h2>
+                            </div>
+                            <div class="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="name" placeholder="Email ID" required="">
+                                </div>
+                                <div class="form-group state-select">
+                                    <select name="State" id="state" class="form-control">
+                                        <option value="gujrat">Gujrat</option>
+                                        <option value="rajsthan">Rajsthan</option>
+                                        <option value="panjab">Panjab</option>
+                                    </select>
+                                </div>
+                                <div class="form-group state-select">
+                                    <select name="State" id="state" class="form-control">
+                                        <option value="ahmedabad">Ahmedabad</option>
+                                        <option value="rajkot">Rajkot</option>
+                                        <option value="surat">Surat</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
+                                </div>
+                                <div class="iimg text-center">
+                                    <button class="btn-effect" type="submit">Share</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                </div>  
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="map-part">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29256.186645355134!2d72.35055517253537!3d23.56760554288374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c41a2155d3e6b%3A0xe6f63b06e01d4af8!2sVimal%20Oil%20%26%20Foods%20Ltd.!5e0!3m2!1sen!2sin!4v1685008779027!5m2!1sen!2sin" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29256.186645355134!2d72.35055517253537!3d23.56760554288374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c41a2155d3e6b%3A0xe6f63b06e01d4af8!2sVimal%20Oil%20%26%20Foods%20Ltd.!5e0!3m2!1sen!2sin!4v1685008779027!5m2!1sen!2sin" width="800" height="595" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>

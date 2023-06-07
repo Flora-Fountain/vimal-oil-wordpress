@@ -211,22 +211,52 @@ echo get_header();
     </div>
 
     <!-- module-9 location  -->
-    <div class="location-section default-section footer-before">
+    <div class="footer-before net-sec default-section">
         <div class="container">
             <div class="h2-white">
-                <h2 class="text-noeffect">
-                    Our Locations
-                </h2>
+                <h2 class="text-noeffect">Our locations</h2>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="image-part">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/map-section.png" alt="Network Map section"/>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="loc-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/location-map.png" alt="location-map"/>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="form">
-                        
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="form-part">
+                        <div class="form-inner net-form form-part">
+                            <div class="h2-white">
+                                <h2 class="text-noeffect">Have Question? Ask Away</h2>
+                            </div>
+                            <div class="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="name" placeholder="Email ID" required="">
+                                </div>
+                                <div class="form-group state-select">
+                                    <select name="State" id="state" class="form-control">
+                                        <option value="gujrat">Gujrat</option>
+                                        <option value="rajsthan">Rajsthan</option>
+                                        <option value="panjab">Panjab</option>
+                                    </select>
+                                </div>
+                                <div class="form-group state-select">
+                                    <select name="State" id="state" class="form-control">
+                                        <option value="ahmedabad">Ahmedabad</option>
+                                        <option value="rajkot">Rajkot</option>
+                                        <option value="surat">Surat</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
+                                </div>
+                                <div class="iimg text-center">
+                                    <button class="btn-effect" type="submit">Share</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
