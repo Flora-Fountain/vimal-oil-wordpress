@@ -160,7 +160,7 @@
     }
     .leaf-sec::after {
         right: auto;
-        left: -110px;
+        left: -90px;
     }
     .nrt-section::before{
         right: -100px;
@@ -694,6 +694,12 @@
     .cb-content{
         margin-top: 80px;
     }
+    .wl-modal-lg .wl-modal-content {
+        max-width: 600px;
+    }
+    .wl-video-modal .wl-modal-content .wl-modal-body iframe {
+        min-height: 330px;
+    }
 
 
 }
@@ -984,14 +990,14 @@
 }
 .prod-leaf-sec::after{
     left: 0;
-    bottom: -120px;
+    bottom: -100px;
 }
 .product-cook-oil .cook-oil-sec-hd{
     font-size: 20px;
 }
 .product-banner .banner-left img{
-    width: 270px;
-    margin-top: 40px;
+    width: 200px;
+    margin-top: 20px;
 }
     
 /* Career Detail Page */
@@ -1183,11 +1189,23 @@
     .billboard-section .container{
         padding: 0 !important;
     }
+    .buy-btn a {
+        padding: 14px 10px;
+    }
+    .nrt-sec .submit-button.text-center {
+        margin-bottom: 30px;
+    }
 
     /* quiz banner  css  */
     .quiz-header-con{
         margin-top: 30px;
         padding: 10px 30px;
+    }
+    .wl-modal-lg .wl-modal-content {
+        max-width: 90%;
+    }
+    .wl-video-modal .wl-modal-content .wl-modal-body iframe {
+        min-height: 280px;
     }
 
 
@@ -1276,6 +1294,9 @@
         align-items: center; */
         /* gap: 25px; */
     }
+    .wl-video-modal .wl-modal-content .wl-modal-body iframe {
+        min-height: 240px;
+    }
 }
 @media screen and (max-width:479px) {
     .pro-sld-main a {
@@ -1331,6 +1352,15 @@
     }
     .nr-det ul li + li {
         margin-top: 20px;
+    }
+    .product-section .row > div {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    .product-section .prod-item {
+        max-width: 270px;
+        margin: 0 auto 10px;
     }
 }
 @media screen and (max-width:359px) {
