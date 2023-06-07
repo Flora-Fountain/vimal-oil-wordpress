@@ -308,7 +308,7 @@
     .animate-text {
         max-width: 450px;
     }
-    .default-section,.nrt-section.default-section,.ft-top {
+    .nrt-section.default-section,.ft-top {
         padding: 60px 0px;
     }
     .hero-banner.default-section{
@@ -798,9 +798,6 @@
     .footer{
         text-align: center;
     }
-    .default-section {
-        padding: 30px 0px;
-    }
     .banner-slider {
         margin-top: 70px;
     }
@@ -966,7 +963,7 @@
     .nr-det ul li:nth-last-child(-n+2) {
         margin-top: 20px;
     }
-    /* REcipes Page */
+    /* Recipes Page */
     .reci-sec .row >div:nth-child(-n + 2) {
         margin-top:20px;
     }
@@ -998,6 +995,21 @@
 .product-banner .banner-left img{
     width: 200px;
     margin-top: 20px;
+}
+.privacy-banner{
+    padding: 100px 0 50px;
+}
+.health-section-wcv, .quality-section, .nrt-sec, .net-sec {
+    padding: 50px 0;
+}
+.quality-section .row{
+    flex-direction: column-reverse;
+}
+.home-prod-sldr.owl-carousel .owl-dots.disabled{
+    display: none;
+}
+.product-section-1 .submit-button{
+    margin-top: 0;
 }
     
 /* Career Detail Page */
@@ -1362,6 +1374,12 @@
         max-width: 270px;
         margin: 0 auto 10px;
     }
+    .h1-title{
+        font-size: 45px;
+    }
+    .h1-title span{
+        font-size: 35px;
+    }
 }
 @media screen and (max-width:359px) {
     .pro-sld-main a {
@@ -1386,5 +1404,8 @@
     }
     #dp-slider, .dp-img img {
         max-width: 190px;
+    }
+    .h1-title{
+        font-size: 42px;
     }
 }

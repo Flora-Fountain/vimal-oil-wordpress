@@ -1597,9 +1597,6 @@ a:focus{
 .form-section .form .form-group{
  	margin: 0 0 20px;   
 }
-.submit-button{
-	margin-top: 30px;
-}
 .form-section .btm-cta {
 	padding: 0 60px;
 	position: relative;
@@ -1851,9 +1848,9 @@ a:focus{
 }
 /* career page css code */
 .common-banner{
-	height: 100vh;
 	background-color: #0c56a1;
 	position: relative;
+	height: 100vh;
 }
 .common-banner .cb-content{
 	position: absolute;
@@ -2674,3 +2671,27 @@ a:focus{
     display: block;
 }
 
+
+
+/* oil calender section  */
+.quiz-end-banner{
+	height: 100vh;
+}
+.quiz-cel{
+	position: relative;
+}
+.quiz-cel .oil-cans{
+	position: absolute;
+	top: 12%;
+	left: 28%;
+	z-index: 11111;
+	width: 50%;
+	text-align: center;
+}
+.quiz-cel .oil-cans img{
+	width: 100%;
+}
+
+.quiz-cel .box-image img{
+	width: 100%;
+}

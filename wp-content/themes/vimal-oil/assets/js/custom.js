@@ -30,6 +30,7 @@ $(document).ready(function(){
                 center: true,
                 autoplayTimeout: 4000,
                 smartSpeed: 400,
+                dots:false,
             },
             480: {
                 items: 3,
@@ -48,6 +49,7 @@ $(document).ready(function(){
                 center: true,
                 autoplayTimeout: 4000,
                 smartSpeed: 400,
+                dots:false,
             },
             991: {
                 items: 4,
