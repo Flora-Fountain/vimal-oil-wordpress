@@ -124,6 +124,7 @@ a:focus{
 	right: 0;
 	z-index: 2;
 }
+
 .blue-bg-health::before{
 	content: '';
 	width: 0;
@@ -2670,21 +2671,27 @@ a:focus{
 
 
 
-/* oil calender section  */
-.quiz-end-banner{
-	height: 100vh;
-}
+/* oil calender section  */	
 .quiz-cel{
 	position: relative;
 }
-.quiz-cel .oil-cans{
+.quiz-cel .oil-cans {
 	position: absolute;
-	top: 12%;
+	bottom: 0;
 	left: 26%;
 	z-index: 11111;
 	width: 50%;
 	text-align: center;
+	transform: scale(0);
+	transition: 1s;
+	z-index: -1111;
 }
+.quiz-cel .oil-cans.aniactive {
+	bottom: 45%;
+	transform: scale(1);
+	z-index: 1111;
+}
+
 .quiz-cel .oil-cans img{
 	width: 100%;
 }

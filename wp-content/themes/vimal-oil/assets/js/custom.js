@@ -649,3 +649,11 @@ $(document).ready(function(){
             newQuestionAnswers();    
         });
     });
+
+
+$(document).ready(function(){
+    setTimeout(function() {
+        $(".oil-cans").addClass("aniactive");
+      }, 250);
+});
+
