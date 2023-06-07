@@ -7,7 +7,7 @@ echo get_header();
 ?>
     
     <!--module-2 hero banner html code  -->
-    <div class="common-banner quiz-end-banner default-section blue-bg-banner">
+    <div class="common-banner quiz-end-banner default-section blue-bg-banner p-5">
         <div class="container">
             <div class="row align-items-center justify-content-center">
 				<div class="col-lg-6 col-md-12 col-sm-12">
