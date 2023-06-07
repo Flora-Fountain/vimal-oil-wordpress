@@ -7,33 +7,31 @@ echo get_header();
 ?>  
 
 <!-- mudule-2 hero banner  -->
-<div class="common-banner quiz-starting-banner default-section blue-bg-banner">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-				<div class="col-lg-6 col-md-12 col-sm-12">
-					<div class="quiz-image">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/quiz-banner-image.png" alt="Quiz Banner image">
-					</div>
+<div class="inner-banner default-section">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6 col-md-12 col-sm-12">
+				<div class="inner-bnr-img">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/quiz-banner-image.png" alt="Quiz Banner image">
 				</div>
-				<div class="col-lg-6 col-md-12 col-sm-12">
-					<div class="quiz-header-con">
-						<did class="h1-title">
-							<h1 class="text-noeffect">
-								Lorem ipsum
-							</h1>
-						</did>
-						<div class="head-para">
-							<p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit</p>
+			</div>
+			<div class="col-lg-6 col-md-12 col-sm-12">
+				<div class="text-aside">
+					<div class="banner-right">
+						<div class="h1-title">
+							<h1 class="text-noeffect">Lorem ipsum</h1>
 						</div>
-						<div class="submit-button text-center">
-                            <button class="btn-effect" type="submit">
-                                Know More
-                            </button>
-                        </div>
+					</div>
+					<div class="head-para">
+						<p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit</p>
+					</div>
+					<div class="submit-button text-center">
+						<a href="#" class="btn-effect">Know More</a>
 					</div>
 				</div>
 			</div>
-        </div>
+		</div>
+	</div>
 </div>
 
 <!--module-2 hero banner html code  -->

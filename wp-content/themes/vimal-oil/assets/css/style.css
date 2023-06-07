@@ -405,7 +405,7 @@ a:focus{
 	z-index: 1;
 }
 
-.product-section.blue-bg::before {
+.product-section.no-bottom-des::before {
 	display: none;
 }
 .health-section .h2-title, .form-section .form .h2-title{
@@ -2666,9 +2666,6 @@ a:focus{
 .buy-btn a img{
 	width: 35px;
 	margin-right: 10px;
-}
-.product-section.blue-bg:before {
-    display: block;
 }
 
 

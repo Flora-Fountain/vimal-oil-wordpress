@@ -7,22 +7,22 @@ echo get_header();
 ?>
     
     <!--module-2 hero banner html code  -->
-    <div class="common-banner default-section blue-bg-banner">
-        <div class="container p-5">
-            <div class="row align-items-center justify-content-center mt-5">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="banner-content why-content">
-                        <div class="h1-title">
-                            <h1 class="text-noeffect"><span>Our</span> Branding</h1>
+    <div class="inner-banner default-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 colp-md-6 col-sm-12">
+                    <div class="text-aside">
+                        <div class="banner-right">
+                            <div class="h1-title">
+                                <h1 class="text-noeffect"><span>Our</span> Branding</h1>
+                            </div>
                         </div>
                         <div class="submit-button text-center">
-                            <button class="btn-effect" type="submit">
-                                Know More
-                            </button>
+                            <a href="#" class="btn-effect">Know More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 colp-md-6 col-sm-12">
                     <div class="social-post">
                         <div class="post post-1">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta-post.png" alt="Instagram Post">
