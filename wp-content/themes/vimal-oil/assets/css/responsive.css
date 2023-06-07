@@ -965,52 +965,56 @@
         margin-top: 0px;
     }
 
-/* Product Landing */
+    /* Product Landing */
 
-.product-banner{
-    padding: 100px 0 0;
-}
-.product-banner .row{
-    flex-direction: column-reverse;
-}
-.prod-leaf-sec::before{
-    top: -65px;
-}
-.product-cook-oil .cook-fall-leaf > div:nth-child(3), .product-cook-oil .cook-oil-float-ele img:nth-child(1), .product-cook-oil .cook-oil-float-ele img:nth-child(2){
-    display: none;
-}
-.prod-leaf-sec::after{
-    left: 0;
-    bottom: -120px;
-}
-.product-cook-oil .cook-oil-sec-hd{
-    font-size: 20px;
-}
-.product-banner .banner-left img{
-    width: 270px;
-    margin-top: 40px;
-}
-.privacy-banner{
-    padding: 100px 0 50px;
-}
-.health-section-wcv, .quality-section, .nrt-sec, .net-sec {
-    padding: 50px 0;
-}
-.quality-section .row{
-    flex-direction: column-reverse;
-}
-.home-prod-sldr.owl-carousel .owl-dots.disabled{
-    display: none;
-}
-.product-section-1 .submit-button{
-    margin-top: 0;
-}
-    
-/* Career Detail Page */
-.job-desc-sec .job-expe h2{
-    font-size: 26px;
-    margin-bottom: 20px;
-}
+    .product-banner{
+        padding: 100px 0 0;
+    }
+    .product-banner .row{
+        flex-direction: column-reverse;
+    }
+    .prod-leaf-sec::before{
+        top: -65px;
+    }
+    .product-cook-oil .cook-fall-leaf > div:nth-child(3), .product-cook-oil .cook-oil-float-ele img:nth-child(1), .product-cook-oil .cook-oil-float-ele img:nth-child(2){
+        display: none;
+    }
+    .prod-leaf-sec::after{
+        left: 0;
+        bottom: -120px;
+    }
+    .product-cook-oil .cook-oil-sec-hd{
+        font-size: 20px;
+    }
+    .product-banner .banner-left img{
+        width: 270px;
+        margin-top: 40px;
+    }
+    .privacy-banner{
+        padding: 100px 0 50px;
+    }
+    .health-section-wcv, .quality-section, .nrt-sec, .net-sec {
+        padding: 50px 0;
+    }
+    .quality-section .row{
+        flex-direction: column-reverse;
+    }
+    .home-prod-sldr.owl-carousel .owl-dots.disabled{
+        display: none;
+    }
+    .product-section-1 .submit-button{
+        margin-top: 0;
+    }
+        
+    /* Career Detail Page */
+    .job-desc-sec .job-expe h2{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .job-opening .job-card .role-small-details{
+        justify-content: space-between;
+        gap: 0;
+    }
 
     /* contact-page css  */
     .cb-content{
@@ -1051,9 +1055,12 @@
         max-width: 170px;
         margin-top: 30px;
     }
-    .form-part {
-        max-width: 400px;
-        margin: 0 auto 50px;
+    .contact-map .form-part {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact-details .row>div + div{
+       margin-top: 30px;
     }
     .nrt-section::before {
         right: -68px;
@@ -1280,14 +1287,6 @@
     .floating-ele.right img:nth-child(5) {
         width: 50px;
     }
-
-    /* career css  */
-    .job-opening .job-card .role-small-details{
-        display: inline-block;
-        /* flex-direction: column;
-        align-items: center; */
-        /* gap: 25px; */
-    }
 }
 @media screen and (max-width:479px) {
     .pro-sld-main a {
@@ -1349,6 +1348,9 @@
     }
     .h1-title span{
         font-size: 35px;
+    }
+    .job-opening .job-card .role-small-details{
+        display: inline-block;
     }
 }
 @media screen and (max-width:359px) {

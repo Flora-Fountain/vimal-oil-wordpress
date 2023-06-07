@@ -7,10 +7,10 @@ echo get_header();
 ?>
     
     <!--module-2 hero banner html code  -->
-    <div class="common-banner default-section blue-bg-banner">
+    <div class="default-section common-banner blue-bg-banner vimal-career">
         <div class="cb-content">
             <div class="h1-title">
-                <h1 class="text-noeffect">Work With Vimal</h1>
+                <h1 class="text-noeffect">Work With <br/>Vimal</h1>
             </div>
             <div class="banner-para  text-center">
                 <p class="text-noeffect">
@@ -26,7 +26,7 @@ echo get_header();
     </div>
 
     <!-- module-3 grow with vimal -->
-    <div class="grow-section default-section">
+    <div class="default-section grow-section">
         <div class="container ">
             <div class="h2-white  text-center">
                 <h2 class="text-noeffect">
@@ -239,7 +239,7 @@ echo get_header();
     </div>
 
     <!-- module-5 form section  -->
-    <div class="form-section-career default-section footer-before">
+    <div class="default-section form-section-career footer-before">
         <div class="container">
             <div class="career-form">
                 <div class="h2-white">
