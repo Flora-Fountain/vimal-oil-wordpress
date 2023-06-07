@@ -21,12 +21,11 @@ echo get_header();
 						<div class="h1-title">
 							<h1 class="text-noeffect">Lorem ipsum</h1>
 						</div>
-					</div>
-					<div class="head-para">
-						<p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit</p>
-					</div>
-					<div class="submit-button text-center">
-						<a href="#" class="btn-effect">Know More</a>
+						<div class="submit-button text-center">
+                            <a href="#quiz-question" class="btn-effect" type="submit">
+                                Start Quiz
+                            </a>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -41,9 +40,9 @@ echo get_header();
 				<div>
 					<div class="panel panel-default">
 						<div  class="panel-body">   
-                            <div class="text-center">
+                            <!-- <div class="text-center">
 							    <button id="start" class="btn-effect ">Start Quiz</button>
-                            </div>
+                            </div> -->
 							<div id="content">
 								<div class="panel-footer">
                                     <button class="no-btn" id="back" disabled>Back</button>
@@ -58,10 +57,6 @@ echo get_header();
                                     <div class="text-center mt-5">
 									    <button class="btn-effect" id="next">Next</button>
                                     </div>
-									<h3><p id="score"></p></h3>
-									<p id="result"><b>Congratulations! You made it!</b></p>
-									<p id="resultbad"><b>Sorry, you need to score 70 points to pass</b></p>
-									<button id="startagain">Start Again</button>
 								</div>
 							</div>
 						</div>

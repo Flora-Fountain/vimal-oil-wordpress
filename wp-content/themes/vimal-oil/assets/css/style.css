@@ -1561,7 +1561,7 @@ a:focus{
 	padding: 0;
 	border: none;
 	border-radius: 10px;
-	box-shadow: 0px 0px 60px 4px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
 	max-width: 890px;
 	margin: 0 auto;
 }
@@ -1847,6 +1847,10 @@ a:focus{
 	box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 /* career page css code */
+
+.grow-section {
+	padding: 50px 0;
+}
 .common-banner{
 	background-color: #0c56a1;
 	position: relative;
@@ -1860,8 +1864,6 @@ a:focus{
 	text-align: center;
 }
 .common-banner .banner-para{
-	font-size: 18px;
-	font-style: 'Raleway', sans-serif;
 	color: #fff;
 	margin-top: 20px;
 }
@@ -1870,9 +1872,6 @@ a:focus{
     color: #0c56a1;
 	border-radius: 10px;
 	margin-top: 20px;
-}
-.grow-section .grow-para{
-	padding: 10px 60px;
 }
 .current-opening{
 	background-color: #0c56a1;
@@ -1893,7 +1892,7 @@ a:focus{
 .job-opening .job-card .role-small-details{
 	display: flex;
 	align-items: center;
-	gap: 25px;
+	gap: 20px;
 }
 .job-opening .job-card .role-small-details p{
 	margin: 0;
@@ -1922,6 +1921,16 @@ a:focus{
 	font-weight: 500;
 	color: #0c56a1;
 }
+.career-form .form-group{
+	margin: 10px 0;
+}
+.form-section-career{
+	padding: 50px 0 100px;
+}
+.blue-bg .time p, .blue-bg .department p{
+	color: #212529;
+}
+
 
 /* Career Job Description */
 
@@ -1980,29 +1989,38 @@ a:focus{
 	width: 100%;
 }
 .contact-details{
-	padding: 50px 0;
+	padding: 0 0 100px;
 }
 .contact-details .contact-icon span {
-	background-color: #0c56a1;
-	display: inline-flex;
-	margin: auto auto;
-	padding: 5px 5px;
-	border-radius: 10px;
+    background-color: #0c56a1;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    width: 50px;
+    height: 50px;
 }
-.contact-details .contact-icon span img{
+.contact-details .contact-icon span svg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	width: 40px;
 	height: 40px;
 }
-.contact-details .para-title p{
-	font-size: 20px;
-	font-weight: 400;
+.contact-details .para-title p, .contact-details .info a{
+	font-size: 24px;
+	font-weight: 500;
+	color: #000;
 }
-.contact-details .contact-para p{
-	font-size: 18px;
-	padding-bottom: 0px;
+.contact-details .h3-title{
+	font-weight: 500;
+	font-size: 26px;
+	color: #0c56a1;
+	text-align: center;
+	margin-bottom: 50px;
 }
 .contact-details .contact{
-	margin: 8px 0;
+	margin: 10px 0;
 }
 
 .contact-map .form-part .net-form  .form .form-group {
@@ -2689,7 +2707,7 @@ a:focus{
 .quiz-cel .oil-cans{
 	position: absolute;
 	top: 12%;
-	left: 28%;
+	left: 26%;
 	z-index: 11111;
 	width: 50%;
 	text-align: center;
