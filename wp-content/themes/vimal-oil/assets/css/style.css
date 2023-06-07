@@ -18,6 +18,7 @@ body{
 }
 h1,h2,h3,h4,h5,h6,.btn-effect{
     font-family: 'Quicksand', sans-serif;
+	margin-bottom: 0;
 }
 ol,ul{
     line-height:1.4;
@@ -326,6 +327,7 @@ a:focus{
 }
 .hash-sec {
 	margin: 30px 0;
+	text-align: center;
 }
 .hash-sec span {
 	color: #fff;
@@ -2001,11 +2003,11 @@ a:focus{
 .privacy-banner{
 	background-color: #0c56a1;
 }
-.privacy-banner .content-part .h1-title{
+/* .privacy-banner .content-part .h1-title{
 	color: #FFDD00;
 	font-weight: 600;
 	font-size: 55px;	
-}
+} */
 .privacy-banner .image-part img{
 	width: 100%;
 } 
@@ -2299,10 +2301,6 @@ a:focus{
 
 
 /* why choose vimal css  */
-.health-section-wcv{
-	height: 100vh;
-}
-
 .health-section-wcv .container{
 	margin: auto;
 }
@@ -2561,4 +2559,81 @@ a:focus{
 	top: 50%;
 	transform: translateY(-50%);
 	pointer-events: none;
+}
+
+/* Product Landing */
+.product-banner {
+	padding: 140px 0 0;
+}
+.product-banner .btn-effect{
+	background: #fff;
+	color: #0c54a0;
+}
+.product-banner .banner-left img{
+	display: block;
+	margin: 0 auto;
+}
+.product-cook-oil{
+	padding: 50px 0 100px 0;
+}
+.product-cook-oil .cook-oil-sec-hd{
+	font-size: 36px;
+	color: #0C54A0;
+	font-weight: 500;
+}
+.prod-leaf-sec::before{
+	top: -120px;
+}
+.prod-leaf-sec::after{
+	bottom: -110px;
+}
+.product-cook-oil .cook-oil-float-ele img:nth-child(1){
+	bottom: -150px;
+    left: 150px;
+	top: auto;
+}
+.product-cook-oil .cook-oil-float-ele img:nth-child(2) {
+    bottom: -100px;
+}
+.product-cook-oil .cook-fall-leaf > div:nth-child(3){
+	animation: up-down 6s infinite linear;
+	bottom: -50px;
+}
+.product-section .prod-item .pro-sld-main{
+	padding: 50px 0;
+}
+.blue-bg  .h2-white{
+	color: #fff;
+	margin-bottom: 20px;
+}
+.product-section .h3-title{
+	font-size: 36px;
+	color: #fff;
+	text-align: center;
+	margin-top: 30px;
+	font-weight: 500;
+}
+.buy-btn{
+	text-align: center;
+	margin-top: 40px;
+}
+.buy-btn a{
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+	color: #0C54A0;
+	font-weight: 500;
+}
+.buy-btn a+a{
+	margin-left: 10px;
+}
+.buy-btn a span{
+	vertical-align: middle;
+}
+.buy-btn a img{
+	width: 35px;
+	margin-right: 10px;
+}
+.product-section.blue-bg:before {
+    display: block;
 }

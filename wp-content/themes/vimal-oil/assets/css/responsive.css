@@ -856,7 +856,7 @@
         bottom: 4px;
     }
     .health-section.default-section {
-        padding: 70px 0;
+        padding: 50px 0;
     }
     .sub-text p {
         font-size: 20px;
@@ -953,6 +953,32 @@
     .reci-sec .row >div:nth-child(-n + 1) {
         margin-top: 0px;
     }
+
+/* Product Landing */
+
+.product-banner{
+    padding: 100px 0 0;
+}
+.product-banner .row{
+    flex-direction: column-reverse;
+}
+.prod-leaf-sec::before{
+    top: -65px;
+}
+.product-cook-oil .cook-fall-leaf > div:nth-child(3), .product-cook-oil .cook-oil-float-ele img:nth-child(1), .product-cook-oil .cook-oil-float-ele img:nth-child(2){
+    display: none;
+}
+.prod-leaf-sec::after{
+    left: 0;
+    bottom: -120px;
+}
+.product-cook-oil .cook-oil-sec-hd{
+    font-size: 20px;
+}
+.product-banner .banner-left img{
+    width: 270px;
+    margin-top: 40px;
+}
     
 /* Career Detail Page */
 .job-desc-sec .job-expe h2{

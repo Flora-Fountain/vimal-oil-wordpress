@@ -13,7 +13,7 @@ echo get_header();
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="content-part">
                         <div class="h1-title">
-                            <h1>Understanding our privacy practices</h1>
+                            <h1 class="text-noeffect">Understanding our privacy practices</h1>
                         </div>
                     </div>
                 </div>
