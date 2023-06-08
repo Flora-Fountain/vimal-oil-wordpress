@@ -27,8 +27,12 @@ echo get_header();
 
     <div class="section-combined">
         <div class="nrt-ani">
-
-            <div class="oil-swirl-mask"></div>
+            <div class="oil-spread">
+                <div class="oil-swirl-mask"></div>
+                <div class="oil-swirl">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image" />
+                </div>
+            </div>
             <!-- module-3 what is nrt -->
             <div class="default-section nrt-content">
                 <div class="container">
@@ -173,9 +177,6 @@ echo get_header();
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="oil-swirl">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image" />
         </div>
     </div>
 

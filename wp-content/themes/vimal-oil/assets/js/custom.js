@@ -1,69 +1,69 @@
 
-    $(document).ready(function(){
-        $('.banner-slider').owlCarousel({
-            loop: true,
-            autoplay: true,
-            responsiveClass: true,
-            dots: true,
-            margin: 15,
-            autoplayTimeout: 50000,
-            smartSpeed: 400,
-            items:1,
-            //animateOut: 'slideOutDown',
-            //animateIn: 'flipInX',
-            responsive: {}
-        });
-        $('.home-prod-sldr').owlCarousel({
-            loop: false,
-            autoplay: false,
-            responsiveClass: true,
-            nav: false,
-            margin: 30,    
-            autoplayTimeout: 4000,
-            smartSpeed: 400,
-            center: false,
-            responsive: {
-                0: {
-                    items: 2,
-                    margin: 10, 
-                    loop: true,
-                    autoplay: true,
-                    center: true,
-                    autoplayTimeout: 4000,
-                    smartSpeed: 400,
-                },
-                480: {
-                    items: 3,
-                    margin: 10, 
-                    loop: true,
-                    autoplay: true,
-                    center: true,
-                    autoplayTimeout: 4000,
-                    smartSpeed: 400,
-                },
-                575: {
-                    items: 3,
-                    margin: 10, 
-                    loop: true,
-                    autoplay: true,
-                    center: true,
-                    autoplayTimeout: 4000,
-                    smartSpeed: 400,
-                },
-                991: {
-                    items: 4,
-                    loop: true,
-                    autoplay: true,
-                    center: true,
-                    autoplayTimeout: 4000,
-                    smartSpeed: 400,
-                },
-                1200: {
-                    items: 5
-                },
-            }
-        });
+$(document).ready(function(){
+    $('.banner-slider').owlCarousel({
+        loop: true,
+        autoplay: true,
+        responsiveClass: true,
+        dots: true,
+        margin: 15,
+        autoplayTimeout: 50000,
+        smartSpeed: 400,
+        items:1,
+        //animateOut: 'slideOutDown',
+        //animateIn: 'flipInX',
+        responsive: {}
     });
+    $('.home-prod-sldr').owlCarousel({
+        loop: false,
+        autoplay: false,
+        responsiveClass: true,
+        nav: false,
+        margin: 30,    
+        autoplayTimeout: 4000,
+        smartSpeed: 400,
+        center: false,
+        responsive: {
+            0: {
+                items: 2,
+                margin: 10, 
+                loop: true,
+                autoplay: true,
+                center: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            480: {
+                items: 3,
+                margin: 10, 
+                loop: true,
+                autoplay: true,
+                center: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            575: {
+                items: 3,
+                margin: 10, 
+                loop: true,
+                autoplay: true,
+                center: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            991: {
+                items: 4,
+                loop: true,
+                autoplay: true,
+                center: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            1200: {
+                items: 5
+            },
+        }
+    });
+});
 $(document).ready(function(){
     $('.banner-slider').owlCarousel({
         loop: true,
@@ -234,6 +234,7 @@ $(document).ready(function(){
     }), $(".close-btn").on("click", function(e) {
             $(".menu-float").removeClass("m-open"), e.preventDefault()
     })
+    
 
     // Instagram slider
     function detect_active() {
