@@ -130,7 +130,8 @@ $(document).ready(function(){
             },
         }
         });
-        /* Video Slider */
+
+    /* Video Slider */
     $('.pro-vdo-sld').owlCarousel({
             stagePadding: 200,
             loop:true,
@@ -171,7 +172,8 @@ $(document).ready(function(){
             }
             
         })
-        // cook healthy slider
+
+    // cook healthy slider
      $('.cook-sldr').owlCarousel({
             loop: false,
             autoplay: false,
@@ -233,46 +235,46 @@ $(document).ready(function(){
             $(".menu-float").removeClass("m-open"), e.preventDefault()
     })
 
-        // Instagram slider
-        function detect_active() {
-            // get active
-            var get_active = $("#dp-slider .dp_item:last-child").data("class");
-            $(".bg-item").removeClass("active");
-            $(".bg-item[data-item=" + get_active + "]").addClass("active");
-        }
-        $("#dp-next").click(function () {
-            var total = $(".dp_item").length;
-            $("#dp-slider .dp_item:first-child").hide().appendTo("#dp-slider").fadeIn();
-            $.each($(".dp_item"), function (index, dp_item) {
-            $(dp_item).attr("data-position", index + 1);
-            });
-            detect_active();
+    // Instagram slider
+    function detect_active() {
+        // get active
+        var get_active = $("#dp-slider .dp_item:last-child").data("class");
+        $(".bg-item").removeClass("active");
+        $(".bg-item[data-item=" + get_active + "]").addClass("active");
+    }
+    $("#dp-next").click(function () {
+        var total = $(".dp_item").length;
+        $("#dp-slider .dp_item:first-child").hide().appendTo("#dp-slider").fadeIn();
+        $.each($(".dp_item"), function (index, dp_item) {
+        $(dp_item).attr("data-position", index + 1);
         });
-        
-        $("#dp-prev").click(function () {
-            var total = $(".dp_item").length;
-            $("#dp-slider .dp_item:last-child").hide().prependTo("#dp-slider").fadeIn();
-            $.each($(".dp_item"), function (index, dp_item) {
-            $(dp_item).attr("data-position", index + 1);
-            });
-        
-            detect_active();
-        });
-        
-        $("body").on("click", "#dp-slider .dp_item:not(:last-child)", function () {
-            var get_slide = $(this).attr("data-class");
-            console.log(get_slide);
-            $("#dp-slider .dp_item[data-class=" + get_slide + "]")
-            .hide()
-            .appendTo("#dp-slider")
-            .fadeIn();
-            $.each($(".dp_item"), function (index, dp_item) {
-            $(dp_item).attr("data-position", index + 1);
-            });
-        
-            detect_active();
-        });
+        detect_active();
     });
+    
+    $("#dp-prev").click(function () {
+        var total = $(".dp_item").length;
+        $("#dp-slider .dp_item:last-child").hide().prependTo("#dp-slider").fadeIn();
+        $.each($(".dp_item"), function (index, dp_item) {
+        $(dp_item).attr("data-position", index + 1);
+        });
+    
+        detect_active();
+    });
+    
+    $("body").on("click", "#dp-slider .dp_item:not(:last-child)", function () {
+        var get_slide = $(this).attr("data-class");
+        console.log(get_slide);
+        $("#dp-slider .dp_item[data-class=" + get_slide + "]")
+        .hide()
+        .appendTo("#dp-slider")
+        .fadeIn();
+        $.each($(".dp_item"), function (index, dp_item) {
+        $(dp_item).attr("data-position", index + 1);
+        });
+    
+        detect_active();
+    });
+});
     // Sticky Header JS Starts
     // if ($(window).width() > 0) {
     //     $(window).scroll(function() {
@@ -284,6 +286,8 @@ $(document).ready(function(){
     //         }
     //     });
     // }
+
+
     $(document).ready(function(){
         // Video Play Button
         if ($(".wl-modal-btn").length > 0) {
@@ -314,6 +318,8 @@ $(document).ready(function(){
             }
         });
         }
+
+        
         // Video Popup
         if ($("#videoPlaypopup").length > 0) {
             $("#videoPlaypopup").each(function() {
