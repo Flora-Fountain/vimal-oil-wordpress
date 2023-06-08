@@ -990,9 +990,6 @@
     .product-banner{
         padding: 100px 0 0;
     }
-    .product-banner .row{
-        flex-direction: column-reverse;
-    }
     .prod-leaf-sec::before{
         top: -65px;
     }
@@ -1035,13 +1032,8 @@
         justify-content: space-between;
         gap: 0;
     }
-
-
     .product-banner{
         padding: 100px 0 0;
-    }
-    .product-banner .row{
-        flex-direction: column-reverse;
     }
     .prod-leaf-sec::before{
         top: -65px;
@@ -1066,8 +1058,37 @@
     .health-section-wcv, .quality-section, .nrt-sec, .net-sec {
         padding: 50px 0;
     }
-    .quality-section .row{
-        flex-direction: column-reverse;
+    .home-prod-sldr.owl-carousel .owl-dots.disabled{
+        display: none;
+    }
+    .product-section-1 .submit-button{
+        margin-top: 0;
+    }
+    .product-banner{
+        padding: 100px 0 0;
+    }
+    .prod-leaf-sec::before{
+        top: -65px;
+    }
+    .product-cook-oil .cook-fall-leaf > div:nth-child(3), .product-cook-oil .cook-oil-float-ele img:nth-child(1), .product-cook-oil .cook-oil-float-ele img:nth-child(2){
+        display: none;
+    }
+    .prod-leaf-sec::after{
+        left: -60px;
+        bottom: -100px;
+    }
+    .product-cook-oil .cook-oil-sec-hd{
+        font-size: 20px;
+    }
+    .product-banner .banner-left img{
+        width: 200px;
+        margin-top: 20px;
+    }
+    .privacy-banner{
+        padding: 100px 0 50px;
+    }
+    .health-section-wcv, .quality-section, .nrt-sec, .net-sec {
+        padding: 50px 0;
     }
     .home-prod-sldr.owl-carousel .owl-dots.disabled{
         display: none;
@@ -1076,52 +1097,12 @@
         margin-top: 0;
     }
 
-.product-banner{
-    padding: 100px 0 0;
-}
-.product-banner .row{
-    flex-direction: column-reverse;
-}
-.prod-leaf-sec::before{
-    top: -65px;
-}
-.product-cook-oil .cook-fall-leaf > div:nth-child(3), .product-cook-oil .cook-oil-float-ele img:nth-child(1), .product-cook-oil .cook-oil-float-ele img:nth-child(2){
-    display: none;
-}
-.prod-leaf-sec::after{
-    left: -60px;
-    bottom: -100px;
-}
-.product-cook-oil .cook-oil-sec-hd{
-    font-size: 20px;
-}
-.product-banner .banner-left img{
-    width: 200px;
-    margin-top: 20px;
-}
-.privacy-banner{
-    padding: 100px 0 50px;
-}
-.health-section-wcv, .quality-section, .nrt-sec, .net-sec {
-    padding: 50px 0;
-}
-.quality-section .row{
-    flex-direction: column-reverse;
-}
-.home-prod-sldr.owl-carousel .owl-dots.disabled{
-    display: none;
-}
-.product-section-1 .submit-button{
-    margin-top: 0;
-}
-
-    
-/* Career Detail Page */
-.job-desc-sec .job-expe h2{
-    font-size: 26px;
-    margin-bottom: 20px;
-}
- /* contact-page css  */
+    /* Career Detail Page */
+    .job-desc-sec .job-expe h2{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    /* contact-page css  */
     .cb-content{
         margin-top: 80px;
     }
@@ -1256,7 +1237,6 @@
         font-size: 18px;
     }
 
-
     /* career-page style  */
     .job-opening .job-card{
         display: inline-block;
@@ -1279,7 +1259,6 @@
     .image-part{
         padding: 30px;
     }
-
 
     /* branding page css  */
     .why-content{
@@ -1325,6 +1304,11 @@
     }
     .wl-video-modal .wl-modal-content .wl-modal-body iframe {
         min-height: 280px;
+    }
+
+    /* NRT Page */
+    .nrt-tempe .gen-sec > .row{
+        flex-direction: column-reverse;
     }
 
 
