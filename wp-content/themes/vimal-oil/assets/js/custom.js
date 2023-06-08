@@ -656,4 +656,3 @@ $(document).ready(function(){
         $(".oil-cans").addClass("aniactive");
       }, 250);
 });
-
