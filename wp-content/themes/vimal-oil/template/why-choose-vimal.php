@@ -53,7 +53,7 @@ echo get_header();
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="legacy-image image-part">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="A lagacy of trust & promice">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/trust-promise.jpg" alt="A lagacy of trust & promice">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">

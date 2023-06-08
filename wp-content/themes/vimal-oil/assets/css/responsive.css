@@ -420,7 +420,7 @@
         font-size: 35px;
     }
     .home-prod-sldr.owl-carousel {
-        padding: 0;
+        padding: 0
     }
     .pro-sld-main a {
         font-size: 20px;
@@ -651,7 +651,9 @@
     .nr-det ul li img {
         max-width: 100px;
     }
-
+    .image-part{
+        padding: 0;
+    }
     .loc-img img {
         width: 100%;
         max-width: 300px;
@@ -680,6 +682,9 @@
         width: 20px;
         height: 20px;
         left: 15px;
+    }
+    .home-prod-sldr.owl-carousel{
+        padding: 0 20px;
     }
 
 
@@ -943,6 +948,7 @@
     }
     .pro-sld-main a {
         font-size: 18px;
+        margin-top: 30px;
     }
     .jorney-main .nav-pills .nav-link {
         width: 33.33%;
@@ -990,9 +996,6 @@
     .product-banner{
         padding: 100px 0 0;
     }
-    .product-banner .row{
-        flex-direction: column-reverse;
-    }
     .prod-leaf-sec::before{
         top: -65px;
     }
@@ -1019,9 +1022,6 @@
     .quality-section .row{
         flex-direction: column-reverse;
     }
-    .home-prod-sldr.owl-carousel .owl-dots.disabled{
-        display: none;
-    }
     .product-section-1 .submit-button{
         margin-top: 0;
     }
@@ -1035,13 +1035,8 @@
         justify-content: space-between;
         gap: 0;
     }
-
-
     .product-banner{
         padding: 100px 0 0;
-    }
-    .product-banner .row{
-        flex-direction: column-reverse;
     }
     .prod-leaf-sec::before{
         top: -65px;
@@ -1066,62 +1061,49 @@
     .health-section-wcv, .quality-section, .nrt-sec, .net-sec {
         padding: 50px 0;
     }
-    .quality-section .row{
-        flex-direction: column-reverse;
-    }
     .home-prod-sldr.owl-carousel .owl-dots.disabled{
         display: none;
     }
     .product-section-1 .submit-button{
         margin-top: 0;
     }
+    .product-banner{
+        padding: 100px 0 0;
+    }
+    .prod-leaf-sec::before{
+        top: -65px;
+    }
+    .product-cook-oil .cook-fall-leaf > div:nth-child(3), .product-cook-oil .cook-oil-float-ele img:nth-child(1), .product-cook-oil .cook-oil-float-ele img:nth-child(2){
+        display: none;
+    }
+    .prod-leaf-sec::after{
+        left: -60px;
+        bottom: -100px;
+    }
+    .product-cook-oil .cook-oil-sec-hd{
+        font-size: 20px;
+    }
+    .product-banner .banner-left img{
+        width: 200px;
+        margin-top: 20px;
+    }
+    .privacy-banner{
+        padding: 100px 0 50px;
+    }
+    .health-section-wcv, .quality-section, .nrt-sec, .net-sec {
+        padding: 50px 0;
+    }
+ 
+    .product-section-1 .submit-button{
+        margin-top: 0;
+    }
 
-.product-banner{
-    padding: 100px 0 0;
-}
-.product-banner .row{
-    flex-direction: column-reverse;
-}
-.prod-leaf-sec::before{
-    top: -65px;
-}
-.product-cook-oil .cook-fall-leaf > div:nth-child(3), .product-cook-oil .cook-oil-float-ele img:nth-child(1), .product-cook-oil .cook-oil-float-ele img:nth-child(2){
-    display: none;
-}
-.prod-leaf-sec::after{
-    left: -60px;
-    bottom: -100px;
-}
-.product-cook-oil .cook-oil-sec-hd{
-    font-size: 20px;
-}
-.product-banner .banner-left img{
-    width: 200px;
-    margin-top: 20px;
-}
-.privacy-banner{
-    padding: 100px 0 50px;
-}
-.health-section-wcv, .quality-section, .nrt-sec, .net-sec {
-    padding: 50px 0;
-}
-.quality-section .row{
-    flex-direction: column-reverse;
-}
-.home-prod-sldr.owl-carousel .owl-dots.disabled{
-    display: none;
-}
-.product-section-1 .submit-button{
-    margin-top: 0;
-}
-
-    
-/* Career Detail Page */
-.job-desc-sec .job-expe h2{
-    font-size: 26px;
-    margin-bottom: 20px;
-}
- /* contact-page css  */
+    /* Career Detail Page */
+    .job-desc-sec .job-expe h2{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    /* contact-page css  */
     .cb-content{
         margin-top: 80px;
     }
@@ -1256,7 +1238,6 @@
         font-size: 18px;
     }
 
-
     /* career-page style  */
     .job-opening .job-card{
         display: inline-block;
@@ -1279,7 +1260,6 @@
     .image-part{
         padding: 30px;
     }
-
 
     /* branding page css  */
     .why-content{
@@ -1327,6 +1307,11 @@
         min-height: 280px;
     }
 
+    /* NRT Page */
+    .nrt-tempe .gen-sec > .row{
+        flex-direction: column-reverse;
+    }
+
 
 }
 @media screen and (max-width:575px) {
@@ -1336,6 +1321,9 @@
     .pro-sld-main a {
         font-size: 15px;
         max-width: 140px;
+    }
+    .home-prod-sldr.owl-carousel{
+        padding: 0 10px;
     }
     .nrt-logo {
         max-width: 162px;
@@ -1421,12 +1409,18 @@
         font-size: 16px;
         max-width: 140px;
     }
+    .hero-banner .banner-right .h1-title, .inner-banner .banner-right .h1-title{
+        font-size: 46px;
+    }
     .nrt-ills::before, .nrt-ills::after {
         height: calc(100% - 316px);
         top: 215px;
     }
     .white-sec::before {
         height: 188px;
+    }
+    .home-prod-sldr.owl-carousel{
+        padding: 0;
     }
     .nrt-logo {
         margin: 390px auto 0;
