@@ -420,7 +420,7 @@
         font-size: 35px;
     }
     .home-prod-sldr.owl-carousel {
-        padding: 0;
+        padding: 0
     }
     .pro-sld-main a {
         font-size: 20px;
@@ -651,7 +651,9 @@
     .nr-det ul li img {
         max-width: 100px;
     }
-
+    .image-part{
+        padding: 0;
+    }
     .loc-img img {
         width: 100%;
         max-width: 300px;
@@ -680,6 +682,9 @@
         width: 20px;
         height: 20px;
         left: 15px;
+    }
+    .home-prod-sldr.owl-carousel{
+        padding: 0 20px;
     }
 
 
@@ -943,6 +948,7 @@
     }
     .pro-sld-main a {
         font-size: 18px;
+        margin-top: 30px;
     }
     .jorney-main .nav-pills .nav-link {
         width: 33.33%;
@@ -1016,9 +1022,6 @@
     .quality-section .row{
         flex-direction: column-reverse;
     }
-    .home-prod-sldr.owl-carousel .owl-dots.disabled{
-        display: none;
-    }
     .product-section-1 .submit-button{
         margin-top: 0;
     }
@@ -1090,9 +1093,7 @@
     .health-section-wcv, .quality-section, .nrt-sec, .net-sec {
         padding: 50px 0;
     }
-    .home-prod-sldr.owl-carousel .owl-dots.disabled{
-        display: none;
-    }
+ 
     .product-section-1 .submit-button{
         margin-top: 0;
     }
@@ -1321,6 +1322,9 @@
         font-size: 15px;
         max-width: 140px;
     }
+    .home-prod-sldr.owl-carousel{
+        padding: 0 10px;
+    }
     .nrt-logo {
         max-width: 162px;
         margin: 244px auto 0;
@@ -1405,12 +1409,18 @@
         font-size: 16px;
         max-width: 140px;
     }
+    .hero-banner .banner-right .h1-title, .inner-banner .banner-right .h1-title{
+        font-size: 46px;
+    }
     .nrt-ills::before, .nrt-ills::after {
         height: calc(100% - 316px);
         top: 215px;
     }
     .white-sec::before {
         height: 188px;
+    }
+    .home-prod-sldr.owl-carousel{
+        padding: 0;
     }
     .nrt-logo {
         margin: 390px auto 0;
