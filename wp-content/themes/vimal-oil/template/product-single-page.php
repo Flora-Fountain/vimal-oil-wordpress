@@ -91,7 +91,7 @@ echo get_header();
         <div class="container">
             <div class="row align-aligns-center justify-content-center">
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="h2-title">
+                    <div class="h2-white">
                         <h2 class="text-noeffect">
                             Tikha Kachi Ghani Musturd Oil
                         </h2>
@@ -100,11 +100,64 @@ echo get_header();
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloremque maxime sapiente quos provident ipsa quae rerum architecto molestiae corrupti explicabo amet non fugiat sequi et, nisi voluptate odit natus!</p>
                     </div>
                     <div class="oil-size">
-
+                        <div class="h3-title">
+                            <h3 class="text-noeffect">
+                                Size available
+                            </h3>
+                        </div>
+                        <div class="size-icon">
+                            <div class="size">
+                                <span>1L</span>
+                            </div>
+                            <div class="size">
+                                <span>5L</span>
+                            </div>
+                            <div class="size">
+                                <span>15L</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-button">
+                        <div class="h3-title">
+                            <h3 class="text-noeffect">
+                                Buy now on
+                            </h3>
+                        </div>
+                        <div class="amazon-btn">
+                            <a href="#" class="shop-btn">
+                                <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon-icon.png" alt="amazon icon"></span>
+                                Amazon
+                            </a>
+                        </div>
+                        <div class="amazon-btn">
+                            <a href="#" class="shop-btn">
+                                <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/jiomart-icon.png" alt="jio mart"></span>
+                                Amazon
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
-
+                    <div class="product-benefits">
+                        <div class="benefits-faqs">
+                            <button class="accordion">
+                                <span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cooking-pen.png" alt="">
+                                </span>
+                                Better For Cooking
+                            </button>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus soluta omnis nostrum excepturi! Eos minima magni temporibus adipisci, dolorum inventore, earum, laborum eum sapiente voluptas iure quod quos molestiae!</p>
+                        </div>
+                        <div class="benefits-faqs">
+                            <button class="accordion">
+                                <span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart-benefits.png" alt="Healthy Heart">
+                                </span>
+                                Better For Cooking
+                            </button>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus soluta omnis nostrum excepturi! Eos minima magni temporibus adipisci, dolorum inventore, earum, laborum eum sapiente voluptas iure quod quos molestiae!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
