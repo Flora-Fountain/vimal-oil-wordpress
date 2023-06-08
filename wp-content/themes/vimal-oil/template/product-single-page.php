@@ -89,7 +89,7 @@ echo get_header();
     <!-- module-3 oil details -->
     <div class="default-section oil-details">
         <div class="container">
-            <div class="row align-aligns-center justify-content-center">
+            <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="h2-white">
                         <h2 class="text-noeffect">
