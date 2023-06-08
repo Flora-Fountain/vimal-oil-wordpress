@@ -269,7 +269,7 @@ echo get_header();
                 <div class="h2-blue">
                     <h2 class="text-noeffect">#ChangeForHealth</h2>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-heart.png" alt="" />
                     </div>
