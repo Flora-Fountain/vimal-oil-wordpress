@@ -18,7 +18,7 @@ echo get_header();
                             </div>
                         </div>
                         <div class="head-para">
-                            <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit</p>
+                            <p class="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit</p>
                         </div>
                         <div class="submit-button text-center">
                             <a href="#" class="btn-effect">Let's Connect</a>

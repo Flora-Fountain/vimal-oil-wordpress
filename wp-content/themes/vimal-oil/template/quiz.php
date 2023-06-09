@@ -36,10 +36,10 @@ echo get_header();
 <!--module-2 hero banner html code  -->
 <div class="default-section quiz-sec footer-before" id="quiz-question">
     <div class="container">
-			<div id="div1">
-				<div>
-					<div class="panel panel-default">
-						<div  class="panel-body">   
+		<div id="div1">
+			<div>
+				<div class="panel panel-default">
+					<div  class="panel-body">   
                             <!-- <div class="text-center">
 							    <button id="start" class="btn-effect ">Start Quiz</button>
                             </div> -->
@@ -60,10 +60,9 @@ echo get_header();
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
 			</div>
-		
+		</div>
 	</div>
 </div>
     
