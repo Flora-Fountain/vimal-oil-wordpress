@@ -171,18 +171,32 @@ echo get_header();
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
-                 
                 </div>
             </div>
         </div>
     </div>
 
     <!-- module-4 oil benefits section  -->
-    <div class="product-section default-section">
-        oil benefits
+    <div class="oil-benefits-sec default-section blue-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="benefits-part">
+                        <div class="h2-blue">
+                            <h2 class="text-noeffect">
+                                What is Kachi Ghani Mustard oil?
+                            </h2>
+                        </div>
+                        <div class="b-para">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque accusamus in nam consectetur commodi suscipit odio totam maiores voluptatibus facilis cupiditate culpa maxime, obcaecati quod nemo sunt? Voluptatibus, excepturi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12"></div>
+            </div>
+        </div>
     </div>
 
     <!-- module-5 faq section  -->
