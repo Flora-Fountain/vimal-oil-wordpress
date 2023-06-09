@@ -2852,7 +2852,7 @@ a:focus{
 	box-shadow: none;
 }
 .product-accor .accordion .accordion-button{
-	padding: 10px 20px 0;
+	padding: 10px 20px;
 	font-size: 26px;
 	outline: none;
 	box-shadow: none;
