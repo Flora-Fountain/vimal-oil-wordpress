@@ -636,9 +636,19 @@ $(document).ready(function(){
             $("#bar").width('80%');
             if (number > 4){
             $("#bar").width('100%');
+            window.location.replace("http://localhost/vimal-oil-wordpress/oil-calendar/")
             }
-            
         });
+
+        console.log(allQuestions[4]);
+
+        $("#next").on('click', function(){
+            if(number == allQuestions[4]){
+                window.location.replace("http://localhost/vimal-oil-wordpress/oil-calendar/")
+            }
+        })
+
+        if(allQuestions[4])
         
         console.log(allQuestions[4]);
 
@@ -675,3 +685,8 @@ $(document).ready(function(){
         $(".oil-cans").addClass("aniactive");
       }, 250);
 });
+
+
+
+
+

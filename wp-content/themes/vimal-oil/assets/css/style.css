@@ -2719,13 +2719,15 @@ a:focus{
 	width: 50%;
 	text-align: center;
 	transform: scale(0);
-	transition: 1s;
+	transition: 1s ;
+	opacity: 0;
 	z-index: -1111;
 }
 .quiz-cel .oil-cans.aniactive {
 	bottom: 45%;
 	transform: scale(1);
 	z-index: 1111;
+	opacity: 1;
 }
 
 .quiz-cel .oil-cans img{
@@ -3389,3 +3391,19 @@ a:focus{
 .menu-float .container-fluid {
 	height: 100%;
 }
+
+
+
+
+/* confeti  */
+#canvas {
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	pointer-events: auto;
+  }
+
