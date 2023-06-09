@@ -20,11 +20,8 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-<<<<<<< Updated upstream
-define( 'DB_NAME', 'vimal_oils' );
-=======
+
 define( 'DB_NAME', 'u649213455_vimal_oils' );
->>>>>>> Stashed changes
 
 /** Database username */
 define( 'DB_USER', 'u649213455_vimal_oils' );
