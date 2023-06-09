@@ -347,6 +347,14 @@
     .panel-footer #back {
         font-size: 20px;
     }
+
+    /* Single Product Banner */
+    .product-single-banner .banner-info{
+        padding: 0;
+    }
+    .product-single-banner .owl-dots{
+        margin-bottom: 10px;
+    }
 }
 @media screen and (max-width:1199px) {
     .header {
