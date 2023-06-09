@@ -9,107 +9,41 @@
         <div class="back-pattern">
             <div class="container-fluid">
                 <div class="banner-slider owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="banner-info">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="banner-right">
-                                        <div class="h1-title">
-                                            <h1 class="text-noeffect">Your Secret <span>to Health &amp; Happiness!</span></h1>
+                    <?php 
+                        if (have_rows('benner')) {
+                            while (have_rows('benner')) {
+                                the_row();?>
+                                <div class="item">
+                                    <div class="banner-info">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="banner-right">
+                                                    <div class="h1-title">
+                                                        <h1 class="text-noeffect"><?php the_sub_field('benner_title') ?> <span><?php the_sub_field('benner_sub_title');?></span></h1>
+                                                    </div>
+                                                </div>
+                                                <div class="hash-sec">
+                                                    <span><?php the_sub_field('benner_hash_section');?></span>
+                                                </div>
+                                                <div class="submit-button text-center">
+                                                    <a href="<?php the_sub_field('benner_button_url');?>" class="btn-effect"><?php echo the_sub_field('banner_buttuon_name'); ?></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="banner-left">
+                                                    <img src="<?php the_sub_field('banner_image'); ?>" alt="kiara-banner" />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="hash-sec">
-                                        <span>#ChangeForHeath</span>
-                                    </div>
-                                    <div class="submit-button text-center">
-                                        <button class="btn-effect" type="submit">Buy Now</button>
-                                    </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="banner-left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/privacy-policy.webp" alt="kiara-banner" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="banner-info">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="banner-right">
-                                        <div class="h1-title">
-                                            <h1 class="text-noeffect">Your Secret <span>to Health &amp; Happiness!</span></h1>
-                                        </div>
-                                    </div>
-                                    <div class="hash-sec">
-                                        <span>#ChangeForHeath</span>
-                                    </div>
-                                    <div class="submit-button text-center">
-                                        <button class="btn-effect" type="submit">Buy Now</button>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="banner-left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/privacy-policy.webp" alt="kiara-banner" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="banner-info">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="banner-right">
-                                        <div class="h1-title">
-                                            <h1 class="text-noeffect">Your Secret <span>to Health &amp; Happiness!</span></h1>
-                                        </div>
-                                    </div>
-                                    <div class="hash-sec">
-                                        <span>#ChangeForHeath</span>
-                                    </div>
-                                    <div class="submit-button text-center">
-                                        <button class="btn-effect" type="submit">Buy Now</button>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="banner-left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/privacy-policy.webp" alt="kiara-banner" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="banner-info">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="banner-right">
-                                        <div class="h1-title">
-                                            <h1 class="text-noeffect">Your Secret <span>to Health &amp; Happiness!</span></h1>
-                                        </div>
-                                    </div>
-                                    <div class="hash-sec">
-                                        <span>#ChangeForHeath</span>
-                                    </div>
-                                    <div class="submit-button text-center">
-                                        <button class="btn-effect" type="submit">Buy Now</button>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="banner-left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/privacy-policy.webp" alt="kiara-banner" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            <?php }
+                        }
+                    ?>
                 </div>
             </div> 
         </div>
     </div>
-
     <!-- module-3 health section -->
     <div class="health-section default-section">
         <div class="leaf-sec">
@@ -126,39 +60,29 @@
             </div>
             <div class="container">
                 <div class="h2-white">
-                    <h2 class="text-noeffect">All natural & nutrition retained!</h2>
+                    <h2 class="text-noeffect"><?php the_field('helth_section_title');    ?></h2>
                 </div>
                 <div class="sub-text">
-                    <p>Make the #ChangeForHealth with Vimal healthy cooking oils, 100% pure and natural with maximum nutrition retained!</p>
+                    <p><?php the_field('helth_section_description');?></p>
                 </div>
                 <div class="align-items-center">
                     <div class="owl">
                         <div class="pro-vdo-sld owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="video-sld">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/video-thumbnail.jpg" width="366" height="720"/>
-                                    <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="video-sld">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/video-thumbnail.jpg" width="366" height="720"/>
-                                    <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="video-sld">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/video-thumbnail.jpg" width="366" height="720"/>
-                                    <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
-                                    </button>
-                                </div>
-                            
-                            </div>
+                            <?php 
+                                if (have_rows('youtube_video')) {
+                                    while (have_rows('youtube_video')) {
+                                        the_row(); ?>
+                                            <div class="item">
+                                                <div class="video-sld">
+                                                    <img src="<?php echo the_sub_field('youtube_video_thumbnail_image'); ?>" width="366" height="720"/>
+                                                    <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                    <?php }
+                                }
+                            ?>
                         </div>
                     </div>
                     <div class="submit-button text-center">
@@ -170,7 +94,14 @@
             </div>
         </div>
     </div>
-
+    <?php 
+         $args = array(
+            'post_type' => 'product',
+            'status'    => 'publish'
+        );
+    
+        $products = wc_get_products( $args );
+    ?>
     <!-- module-4 product section  -->
     <div class="product-section default-section blue-bg no-bottom-des">
         <div class="container-fluid">
@@ -179,36 +110,19 @@
                     <h2 class="text-noeffect">Make Healthy Choice</h2>
                 </div>
                 <div class="home-prod-sldr owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="pro-sld-main light-blue">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-oil-slider.png" alt="vimal-cottonseed-oil" width="259" height="390"/>
-                            <a href="#">Refined Cottonseed Oil</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pro-sld-main red">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-kachi-ghani-oil-slider.png" alt="kachi-ghani-oil" width="259" height="390"/>
-                            <a href="#">Tikha Kachi Ghani Musterd Oil</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pro-sld-main ylw">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-gold-groundnut-oil-slider.png" alt="vimal-pure-gold-oil" width="259" height="390"/>
-                            <a href="#">Pure Gold Groundnut Oil</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pro-sld-main grn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahary-soyabean-oil-slider.png" alt="vimal-soyahart-oil" width="259" height="390"/>
-                            <a href="#">Soyahart Refined Soyabean Oil</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pro-sld-main red">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-sunhart-oil-slider.png" alt="vimal-sunhart-oil" width="259" height="390"/>
-                            <a href="#">Sunhart Refined Sunflower Oil</a>
-                        </div>
-                    </div>
+                    <?php 
+                        foreach ($products as $product) {
+                            $image = wp_get_attachment_image_src( get_post_thumbnail_id($product->get_id()));
+                            $color = get_field('product_background_color',$product->get_id());
+                            ?>
+                                <div class="item">
+                                    <div class="pro-sld-main <?php if($color == '#fbef4d'){echo "ylw";} ?>" style="background:<?php echo get_field('product_background_color',$product->get_id()); ?>">
+                                        <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
+                                        <a href="#"><?php echo $product->get_title(); ?></a>
+                                    </div>
+                                </div>        
+                        <?php }
+                    ?>
                 </div>
                 <div class="submit-button text-center">
                     <button class="btn-effect" type="submit">
@@ -262,14 +176,14 @@
                     <div class="nrt-top">
                         <div class="h2-blue">
                             <h2 class="text-noeffect">
-                                All natural & nutrition retained!
+                                <?php echo the_field('default_nrt_section_title');?>
                             </h2>
                         </div>
-                        <p class="text-center">A path-breaking innovation to preserve naturally-occurring nutrients in edible oils!</p>
+                        <p class="text-center"><?php echo the_field('default_nrt_section_discription');?></p>
                     </div>
                 </div>
                 <div class="nrt-logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/NRT-logo.png" alt="NRT-logo"/>
+                    <img src="<?php echo the_field('default_nrt_section_logo');?>" alt="NRT-logo"/>
                 </div>
             </div>
         </div>
@@ -291,17 +205,17 @@
             <div class="align-items-center">
                 <div class="nrt-bottom">
                     <div class="h2-white">
-                        <h2 class="text-noeffect">Why Vimal?</h2>
+                        <h2 class="text-noeffect"><?php echo the_field('nrt_section_title');?></h2>
                     </div>
                     <div class="animate-text">
-                        <span>NUTRIENT-RICH PURE & NATURAL ANTIOXIDANT-RICH</span>
+                        <span><?php echo the_field('nrt_section_sub_title'); ?></span>
                     </div>
-                    <p class="text-center">Vimal Healthy Oils gives you the golden promise of good health and happiness!</p>
+                    <p class="text-center"><?php echo the_field('nrt_section_discription');?></p>
                 </div>
                 <div class="submit-button text-center">
-                    <button class="btn-effect" type="submit">
-                       All Products
-                    </button>
+                    <a href="<?php echo the_field('nrt_section_page_link') ?>" class="btn-effect" type="submit">
+                       <?php echo the_field('ntr_section_button_name'); ?> 
+                    </a>
                 </div>
             </div>
         </div>
@@ -318,6 +232,14 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="tab-content" id="v-pills-tabContent">
+                                <?php 
+                                    // if (have_rows('main_jorney_section')) {
+                                    //     while (have_rows('main_jorney_section')) {
+                                    //         the_row();
+                                            
+                                    //     }
+                                    // }
+                                ?>
                                 <div class="tab-pane fade show active" id="v-pills-1993" role="tabpanel" aria-labelledby="v-pills-1993-tab" tabindex="0">
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
@@ -492,15 +414,14 @@
                     <div class="oil-quiz-right">
                         <div class="h2-title">
                             <h2 class="text-noeffect">
-                                My Healthy Oil Calendar
+                                <?php echo the_field('quiz_title'); ?>
                             </h2>
                         </div>
-                        <p>Helping you choose the right cooking oil 
-                            as per your taste, food habits and seasons!</p>
+                        <p><?php echo the_field('quiz_description') ?></p>
                         <div class="submit-button text-center">
-                            <button class="btn-effect" type="submit">
-                                Know More
-                            </button>
+                            <a href="<?php the_field('quiz_page_link') ?>" class="btn-effect">
+                                <?php echo the_field('quiz_button_name');?>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -574,7 +495,7 @@
     <div class="social-presence default-section blue-bg">
         <div class="container">
             <div class="h2-blue">
-                <h2 class="text-noeffect">Our Digital Presence</h2>
+                <h2 class="text-noeffect"><?php echo the_field('social_presence_title'); ?></h2>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-sm-12">
@@ -616,17 +537,17 @@
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="social-sec">
                         <div class="h3-ttl">
-                            <h3 class="text-noeffect">Follow Us</h3>
+                            <h3 class="text-noeffect"><?php echo the_field('social_section_title');?></h3>
                         </div>
-                        <p>Vimal Healthy Oils gives you the golden promise of good health and happiness!</p>
+                        <p><?php echo the_field('social_section_description');?></p>
                         <div class="socials">
                             <ul>
-                                <li><a href="#"><span>
+                                <li><a href="<?php echo the_field('facebook_share_icons_links');?>"><span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path d="M14,6h3a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H14A5,5,0,0,0,9,7v3H7a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1H9v7a1,1,0,0,0,1,1h2a1,1,0,0,0,1-1V14h2.22a1,1,0,0,0,1-.76l.5-2a1,1,0,0,0-1-1.24H13V7A1,1,0,0,1,14,6Z"></path>
                                     </svg>
                                 </span></a></li>
-                                <li><a href="#"><span>
+                                <li><a href="<?php echo the_field('instagram_share_icons_links');?>"><span>
                                     <svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                         <title>instagram</title>
                                         <path d="M25.805 7.996c0 0 0 0.001 0 0.001 0 0.994-0.806 1.799-1.799 1.799s-1.799-0.806-1.799-1.799c0-0.994 0.806-1.799 1.799-1.799v0c0.993 0.001 1.798 0.805 1.799 1.798v0zM16 20.999c-2.761 0-4.999-2.238-4.999-4.999s2.238-4.999 4.999-4.999c2.761 0 4.999 2.238 4.999 4.999v0c0 0 0 0.001 0 0.001 0 2.76-2.237 4.997-4.997 4.997-0 0-0.001 0-0.001 0h0zM16 8.3c0 0 0 0-0 0-4.253 0-7.7 3.448-7.7 7.7s3.448 7.7 7.7 7.7c4.253 0 7.7-3.448 7.7-7.7v0c0-0 0-0 0-0.001 0-4.252-3.447-7.7-7.7-7.7-0 0-0 0-0.001 0h0zM16 3.704c4.003 0 4.48 0.020 6.061 0.089 1.003 0.012 1.957 0.202 2.84 0.538l-0.057-0.019c1.314 0.512 2.334 1.532 2.835 2.812l0.012 0.034c0.316 0.826 0.504 1.781 0.516 2.778l0 0.005c0.071 1.582 0.087 2.057 0.087 6.061s-0.019 4.48-0.092 6.061c-0.019 1.004-0.21 1.958-0.545 2.841l0.019-0.058c-0.258 0.676-0.64 1.252-1.123 1.726l-0.001 0.001c-0.473 0.484-1.049 0.866-1.692 1.109l-0.032 0.011c-0.829 0.316-1.787 0.504-2.788 0.516l-0.005 0c-1.592 0.071-2.061 0.087-6.072 0.087-4.013 0-4.481-0.019-6.072-0.092-1.008-0.019-1.966-0.21-2.853-0.545l0.059 0.019c-0.676-0.254-1.252-0.637-1.722-1.122l-0.001-0.001c-0.489-0.47-0.873-1.047-1.114-1.693l-0.010-0.031c-0.315-0.828-0.506-1.785-0.525-2.785l-0-0.008c-0.056-1.575-0.076-2.061-0.076-6.053 0-3.994 0.020-4.481 0.076-6.075 0.019-1.007 0.209-1.964 0.544-2.85l-0.019 0.059c0.247-0.679 0.632-1.257 1.123-1.724l0.002-0.002c0.468-0.492 1.045-0.875 1.692-1.112l0.031-0.010c0.823-0.318 1.774-0.509 2.768-0.526l0.007-0c1.593-0.056 2.062-0.075 6.072-0.075zM16 1.004c-4.074 0-4.582 0.019-6.182 0.090-1.315 0.028-2.562 0.282-3.716 0.723l0.076-0.025c-1.040 0.397-1.926 0.986-2.656 1.728l-0.001 0.001c-0.745 0.73-1.333 1.617-1.713 2.607l-0.017 0.050c-0.416 1.078-0.67 2.326-0.697 3.628l-0 0.012c-0.075 1.6-0.090 2.108-0.090 6.182s0.019 4.582 0.090 6.182c0.028 1.315 0.282 2.562 0.723 3.716l-0.025-0.076c0.796 2.021 2.365 3.59 4.334 4.368l0.052 0.018c1.078 0.415 2.326 0.669 3.628 0.697l0.012 0c1.6 0.075 2.108 0.090 6.182 0.090s4.582-0.019 6.182-0.090c1.315-0.029 2.562-0.282 3.716-0.723l-0.076 0.026c2.021-0.796 3.59-2.365 4.368-4.334l0.018-0.052c0.416-1.078 0.669-2.326 0.697-3.628l0-0.012c0.075-1.6 0.090-2.108 0.090-6.182s-0.019-4.582-0.090-6.182c-0.029-1.315-0.282-2.562-0.723-3.716l0.026 0.076c-0.398-1.040-0.986-1.926-1.729-2.656l-0.001-0.001c-0.73-0.745-1.617-1.333-2.607-1.713l-0.050-0.017c-1.078-0.416-2.326-0.67-3.628-0.697l-0.012-0c-1.6-0.075-2.108-0.090-6.182-0.090z"></path>
@@ -635,7 +556,7 @@
                                 <li><a href="#"><span>
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"><g><path d="M220.646,338.475C207.223,408.825,190.842,476.269,142.3,511.5   c-14.996-106.33,21.994-186.188,39.173-270.971c-29.293-49.292,3.518-148.498,65.285-124.059   c76.001,30.066-65.809,183.279,29.38,202.417c99.405,19.974,139.989-172.476,78.359-235.054   C265.434-6.539,95.253,81.775,116.175,211.161c5.09,31.626,37.765,41.22,13.062,84.884c-57.001-12.65-74.005-57.6-71.822-117.533   c3.53-98.108,88.141-166.787,173.024-176.293c107.34-12.014,208.081,39.398,221.991,140.376   c15.67,113.978-48.442,237.412-163.23,228.529C258.085,368.704,245.023,353.283,220.646,338.475z"></path></g></svg>
                                 </span></a></li>
-                                <li><a href="#"><span>
+                                <li><a href="<?php echo the_field('twitter_share_icons_links');?>"><span>
                                     <svg viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
                                             <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)">
@@ -647,7 +568,7 @@
                                         </g>
                                     </svg>
                                 </span></a></li>
-                                <li><a href="#"><span>
+                                <li><a href="<?php echo the_field('youtube_share_icons_links');?>"><span>
                                     <svg width="800px" height="800px" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
                                             <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)">
@@ -684,9 +605,9 @@
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="form-left">
                             <div class="h2-white">
-                                <h2 class="text-noeffect">Lorem ipsum Lorem ipsum dolor</h2>
+                                <h2 class="text-noeffect"><?php echo the_field('footer_before_section_title'); ?></h2>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p><?php echo the_field('footer_before_section_description');?></p>
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-12 col-sm-12">
