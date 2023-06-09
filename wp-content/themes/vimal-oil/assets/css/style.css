@@ -2445,7 +2445,8 @@ a:focus{
 	background-size: cover;
 	padding-bottom: 0;
     z-index: 1;
-	padding: 140px 0 100px;
+	height: 100vh;
+    padding: 0;
 }
 .quiz-sec .progress-bar{
 	background-color: #0C58A5;
@@ -2734,6 +2735,92 @@ a:focus{
 	width: 100%;
 }
 
+.season-oil{
+	display: inline-block;
+    width: 100%;
+    padding: 30px 30px;
+    background: #ed5839;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.season-oil::before{
+	position: absolute;
+    content: '';
+    background: #ffffff40;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    animation: oil-wave 4s infinite linear;
+}
+
+.winter-oil{
+	background: #FD8066;
+	color: white;
+}
+.summer-oil{
+	background: #E2C722;
+	color: white;
+}
+.monsoon-oil{
+	background: #7EBC4F;
+	color: white;
+}
+
+.season-oil .pr-name{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+/* .season-oil .pr-name .pro-img img{
+	width: 100%;
+} */
+
+.season-oil .h3-title{
+	font-size: 24px;
+	font-weight: 500;
+	/* max-width: 222px; */
+}
+
+.season-oil .h3-title span{
+	font-size: 18px;
+}
+
+.season-oil .season-benefits{
+	margin-top: 10px;
+}
+
+.season-oil .buy-btn{
+	margin-top: 15px;
+}
+
+
+.calender-product .form-group{
+	width: 40%;
+	margin: 0 auto;
+}
+
+.email-form{
+	width: 100%;
+	outline: none;
+    background-color: #f9faff;
+    color: #c3c3c3;
+    padding: 0.7rem 0.65rem;
+    margin: 0;
+    border: 1px solid #eae8f3;
+	border-radius: 10px;
+}
+.email-form::placeholder{
+	font-size: 18px;
+}
+
+.calender-product .btn-effect{
+	background: #0c56a1;
+	color: white;
+	margin-top: 10px;
+}
 
 /* product single page css  */
 .product-single-banner{

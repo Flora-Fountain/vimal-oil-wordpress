@@ -594,27 +594,34 @@ $(document).ready(function(){
         $("#bar10").hide();
         $("#result").hide();
         $("#resultbad").hide();
-        $("#start").on('click', function() {
-            $("#start").hide();
-            $('#h4Start').hide(1000);
-             $("#next").show(1000);
-            $("#bar").width('5%');
-            newQuestionAnswers();
-            updateScore(0);
-        });
+        // $("#start").on('click', function() {
+        //     $("#start").hide();
+        //     $('#h4Start').hide(1000);
+        //      $("#next").show(1000);
+        //     $("#bar").width('5%');
+        //     newQuestionAnswers();
+        //     updateScore(0);
+        // });
+
+        newQuestionAnswers();
+        $("#next").show(1000);
 
         $("#startagain").on('click', function() {
         location.reload();
         });
         
+        if (number > 0)
+            $("#back").prop("disabled", false);
+            $("#bar").width('00%');
+
         $("#next").on('click', function() {
             $("#back").show(100);
             $("#warning").remove();
             if(checkAnswer()) {
                 if (number < totalQuestions)
                     newQuestionAnswers();
-                else
-                    finalScore(); 
+                // else
+                //     finalScore(); 
             }
             // Enable the back button if past first question
             if (number > 0)
@@ -627,9 +634,14 @@ $(document).ready(function(){
             $("#bar").width('60%');
             if (number > 3)
             $("#bar").width('80%');
-            if (number > 4)
+            if (number > 4){
             $("#bar").width('100%');
+            }
+            
         });
+        
+        console.log(allQuestions[4]);
+
         $("#back").on('click', function() {
             if ( number === totalQuestions) {
                 $("#score").hide();
