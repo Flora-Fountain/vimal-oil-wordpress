@@ -2846,10 +2846,18 @@ a:focus{
 }
 .product-accor .accordion .accordion-item{
 	border: none;
+	background: none;
 }
 .product-accor .accordion .accordion-button:not(.collapsed){
 	background: none;
 	box-shadow: none;
+	color: #0c56a1;
+}
+.product-bene-accor .accordion .accordion-button:not(.collapsed){
+	color: #fff;
+}
+.product-accor .accordion-collapse .accordion-body {
+    padding: 0 20px;
 }
 .product-accor .accordion .accordion-button{
 	padding: 10px 20px;
@@ -2857,12 +2865,59 @@ a:focus{
 	outline: none;
 	box-shadow: none;
 	font-weight: 500;
+	background: none;
+}
+.product-accor .accordion .accordion-button span img{
+	margin-right: 10px;
+	width: 40px;
+	height: 40px;
 }
 .product-accor .accordion .accordion-header::before{
 	content: "";
 	border-top: 1px solid rgba(0, 0, 0, 0.3);
 	width: 100%;
 	display: block;
+}
+.oil-details{
+	padding: 100px 0 50px;
+}
+.oil-benefits-sec .h2-blue{
+	text-align: start;
+}
+.benefits-part-right img{
+	width: 100%;
+}
+.oil-benefits-sec .floating-ele img:nth-child(2) {
+    bottom: -120px;
+    left: auto;
+    right: 0;
+    animation: up-down 6s infinite linear;
+    filter: blur(3px);
+    animation-delay: 0.5s;
+}
+.oil-benefits-sec .floating-ele img:nth-child(1) {
+    bottom: -120px;
+    left: 150px;
+    top: auto;
+    animation: up-down 6s infinite linear;
+    filter: blur(3px);
+    animation-delay: 0.5s;
+}
+.oil-benefits-sec .falling-leaf > div:nth-child(3) {
+    left: 70%;
+    bottom: -70px;
+    animation: up-down 6s infinite linear;
+    animation-delay: 0s;
+}
+.oil-benefits-sec .leaf-sec::after, .oil-benefits-sec .leaf-sec::before{
+	filter: blur(2px);
+}
+.oil-benefits-sec .falling-leaf > div:nth-child(2) {
+    left: auto;
+    top: -70px;
+    right: 100px;
+    animation: up-down 6s infinite linear;
+    animation-delay: -5s;
 }
 
 

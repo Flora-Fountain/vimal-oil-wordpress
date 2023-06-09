@@ -147,7 +147,6 @@ echo get_header();
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cooking-pen.png" alt="Cooking Pen">
                                             Better for cooking
                                         </span>
-                                    
                                     </button>
                                 </h4>
                                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -160,7 +159,7 @@ echo get_header();
                                 <h4 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         <span>
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/heart-benefits.png" alt="Heart Benefits">JioMart
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/healthy-heart.png" alt="Healthy Heart">JioMart
                                             Healthy for heart
                                         </span>     
                                     </button>
@@ -179,24 +178,46 @@ echo get_header();
     </div>
 
     <!-- module-4 oil benefits section  -->
-    <div class="oil-benefits-sec default-section blue-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="benefits-part">
-                        <div class="h2-blue">
-                            <h2 class="text-noeffect">
-                                What is Kachi Ghani Mustard oil?
-                            </h2>
+    <div class="default-section blue-bg oil-benefits-sec">
+        <div class="leaf-sec prod-leaf-sec">
+            <div class="falling-leaf cook-fall-leaf">
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+                </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+                </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-flower-blur.png" alt="blur-leaf">
+                </div>
+            </div>
+            <div class="floating-ele after-banner cook-oil-float-ele">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="white-flower">
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="benefits-part-left">
+                            <div class="h2-blue">
+                                <h2 class="text-noeffect">
+                                    What is Kachi Ghani Mustard oil?
+                                </h2>
+                            </div>
+                            <div class="b-para">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque accusamus in nam consectetur commodi suscipit odio totam maiores voluptatibus facilis cupiditate culpa maxime, obcaecati quod nemo sunt? Voluptatibus, excepturi.</p>
+                            </div>
+                            
                         </div>
-                        <div class="b-para">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque accusamus in nam consectetur commodi suscipit odio totam maiores voluptatibus facilis cupiditate culpa maxime, obcaecati quod nemo sunt? Voluptatibus, excepturi.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="benefits-part-right">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/benefits-oil.png" alt="Oil Benefits">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12"></div>
             </div>
-        </div>
+        </div> 
     </div>
 
     <!-- module-5 faq section  -->
