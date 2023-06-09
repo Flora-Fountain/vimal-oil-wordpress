@@ -86,9 +86,9 @@
                         </div>
                     </div>
                     <div class="submit-button text-center">
-                        <button class="btn-effect" type="submit">
-                        Know More
-                        </button>
+                        <a href="<?php echo the_field('health_section_button_page_link'); ?>" class="btn-effect" type="submit">
+                        <?php echo the_field('health_section_button_name'); ?>
+                        </a>
                     </div>    
                 </div>
             </div>
@@ -107,7 +107,7 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="h2-blue">
-                    <h2 class="text-noeffect">Make Healthy Choice</h2>
+                    <h2 class="text-noeffect"><?php echo the_field('product_section_title'); ?></h2>
                 </div>
                 <div class="home-prod-sldr owl-carousel owl-theme">
                     <?php 
@@ -118,16 +118,16 @@
                                 <div class="item">
                                     <div class="pro-sld-main <?php if($color == '#fbef4d'){echo "ylw";} ?>" style="background:<?php echo get_field('product_background_color',$product->get_id()); ?>">
                                         <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
-                                        <a href="#"><?php echo $product->get_title(); ?></a>
+                                        <a href="<?php the_permalink($product->get_id()); ?>"><?php echo $product->get_title(); ?></a>
                                     </div>
                                 </div>        
                         <?php }
                     ?>
                 </div>
                 <div class="submit-button text-center">
-                    <button class="btn-effect" type="submit">
-                       All Products
-                    </button>
+                    <a href="<?php echo the_field('product_section_button_page_link'); ?>" class="btn-effect" type="submit">
+                    <?php echo the_field('product_section_button_name'); ?>
+                        </a>
                 </div>
             </div>
         </div>
