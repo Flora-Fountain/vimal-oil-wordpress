@@ -20,16 +20,20 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+<<<<<<< Updated upstream
 define( 'DB_NAME', 'vimal_oils' );
+=======
+define( 'DB_NAME', 'u649213455_vimal_oils' );
+>>>>>>> Stashed changes
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'u649213455_vimal_oils' );
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'Fl0ra$2023PC' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'srv947.hstgr.io' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
