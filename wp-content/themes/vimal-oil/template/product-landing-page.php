@@ -13,7 +13,7 @@ echo get_header();
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="banner-left">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product.png" alt="privacy policy kiara image">
+                    <img src="<?php echo the_field('benner_image');?>" alt="privacy policy kiara image">
             </div>
                 
             </div>
@@ -21,14 +21,14 @@ echo get_header();
             <div class="text-middle">
                 <div class="banner-right">
                     <div class="h1-title">
-                        <h1 class="text-noeffect">Cooking Oil <span>Health &amp; Happiness!</span></h1>
+                        <h1 class="text-noeffect"><?php echo the_field('benner_title');?> <span><?php echo the_field('benner_sub_title'); ?></span></h1>
                     </div>
                 </div>
                 <div class="hash-sec">
-                    <span class="text-center">#ChangeForHeath</span>
+                    <span class="text-center"><?php echo  the_field('benner_hash_tag_text') ?></span>
                 </div>
                 <div class="submit-button text-center">
-                    <a href="#" class="btn-effect">Buy Now</a>
+                    <a href="<?php echo the_field('benner_button_link') ?>" class="btn-effect"><?php echo the_field('benner_button_name'); ?></a>
                 </div>
             </div>
             </div>
@@ -56,24 +56,50 @@ echo get_header();
             </div>
             <div class="container">
                 <div class="h2-white">
-                    <h2 class="text-noeffect">Cooking oil</h2>
+                    <h2 class="text-noeffect"><?php echo  the_field('cook_oil_section_title'); ?></h2>
                 </div>
                 <div class="text-center">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
-                    <span class="cook-oil-sec-hd">“Lorem Ipsum is simply dummy text”</span>
+                    <p><?php echo the_field('cook_oil_section_description'); ?></p>
+                    <span class="cook-oil-sec-hd">“<?php echo  the_field('cook_oil_section_center_text');?>”</span>
                 </div>
             </div>
         </div>
 </div>
-
+<!-- Get Product -->
+<?php 
+         $args = array(
+            'post_type' => 'product',
+            'status'    => 'publish'
+        );
+    
+        $products = wc_get_products( $args );
+        // echo "<pre>";
+        // print_r($products);
+        // die;
+    ?>
     <!-- module-4 product section  -->
     <div class="default-section product-section blue-bg">
         <div class="container">
             <div class="h2-white">
-                <h2 class="text-noeffect">Choose Your Vimal</h2>
+                <h2 class="text-noeffect"><?php echo the_field('product_title');?></h2>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <?php 
+                    foreach ($products as $product) {
+                        $image = wp_get_attachment_image_src( get_post_thumbnail_id($product->get_id()));
+                        $color = get_field('product_background_color',$product->get_id()); ?>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="prod-item">
+                                <div class="pro-sld-main <?php if($color == '#fbef4d'){echo "ylw";} ?>" style="background:<?php echo $color;?>" >
+                                    <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil-slider" width="259" height="390">
+                                    <a href="<?php echo the_permalink($product->get_id());?>"><?php echo $product->get_title();?></a>
+                                </div>
+                            </div>
+                        </div>
+                    <?php }
+                ?>
+                <!-- <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="prod-item">
                         <div class="pro-sld-main light-blue">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-oil-slider.png" alt="vimal-cottonseed-oil-slider" width="259" height="390">
@@ -120,22 +146,24 @@ echo get_header();
                             <a href="#">Refined Cottonseed Oil</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="h3-title">
-                <h3 class="text-noeffect">Buy now on</h3>
+                <h3 class="text-noeffect"><?php echo  the_field('button_section_title'); ?></h3>
             </div>
             <div class="buy-btn">
-                <a href="#">
-                    <span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon_logo.png" alt="amazon logo" />Amazon
-                    </span>
-                </a>
-                <a href="#">
-                    <span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jiomart_logo.png" alt="jiomart logo" />JioMart
-                    </span>
-                </a>
+                <?php 
+                    if (have_rows('buy_now_button')) {
+                        while (have_rows('buy_now_button')) {
+                            the_row();?>
+                            <a href="<?php echo  the_sub_field('buy_now_button_link') ?>">
+                                <span>
+                                    <img src="<?php echo the_sub_field('buy_now_button_logo'); ?>" alt="<?php the_sub_field('buy_now_button_brand_name'); ?>" /><?php the_sub_field('buy_now_button_brand_name'); ?>
+                                </span>
+                            </a>
+                        <?php }
+                    }
+                ?>
             </div>
 
         </div>
@@ -154,15 +182,26 @@ echo get_header();
     </div>
     <div class="container">
         <div class="h2-white">
-            <h2 class="text-noeffect">What is Nutrition<br/> Retention Technology</h2>
+            <h2 class="text-noeffect"><?php echo the_field('nrt_title');?></h2>
         </div>
         <div class="text-center">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</op>
+            <p><?php echo the_field('nrt_description1');?></p>
+            <p><?php echo the_field('nrt_description2');?></p>
         </div>
         <div class="nr-det">
             <ul>
-                <li>
+                <?php 
+                    if (have_rows('process')) {
+                        while (have_rows('process')) {
+                            the_row(); ?>
+                                <li>
+                                    <img src="<?php echo the_sub_field('process_image'); ?>" alt="temperature"/>
+                                    <h4><?php echo the_sub_field('process_title') ?><span><?php echo the_sub_field('process_description');?> </span></h4>
+                                </li>                
+                        <?php }
+                    }
+                ?>
+                <!-- <li>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/temperature.png" alt="temperature"/>
                     <h4>Temperature<span>Lorem Ipsum is simply dummy text of the </span></h4>
                 </li>
@@ -177,11 +216,11 @@ echo get_header();
                 <li>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vacuum.png" alt="vacuum"/>
                     <h4>Vacuum<span>Lorem Ipsum is simply dummy text of the </span></h4>
-                </li>
+                </li> -->
             </ul>
         </div>
         <div class="submit-button text-center">
-            <button class="btn-effect" type="submit">Know More</button>
+            <a href="<?php echo the_field('nrt_section_button_link'); ?>" class="btn-effect" type="submit"><?php echo the_field('nrt_section_button_name'); ?></a>
         </div>
     </div>
 </div>
