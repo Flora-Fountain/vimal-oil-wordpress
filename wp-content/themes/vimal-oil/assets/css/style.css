@@ -3025,6 +3025,67 @@ a:focus{
 	background-image: url("../images/chevron-down.svg");
 
 }
+.must-oil-accor .accordion-item .accordion-button::after {
+
+    background-image: url("../images/chevron-down-white.svg");
+
+}
+.faq-sec{
+	padding: 50px 0 100px;
+}
+.faq-item .accordion .accordion-item .accordion-button{
+	font-size: 26PX;
+	font-weight: 500;
+}
+.faq-item .accordion-item .accordion-body{
+	background-color: #B3D1EF;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.faq-item .accordion-item .accordion-button:not(.collapsed){
+	background-color: #ffffff;
+	box-shadow: none;
+	outline: none;
+}
+.faq-item .accordion-item{
+	margin-bottom: 20px;
+	border: none;
+	box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
+	
+}
+.faq-item .accordion-item .accordion-button:focus{
+	box-shadow: none;
+}
+.faq-item .accordion .accordion-item .accordion-button span::before{
+	content: "Q";
+	background: #B3D1EF;
+	width: 35px;
+	height: 35px;
+	border-radius: 10px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+}
+.faq-item .accordion-item .accordion-body p{
+	margin-bottom: 0;
+}
+.faq-item .accordion-item .accordion-body p::before{
+	content: "A";
+	background: #0C58A5;
+	width: 35px;
+	height: 35px;
+	border-radius: 10px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 10px;
+	color: #FFFFFF;
+}
+.faq-item .accordion-item .accordion-button {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+  }
 
 /* NRT Page */
 
