@@ -2831,7 +2831,7 @@ a:focus{
 	background: #FD8066;
 }
 .product-single-banner .owl-dots {
-	bottom: -150px;
+	bottom: -155px;
 	z-index: 1;
 	position: absolute;
 	right: 0;
@@ -2947,7 +2947,16 @@ a:focus{
 	color: #fff;
 }
 .product-accor .accordion-collapse .accordion-body {
-    padding: 0 20px;
+    padding: 0 20px 10px;
+}
+.accordion-body .accor-body-cont{
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	padding-left: 20px;
+}
+.accordion-body .fat-hd{
+	padding: 10px 0;
 }
 .product-accor .accordion .accordion-button{
 	padding: 10px 20px;
@@ -2976,6 +2985,7 @@ a:focus{
 }
 .benefits-part-right img{
 	width: 100%;
+	border-radius: 10px;
 }
 .oil-benefits-sec .floating-ele img:nth-child(2) {
     bottom: -120px;
@@ -3012,7 +3022,7 @@ a:focus{
 .oil-benefits-sec .floating-ele{
 	z-index: 0;
 }
-.must-oil-accor .accordion .accordion-button:not(.collapsed){
+.must-oil-accor .accordion .accordion-button{
 	color: #fff;
 }
 .must-oil-accor .accordion .accordion-header::before{
@@ -3021,7 +3031,7 @@ a:focus{
 .benefits-part-left .must-oil-accor {
 	margin-top: 30px;
 }
-.product-accor .accordion-item .accordion-button::after{
+.product-accor .accordion-item .accordion-button::after, .faq-item .accordion-item .accordion-button::after{
 	background-image: url("../images/chevron-down.svg");
 
 }
