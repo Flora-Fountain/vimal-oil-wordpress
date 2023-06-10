@@ -1,0 +1,2 @@
+2023-06-10T05:44:29+00:00 CRITICAL Out of memory (allocated 67108864) (tried to allocate 32768 bytes) in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\woocommerce\packages\woocommerce-blocks\build\featured-product.asset.php on line 1
+
