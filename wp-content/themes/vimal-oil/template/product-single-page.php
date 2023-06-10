@@ -91,49 +91,51 @@ echo get_header();
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="h2-white">
-                        <h2 class="text-noeffect">
-                            Tikha Kachi Ghani Musturd Oil
-                        </h2>
-                    </div>
-                    <div class="oil-para">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloremque maxime sapiente quos provident ipsa quae rerum architecto molestiae corrupti explicabo amet non fugiat sequi et, nisi voluptate odit natus!</p>
-                    </div>
-                    <div class="oil-size">
-                        <div class="h4-title">
-                            <h4 class="text-noeffect">
-                                Size available
-                            </h4>
+                    <div class="oil-det-right">
+                        <div class="h2-white">
+                            <h2 class="text-noeffect">
+                                Tikha Kachi Ghani Musturd Oil
+                            </h2>
                         </div>
-                        <div class="size-icon">
-                            <div class="size">
-                                <a href="#">1L</a>
+                        <div class="oil-para">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloremque maxime sapiente quos provident ipsa quae rerum architecto molestiae corrupti explicabo amet non fugiat sequi et, nisi voluptate odit natus!</p>
+                        </div>
+                        <div class="oil-size">
+                            <div class="h4-title">
+                                <h4 class="text-noeffect">
+                                    Size available
+                                </h4>
                             </div>
-                            <div class="size">
-                                <a href="#">5L</a>
-                            </div>
-                            <div class="size">
-                                <a href="#">15L</a>
+                            <div class="size-icon">
+                                <div class="size">
+                                    <a href="#">1L</a>
+                                </div>
+                                <div class="size">
+                                    <a href="#">5L</a>
+                                </div>
+                                <div class="size">
+                                    <a href="#">15L</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="shop-button">
-                        <div class="h3-title">
-                            <h3 class="text-noeffect">
-                                Buy now on
-                            </h3>
-                        </div>
-                        <div class="buy-btn">
-                            <a href="#">
-                                <span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon_logo.png" alt="amazon logo">Amazon
-                                </span>
-                            </a>
-                            <a href="#">
-                                <span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jiomart_logo.png" alt="jiomart logo">JioMart
-                                </span>
-                            </a>
+                        <div class="shop-button">
+                            <div class="h3-title">
+                                <h3 class="text-noeffect">
+                                    Buy now on
+                                </h3>
+                            </div>
+                            <div class="buy-btn">
+                                <a href="#">
+                                    <span>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon_logo.png" alt="amazon logo">Amazon
+                                    </span>
+                                </a>
+                                <a href="#">
+                                    <span>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jiomart_logo.png" alt="jiomart logo">JioMart
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -159,7 +161,7 @@ echo get_header();
                                 <h4 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         <span>
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/healthy-heart.png" alt="Healthy Heart">JioMart
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/healthy-heart.png" alt="Healthy Heart">
                                             Healthy for heart
                                         </span>     
                                     </button>
@@ -214,13 +216,35 @@ echo get_header();
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
                                                 <span>
                                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nutrition-facts.png" alt="Nutrition Facts">
-                                                    Better for cooking
+                                                    Nutrition Facts
                                                 </span>
                                             </button>
                                         </h4>
                                         <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
                                             <div class="accordion-body">
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem IpsumLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                                                <div class="fat-hd">
+                                                    <p class="mb-0">Per Serving*</p>
+                                                </div>
+                                                <div class="accor-body-cont">
+                                                    <div class="">Calories</div>
+                                                    <div class="">124</div>
+                                                </div>
+                                                <div class="accor-body-cont">
+                                                    <div class="">Fat</div>
+                                                    <div class="">14g</div>
+                                                </div>
+                                                <div class="accor-body-cont">
+                                                    <div class="">Sodium</div>
+                                                    <div class="">0mg</div>
+                                                </div>
+                                                <div class="accor-body-cont">
+                                                    <div class="">Carbohydrates</div>
+                                                    <div class="">0g</div>
+                                                </div>
+                                                <div class="accor-body-cont">
+                                                    <div class="">Fiber</div>
+                                                    <div class="">0g</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -228,14 +252,36 @@ echo get_header();
                                         <h4 class="accordion-header" id="headingTwo2">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
                                                 <span>
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/specifications.png" alt="Oil Specification">JioMart
-                                                    Healthy for heart
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/specifications.png" alt="Oil Specification">
+                                                    Specifications
                                                 </span>     
                                             </button>
                                         </h4>
                                         <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample2">
                                             <div class="accordion-body">
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem IpsumLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                                                <div class="fat-hd">
+                                                    <p class="mb-0">Per Serving*</p>
+                                                </div>
+                                                <div class="accor-body-cont">
+                                                    <div class="">Calories</div>
+                                                    <div class="">124</div>
+                                                </div>
+                                                <div class="accor-body-cont">
+                                                    <div class="">Fat</div>
+                                                    <div class="">14g</div>
+                                                </div>
+                                                <div class="accor-body-cont">
+                                                    <div class="">Sodium</div>
+                                                    <div class="">0mg</div>
+                                                </div>
+                                                <div class="accor-body-cont">
+                                                    <div class="">Carbohydrates</div>
+                                                    <div class="">0g</div>
+                                                </div>
+                                                <div class="accor-body-cont">
+                                                    <div class="">Fiber</div>
+                                                    <div class="">0g</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

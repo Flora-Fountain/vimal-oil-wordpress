@@ -352,9 +352,6 @@
     .product-single-banner .banner-info{
         padding: 0;
     }
-    .product-single-banner .owl-dots{
-        margin-bottom: 10px;
-    }
 }
 @media screen and (max-width:1199px) {
     .header {
@@ -524,6 +521,9 @@
     }
 }
 @media screen and (max-width:991px) {
+    .h1-title{
+        font-size: 70px;
+    }
     .pro-vdo-sld.owl-carousel .owl-stage {
         padding: 0;
     }
@@ -699,8 +699,6 @@
     .home-prod-sldr.owl-carousel{
         padding: 0 20px;
     }
-
-
     /* Recipes Page */
     .reci-sec .row >div, .reci-sec .row >div:nth-last-child(-n+4){
         margin-top: 20px;
@@ -749,6 +747,26 @@
     .buy-btn a img {
         width: 28px;
         margin-right: 5px;
+    }
+
+    /* Product Single */
+    .oil-details .h2-white, .oil-details .oil-size .h4-title, .oil-details .shop-button .h3-title, .oil-details .shop-button .buy-btn, .oil-benefits-sec .h2-blue{
+        text-align: center;
+    }
+    .oil-details .oil-para p{
+        text-align: center;
+    }
+    .oil-details .oil-det-right{
+        margin-bottom: 50px;
+    }
+    .oil-details .oil-size .size-icon{
+        justify-content: center;
+    }
+    .benefits-part-left .b-para{
+        text-align: center;
+    }
+    .benefits-part-right {
+        margin-top: 20px;
     }
 }
 @media screen and (max-width:767px) {
@@ -1350,6 +1368,11 @@
         flex-direction: row;
         align-items: center;
         gap: 10px;
+    }
+
+    /* Product Single */
+    .product-single-banner .h1-title{
+        margin-bottom: 50px;
     }
 
 

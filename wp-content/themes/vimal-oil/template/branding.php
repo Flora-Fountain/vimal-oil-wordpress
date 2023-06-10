@@ -14,11 +14,11 @@ echo get_header();
                     <div class="text-aside">
                         <div class="banner-right">
                             <div class="h1-title">
-                                <h1 class="text-noeffect"><span>Our</span> Branding</h1>
+                                <h1 class="text-noeffect"><span><?php echo the_field('benner_section_title'); ?></span> <?php echo the_field('benner_section_sub_title');?></h1>
                             </div>
                         </div>
                         <div class="submit-button text-center">
-                            <a href="#" class="btn-effect">Know More</a>
+                            <a href="<?php echo the_field('benner_section_button_link'); ?>" class="btn-effect"><?php echo the_field('benner_section_button_name');?></a>
                         </div>
                     </div>
                 </div>
@@ -64,45 +64,35 @@ echo get_header();
             </div>
             <div class="container">
                 <div class="h2-white">
-                    <h2 class="text-noeffect">All natural & nutrition retained!</h2>
+                    <h2 class="text-noeffect"><?php echo the_field('helth_section_title'); ?></h2>
                 </div>
                 <div class="sub-text">
-                    <p>Make the #ChangeForHealth with Vimal healthy cooking oils, 100% pure and natural with maximum nutrition retained!</p>
+                    <p><?php echo the_field('helth_section_description'); ?></p>
                 </div>
                 <div class="align-items-center">
                     <div class="owl">
                         <div class="pro-vdo-sld owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="video-sld">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/video-thumbnail.jpg" width="366" height="720"/>
-                                    <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="video-sld">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/video-thumbnail.jpg" width="366" height="720"/>
-                                    <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="video-sld">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/video-thumbnail.jpg" width="366" height="720"/>
-                                    <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
-                                    </button>
-                                </div>
-                            
-                            </div>
+                            <?php 
+                                if (have_rows('youtube_video')) {
+                                    while (have_rows('youtube_video')) {
+                                        the_row();?>
+                                        <div class="item">
+                                            <div class="video-sld">
+                                                <img src="<?php echo the_sub_field('youtube_video_thumbnail_image'); ?>" width="366" height="720"/>
+                                                <button aria-label="Video Play" data-src="<?php echo the_sub_field('youtube_video_link');?>" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                                                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    <?php }
+                                }
+                            ?>
                         </div>
                     </div>
                     <div class="submit-button text-center">
-                        <button class="btn-effect" type="submit">
-                        Know More
-                        </button>
+                        <a href="<?php echo the_field('health_section_button_page_link'); ?>" class="btn-effect" type="submit">
+                            <?php echo the_field('health_section_button_name') ?>
+                        </a>
                     </div>    
                 </div>
             </div>
@@ -129,19 +119,21 @@ echo get_header();
         <div class="container">
             <div class="gen-sec">
                 <div class="h2-blue">
-                    <h2 class="text-noeffect">#ChangeForHealth</h2>
+                    <h2 class="text-noeffect"><?php echo the_field('change_for_health_title'); ?></h2>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-heart.png" alt="">
+                        <img src="<?php echo the_field('change_for_health_image'); ?>" alt="">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                        <p><?php echo the_field('change_for_health_description1'); ?></p>
+                        <p><?php echo the_field('change_for_health_description2'); ?></p>
                     </div>
                 </div>
                 <div class="submit-button text-center">
-                    <button class="btn-effect" type="submit">All Products</button>
+                    <a href="<?php echo the_field('change_for_health_button_link');?>" class="btn-effect" type="submit">
+                        <?php echo the_field('change_for_health_button_name');?>
+                    </a>
                 </div>
             </div>
         </div>
@@ -151,78 +143,30 @@ echo get_header();
         <div class="container">
             <div class="h2-white">
                 <h2 class="text-noeffect">
-                    OUR TVCs
+                    <?php echo the_field('our_tvcs_section_title');?>
                 </h2>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="owl-carousel" id="tvc-carousel">
-                        <div class="tvc-owl">
-                            <div class="tvc-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="tvc-video">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recipes-video-img.jpg"  alt="vimal oil">
-                                <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"></path></svg></span>
-                                </button>  
-                            </div>
-                        </div>
-                        <div class="tvc-owl">
-                            <div class="tvc-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="tvc-video">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recipes-video-img.jpg"  alt="vimal oil">
-                                <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"></path></svg></span>
-                                </button>  
-                            </div>
-                        </div>
-                        <div class="tvc-owl">
-                            <div class="tvc-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="tvc-video">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recipes-video-img.jpg"  alt="vimal oil">
-                                <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"></path></svg></span>
-                                </button>  
-                            </div>
-                        </div>
-                        <div class="tvc-owl">
-                            <div class="tvc-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="tvc-video">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recipes-video-img.jpg"  alt="vimal oil">
-                                <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"></path></svg></span>
-                                </button>  
-                            </div>
-                        </div>
-                        <div class="tvc-owl">
-                            <div class="tvc-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="tvc-video">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recipes-video-img.jpg"  alt="vimal oil">
-                                <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"></path></svg></span>
-                                </button>  
-                            </div>
-                        </div>
-                        <div class="tvc-owl">
-                            <div class="tvc-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="tvc-video">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recipes-video-img.jpg"  alt="vimal oil">
-                                <button aria-label="Video Play" data-src="https://www.youtube.com/embed/1WudR5boKGc" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"></path></svg></span>
-                                </button>  
-                            </div>
-                        </div>
+                        <?php 
+                            if (have_rows('tvcs_youtube')) {
+                                while (have_rows('tvcs_youtube')) {
+                                    the_row(); ?>
+                                    <div class="tvc-owl">
+                                        <div class="tvc-content">
+                                            <p><?php echo the_sub_field('tvcs_youtube_video_title');?></p>
+                                        </div>
+                                        <div class="tvc-video">
+                                            <img src="<?php echo the_sub_field('tvcs_youtube_video_background_image'); ?>"  alt="vimal oil">
+                                            <button aria-label="Video Play" data-src="<?php echo the_sub_field('tvcs_youtube_video_iink'); ?>" data-modal="videoPlaypopup" type="button" class="wl-modal-btn video-play-btn">
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"></path></svg></span>
+                                            </button>  
+                                        </div>
+                                    </div>
+                                <?php }
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
@@ -234,13 +178,23 @@ echo get_header();
         <div class="container">
             <div class="h2-white">
                 <h2 class="text-noeffect">
-                    Growth of Health & Happiness
+                    <?php echo the_field('billboard_section_title');?>
                 </h2>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="owl-carousel billboard-carousel" id="billboard-carousel">
-                        <div class="billboard-owl">
+                        <?php  
+                            if (have_rows('billboard_image')) {
+                                while (have_rows('billboard_image')) {
+                                    the_row(); ?>
+                                    <div class="billboard-owl">
+                                        <img src="<?php echo the_sub_field('billboard_section_image'); ?>" alt="">
+                                    </div>      
+                                <?php }
+                            }
+                        ?>
+                        <!-- <div class="board-owl">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/billboard.png" alt="">
                         </div>
                         <div class="billboard-owl">
@@ -258,6 +212,7 @@ echo get_header();
                         <div class="billboard-owl">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/billboard.png" alt="">
                         </div>
+                        <div class="bill -->
                     </div>
                 </div>
             </div>
