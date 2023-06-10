@@ -23,13 +23,16 @@ echo get_header();
                 </div>
             </div>   
         </div>
+        <div class="oil-bottle-flow">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-bottle.png" alt="oil bottle">
+        </div>
     </div>
 
     <div class="section-combined">
         <div class="nrt-ani">
             <div class="oil-spread">
                 <div class="oil-swirl-mask"></div>
-                <div class="oil-swirl">
+                <div class="oil-swirl" id="oil-swirl">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image" />
                 </div>
             </div>
@@ -45,8 +48,34 @@ echo get_header();
                 </div>
             </div>
 
-            <!-- module-4 legacy of trust and promise  -->
-            <div class="default-section blue-bg nrt-tempe">
+            <!-- temrature section  -->
+            <div class="temp-section-nrt">
+                
+                <div class="nrt-tempe fisrt-temp-sec" id="temp-nrt">
+                    <div class="container">
+                    <div class="gen-sec">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="nrt-temp-left">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/temp-oil.png" alt="temperature oil">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="nrt-temp-right">
+                                    <div class="h2-blue">
+                                        <h2 class="text-noeffect">Temperature</h2>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a   dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a  dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a ext ever since the 1500s, when a </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="back-sec"></div>
+            </div>
+            <!-- <div class="blur-bg" style="height:100vh;"></div>
+            <div class="default-section nrt-tempe blue-bg" id="temp-nrt">
                 <div class="container">
                     <div class="gen-sec">
                         <div class="row align-items-center">
@@ -66,11 +95,11 @@ echo get_header();
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <!-- module-5 Degumming  -->
-            <div class="default-section nrt-tempe nrt-time">
-                <div class="lab-ele">
+            <!-- module-5 time section  -->
+            <div class="nrt-tempe nrt-time">
+                <!-- <div class="lab-ele">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/hexa.png" alt="hexa">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/tube.png" alt="tube">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/beaker.png" alt="beaker">
@@ -78,7 +107,7 @@ echo get_header();
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/hexa.png" alt="hexa">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/atom.png" alt="atom">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/flask.png" alt="flask">
-                </div>
+                </div> -->
                 <div class="container">
                     <div class="gen-sec">
                         <div class="row align-items-center">
@@ -100,8 +129,8 @@ echo get_header();
                 </div>
             </div>
         
-            <!-- module-6 Neutrilisation section  -->
-            <div class="default-section blue-bg nrt-tempe nrt-pressure">
+            <!-- module-6 pressure section  -->
+            <div class=" nrt-tempe nrt-pressure">
                 <div class="container">
                     <div class="gen-sec">
                         <div class="row align-items-center">
@@ -123,9 +152,9 @@ echo get_header();
                 </div>
             </div>
 
-            <!-- module-7 Bleaching  -->
-            <div class="default-section nrt-tempe nrt-time nrt-vaccum">
-                <div class="lab-ele">
+            <!-- module-7 vaccum  -->
+            <div class=" nrt-tempe nrt-time nrt-vaccum">
+                <!-- <div class="lab-ele">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/hexa.png" alt="hexa">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/tube.png" alt="tube">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/beaker.png" alt="beaker">
@@ -133,7 +162,7 @@ echo get_header();
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/hexa.png" alt="hexa">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/atom.png" alt="atom">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/flask.png" alt="flask">
-                </div>
+                </div> -->
                 <div class="container">
                     <div class="gen-sec">
                         <div class="row align-items-center">
@@ -155,8 +184,8 @@ echo get_header();
                 </div>
             </div>
 
-            <!-- module-8 Deodarisation  -->
-            <div class="default-section blue-bg nrt-tempe nrt-benefits">
+            <!-- module-8 nrt benefits  -->
+            <div class=" nrt-tempe nrt-benefits">
                 <div class="container">
                     <div class="gen-sec">
                         <div class="row align-items-center">
@@ -178,6 +207,9 @@ echo get_header();
                 </div>
             </div>
         </div>
+
+
+
     </div>
 
     <!-- module-9 oil range -->
