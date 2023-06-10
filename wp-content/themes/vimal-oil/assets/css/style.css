@@ -3009,8 +3009,22 @@ a:focus{
     animation: up-down 6s infinite linear;
     animation-delay: -5s;
 }
+.oil-benefits-sec .floating-ele{
+	z-index: 0;
+}
+.must-oil-accor .accordion .accordion-button:not(.collapsed){
+	color: #fff;
+}
+.must-oil-accor .accordion .accordion-header::before{
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.benefits-part-left .must-oil-accor {
+	margin-top: 30px;
+}
+.product-accor .accordion-item .accordion-button::after{
+	background-image: url("../images/chevron-down.svg");
 
-
+}
 
 /* NRT Page */
 
