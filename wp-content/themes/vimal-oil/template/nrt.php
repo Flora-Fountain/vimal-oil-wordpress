@@ -28,10 +28,12 @@ echo get_header();
         </div>
     </div>
 
+    
+
     <div class="section-combined">
         <div class="nrt-ani">
             <div class="oil-spread">
-                <div class="oil-swirl-mask"></div>
+                <!-- <div class="oil-swirl-mask"></div> -->
                 <div class="oil-swirl" id="oil-swirl">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image" />
                 </div>
@@ -72,7 +74,7 @@ echo get_header();
                     </div>
                 </div>
                 </div>
-                <div class="back-sec"></div>
+                <div class="back-sec blue-bg"></div>
             </div>
             <!-- <div class="blur-bg" style="height:100vh;"></div>
             <div class="default-section nrt-tempe blue-bg" id="temp-nrt">
