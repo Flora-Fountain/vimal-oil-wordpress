@@ -26,7 +26,13 @@
     <link rel="stylesheet" href="<?php //echo get_template_directory_uri(); ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?php //echo get_template_directory_uri(); ?>/assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+
     <?php wp_head(); ?>
 </head>
 <body>

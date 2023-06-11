@@ -1,30 +1,43 @@
-// gsap.registerPlugin(ScrollTrigger);
+$( window ).on('scroll', function(){
 
-// let revealContainers = document.querySelectorAll(".reveal");
+    var scrollTop = $(this).scrollTop();
+    // $( '.oil-swirl' ).css({
+    //   transform: 'translateX('+  ( -1 * scrollTop ) +'px)',
+    // });
 
-// revealContainers.forEach((container) => {
-//   let image = container.querySelector("img");
-//   let tl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: container,
-//       toggleActions: "restart none none reset"
-//     }
-//   });
+    // $('.oil-swirl').css({
+      
+    // })
 
-//   tl.set(container, { autoAlpha: 1 });
-//   tl.from(container, 1.5, {
-//     xPercent: -100,
-//     ease: Power2.out
-//   });
-//   tl.from(image, 1.5, {
-//     xPercent: 100,
-//     scale: 1.3,
-//     delay: -1.5,
-//     ease: Power2.out
-//   });
-// });
+    // $('.oil-swirl').css({
+    //   opacity: function() {
+    //       var elementHeight = $(this).height(),
+    //       // opacity = ((elementHeight - scrollTop) / elementHeight);
+    //       opacity = ((scrollTop - elementHeight) / scrollTop);
+    //       return opacity;
+    // }
+    // })
 
+  
+    
+    // var vh = (document.documentElement.clientHeight * 80) / 100;//80vh to px
+    // var scrollTop = $(this).scrollTop();
+    // var current = parseFloat($('.coffee-swirl-image').css('opacity'));
+    // var opacity = Math.min(Math.max((scrollTop >= vh ? current - 0.1 : current + 0.1), 0), 1);
+    // $('.coffee-swirl-image').css({opacity: opacity});
+     
 
-gsap.to(".gen-sec", { 
-    x: 2000,
 });
+
+
+// gsap.registerPlugin(ScrollTrigger);
+// gsap.to("#coffee-swirl-image", {
+//   scrollTrigger: {
+//     trigger: "#oil-swirl",
+//     start: "center center",
+//     pin: true,
+//     markers: true,
+//     scrub: true
+//   },
+//   opacity: 1,
+// });

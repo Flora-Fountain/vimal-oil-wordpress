@@ -260,7 +260,7 @@ echo get_header();
     </div>
 
     <!-- module-6 change for health  -->
-    <div class="vimal-journey default-section blue-bg">
+    <div class="vimal-journey default-section blue-bg" id="vimal-cfh">
         <div class="falling-leaf">
             <div>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
@@ -283,7 +283,7 @@ echo get_header();
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img src="<?php echo the_field('change_for_health_section_image');?>" alt="" />
+                        <img id="heart-image-gsap" src="<?php echo the_field('change_for_health_section_image');?>" alt="" />
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <p><?php echo  the_field('change_for_health_section_description1');?></p>

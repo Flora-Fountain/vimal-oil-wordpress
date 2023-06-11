@@ -30,12 +30,12 @@ echo get_header();
 
     
 
-    <div class="section-combined">
+    <div class="section-combined" id="section-combined">
         <div class="nrt-ani">
             <div class="oil-spread">
                 <!-- <div class="oil-swirl-mask"></div> -->
                 <div class="oil-swirl" id="oil-swirl">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image" id="coffee-swirl-image" />
                 </div>
             </div>
             <!-- module-3 what is nrt -->
@@ -51,7 +51,7 @@ echo get_header();
             </div>
 
             <!-- temrature section  -->
-            <div class="temp-section-nrt">
+            <div class="temp-section-nrt ">
                 
                 <div class="nrt-tempe fisrt-temp-sec" id="temp-nrt">
                     <div class="container">
@@ -100,7 +100,7 @@ echo get_header();
             </div> -->
 
             <!-- module-5 time section  -->
-            <div class="nrt-tempe nrt-time">
+            <div class="nrt-tempe nrt-time ">
                 <!-- <div class="lab-ele">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/hexa.png" alt="hexa">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/tube.png" alt="tube">
@@ -132,7 +132,7 @@ echo get_header();
             </div>
         
             <!-- module-6 pressure section  -->
-            <div class=" nrt-tempe nrt-pressure">
+            <div class=" nrt-tempe nrt-pressure ">
                 <div class="container">
                     <div class="gen-sec">
                         <div class="row align-items-center">
@@ -155,7 +155,7 @@ echo get_header();
             </div>
 
             <!-- module-7 vaccum  -->
-            <div class=" nrt-tempe nrt-time nrt-vaccum">
+            <div class=" nrt-tempe nrt-time nrt-vaccum ">
                 <!-- <div class="lab-ele">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/hexa.png" alt="hexa">
                     <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/tube.png" alt="tube">
