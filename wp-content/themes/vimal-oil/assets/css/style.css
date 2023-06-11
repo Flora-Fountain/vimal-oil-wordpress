@@ -3224,8 +3224,16 @@ a:focus{
 	-webkit-align-items: flex-start;
 	-ms-flex-align: start;
 	align-items: flex-start;
-	/* opacity: 0; */
-}
+	opacity: 1;
+	/* overflow: visible; */
+ }
+ 
+ /* .oil-swirl .coffee-swirl-image{
+	visibility: hidden;
+ } */
+
+
+
 
 /* .oil-swirl {
 	position: relative;
