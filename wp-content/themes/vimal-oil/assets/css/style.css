@@ -1336,6 +1336,37 @@ a:focus{
 .social-presence .h1-title {
 	color: #fff;
 }
+
+.demo__card-count{
+	position: relative;
+    width: 28rem;
+    height: 38rem;
+    margin: 0 auto 5rem;
+}
+
+.demo__card{
+	z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 100%;
+}
+
+.demo__card.to-left {
+	transform: translateX(-30rem) rotate(-30deg) !important;
+  }
+  
+.demo__card.to-right {
+	transform: translate(30rem) rotate(30deg) !important;
+}
+
+.demo__card.reset{
+	transition: transform 0.3s;
+    transform: translateX(0) !important;
+}
+
 .dp-wrap {
     margin: 50px auto;
     position: relative;
