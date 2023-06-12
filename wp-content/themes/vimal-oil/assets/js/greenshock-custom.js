@@ -201,7 +201,7 @@ $( window ).on('scroll', function(){
 
 
     window.addEventListener('scroll', (e) => {
-        document.querySelector('.oil-swirl').style.height = (window.scrollY) + 'px';
+        document.querySelector('.oil-swirl').style.height = window.scrollY + 'px';
         document.querySelector('.oil-swirl').style.transitionDelay = "0.2s";
         document.querySelector('.oil-swirl').style.transitionTimingFunction = 'ease-in-out';
 
@@ -214,3 +214,4 @@ $( window ).on('scroll', function(){
         // height = Math.min(height, maxElementHeight); // Ensure the height doesn't exceed the maximum
         // document.querySelector('.oil-swirl').style.height = height + 'px';
     })
+ 
