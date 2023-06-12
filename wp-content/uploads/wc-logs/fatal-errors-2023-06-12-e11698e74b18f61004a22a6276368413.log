@@ -1,0 +1,84 @@
+2023-06-12T05:55:27+00:00 CRITICAL Uncaught Error: Call to undefined function <img width="199" height="300" src="http://localhost/vimal-oil-wordpress/wp-content/uploads/2023/06/vimal-sunhart-oil-slider.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" />() in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php:31
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php on line 31
+
+2023-06-12T06:02:12+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_gallery_image() in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php:13
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php on line 13
+
+2023-06-12T06:03:02+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_post_gallery_images() in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php:13
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php on line 13
+
+2023-06-12T07:51:17+00:00 CRITICAL Uncaught Error: Call to undefined function impload() in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php:73
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php on line 73
+
+2023-06-12T07:55:56+00:00 CRITICAL Uncaught TypeError: Illegal offset type in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php:74
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php on line 74
+
+2023-06-12T07:57:00+00:00 CRITICAL Uncaught TypeError: Illegal offset type in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php:74
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php on line 74
+
+2023-06-12T07:57:27+00:00 CRITICAL Uncaught TypeError: Illegal offset type in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php:74
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php on line 74
+
+2023-06-12T07:57:54+00:00 CRITICAL Uncaught TypeError: Illegal offset type in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php:74
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php on line 74
+
+2023-06-12T08:05:57+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php on line 75
+
+2023-06-12T08:10:25+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php on line 91 and at least 1 expected in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php:70
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php(91): the_field()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 70
+
+2023-06-12T08:11:40+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php on line 91 and at least 1 expected in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php:70
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single-product.php(91): the_field()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 70
+
