@@ -689,4 +689,7 @@ $(document).ready(function(){
 
 
 
+// instagram swipe effect 
+
+
 

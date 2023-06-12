@@ -1330,6 +1330,37 @@ a:focus{
 .social-presence .h1-title {
 	color: #fff;
 }
+
+.demo__card-count{
+	position: relative;
+    width: 28rem;
+    height: 38rem;
+    margin: 0 auto 5rem;
+}
+
+.demo__card{
+	z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 100%;
+}
+
+.demo__card.to-left {
+	transform: translateX(-30rem) rotate(-30deg) !important;
+  }
+  
+.demo__card.to-right {
+	transform: translate(30rem) rotate(30deg) !important;
+}
+
+.demo__card.reset{
+	transition: transform 0.3s;
+    transform: translateX(0) !important;
+}
+
 .dp-wrap {
     margin: 50px auto;
     position: relative;
@@ -2958,6 +2989,9 @@ a:focus{
 	box-shadow: none;
 	color: #0c56a1;
 }
+.product-accor.must-oil-accor .accordion .accordion-button:not(.collapsed) {
+	color: #fd0;
+}
 .product-bene-accor .accordion .accordion-button:not(.collapsed){
 	color: #fff;
 }
@@ -3133,8 +3167,8 @@ a:focus{
 
 .nrt-banner .oil-bottle-flow{
 	position: absolute;
-	bottom: -55px;
-	left: -98px;
+	bottom: -59px;
+	left: -72px;
 	width: 400px;
 	height: auto;
 	z-index: 4;
@@ -3146,6 +3180,7 @@ a:focus{
 
 .temp-section-nrt{
 	position: relative;
+	height: 100vh;
 }
 
 .temp-section-nrt .back-sec{
@@ -3156,6 +3191,30 @@ a:focus{
 	left: 0;
 	z-index: -99999;
 	background-color: #0c56a1;
+}
+.temp-section-nrt .back-sec::before{
+	position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 45px solid white;
+    border-left: 100vw solid transparent;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.temp-section-nrt .back-sec .lab-ele img{
+	opacity: 0.5;
+}
+.temp-section-nrt .back-white{
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -99999;
+	/* background-color: #0c56a1; */
 }
 
 .temp-section-nrt .fisrt-temp-sec{
@@ -3184,13 +3243,19 @@ a:focus{
 .nrt-product{
 	padding: 50px 0 100px 0;
 }
+
+.nrt-tempe{
+	padding: 70px 0;
+	/* height: 100vh;*/
+}
+
 .nrt-tempe .h2-blue, .nrt-time .h2-white{
 	text-align: start;
 	text-transform: uppercase;
 }
 .nrt-temp-left img, .nrt-temp-right img{
     width: 100%;
-	max-width: 500px;
+	max-width: 400px;
     display: block;
     margin: 0 auto;
 }
@@ -3223,6 +3288,10 @@ a:focus{
 	background-color: #fff;
 }
 .oil-swirl {
+	/* background-image: url("../images/oil.png"); */
+  	/* background-position: center;
+  	background-size: cover; */
+  	/* background-repeat: no-repeat; */
 	position: absolute;
 	left: 0%;
 	top: 0%;
@@ -3234,14 +3303,23 @@ a:focus{
 	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
-	height: 100%;
+	/* height: 25px !important; */
 	-webkit-box-align: start;
 	-webkit-align-items: flex-start;
 	-ms-flex-align: start;
 	align-items: flex-start;
 	opacity: 1;
-	/* overflow: visible; */
+	overflow: hidden;
  }
+
+ .oil-swirl .coffee-swirl-image{
+	/* opacity: 0; */
+	transition: opacity 0.5s;
+	overflow: hidden;
+}
+ .oil-swirl .coffee-swirl-image.reveal{
+	opacity: 1;
+}
  
  /* .oil-swirl .coffee-swirl-image{
 	visibility: hidden;
@@ -3337,13 +3415,15 @@ a:focus{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 25px;
+	padding-top: 15px;
+	padding-left: 24px;
 }
 .menu-float .menu-left .nav-menu {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 .menu-float .menu-right {
 	width: 10%;
@@ -3408,12 +3488,14 @@ a:focus{
 	padding-left: 0;
 	margin: 0;
 }
+.menu-last .socials ul li{
+	width: 45px;
+	height: 45px;
+}
 .menu-last .socials ul li + li {
 	display: block;
-	width: 50px;
-	height: 50px;
 	margin: 0;
-	margin-top: 15px;
+	margin-top: 10px;
 }
 .menu-last .socials ul li a {
 	width: 50px;
@@ -3554,12 +3636,12 @@ a:focus{
 	-ms-transform-origin: center center;
 	transform-origin: center center;
 }
-.nav-menu-right .nav li .nav-link:hover:before{
+.nav-menu-right .nav li .nav-link:hover:before,.nav-menu-right .nav li.active .nav-link::before{
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
 }
-.nav-menu-right .nav li .nav-link:hover{
+.nav-menu-right .nav li .nav-link:hover,.nav-menu-right .nav li.active>.nav-link{
 	color:#0c54a0;
 }
 .menu-float .container-fluid {
