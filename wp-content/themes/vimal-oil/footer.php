@@ -6,7 +6,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="about-us-col">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="vimal oil"></a>
+                                <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="vimal oil"></a>
                             </div>
                             <div class="text-content">
                                 <div class="h3-title">
