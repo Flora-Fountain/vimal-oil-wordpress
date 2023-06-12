@@ -174,7 +174,13 @@ a:focus{
 	-ms-transition: 0.3s;
 	transition: 0.3s;
 }
-.header.nav-down {
+.header.sticky {
+	top: 0;
+	background: rgba(12, 86, 161,0.9);
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.9);
+	padding: 10px 25px;
+}
+/* .header.nav-down {
 	top: 0;
 	background: rgba(12, 86, 161,0.9);
 	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.9);
@@ -182,7 +188,7 @@ a:focus{
 }
 .header.nav-up {
 	top: -150px;
-}
+} */
 .nav-menu {
 	display: flex;
 	align-items: center;
