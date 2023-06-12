@@ -14,20 +14,20 @@ echo get_header();
                     <div class="text-aside">
                         <div class="banner-right">
                             <div class="h1-title">
-                                <h1 class="text-noeffect">Reach out to us!</h1>
+                                <h1 class="text-noeffect"><?php echo the_field('contact_benner_section_title');?></h1>
                             </div>
                         </div>
                         <div class="head-para">
-                            <p class="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit</p>
+                            <p class="text-center mt-2"><?php echo the_field('contact_benner_section_description');?></p>
                         </div>
                         <div class="submit-button text-center">
-                            <a href="#" class="btn-effect">Let's Connect</a>
+                            <a href="<?php echo  the_field('contact_benner_section_url') ?>" class="btn-effect"><?php the_field('contact_benner_section_button_name');?></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="inner-bnr-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-banner-image.png" alt="contact us">
+                    <img src="<?php echo the_field('contact_benner_section_image'); ?>" alt="contact us">
                     </div>
                 </div>
             </div>
@@ -89,11 +89,11 @@ echo get_header();
         <div class="container">
             <div class="h2-white">
                 <h2 class="text-noeffect">
-                    We'd love to here from you
+                    <?php echo  the_field('contact_details_section_title');?>
                 </h2>
             </div>
             <div class="h3-title">
-                <h3 class="text-noeffect">Chat with our team</h3>
+                <h3 class="text-noeffect"><?php echo the_field('contact_details_section_sub_title');?></h3>
             </div>
             <div class="row text-center align-item-center">
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -105,13 +105,13 @@ echo get_header();
                             </span>
                         </div>
                         <div class="para-title">
-                            <p>Chat to sales</p>
+                            <p><?php echo the_field('contact_mail_info_title'); ?></p>
                         </div>
                         <div class="contact-para">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p><?php echo the_field('contact_mail_info_description') ?></p>
                         </div>
                         <div class="info">
-                            <a href="mailto:mail@vimaloil.com">mail@vimaloil.com</a>
+                            <a href="<?php echo the_field('contect_mail_info_mailto_link');?>"><?php echo the_field('contact_mail_id');?></a>
                         </div>
                     </div>
                 </div>
@@ -124,11 +124,11 @@ echo get_header();
                             </span>
                         </div>
                         <div class="para-title">
-                            <p>Visit us</p>
+                            <p><?php echo the_field('visit_us_title');?></p>
                         </div>
-                        <div class="contact-para">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
+                        <a href="<?php echo the_field('visit_us_address_link'); ?>" class="contact-para">
+                            <p><?php echo the_field('visit_us_address') ?></p>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -140,13 +140,13 @@ echo get_header();
                             </span>
                         </div>
                         <div class="para-title">
-                            <p>Call us</p>
+                            <p><?php echo the_field('contect_details_title') ?></p>
                         </div>
                         <div class="contact-para">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p><?php echo the_field('contect_details'); ?></p>
                         </div>
                         <div class="info">
-                            <a href="tel:+91xxxxx-xxxxx">(+91)xxxxx-xxxxx</a>
+                            <a href="<?php echo the_field('contect_tel') ?>"><?php echo the_field('contect_number');?></a>
                         </div>
                     </div>
                 </div>
