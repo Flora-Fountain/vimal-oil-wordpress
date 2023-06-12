@@ -41,7 +41,7 @@
         <div class="container-fluid">
             <div class="nav-menu">
                 <div class="logo" id="logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="vimal oil">
+                    <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="vimal oil"></a>
                 </div>
                 <div class="menu-btn">
                     <span></span>

@@ -107,7 +107,7 @@ a:focus{
 	height: 0;
 	border-bottom: 45px solid white;
 	border-left: 100vw solid transparent;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	right: 0;
 	z-index: 2;
@@ -119,7 +119,7 @@ a:focus{
 	height: 0;
 	border-top: 45px solid white;
 	border-right: 100vw solid transparent;
-	top: 0;
+	top:-1px;
 	left: 0;
 	right: 0;
 	z-index: 2;
@@ -142,7 +142,7 @@ a:focus{
 	height: 0;
 	border-bottom: 45px solid #ffffff;
 	border-left: 100vw solid transparent;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	right: 0;
 	z-index: 2;
@@ -155,7 +155,7 @@ a:focus{
 	height: 0;
 	border-bottom: 45px solid #0c56a1;
 	border-left: 100vw solid transparent;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	right: 0;
 	z-index: 2;
@@ -536,8 +536,9 @@ a:focus{
         transform:translateX(-20px) rotate(180deg);
     }
     100%{
-        top: 100%;
-        transform:translateX(-20px) rotate(225deg);
+        top: 90%;
+		transform: translateX(-20px) rotate(225deg);
+		opacity: 0.2;
     }
 }
 .health-section .owl {
@@ -732,6 +733,12 @@ a:focus{
 	height: auto;
 	margin: 0 auto;
     position: relative;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+.pro-sld-main:hover img {
+	filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
 }
 .pro-sld-main a {
 	font-size: 32px;
@@ -931,12 +938,12 @@ a:focus{
 	margin: 40px auto;
 	line-height: 1.4;
 }
-
-.nrt-section .h2-white{
-	font-size: 64px;
+.nrt-section .h2-white {
+	font-size: 90px;
 	align-items: center;
-} 
-
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
 .animate-text {
 	text-align: center;
 	margin: 0 auto;
@@ -999,7 +1006,7 @@ a:focus{
 	width: 100%;
 	text-align: center;
 	max-width: 320px;
-	margin: 498px auto 0;
+	margin: 482px auto 0;
 	padding: 40px;
 	border-radius: 50%;
 	background: #0c56a1;
@@ -1161,7 +1168,7 @@ a:focus{
     border-bottom: 50px solid #ffffff;
     border-left: 100vw solid transparent;
     position: absolute;
-    bottom: 0;
+    bottom: -1px
 }
 .head-para{
     text-align: center;
@@ -1294,8 +1301,8 @@ a:focus{
 	font-size: 26px;
 }
 .h4-title h4 {
-	font-size: 35px;
-	font-weight: bold;
+	font-size: 26px;
+	font-weight: 600;
 }
 .recipe-section .submit-button{
 	margin-top: 40px;
@@ -1666,14 +1673,15 @@ a:focus{
     color: #ffffff;
     font-weight: 500;
 }
-.footer input[type=email] {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    background: #094584;
-    border-radius: 10px;
-    resize: vertical;
-    color: #fff;
+.footer input[type="email"] {
+	width: 100%;
+	padding: 12px;
+	background: #094584;
+	border-radius: 10px;
+	resize: vertical;
+	color: #fff;
+	border: 0;
+	outline: none;
 }
 /* @keyframes wave {
     0%,
@@ -2111,6 +2119,13 @@ a:focus{
 	top: 0;
 	left: 0;
 	animation: up-down 6s infinite linear;
+}
+.health-section .floating-ele.after-banner img:nth-child(2) {
+	bottom: 10%;
+	left: auto;
+	animation: up-down 5s infinite linear reverse;
+	right: 0;
+	animation-delay: .7s;
 }
 .stats-desc,.counter-main,.text-center,.h2-white {
 	position: relative;
