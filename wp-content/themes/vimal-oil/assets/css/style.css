@@ -185,7 +185,7 @@ a:focus{
 }
 .nav-menu {
 	display: flex;
-	align-items: start;
+	align-items: center;
 	justify-content: space-between;
 	width: 100%;
 }
