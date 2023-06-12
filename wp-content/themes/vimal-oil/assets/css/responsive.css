@@ -1376,6 +1376,38 @@
     }
 
 
+    /* nrt-page section  */
+
+    .nrt-temp-gen .gen-sec .row{
+        flex-direction: column-reverse;
+    }
+
+    .nrt-time .gen-sec .row{
+        flex-direction: column;
+    }
+    .nrt-pressure .gen-sec .row{
+        flex-direction: column-reverse;
+    }
+    .nrt-vaccum .gen-sec .row{
+        flex-direction: column;
+    }
+
+    .nrt-temp-left img, .nrt-temp-right img {
+        width: 100%;
+        max-width: 240px;
+        display: block;
+        margin: 0 auto;
+    }
+    .nrt-banner .oil-bottle-flow {
+        position: absolute;
+        bottom: -59px;
+        left: -72px;
+        width: 342px;
+        height: auto;
+        z-index: 4;
+    }
+
+
 }
 @media screen and (max-width:575px) {
     .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white,.form-inner .h2-white {
@@ -1467,7 +1499,21 @@
         min-height: 240px;
     }
 
-    /* oil calender css  */
+    /* nrt page css  */
+    .nrt-banner .oil-bottle-flow {
+        position: absolute;
+        bottom: -59px;
+        left: -100px;
+        max-width: 300px;
+        height: auto;
+        z-index: 4;
+    }
+    .nrt-temp-left img, .nrt-temp-right img {
+        width: 100%;
+        max-width: 220px;
+        display: block;
+        margin: 0 auto;
+    }
     
 }
 @media screen and (max-width:479px) {
@@ -1549,6 +1595,23 @@
     .job-opening .job-card .role-small-details{
         display: inline-block;
     }
+
+    /* nrt-page css  */
+    .nrt-temp-left img, .nrt-temp-right img {
+        width: 100%;
+        max-width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nrt-banner .oil-bottle-flow {
+        position: absolute;
+        bottom: -59px;
+        left: -72px;
+        width: 243px;
+        height: auto;
+        z-index: 4;
+    }
 }
 @media screen and (max-width:359px) {
     .pro-sld-main a {
@@ -1576,5 +1639,24 @@
     }
     .h1-title{
         font-size: 42px;
+    }
+
+    /* nrt-page css  */
+    .nrt-temp-left img, .nrt-temp-right img {
+        width: 100%;
+        max-width: 180px;
+        display: block;
+        margin: 0 auto;
+    }
+    .nrt-temp-left img, .nrt-temp-right p {
+       line-height: 23px;
+    }
+    .nrt-banner .oil-bottle-flow {
+        position: absolute;
+        bottom: -59px;
+        left: -72px;
+        width: 230px;
+        height: auto;
+        z-index: 4;
     }
 }

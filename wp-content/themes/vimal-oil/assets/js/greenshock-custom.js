@@ -8,9 +8,14 @@ $( window ).on('scroll', function(){
     })
 
 
+    let i = 0;
+    
+
+
+
     // var scrollTop = $(this).scrollTop();
     // $( '.oil-swirl' ).css({
-    //   transform: 'translateX('+  ( -1 * scrollTop ) +'px)',
+    //   height: ( -1 * scrollTop ) +'px)',
     // });
 
     // $('.oil-swirl').css({
@@ -28,7 +33,7 @@ $( window ).on('scroll', function(){
 
   
     
-    // var vh = (document.documentElement.clientHeight * 80) / 100;//80vh to px
+    // var vh = (document.documentElement.clientHeight * 80) / 100; //80vh to px
     // var scrollTop = $(this).scrollTop();
     // var current = parseFloat($('.coffee-swirl-image').css('opacity'));
     // var opacity = Math.min(Math.max((scrollTop >= vh ? current - 0.1 : current + 0.1), 0), 1);
@@ -145,3 +150,67 @@ $( window ).on('scroll', function(){
 //     div.style.height = scrollTop + 'px';
 //     img.style.visibility = 'visible';
 // });
+
+
+// var tl = gsap.timeline({paused:true});
+
+// tl
+//   .fromTo(".oil-swirl", {yPercent:-100}, {duration: 0.5, yPercent:0})
+//   .fromTo(".oil-swirl img", {yPercent:100}, {duration: 0.5, yPercent: 0}, "<")
+//   .reverse();
+
+// $(window).on("scroll", function() {
+//   if ($(window).scrollTop() > 300) { // Adjust the scroll position threshold as needed
+//     tl.reversed(!tl.reversed());
+//   }
+// });
+
+// let bgImage = document.querySelector(".oil-swirl");
+//       //  Now registering thescrollTrigger plugin to gsap
+//     gsap.registerPlugin(ScrollTrigger);
+//       // Now we are going to animate
+
+//     gsap.fromTo(
+//         bgImage,
+//         {
+//           clipPath: "circle(5% at 77% 40%)",
+//         },
+//         {
+//           clipPath: "circle(75% at 50% 50%)",
+//           ease: "none",
+//           //  We want to do that animation on scroll
+//           scrollTrigger: {
+//             trigger: bgImage,
+//             scrub: 1,
+//             start: "top center",
+//             end: "top center-=200",
+//           },
+//         }
+//       );
+
+    //   $(window).on("scroll", function() {
+    //     var scrollPos = $(window).scrollTop();
+    //     var windowHeight = $(window).height();
+    //     var imagePos = $(".coffee-swirl-image").offset().top;
+        
+    //     if (scrollPos > imagePos - windowHeight + 100) { // Adjust the offset and threshold as needed
+    //       $(".coffee-swirl-image").addClass("reveal");
+    //     }
+    //   });
+
+
+
+    window.addEventListener('scroll', (e) => {
+        document.querySelector('.oil-swirl').style.height = (window.scrollY) + 'px';
+        document.querySelector('.oil-swirl').style.transitionDelay = "0.2s";
+        document.querySelector('.oil-swirl').style.transitionTimingFunction = 'ease-in-out';
+
+        // const scrollPosition = window.scrollY;
+        // const maxScrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        // const maxElementHeight = 100; // Define the maximum height you want for the element
+
+        // // Calculate the height based on the scroll position
+        // let height = Math.max(0, maxElementHeight - scrollPosition);
+        // height = Math.min(height, maxElementHeight); // Ensure the height doesn't exceed the maximum
+        // document.querySelector('.oil-swirl').style.height = height + 'px';
+    })
