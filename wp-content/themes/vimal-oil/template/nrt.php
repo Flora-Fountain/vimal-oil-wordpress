@@ -219,9 +219,6 @@ echo get_header();
                 <div class="back-sec"></div>
             </div>
         </div>
-
-
-
     </div>
 
     <!-- module-9 oil range -->

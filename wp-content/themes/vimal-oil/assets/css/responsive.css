@@ -1705,7 +1705,13 @@
         display: block;
         margin: 0 auto;
     }
-    
+
+    .nrt-banner .nrt-logo-img img {
+        display: block;
+        margin: 0 auto;
+        width: 180px;
+    }
+
 }
 @media screen and (max-width:479px) {
     .pro-sld-main a {

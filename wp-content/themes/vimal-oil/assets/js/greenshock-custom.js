@@ -200,18 +200,20 @@ $( window ).on('scroll', function(){
 
 
 
-    window.addEventListener('scroll', (e) => {
-        document.querySelector('.oil-swirl').style.height = window.scrollY + 'px';
-        document.querySelector('.oil-swirl').style.transitionDelay = "0.2s";
-        document.querySelector('.oil-swirl').style.transitionTimingFunction = 'ease-in-out';
+// oil-flow js 
 
-        // const scrollPosition = window.scrollY;
-        // const maxScrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-        // const maxElementHeight = 100; // Define the maximum height you want for the element
+window.addEventListener('scroll', (e) => {
+    document.querySelector('.oil-swirl').style.height = window.scrollY + 'px';
+    document.querySelector('.oil-swirl').style.transitionDelay = "0.1s";
+    document.querySelector('.oil-swirl').style.transitionTimingFunction = 'ease-in';
 
-        // // Calculate the height based on the scroll position
-        // let height = Math.max(0, maxElementHeight - scrollPosition);
-        // height = Math.min(height, maxElementHeight); // Ensure the height doesn't exceed the maximum
-        // document.querySelector('.oil-swirl').style.height = height + 'px';
-    })
+    // const scrollPosition = window.scrollY;
+    // const maxScrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    // const maxElementHeight = 100; // Define the maximum height you want for the element
+
+    // // Calculate the height based on the scroll position
+    // let height = Math.max(0, maxElementHeight - scrollPosition);
+    // height = Math.min(height, maxElementHeight); // Ensure the height doesn't exceed the maximum
+    // document.querySelector('.oil-swirl').style.height = height + 'px';
+})
  
