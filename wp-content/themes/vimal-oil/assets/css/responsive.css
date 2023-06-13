@@ -594,6 +594,14 @@
     .recipe-section {
         padding-top: 20px;
     }
+
+    .blog-detail h2{
+        font-size: 45px;
+    }
+    .blog-detail h3{
+        font-size: 26px;
+    }
+
     .tvc-section #tvc-carousel {
         margin-bottom: 0;
     }
@@ -607,9 +615,7 @@
         padding: 50px 0 0;
     }
 }
-@media screen and (max-width:1024px) {
-    
-}
+
 @media screen and (max-width:991px) {
     .h1-title{
         font-size: 70px;
@@ -989,6 +995,12 @@
 @media screen and (max-width:767px) {
     body{
         font-size: 18px;
+    }
+    .blog-detail h2{
+        font-size: 36px;
+    }
+    .blog-detail h3{
+        font-size: 24px;
     }
     .header, .header.nav-down {
         padding: 10px 0;
@@ -2055,9 +2067,6 @@
     .nrt-temp-left img, .nrt-temp-right img {
         width: 100%;
         max-width: 180px;
-    }
-    .nrt-temp-left img, .nrt-temp-right p {
-       /* line-height: 23px; */
     }
     .nrt-banner .oil-bottle-flow {
         position: absolute;
