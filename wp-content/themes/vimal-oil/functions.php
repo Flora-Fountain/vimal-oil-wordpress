@@ -17,3 +17,41 @@ function AllScript()
     wp_enqueue_script('greenshock-custom-js',get_template_directory_uri().'/assets/js/greenshock-custom.js', true);
 }
 add_action('wp_enqueue_scripts','AllScript');
+
+// Share post/blog on social media  
+function social_share_links()
+{
+	global $post;
+	// if(is_singular()) {
+
+	// Get current page's URL 
+	$sl_url = urlencode(get_permalink());
+	// Get current page title - replace space by %20
+	$sl_title = str_replace(' ', '%20', get_the_title());
+        
+    
+	// Construct social sharing URLs
+	$twitterURL = 'https://twitter.com/intent/tweet?text=' . $sl_title . '&url=' . $sl_url;
+	$facebookURL = 'https://www.facebook.com/sharer/sharer.php?u=' . $sl_url;
+	// $redditURL = 'https://www.reddit.com/submit?url='.$sl_url.'&title='.$sl_title;
+	$linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url=' . $sl_url . '&title=' . $sl_title;
+
+
+	$content = '<div class="template-demo">';
+	$content .= '<a class="btn btn-social-icon" href="' . $facebookURL . '" target="_blank">';
+	$content .= 'facebook';
+	$content .= '</a>';
+	$content .= '<a class="btn btn-social-icon" href="' . $linkedInURL . '" target="_blank">';
+	$content .= 'linkedin';
+	$content .= '</a>';
+	$content .= '<a class="btn btn-social-icon" href="' . $twitterURL . '" target="_blank">';
+	$content .= 'twitter';
+	$content .= '</a>';
+
+	$content .= '</div>';
+    
+	return $content;
+}
+// This will create a wordpress shortcode [social_share_links].
+
+add_shortcode('social_share_links', 'social_share_links');

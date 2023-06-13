@@ -1,0 +1,40 @@
+2023-06-13T06:37:00+00:00 CRITICAL Unclosed '{' on line 35 in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\disclaimer.php on line 76
+
+2023-06-13T06:37:32+00:00 CRITICAL Unclosed '{' on line 35 in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\disclaimer.php on line 67
+
+2023-06-13T09:03:04+00:00 CRITICAL Unclosed '{' on line 85 in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\quiz.php on line 259
+
+2023-06-13T09:15:53+00:00 CRITICAL Uncaught Error: Call to undefined function the_rows() in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\quiz.php:92
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\quiz.php on line 92
+
+2023-06-13T09:16:06+00:00 CRITICAL Uncaught Error: Call to undefined function the_rows() in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\quiz.php:92
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\quiz.php on line 92
+
+2023-06-13T09:16:36+00:00 CRITICAL syntax error, unexpected token "}" in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\quiz.php on line 94
+
+2023-06-13T09:16:54+00:00 CRITICAL Uncaught Error: Call to undefined function the_rows() in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\quiz.php:92
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\quiz.php on line 92
+
+2023-06-13T10:17:41+00:00 CRITICAL Uncaught Error: Call to undefined function the_thumbnail() in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single.php:18
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\single.php on line 18
+

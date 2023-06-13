@@ -9,19 +9,19 @@ echo get_header();
     <!--module-2 hero banner html code  -->
     <div class="hero-banner video-banner blue-bg-banner">
         <video autoplay muted loop id="video">
-            <source src="<?php echo get_template_directory_uri(); ?>/assets/video/vimal-ad.mp4" type="video/mp4">
+            <source src="<?php echo the_field('benner_video'); ?>" type="video/mp4">
         </video>
         <div class="text-middle">
             <div class="banner-right">
                 <div class="h1-title">
-                    <h1 class="text-noeffect">Vimal Oil <span>30 Years of <br/> Health &amp; Happiness!</span></h1>
+                    <h1 class="text-noeffect"><?php echo the_field('benner_title') ?> <span><?php echo the_field('benner_sub_title') ?></span></h1>
                 </div>
             </div>
             <div class="hash-sec">
-                <span>#ChangeForHeath</span>
+                <span><?php echo the_field('benner_hash_tag_text') ?></span>
             </div>
             <div class="submit-button text-center">
-                <button class="btn-effect" type="submit">Buy Now</button>
+                <a href="<?php echo the_field('benner_button_link') ?>" class="btn-effect"><?php echo the_field('benner_button_name') ?></a>
             </div>
         </div>
     </div>
@@ -31,15 +31,15 @@ echo get_header();
         <div class="container">
             <div class="h2-white">
                 <h2 class="text-noeffect">
-                    Helping you
+                    <?php echo the_field('after_benner_section_title');?>
                 </h2>
                 <h2 class="text-noeffect">
-                    Change For Health
+                    <?php echo the_field('after_benner_section_sub_title');?>
                 </h2>
             </div>
             <div class="para">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p><?php echo the_field('after_benner_section_description1') ?></p>
+                <p><?php echo the_field('after_benner_section_description2') ?></p>
             </div>
         </div>
     </div>
@@ -48,19 +48,19 @@ echo get_header();
     <div class="legacy-section default-section blue-bg">
         <div class="container">
             <div class="h2-blue">
-                <h2 class="text-noeffect">A lagacy of trust & promice</h2>
+                <h2 class="text-noeffect"><?php echo the_field('legacy_section_title');?></h2>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="legacy-image image-part">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/trust-promise.jpg" alt="A lagacy of trust & promice">
+                        <img src="<?php echo the_field('legacy_section_image'); ?>" alt="A lagacy of trust & promice">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="content-part">
                         <div class="para">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <p><?php echo the_field('legacy_section_description1');?></p>
+                            <p><?php echo the_field('legacy_section_description2');?></p>
                         </div>
                     </div>
                 </div>
@@ -73,19 +73,19 @@ echo get_header();
         <div class="container">
             <div class="h2-white">
                 <h2 class="text-noeffect">
-                    Quality is always paramount
+                    <?php echo the_field('quality_section_title');?>
                 </h2>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="content-part">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p><?php echo the_field('quality_section_description'); ?></p>
+                        <p><?php echo the_field('quality_section_description2'); ?></p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="image-part">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/quality.png" alt="A quality is always paramount">
+                    <div class="image-part">    
+                        <img src="<?php echo the_field('quality_section_image'); ?>" alt="A quality is always paramount">
                     </div>
                 </div>
             </div>
@@ -97,19 +97,19 @@ echo get_header();
             <div class="container">
             <div class="h2-blue">
                 <h2 class="text-noeffect">
-                    Sourcing and Extraction
+                    <?php echo the_field('sourcing_section_title');?>
                 </h2>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="image-part">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sourcing.png" alt="Souring and Extraction">
+                        <img src="<?php echo the_field('sourcing_section_image'); ?>" alt="Souring and Extraction">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="content-part">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p><?php echo the_field('sourcing_section_description1');?></p>
+                        <p><?php echo the_field('sourcing_section_description2');?></p>
                     </div>
                 </div>
                 </div>
@@ -130,15 +130,26 @@ echo get_header();
         </div>
         <div class="container">
             <div class="h2-white">
-                <h2 class="text-noeffect">What is Nutrition<br/> Retention Technology</h2>
+                <h2 class="text-noeffect"><?php the_field('nrt_section_title');?></h2>
             </div>
             <div class="text-center">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</op>
+                <p><?php echo the_field('nrt_section_description1');?></p>
+                <p><?php echo the_field('nrt_section_description1');?></p>
             </div>
             <div class="nr-det">
                 <ul>
-                    <li>
+                    <?php  
+                        if (have_rows('nrt_process')) {
+                            while (have_rows('nrt_process')) {
+                                the_row(); ?>
+                                <li>
+                                    <img src="<?php echo the_sub_field('nrt_process_image'); ?>" alt="<?php the_sub_field('nrt_process_title');?>"/>
+                                    <h4><?php the_sub_field('nrt_process_title');?><span><?php the_sub_field('nrt_process_description');?> </span></h4>
+                                </li>
+                            <?php }
+                        }
+                    ?>
+                    <!-- <li>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/temperature.png" alt="temperature"/>
                         <h4>Temperature<span>Lorem Ipsum is simply dummy text of the </span></h4>
                     </li>
@@ -153,57 +164,50 @@ echo get_header();
                     <li>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vacuum.png" alt="vacuum"/>
                         <h4>Vacuum<span>Lorem Ipsum is simply dummy text of the </span></h4>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="submit-button text-center">
-                <button class="btn-effect" type="submit">Know More</button>
+                <a href="<?php echo the_field('nrt_section_button_link');?>" class="btn-effect"><?php echo the_field('nrt_section_button_name');?></a>
             </div>
         </div>
     </div>
+    
+    <!-- Get Product -->
+    <?php 
+         $args = array(
+            'post_type' => 'product',
+            'status'    => 'publish'
+        );
+    
+        $products = wc_get_products( $args );
+    ?>
 
     <!-- module-8 product Slider  -->
     <div class="product-section-1 default-section blue-bg">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="h2-blue">
-                    <h2 class="text-noeffect">Make Healthy Choice</h2>
+                    <h2 class="text-noeffect"><?php echo the_field('product_section_title') ?></h2>
                 </div>
                 <div class="home-prod-sldr owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="pro-sld-main light-blue">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-oil-slider.png" alt="vimal-cottonseed-oil" width="259" height="390"/>
-                            <a href="#">Refined Cottonseed Oil</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pro-sld-main red">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-kachi-ghani-oil-slider.png" alt="kachi-ghani-oil" width="259" height="390"/>
-                            <a href="#">Tikha Kachi Ghani Musterd Oil</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pro-sld-main ylw">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-gold-groundnut-oil-slider.png" alt="vimal-pure-gold-oil" width="259" height="390"/>
-                            <a href="#">Pure Gold Groundnut Oil</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pro-sld-main grn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahary-soyabean-oil-slider.png" alt="vimal-soyahart-oil" width="259" height="390"/>
-                            <a href="#">Soyahart Refined Soyabean Oil</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pro-sld-main red">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-sunhart-oil-slider.png" alt="vimal-sunhart-oil" width="259" height="390"/>
-                            <a href="#">Sunhart Refined Sunflower Oil</a>
-                        </div>
-                    </div>
+                    <?php 
+                        foreach ($products as $product) {
+                            $image = wp_get_attachment_image_src( get_post_thumbnail_id($product->get_id()));
+                            $color = get_field('product_background_color',$product->get_id());
+                            ?>
+                                <div class="item">
+                                    <div class="pro-sld-main <?php if($color == '#fbef4d'){echo "ylw";} ?>" style="background:<?php echo get_field('product_background_color',$product->get_id()); ?>">
+                                        <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
+                                        <a href="<?php the_permalink($product->get_id()); ?>"><?php echo $product->get_title(); ?></a>
+                                    </div>
+                                </div>        
+                        <?php }
+                    ?>
                 </div>
                 <div class="submit-button text-center">
-                    <a href="#" class="btn-effect" type="submit">
-                       All Products
+                    <a href="<?php echo the_field('product_section_button_link') ?>" class="btn-effect" type="submit">
+                       <?php the_field('products_section_button_name') ?>
                     </a>
                 </div>
             </div>
@@ -214,12 +218,12 @@ echo get_header();
     <div class="footer-before net-sec default-section">
         <div class="container">
             <div class="h2-white">
-                <h2 class="text-noeffect">Our locations</h2>
+                <h2 class="text-noeffect"><?php echo the_field('before_footer_section_title');?></h2>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="loc-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/location-map.png" alt="location-map"/>
+                        <img src="<?php echo the_field('before_footer_section_location_image'); ?>" alt="location-map"/>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
