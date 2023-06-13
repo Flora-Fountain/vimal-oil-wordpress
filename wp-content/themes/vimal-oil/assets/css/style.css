@@ -3196,10 +3196,19 @@ a:focus{
 	z-index: 4;
 }
 
-.nrt-banner .oil-bottle-flow img{
+.nrt-banner .oil-bottle-flow img {
 	width: 100%;
+	transition: 0.5s;
+	-webkit-transform: rotate(-120deg);
+	-ms-transform: rotate(-120deg);
+	transform: rotate(-120deg);
+	height: 310px;
 }
-
+.nrt-banner .oil-bottle-flow.rotate img{
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
 .temp-section-nrt{
 	position: relative;
 	height: 100vh;
@@ -3324,6 +3333,9 @@ a:focus{
 	align-items: flex-start;
 	opacity: 1;
 	overflow: hidden;
+	-webkit-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
  }
 
  .oil-swirl .coffee-swirl-image{

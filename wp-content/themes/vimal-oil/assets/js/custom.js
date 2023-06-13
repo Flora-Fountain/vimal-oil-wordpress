@@ -660,7 +660,18 @@ $(document).ready(function(){
       }, 250);
 });
 
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
 
+     //>=, not <=
+    if (scroll >= 20) {
+        //clearHeader, not clearheader - caps H
+        $(".oil-bottle-flow").addClass("rotate");
+    }
+    else{
+        $(".oil-bottle-flow").removeClass("rotate");
+    }
+}); //missing );
 
 
 // instagram swipe effect 
