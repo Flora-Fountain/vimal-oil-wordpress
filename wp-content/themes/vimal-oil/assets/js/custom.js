@@ -484,174 +484,174 @@ $(document).ready(function(){
         })
     });
 
-    // Quiz JS
-    // Create a function that will generate new question objects
-    function newQuestion(params) {
-        var temp = {
-            question:  params[0],
-            choices: params[1],
-            correctAnswer: params[2]
-        };
-        return temp;
-    }
-    // Create the array allQuestions and generate all of the new questions
-    var allQuestions = [
-        ["<p>1. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
-        ["<p>2. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
-        ["<p>3. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
-        ["<p>4. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
-        ["<p>5. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1]
-    ].map(newQuestion);
-    // Create and initialize the total (to 0), number (to 0), and totalQuestions (to the length of allQuestions) variables
-    var total = 0, number = 0, totalQuestions = allQuestions.length, answers = [];
+    // // Quiz JS
+    // // Create a function that will generate new question objects
+    // function newQuestion(params) {
+    //     var temp = {
+    //         question:  params[0],
+    //         choices: params[1],
+    //         correctAnswer: params[2]
+    //     };
+    //     return temp;
+    // }
+    // // Create the array allQuestions and generate all of the new questions
+    // var allQuestions = [
+    //     ["<p>1. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
+    //     ["<p>2. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
+    //     ["<p>3. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
+    //     ["<p>4. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
+    //     ["<p>5. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1]
+    // ].map(newQuestion);
+    // // Create and initialize the total (to 0), number (to 0), and totalQuestions (to the length of allQuestions) variables
+    // var total = 0, number = 0, totalQuestions = allQuestions.length, answers = [];
 
-    $(document).ready(function() {
+    // $(document).ready(function() {
 
-        function newQuestionAnswers() {
-            $("#content").fadeOut(500, function() {
-                $("#answers").empty();
-                if (number < totalQuestions)
-                    $("#questCount").text("" + (number + 1) + "/5");
-                var query = allQuestions[number];
-                $("#question").html(query.question);
+    //     function newQuestionAnswers() {
+    //         $("#content").fadeOut(500, function() {
+    //             $("#answers").empty();
+    //             if (number < totalQuestions)
+    //                 $("#questCount").text("" + (number + 1) + "/5");
+    //             var query = allQuestions[number];
+    //             $("#question").html(query.question);
 
-                // make sure to put in the name parameter and make sure that it's the same as the div that groups
-                // the radio buttons together, otherwise they can all be checked at the same time, you'll never have
-                // just one answer. The use of the html <label> element was discovered here:
-                // http://stackoverflow.com/questions/5795499/changing-text-of-radio-button
-                // Where it was explained that the text of the radio button was now explicitly associated with the
-                // use of <label>
-                for(var i = 0; i < query.choices.length; i++)
-                    $("#answers").append("<div class='options'><input type='radio' name='answers' id='radio" + i + "' value='answer" + i
-                        + "'><label for='radio" + i + "'>" + query.choices[i] + "</label></div>");
-                if(answers.length > number)
-                    $("#radio" + answers[number]).prop("checked", true);
-                if (number > 0)
-                    $("#back").prop("disabled", false);
-            });
-            $("#content").fadeIn(500);
-        }
+    //             // make sure to put in the name parameter and make sure that it's the same as the div that groups
+    //             // the radio buttons together, otherwise they can all be checked at the same time, you'll never have
+    //             // just one answer. The use of the html <label> element was discovered here:
+    //             // http://stackoverflow.com/questions/5795499/changing-text-of-radio-button
+    //             // Where it was explained that the text of the radio button was now explicitly associated with the
+    //             // use of <label>
+    //             for(var i = 0; i < query.choices.length; i++)
+    //                 $("#answers").append("<div class='options'><input type='radio' name='answers' id='radio" + i + "' value='answer" + i
+    //                     + "'><label for='radio" + i + "'>" + query.choices[i] + "</label></div>");
+    //             if(answers.length > number)
+    //                 $("#radio" + answers[number]).prop("checked", true);
+    //             if (number > 0)
+    //                 $("#back").prop("disabled", false);
+    //         });
+    //         $("#content").fadeIn(500);
+    //     }
 
-        function checkAnswer() {
-            // Make sure a radio button is checked before proceeding. If one is checked add it to answers, else if
-            // the last radio button is reached and it is not checked alert the user that they must select an answer.
-            for(var i = 0; i < $("input").length; i++) {
-                if ($("#radio" + i).is(":checked")) {
-                    answers[number] = i;
-                    break;
-                }
-                else if ( i === $("input").length -1 && !$("#radio" +i).is(":checked")) {
-                    $("#next").after("<p id='warning'>Please select an answer and then click next</p>");
-                    return false;
-                }
-            }
+    //     function checkAnswer() {
+    //         // Make sure a radio button is checked before proceeding. If one is checked add it to answers, else if
+    //         // the last radio button is reached and it is not checked alert the user that they must select an answer.
+    //         for(var i = 0; i < $("input").length; i++) {
+    //             if ($("#radio" + i).is(":checked")) {
+    //                 answers[number] = i;
+    //                 break;
+    //             }
+    //             else if ( i === $("input").length -1 && !$("#radio" +i).is(":checked")) {
+    //                 $("#next").after("<p id='warning'>Please select an answer and then click next</p>");
+    //                 return false;
+    //             }
+    //         }
 
-            // Check to see if the current radio button checked is the correct answer. If correct increment the
-            // score 10 points. This answer helped figure out if a radio box was checked and allowed you to use it in
-            // an if statement http://stackoverflow.com/a/12932116
-            var query = allQuestions[number];
-            if($("#radio" + query.correctAnswer).is(":checked"))
-                updateScore(10);
-            number += 1;
-            return true;
-        }
+    //         // Check to see if the current radio button checked is the correct answer. If correct increment the
+    //         // score 10 points. This answer helped figure out if a radio box was checked and allowed you to use it in
+    //         // an if statement http://stackoverflow.com/a/12932116
+    //         var query = allQuestions[number];
+    //         if($("#radio" + query.correctAnswer).is(":checked"))
+    //             updateScore(10);
+    //         number += 1;
+    //         return true;
+    //     }
         
 
-        function updateScore(change) {
-            total += change;
-            $("#score").text("Score: " + total);
-        }
-        $("#back").hide();
-        $("#next").hide();
-        $("#startagain").hide();
-        $("#score").hide();
-        $("#bar10").hide();
-        $("#result").hide();
-        $("#resultbad").hide();
-        // $("#start").on('click', function() {
-        //     $("#start").hide();
-        //     $('#h4Start').hide(1000);
-        //      $("#next").show(1000);
-        //     $("#bar").width('5%');
-        //     newQuestionAnswers();
-        //     updateScore(0);
-        // });
+    //     function updateScore(change) {
+    //         total += change;
+    //         $("#score").text("Score: " + total);
+    //     }
+    //     $("#back").hide();
+    //     $("#next").hide();
+    //     $("#startagain").hide();
+    //     $("#score").hide();
+    //     $("#bar10").hide();
+    //     $("#result").hide();
+    //     $("#resultbad").hide();
+    //     // $("#start").on('click', function() {
+    //     //     $("#start").hide();
+    //     //     $('#h4Start').hide(1000);
+    //     //      $("#next").show(1000);
+    //     //     $("#bar").width('5%');
+    //     //     newQuestionAnswers();
+    //     //     updateScore(0);
+    //     // });
 
-        newQuestionAnswers();
-        $("#next").show(1000);
+    //     newQuestionAnswers();
+    //     $("#next").show(1000);
 
-        $("#startagain").on('click', function() {
-        location.reload();
-        });
+    //     $("#startagain").on('click', function() {
+    //     location.reload();
+    //     });
         
-        if (number > 0)
-            $("#back").prop("disabled", false);
-            $("#bar").width('00%');
+    //     if (number > 0)
+    //         $("#back").prop("disabled", false);
+    //         $("#bar").width('00%');
 
-        $("#next").on('click', function() {
-            $("#back").show(100);
-            $("#warning").remove();
-            if(checkAnswer()) {
-                if (number < totalQuestions)
-                    newQuestionAnswers();
-                // else
-                //     finalScore(); 
-            }
-            // Enable the back button if past first question
-            if (number > 0)
-                $("#back").prop("disabled", false);
-                $("#bar").width('20%');
+    //     $("#next").on('click', function() {
+    //         $("#back").show(100);
+    //         $("#warning").remove();
+    //         if(checkAnswer()) {
+    //             if (number < totalQuestions)
+    //                 newQuestionAnswers();
+    //             // else
+    //             //     finalScore(); 
+    //         }
+    //         // Enable the back button if past first question
+    //         if (number > 0)
+    //             $("#back").prop("disabled", false);
+    //             $("#bar").width('20%');
             
-            if (number > 1)
-            $("#bar").width('40%');
-            if (number > 2)
-            $("#bar").width('60%');
-            if (number > 3)
-            $("#bar").width('80%');
-            if (number > 4){
-            $("#bar").width('100%');
-            window.location.replace("http://localhost/vimal-oil-wordpress/oil-calendar/")
-            }
-        });
+    //         if (number > 1)
+    //         $("#bar").width('40%');
+    //         if (number > 2)
+    //         $("#bar").width('60%');
+    //         if (number > 3)
+    //         $("#bar").width('80%');
+    //         if (number > 4){
+    //         $("#bar").width('100%');
+    //         window.location.replace("http://localhost/vimal-oil-wordpress/oil-calendar/")
+    //         }
+    //     });
 
-        console.log(allQuestions[4]);
+    //     console.log(allQuestions[4]);
 
-        $("#next").on('click', function(){
-            if(number == allQuestions[4]){
-                window.location.replace("http://localhost/vimal-oil-wordpress/oil-calendar/")
-            }
-        })
+    //     $("#next").on('click', function(){
+    //         if(number == allQuestions[4]){
+    //             window.location.replace("http://localhost/vimal-oil-wordpress/oil-calendar/")
+    //         }
+    //     })
 
-        if(allQuestions[4])
+    //     if(allQuestions[4])
         
-        console.log(allQuestions[4]);
+    //     console.log(allQuestions[4]);
 
-        $("#back").on('click', function() {
-            if ( number === totalQuestions) {
-                $("#score").hide();
-                $("#question, #answers, #questCount, #next, #score").show(2500);
-            }
+    //     $("#back").on('click', function() {
+    //         if ( number === totalQuestions) {
+    //             $("#score").hide();
+    //             $("#question, #answers, #questCount, #next, #score").show(2500);
+    //         }
             
-            if (number > 0)
-            $("#bar").width('0%');
-            if (number > 1)
-            $("#bar").width('20%');
-            if (number > 2)
-            $("#bar").width('40%');
-            if (number > 3)
-            $("#bar").width('60%');
-            if (number > 4)
-            $("#bar").width('80%');
-            if (number > 5)
-            $("#bar").width('100%');
+    //         if (number > 0)
+    //         $("#bar").width('0%');
+    //         if (number > 1)
+    //         $("#bar").width('20%');
+    //         if (number > 2)
+    //         $("#bar").width('40%');
+    //         if (number > 3)
+    //         $("#bar").width('60%');
+    //         if (number > 4)
+    //         $("#bar").width('80%');
+    //         if (number > 5)
+    //         $("#bar").width('100%');
             
-            number -= 1;
-            $("#back").prop("disabled", true);
-            if (allQuestions[number].correctAnswer === answers[number])
-                updateScore(-10);
-            newQuestionAnswers();    
-        });
-    });
+    //         number -= 1;
+    //         $("#back").prop("disabled", true);
+    //         if (allQuestions[number].correctAnswer === answers[number])
+    //             updateScore(-10);
+    //         newQuestionAnswers();    
+    //     });
+    // });
 
 
 $(document).ready(function(){
@@ -670,4 +670,26 @@ $(window).scroll(function() {
     else{
         $(".oil-bottle-flow").removeClass("rotate");
     }
+
 });
+
+
+// instagram swipe effect 
+
+
+
+// oil-flow js 
+window.addEventListener('scroll', (e) => {
+    document.querySelector('.oil-swirl').style.height = window.scrollY + 'px';
+    document.querySelector('.oil-swirl').style.transitionDelay = "0.1s";
+    document.querySelector('.oil-swirl').style.transitionTimingFunction = 'ease-in';
+
+    // const scrollPosition = window.scrollY;
+    // const maxScrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    // const maxElementHeight = 100; // Define the maximum height you want for the element
+
+    // // Calculate the height based on the scroll position
+    // let height = Math.max(0, maxElementHeight - scrollPosition);
+    // height = Math.min(height, maxElementHeight); // Ensure the height doesn't exceed the maximum
+    // document.querySelector('.oil-swirl').style.height = height + 'px';
+})

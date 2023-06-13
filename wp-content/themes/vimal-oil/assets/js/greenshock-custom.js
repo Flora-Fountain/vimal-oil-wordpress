@@ -202,18 +202,22 @@ $( window ).on('scroll', function(){
 
 // oil-flow js 
 
-window.addEventListener('scroll', (e) => {
-    document.querySelector('.oil-swirl').style.height = window.scrollY + 'px';
-    document.querySelector('.oil-swirl').style.transitionDelay = "0.1s";
-    document.querySelector('.oil-swirl').style.transitionTimingFunction = 'ease-in';
 
-    // const scrollPosition = window.scrollY;
-    // const maxScrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-    // const maxElementHeight = 100; // Define the maximum height you want for the element
-
-    // // Calculate the height based on the scroll position
-    // let height = Math.max(0, maxElementHeight - scrollPosition);
-    // height = Math.min(height, maxElementHeight); // Ensure the height doesn't exceed the maximum
-    // document.querySelector('.oil-swirl').style.height = height + 'px';
-})
  
+
+gsap.registerPlugin(ScrollTrigger);
+
+gasp.from('.nrt-ills-sec', { duration:1.5, x:500,
+
+    ScrollTrigger : {
+        trigger:".nrt-ills",
+        start : "bottom, bottom",
+        end:"bottom, bottom",
+        scrub:2,
+    }
+
+})
+
+$(window).on("scroll", (e) => {
+    
+})
