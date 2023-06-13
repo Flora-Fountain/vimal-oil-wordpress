@@ -787,6 +787,7 @@ a:focus{
     background:transparent;
     overflow: hidden;
 	z-index:0;
+	text-align: center;
 }
 .btn-effect:before{
 	position: absolute;
@@ -3736,6 +3737,11 @@ a:focus{
     margin-bottom: 26px;
     padding: 0;
 
+}
+.blog-detail .blog-detail-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 

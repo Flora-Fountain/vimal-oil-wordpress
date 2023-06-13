@@ -35,33 +35,87 @@
 <!-- module-3 health section -->
 <div class="default-section blog-detail">
     <div class="container">
-       <?php the_content(); ?>
+        <div class="blog-desc">
+            <?php the_content(); ?>
+        </div>
+
+        
+       
+        <div class="blog-detail-bottom">
+                <div class="prev-next-btn">
+                    <div class="submit-button">
+                        <?php $previous_post = get_adjacent_post(false, '', false);
+                            if (!empty($previous_post)) {
+                                echo '<a class="btn-effect blue-back" href="' . get_permalink($previous_post->ID) . '" title="' . $previous_post->post_title . '">Previous</a>';
+                            }
+                        ?>
+                    </div>
+                    <div class="submit-button">
+                        <?php $next_post = get_adjacent_post(false, '', true);
+                                if (!empty($next_post)) {
+                                    echo '<a class="btn-effect blue-back" href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">Next</a>';
+                        } ?>
+                    </div>
+
+                </div>
+                <div class="connect-part">
+                    <span>Follow on</span>
+                    <div class="socials">
+                        <?php echo do_shortcode('[social_share_links]'); ?>
+                    </div>
+                </div>
+        </div>
     </div>
 </div>
 
 <!-- module-4 social-icon section  -->
 <div class="default-section">
-    <span>Follow on</span><?php echo do_shortcode('[social_share_links]'); ?>
+    <div class="container">
+       
+    </div>
 </div>
 
-<!-- module-6 recent blog  -->
-<div class="vimal-journey default-section">
-    recent blog
-    <?php $recent_posts = wp_get_recent_posts(array('numberposts' => 3, 'post_status' => 'publish'), ARRAY_A);
-        if ($recent_posts) {
-             foreach ($recent_posts as $recent) {
-                $image = get_the_post_thumbnail_url($recent['ID']); ?>
-                <img src="<?php echo $image; ?>" alt=""/><br>
-                <a href="<?php echo get_permalink($recent['ID']); ?>">
-                    <?php echo $recent['post_title']; ?>
-                </a><br>
-                <span>
-                    <?php echo date("d M, Y", strtotime($recent['post_date'])); ?>
-                </span><br>
-            <?php }
-        }
-        ?>
+<div class="default-section">
+    <?php
+        $post_id = get_the_ID();
+        $cat_ids = array();
+        $categories = get_the_category( $post_id );
+
+        if(!empty($categories) && !is_wp_error($categories)):
+            foreach ($categories as $category):
+                array_push($cat_ids, $category->term_id);
+            endforeach;
+        endif;
+
+        $current_post_type = get_post_type($post_id);
+
+        $query_args = array( 
+            'category__in'   => $cat_ids,
+            'post_type'      => $current_post_type,
+            'post__not_in'    => array($post_id),
+            'posts_per_page'  => '3',
+        );
+
+        $related_cats_post = new WP_Query( $query_args );
+
+        if($related_cats_post->have_posts()):
+            while($related_cats_post->have_posts()): $related_cats_post->the_post(); ?>
+                <ul>
+                    <li>
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?>
+                        </a>
+                        <?php the_content(); ?>
+                    </li>
+                </ul>
+        <?php endwhile;
+
+        // Restore original Post Data
+        wp_reset_postdata();
+    endif; ?>
 </div>
+<!-- module-6 recent blog  -->
+
 <?php 
     echo get_footer();
 ?>
