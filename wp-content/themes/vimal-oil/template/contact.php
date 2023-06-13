@@ -69,7 +69,7 @@ echo get_header();
                                     <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
                                 </div>
                                 <div class="iimg text-center">
-                                    <button class="btn-effect" type="submit">Share</button>
+                                    <button class="btn-effect blue-back" type="submit">Share</button>
                                 </div>
                             </div>
                         </div>

@@ -55,7 +55,7 @@ echo get_header();
 									<div id="answers"></div>
 									<br/>
                                     <div class="text-center mt-5">
-									    <button class="btn-effect" id="next">Next</button>
+									    <button class="btn-effect blue-back" id="next">Next</button>
                                     </div>
 								</div>
 							</div>

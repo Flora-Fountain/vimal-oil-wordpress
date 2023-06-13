@@ -157,7 +157,7 @@ echo get_header();
                     <input type="email" class="email-form" name="email" id="email" placeholder="Enter Email">
                 </div>
                 <div class="submit-button text-center">
-                    <a href="#" class="btn-effect">Subscribe</a>
+                    <a href="#" class="btn-effect blue-back">Subscribe</a>
                 </div>
             </div>
         </div>

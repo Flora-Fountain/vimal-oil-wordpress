@@ -350,7 +350,7 @@ echo get_header();
                 </ul>
             </div>
             <div class="submit-button text-center">
-                <a href="<?php echo the_field('nrt_button_link');?>" class="btn-effect" type="submit">
+                <a href="<?php echo the_field('nrt_button_link');?>" class="btn-effect blue-back" type="submit">
                     <?php echo the_field('nrt_button_name');?>
                 </a>
             </div>

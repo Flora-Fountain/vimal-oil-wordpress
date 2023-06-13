@@ -9,7 +9,7 @@
         max-width: 216px;
     }
     .nrt-ills::before, .nrt-ills::after {
-        height: calc(100% - 402px);
+        height: calc(100% - 392px);
     }
     .nrt-logo {
         max-width: 300px;
@@ -40,7 +40,7 @@
         height: 290px;
     }
     .nrt-ills::before, .nrt-ills::after {
-        height: calc(100% - 390px);
+        height: calc(100% - 384px);
     }
     .nrt-logo {
         max-width: 280px;
@@ -383,6 +383,9 @@
     .menu-float .menu-ing {
         margin-left: 80px;
     }
+    .recipe-section {
+        padding-top: 40px;
+    }
 }
 @media screen and (max-width:1199px) {
     .header {
@@ -469,15 +472,16 @@
         max-width: 170px;
     }
     .nrt-ills::before, .nrt-ills::after {
-        height: calc(100% - 397px);
+        height: calc(100% - 300px);
     }
     .white-sec::before {
         bottom: -60px;
-        height: 250px;
+        height: 190px;
     }
     .nrt-logo {
-        max-width: 200px;
-        margin: 205px auto 0;
+        max-width: 153px;
+        margin: 360px auto 0;
+        padding: 20px;
     }
     .footer .about-us-col .footer-logo img {
         height: 120px;
@@ -537,7 +541,7 @@
     }
     .form-left .h2-white {
         letter-spacing: 1px;
-        font-size: 27px;
+        font-size: 30px;
     }
     .form-left p {
         font-size: 20px;
@@ -569,12 +573,27 @@
     .menu-float.m-open .nav-menu-right .nav.right::before {
         height: calc(100% - 100px);
     }
+    .jorney-main .tab-content .j-para .j-year {
+        font-size: 50px;
+    }
+    .jorney-main .tab-content .j-para {
+        font-size: 18px;
+    }
+    .recipe-section {
+        padding-top: 20px;
+    }
+    .default-section {
+        padding: 80px 0px;
+    }
+    .nrt-ills {
+        padding: 20px 0 60px;
+    }
+    .recipe-section {
+        padding-top: 20px;
+    }
 }
 @media screen and (max-width:1024px) {
-    .nrt-logo {
-        max-width: 200px;
-        margin: 218px auto 0;
-    }
+    
 }
 @media screen and (max-width:991px) {
     .h1-title{
@@ -582,17 +601,6 @@
     }
     .pro-vdo-sld.owl-carousel .owl-stage {
         padding: 0;
-    }
-    .nrt-ills::before, .nrt-ills::after {
-        height: calc(100% - 390px);
-    }
-    .white-sec::before {
-        bottom: -60px;
-        height: 240px;
-    }
-    .nrt-logo {
-        max-width: 205px;
-        margin: 300px auto 0;
     }
     .footer .about-us-col .footer-logo img {
         height: 90px;
@@ -926,6 +934,32 @@
     .menu-float.m-open .nav-menu-right .nav.right li:nth-child(4) {
         transition-delay: 2.3s;
     }
+    .nrt-ills::before, .nrt-ills::after {
+        height: calc(100% - 330px);
+    }
+    .white-sec::before {
+        bottom: -60px;
+        height: 200px;
+    }
+    .nrt-logo {
+        max-width: 158px;
+        margin: 313px auto 0;
+        padding: 20px;
+    }
+}
+@media screen and (max-width:799px) {
+    .nrt-ills::before, .nrt-ills::after {
+        height: calc(100% - 340px);
+    }
+    .white-sec::before {
+        bottom: -60px;
+        height: 190px;
+    }
+    .nrt-logo {
+        max-width: 158px;
+        margin: 320px auto 0;
+        padding: 20px;
+    }
 }
 @media screen and (max-width:767px) {
     body{
@@ -1123,7 +1157,7 @@
     }
     .nrt-logo {
         max-width: 180px;
-        margin: 240px auto 0;
+        margin: 238px auto 0;
         padding: 30px;
     }
     .pro-vdo-sld .video-sld img {
@@ -1596,6 +1630,32 @@
         height: auto;
         z-index: 4;
     }
+    .default-section {
+        padding: 60px 0px;
+    }
+    .droplets > div:nth-child(7),.droplets > div:nth-child(9),.droplets > div:nth-child(4),.droplets > div:nth-child(5) {
+        display: none;
+    }
+    .droplets > div:nth-child(11) {
+        animation-delay: 0.9s;
+    }
+    .product-section.home-pro {
+        padding: 60px 0 0;
+    }
+    .nav-menu .menu-btn span:nth-child(1),.nav-menu .menu-btn span {
+        width: 30px;
+    }
+    .nav-menu .menu-btn span{
+        height: 2px;
+    }
+    .nav-menu .menu-btn span + span {
+        margin-top: 7px;
+    }
+}
+@media screen and (max-width:600px) {
+    .nrt-logo {
+        margin: 288px auto 0;
+    }
 }
 @media screen and (max-width:575px) {
     .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white,.form-inner .h2-white {
@@ -1609,12 +1669,13 @@
         padding: 0 10px;
     }
     .nrt-logo {
-        max-width: 162px;
-        margin: 244px auto 0;
+        max-width: 130px;
+        margin: 227px auto 0;
         padding: 20px;
     }
     .white-sec::before {
-        height: 198px;
+        height: 178px;
+        bottom: -60px;
     }
     .nrt-ills::before, .nrt-ills::after {
         height: calc(100% - 359px);
@@ -1705,11 +1766,14 @@
         display: block;
         margin: 0 auto;
     }
-
     .nrt-banner .nrt-logo-img img {
         display: block;
         margin: 0 auto;
         width: 180px;
+    }
+    .product-section.home-pro .row > div {
+        width: 100%;
+        max-width: 100%;
     }
 
 }
@@ -1726,14 +1790,14 @@
         top: 215px;
     }
     .white-sec::before {
-        height: 188px;
+        height: 160px;
     }
     .home-prod-sldr.owl-carousel{
         padding: 0;
     }
     .nrt-logo {
-        margin: 390px auto 0;
-        max-width: 164px;
+        margin: 271px auto 0;
+        max-width: 113px;
     }
     .nrt-top .text-center {
         font-size: 18px;
@@ -1816,6 +1880,25 @@
         height: auto;
         z-index: 4;
     }
+    .nrt-ills {
+        padding: 20px 0 60px;
+    }
+}
+@media screen and (max-width:412px) {
+    .nrt-logo {
+        margin: 271px auto 0;
+        max-width: 113px;
+    }
+}
+@media screen and (max-width:399px) {
+    .nrt-logo {
+        margin: 249px auto 0;
+    }
+}
+@media screen and (max-width:375px) {
+    .nrt-logo {
+        margin: 253px auto 0;
+    }
 }
 @media screen and (max-width:359px) {
     .pro-sld-main a {
@@ -1836,7 +1919,7 @@
         font-size: 48px;
     }
     .nrt-logo {
-        max-width: 166px;
+        margin: 243px auto 0;
     }
     #dp-slider, .dp-img img {
         max-width: 190px;
