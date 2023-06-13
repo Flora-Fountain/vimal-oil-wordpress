@@ -662,8 +662,7 @@ $(document).ready(function(){
 
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-
-     //>=, not <=
+    
     if (scroll >= 20) {
         //clearHeader, not clearheader - caps H
         $(".oil-bottle-flow").addClass("rotate");
@@ -671,10 +670,4 @@ $(window).scroll(function() {
     else{
         $(".oil-bottle-flow").removeClass("rotate");
     }
-}); //missing );
-
-
-// instagram swipe effect 
-
-
-
+});

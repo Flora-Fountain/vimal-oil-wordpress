@@ -2106,7 +2106,12 @@ a:focus{
 .contact-details .contact{
 	margin: 10px 0;
 }
-
+.contact-details .contact a.contact-para {
+	color: #000;
+}
+.contact-details a:hover,.contact-details .contact a.contact-para:hover {
+	color: #0c56a1;
+}
 .contact-map .form-part .net-form  .form .form-group {
     margin: 0 0 20px;
 }
@@ -2276,7 +2281,7 @@ a:focus{
 }
 .gen-sec {
 	position: relative;
-	/* z-index: 0; */
+	z-index: 1;
 	padding: 60px 0;
 }
 .footer-before {
@@ -2467,7 +2472,22 @@ a:focus{
 .billboard-section{
 	padding: 15px 0px 45px 0px;
 }
-
+.tvc-section #tvc-carousel {
+	margin-bottom: 50px;
+}
+.billboard-section .billboard-carousel {
+	margin: 10px 0 60px;
+}
+.blur-flw .floating-ele.after-banner img:nth-child(1),.blur-flw .floating-ele.after-banner img:nth-child(2) {
+	width: 100px;
+	filter: blur(2px);
+}
+.blur-flw .floating-ele.after-banner img:nth-child(1) {
+	left: -20px;
+}
+.blur-flw .floating-ele.after-banner img:nth-child(2){
+	right: -30px;
+}
 /* Recipes Page */
 .recipes-sec .h1-title{
 	color: #fff;
@@ -3115,14 +3135,32 @@ a:focus{
 .faq-sec{
 	padding: 50px 0 100px;
 }
-.faq-item .accordion .accordion-item .accordion-button{
-	font-size: 26PX;
+.faq-item .accordion .accordion-item .accordion-button {
+	font-size: 26px;
 	font-weight: 500;
+	border-radius: 10px;
 }
-.faq-item .accordion-item .accordion-body{
+.faq-item .accordion-item .accordion-body {
 	background-color: #B3D1EF;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
+	position: relative;
+	padding-left: 66px;
+}
+.faq-item .accordion-item .accordion-body::before {
+	position: absolute;
+	content: "A";
+	background: #0C58A5;
+	width: 35px;
+	height: 35px;
+	border-radius: 10px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 1.7;
+	margin-right: 10px;
+	color: #FFFFFF;
+	left: 20px;
 }
 .faq-item .accordion-item .accordion-button:not(.collapsed){
 	background-color: #ffffff;
@@ -3134,7 +3172,6 @@ a:focus{
 	border: none;
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
-	
 }
 .faq-item .accordion-item .accordion-button:focus{
 	box-shadow: none;
@@ -3152,18 +3189,6 @@ a:focus{
 }
 .faq-item .accordion-item .accordion-body p{
 	margin-bottom: 0;
-}
-.faq-item .accordion-item .accordion-body p::before{
-	content: "A";
-	background: #0C58A5;
-	width: 35px;
-	height: 35px;
-	border-radius: 10px;
-	display: inline-block;
-	text-align: center;
-	vertical-align: middle;
-	margin-right: 10px;
-	color: #FFFFFF;
 }
 /* .faq-item .accordion-item .accordion-button {
 	border-top-left-radius: 10px;
@@ -3717,3 +3742,219 @@ a:focus{
 	pointer-events: auto;
 }
 
+#articles {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	max-height: 0;
+	overflow: hidden;
+	position: relative;
+  
+	perspective: 1000px;
+	perspective-origin: 50% -50%;
+  
+	height: 500px;
+	width: 300px;
+  
+	transition: all 1s;
+	vertical-align: middle;
+  }
+  
+  #articles h2 {
+	font-size: 1.25em;
+	margin: 0;
+	min-height: 100px;
+  }
+  
+  #articles .date {
+	color: #727991;
+	font-size: 0.8em;
+	margin-top: 0;
+	text-transform: uppercase;
+  }
+  
+  #articles li {
+	background: #7f4fca;
+	border-radius: 5px;
+	display: inline-block;
+	max-height: 390px;
+	max-width: 300px;
+	overflow: hidden;
+	vertical-align: top;
+  
+	box-shadow: 0 0 3px 0 #b1f7e3;
+  
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+  
+	transition: all 0.5s;
+	opacity: 1;
+  
+	z-index: -2;
+  }
+  
+  #articles li.go-away {
+	opacity: 0;
+	top: 600px;
+	transform:rotateX(10deg);
+  }
+  
+  #articles li.error{
+	color:#fff;
+	text-align:center;
+	padding:35px 10px;
+  }
+  
+  #articles li .card-content {
+	background: white;
+	opacity: 1;
+	position: relative;
+	padding: 5px 15px;
+	top: 0;
+  
+	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  #articles li .card-content.open,
+  #articles li:hover .card-content.open,
+  #articles li:focus .card-content.open{
+	top: -200px;
+	opacity: 0.8;
+  }
+  #articles li:hover .card-content.open .description,
+  #articles li:focus .card-content.open .description{
+	opacity: 1;
+  }
+  
+  #articles li:hover,#articles li:focus {
+	cursor: pointer;
+  }
+  
+  #articles li:hover .card-content,#articles li:focus .card-content{
+	top: -50px;
+  }
+  
+  #articles li:hover .description,#articles li:focus .description {
+	opacity: 0.3;
+  }
+  
+  #articles li .card-content:before {
+	content: "";
+	height: 7.5px;
+	width: 75px;
+  
+	position: absolute;
+	top: -3px;
+	left: 0;
+  }
+  
+  
+  #articles li .card-content:before {
+	background-color: #747796;
+  }
+  #articles li.snapshot .card-content:before {
+	background-color: #749d1c;
+  }
+  #articles li.soompi .card-content:before {
+	background-color: #7f4fca;
+  }
+  #articles li.music .card-content:before {
+	background-color: #4ecdc4;
+  }
+  #articles li.celeb .card-content:before {
+	background-color: #ff6b6b;
+  }
+  #articles li.features .card-content:before {
+	background-color: #f8ca00;
+  }
+  
+  #articles li.music a {
+	color: #4ecdc4;
+  }
+  #articles li.celeb a {
+	color: #ff6b6b;
+  }
+  #articles li.features a {
+	color: #f8ca00;
+  }
+  #articles li.snapshot a {
+	color: #749d1c;
+  }
+  #articles li.soompi a {
+	color: #7f4fca;
+  }
+  
+  #articles .card-image {
+	background-color: #727991;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	height: 200px;
+	width: 100%;
+  }
+  
+  #articles .eyebrow-title {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	margin-top: 5px;
+	margin-bottom: 0;
+  }
+  
+  #articles .description {
+	line-height: 1.5em;
+	opacity: 0;
+  
+	transition: all 0.5s;
+  }
+  
+  #articles .open .description {
+	opacity: 1;
+  }
+  
+  .description p:first-child {
+	overflow: hidden;
+	max-height: 145px;
+  }
+  
+  .description p:nth-child(2) {
+	display: none;
+  }
+  
+  .more-info {
+	color: #fff;
+	text-align: center;
+	max-width:300px;
+	margin:0 auto;
+  }
+  
+  @media (min-width: 663px) {
+	.more-info{
+	  text-align: left;
+	  margin-left:0;
+	  max-width:600px;
+	}
+	h1 {
+	  margin-right: 30px;
+	}
+	#articles {
+	  height: 600px;
+	}
+	nav {
+	  margin-top: 0;
+	  width: 50px;
+	}
+	nav button {
+	  transform: rotate(90deg);
+	}
+  }
+  
+  @media (min-width: 900px) {
+	h1 {
+	  margin-right: 50px;
+	}
+  }
+  
