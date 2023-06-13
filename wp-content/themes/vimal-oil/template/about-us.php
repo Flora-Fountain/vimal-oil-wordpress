@@ -43,7 +43,6 @@ echo get_header();
             </div>
             <div class="floating-ele after-banner">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="white-flower">
             </div>
             <div class="container">
                 <div class="h2-white">
