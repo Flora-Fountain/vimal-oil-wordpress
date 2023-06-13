@@ -591,6 +591,12 @@
     .recipe-section {
         padding-top: 20px;
     }
+    .blog-detail h2{
+        font-size: 45px;
+    }
+    .blog-detail h3{
+        font-size: 26px;
+    }
 }
 @media screen and (max-width:1024px) {
     
@@ -964,6 +970,12 @@
 @media screen and (max-width:768px) {
     body{
         font-size: 18px;
+    }
+    .blog-detail h2{
+        font-size: 36px;
+    }
+    .blog-detail h3{
+        font-size: 24px;
     }
     .header, .header.nav-down {
         padding: 10px 0;

@@ -14,19 +14,34 @@
 ?>
 
 <!--module-2 hero banner html code  -->
-<div class="hero-banner default-section">
-    <?php echo get_the_post_thumbnail()."<br>";?>
-    <?php echo get_the_title(); ?>
-</div>
+    <div class="inner-banner default-section">
+        <div class="container">
+            <div class="align-items-center">
+                <div class="text-aside">
+                     <div class="head-para">
+                        <p class="text-center mt-3 max-wd">Blog</p>
+                    </div>
+                    <div class="banner-right">
+                        <div class="h1-title">
+                            <h1 class="text-noeffect">Best Healthy <br/>Cooking Oils in <br/>India</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 <!-- module-3 health section -->
-<div class="health-section default-section">
-    Description:<?php the_content(); ?>
+<div class="default-section blog-detail">
+    <div class="container">
+       <?php the_content(); ?>
+    </div>
 </div>
 
 <!-- module-4 social-icon section  -->
-<div class="product-section default-section">
-    social icon : <?php echo do_shortcode('[social_share_links]'); ?>
+<div class="default-section">
+    <span>Follow on</span><?php echo do_shortcode('[social_share_links]'); ?>
 </div>
 
 <!-- module-6 recent blog  -->
