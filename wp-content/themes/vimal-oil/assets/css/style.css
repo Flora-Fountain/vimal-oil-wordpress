@@ -2443,6 +2443,9 @@ a:focus{
 
 
 /* why choose vimal css  */
+.h1-title.white-text {
+	color: #fff;
+}
 .health-section-wcv .container{
 	margin: auto;
 }
@@ -3740,4 +3743,16 @@ a:focus{
 }
 .menu-float .container-fluid {
 	height: 100%;
+}
+.health-section-wcv.help-pg .floating-ele.after-banner img:nth-child(1) {
+	bottom: -40%;
+	top: auto;
+	left: 40%;
+}
+.health-section-wcv.help-pg .floating-ele.after-banner img:nth-child(2) {
+	left: auto;
+	right: 0;
+	bottom: -20%;
+	animation: up-down 2s infinite linear;
+	animation-delay: 0.7s;
 }
