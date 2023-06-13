@@ -254,9 +254,7 @@ echo get_header();
                         </div>
                     </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
                 <div class="submit-button text-center">
-                    <a href="#" class="btn-effect" type="submit">
-                       All Products
-                    </a>
+                    <a href="#" class="btn-effect blue-back" type="submit">All Products</a>
                 </div>
             </div>
         </div>

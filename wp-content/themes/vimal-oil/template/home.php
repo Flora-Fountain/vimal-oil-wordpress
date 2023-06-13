@@ -57,7 +57,7 @@
         $products = wc_get_products( $args );
     ?>
     <!-- module-4 product section  -->
-    <div class="product-section default-section blue-bg no-bottom-des">
+    <div class="product-section default-section blue-bg no-bottom-des home-pro">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="h2-blue">
@@ -167,7 +167,7 @@
                     <p class="text-center"><?php echo the_field('nrt_section_discription');?></p>
                 </div>
                 <div class="submit-button text-center">
-                    <a href="<?php echo the_field('nrt_section_page_link') ?>" class="btn-effect" type="submit">
+                    <a href="<?php echo the_field('nrt_section_page_link') ?>" class="btn-effect blue-back" type="submit">
                        <?php echo the_field('ntr_section_button_name'); ?> 
                     </a>
                 </div>
@@ -373,7 +373,7 @@
                         </div>
                         <p><?php echo the_field('quiz_description') ?></p>
                         <div class="submit-button text-center">
-                            <a href="<?php the_field('quiz_page_link') ?>" class="btn-effect">
+                            <a href="<?php the_field('quiz_page_link') ?>" class="btn-effect blue-back">
                                 <?php echo the_field('quiz_button_name');?>
                             </a>
                         </div>
@@ -439,7 +439,7 @@
                     </div>
                 </div>
                 <div class="submit-button text-center">
-                    <button class="btn-effect" type="submit">Let's Explore</button>
+                    <button class="btn-effect blue-back" type="submit">Let's Explore</button>
                 </div>
             </div>
         </div>
@@ -597,7 +597,7 @@
                                                 <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
                                             </div>
                                             <div class="iimg text-center">
-                                                <button class="btn-effect" type="submit">Share</button>
+                                                <button class="btn-effect blue-back" type="submit">Share</button>
                                             </div>
                                         </div>
                                     </div>
