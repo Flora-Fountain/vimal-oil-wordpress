@@ -100,40 +100,42 @@ echo get_header();
     </div>
 
     <!-- module-4 journey section  -->
-    <div class="vimal-journey default-section blue-bg">
-        <div class="falling-leaf">
-            <div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
-            </div>
-            <div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
-            </div>
-            <div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
-            </div>
-        </div>
-        <div class="floating-ele after-banner">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="white-flower">
-        </div>
-        <div class="container">
-            <div class="gen-sec">
-                <div class="h2-blue">
-                    <h2 class="text-noeffect"><?php echo the_field('change_for_health_title'); ?></h2>
+    <div class="vimal-journey default-section blue-bg blur-flw">
+        <div class="leaf-sec">
+            <div class="falling-leaf">
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img src="<?php echo the_field('change_for_health_image'); ?>" alt="">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <p><?php echo the_field('change_for_health_description1'); ?></p>
-                        <p><?php echo the_field('change_for_health_description2'); ?></p>
-                    </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
                 </div>
-                <div class="submit-button text-center">
-                    <a href="<?php echo the_field('change_for_health_button_link');?>" class="btn-effect" type="submit">
-                        <?php echo the_field('change_for_health_button_name');?>
-                    </a>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+                </div>
+            </div>
+            <div class="floating-ele after-banner">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sun-flower.png" alt="blur-leaf">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sun-flower.png" alt="blur-leaf">
+            </div>
+            <div class="container">
+                <div class="gen-sec">
+                    <div class="h2-blue">
+                        <h2 class="text-noeffect"><?php echo the_field('change_for_health_title'); ?></h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <img src="<?php echo the_field('change_for_health_image'); ?>" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <p><?php echo the_field('change_for_health_description1'); ?></p>
+                            <p><?php echo the_field('change_for_health_description2'); ?></p>
+                        </div>
+                    </div>
+                    <div class="submit-button text-center">
+                        <a href="<?php echo the_field('change_for_health_button_link');?>" class="btn-effect" type="submit">
+                            <?php echo the_field('change_for_health_button_name');?>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

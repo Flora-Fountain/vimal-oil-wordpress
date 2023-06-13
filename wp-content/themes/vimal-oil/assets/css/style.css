@@ -2107,7 +2107,12 @@ a:focus{
 .contact-details .contact{
 	margin: 10px 0;
 }
-
+.contact-details .contact a.contact-para {
+	color: #000;
+}
+.contact-details a:hover,.contact-details .contact a.contact-para:hover {
+	color: #0c56a1;
+}
 .contact-map .form-part .net-form  .form .form-group {
     margin: 0 0 20px;
 }
@@ -2277,7 +2282,7 @@ a:focus{
 }
 .gen-sec {
 	position: relative;
-	/* z-index: 0; */
+	z-index: 1;
 	padding: 60px 0;
 }
 .footer-before {
@@ -2468,7 +2473,22 @@ a:focus{
 .billboard-section{
 	padding: 15px 0px 45px 0px;
 }
-
+.tvc-section #tvc-carousel {
+	margin-bottom: 50px;
+}
+.billboard-section .billboard-carousel {
+	margin: 10px 0 60px;
+}
+.blur-flw .floating-ele.after-banner img:nth-child(1),.blur-flw .floating-ele.after-banner img:nth-child(2) {
+	width: 100px;
+	filter: blur(2px);
+}
+.blur-flw .floating-ele.after-banner img:nth-child(1) {
+	left: -20px;
+}
+.blur-flw .floating-ele.after-banner img:nth-child(2){
+	right: -30px;
+}
 /* Recipes Page */
 .recipes-sec .h1-title{
 	color: #fff;
@@ -3116,14 +3136,32 @@ a:focus{
 .faq-sec{
 	padding: 50px 0 100px;
 }
-.faq-item .accordion .accordion-item .accordion-button{
-	font-size: 26PX;
+.faq-item .accordion .accordion-item .accordion-button {
+	font-size: 26px;
 	font-weight: 500;
+	border-radius: 10px;
 }
-.faq-item .accordion-item .accordion-body{
+.faq-item .accordion-item .accordion-body {
 	background-color: #B3D1EF;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
+	position: relative;
+	padding-left: 66px;
+}
+.faq-item .accordion-item .accordion-body::before {
+	position: absolute;
+	content: "A";
+	background: #0C58A5;
+	width: 35px;
+	height: 35px;
+	border-radius: 10px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 1.7;
+	margin-right: 10px;
+	color: #FFFFFF;
+	left: 20px;
 }
 .faq-item .accordion-item .accordion-button:not(.collapsed){
 	background-color: #ffffff;
@@ -3135,7 +3173,6 @@ a:focus{
 	border: none;
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
-	
 }
 .faq-item .accordion-item .accordion-button:focus{
 	box-shadow: none;
@@ -3153,18 +3190,6 @@ a:focus{
 }
 .faq-item .accordion-item .accordion-body p{
 	margin-bottom: 0;
-}
-.faq-item .accordion-item .accordion-body p::before{
-	content: "A";
-	background: #0C58A5;
-	width: 35px;
-	height: 35px;
-	border-radius: 10px;
-	display: inline-block;
-	text-align: center;
-	vertical-align: middle;
-	margin-right: 10px;
-	color: #FFFFFF;
 }
 /* .faq-item .accordion-item .accordion-button {
 	border-top-left-radius: 10px;
@@ -3716,6 +3741,7 @@ a:focus{
 }
 .menu-float .container-fluid {
 	height: 100%;
+
 }
 
 /* Blog Detail Page */
@@ -3758,6 +3784,3 @@ a:focus{
 	z-index: 1;
 	pointer-events: auto;
 }
-
-
-
