@@ -43,7 +43,6 @@ echo get_header();
             </div>
             <div class="floating-ele after-banner">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="white-flower">
             </div>
             <div class="container">
                 <div class="h2-white">
@@ -350,7 +349,7 @@ echo get_header();
                 </ul>
             </div>
             <div class="submit-button text-center">
-                <a href="<?php echo the_field('nrt_button_link');?>" class="btn-effect" type="submit">
+                <a href="<?php echo the_field('nrt_button_link');?>" class="btn-effect blue-back" type="submit">
                     <?php echo the_field('nrt_button_name');?>
                 </a>
             </div>

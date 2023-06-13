@@ -66,7 +66,7 @@ echo get_header();
                                     <div class="h2-blue">
                                         <h2 class="text-noeffect">Temperature</h2>
                                     </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a   dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's</p>
+                                    <p>Our state-of-the-art facilities enable us to process each oil variant at specific temperatures, precisely calibrated to safeguard the delicate balance of nutrients. By avoiding excessive heat, we protect the natural vitamins, antioxidants, and other beneficial compounds present in our oils.</p>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ echo get_header();
                                     <div class="h2-white">
                                             <h2 class="text-noeffect">Time</h2>
                                     </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a   dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's </p>
+                                    <p>We adhere to strict time controls during the refining process. This ensures that our oils are refined for the ideal duration, striking the perfect balance between removing impurities and retaining essential nutrients. This meticulous approach optimises the nutrient content without compromising on quality or flavour. </p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -138,7 +138,7 @@ echo get_header();
                                     <div class="h2-blue">
                                         <h2 class="text-noeffect">Pressure</h2>
                                     </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a   dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's</p>
+                                    <p>The Vimal Oil Nutrition Retention Technology incorporates controlled vacuum conditions. By subjecting the oils to a carefully regulated vacuum environment, we minimise exposure to oxygen and prevent oxidation, which can lead to nutrient degradation. This controlled vacuum helps maintain the integrity of vitamins, healthy fats, and other vital components, ensuring you receive the maximum nutritional benefits from our oils.</p>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@ echo get_header();
                                     <div class="h2-white">
                                             <h2 class="text-noeffect">Vacuum</h2>
                                     </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a   dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's</p>
+                                    <p>Maintaining precise pressure levels is another crucial aspect of our nutrition retention technology. By carefully controlling the pressure during the refining process, we prevent excessive heat buildup and preserve the delicate nutritional structure of our oils. This approach helps retain the natural antioxidants, fatty acids and micronutrients, making our oils truly nutrient-rich and beneficial for your health.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -194,23 +194,21 @@ echo get_header();
             </div>
 
             <!-- module-8 nrt benefits  -->
-            <div class="temp-section-nrt" style="z-index:1;">
-                <div class="nrt-tempe nrt-benefits p-3">
+            <div class="temp-section-nrt">
+                <div class="nrt-tempe nrt-benefits p-5">
                     <div class="container">
-                        <div class="gen-sec">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="nrt-temp-left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nrt-benefits.png" alt="Benefits of NRT">
-                                    </div>
+                        <div class="gen-sec-ben">
+                            <div class="can-image-sec">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nrt-benefits-1.png" alt="">
+                            </div>
+                            <div class="benefits-content">
+                                <div class="h2-blue">
+                                    <h2 class="text-noeffect">
+                                        Benefits of NRT
+                                    </h2>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="nrt-temp-right">
-                                        <div class="h2-blue">
-                                            <h2 class="text-noeffect">Benefits of NRT</h2>
-                                        </div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a   dummy text ever since the 1500s, when a ndustry. Lorem Ipsum has been the industry's</p>
-                                    </div>
+                                <div class="ben-para">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquid aliquam facere quos esse tenetur veritatis pariatur excepturi, nulla voluptatum eius, id consequuntur ex? Recusandae nesciunt impedit nemo voluptatibus quibusdam? id consequuntur ex? Recusandae nesciunt impedit nemo voluptatibus quibusdam? id consequuntur ex? Recusandae nesciunt impedit nemo voluptatibus quibusdam?</p>
                                 </div>
                             </div>
                         </div>
@@ -256,9 +254,7 @@ echo get_header();
                         </div>
                     </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
                 <div class="submit-button text-center">
-                    <a href="#" class="btn-effect" type="submit">
-                       All Products
-                    </a>
+                    <a href="#" class="btn-effect blue-back" type="submit">All Products</a>
                 </div>
             </div>
         </div>

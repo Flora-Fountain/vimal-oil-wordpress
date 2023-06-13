@@ -90,7 +90,7 @@ echo get_header();
                         </div>
                     </div>
                     <div class="submit-button text-center">
-                        <a href="<?php echo the_field('health_section_button_page_link'); ?>" class="btn-effect" type="submit">
+                        <a href="<?php echo the_field('health_section_button_page_link'); ?>" class="btn-effect blue-back" type="submit">
                             <?php echo the_field('health_section_button_name') ?>
                         </a>
                     </div>    

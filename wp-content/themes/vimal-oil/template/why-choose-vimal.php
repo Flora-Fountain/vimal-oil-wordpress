@@ -28,7 +28,23 @@ echo get_header();
 
     <!-- module-3 change for health health section -->
     <div class="health-section-wcv default-section">
-        <div class="container">
+        <div class="leaf-sec">
+            <div class="falling-leaf">
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+                </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+                </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+                </div>
+            </div>
+            <div class="floating-ele after-banner">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="white-flower">
+            </div>
+            <div class="container">
             <div class="h2-white">
                 <h2 class="text-noeffect">
                     <?php echo the_field('after_benner_section_title');?>
@@ -41,6 +57,7 @@ echo get_header();
                 <p><?php echo the_field('after_benner_section_description1') ?></p>
                 <p><?php echo the_field('after_benner_section_description2') ?></p>
             </div>
+        </div>
         </div>
     </div>
 
@@ -168,7 +185,11 @@ echo get_header();
                 </ul>
             </div>
             <div class="submit-button text-center">
+<<<<<<< HEAD
                 <a href="<?php echo the_field('nrt_section_button_link');?>" class="btn-effect"><?php echo the_field('nrt_section_button_name');?></a>
+=======
+                <button class="btn-effect blue-back" type="submit">Know More</button>
+>>>>>>> ddad32eca35ca73de32af115fdb6918d3fac899e
             </div>
         </div>
     </div>
@@ -257,7 +278,7 @@ echo get_header();
                                     <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
                                 </div>
                                 <div class="iimg text-center">
-                                    <button class="btn-effect" type="submit">Share</button>
+                                    <button class="btn-effect blue-back" type="submit">Share</button>
                                 </div>
                             </div>
                         </div>
