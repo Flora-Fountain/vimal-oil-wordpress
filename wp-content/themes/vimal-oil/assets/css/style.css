@@ -3282,6 +3282,7 @@ a:focus{
 	max-width: 400px;
     display: block;
     margin: 0 auto;
+	animation: beakerAnimation 3s infinite linear;
 }
 .nrt-content .text-center p {
 	color: #0C58A5;
@@ -3411,6 +3412,20 @@ a:focus{
 	left: 0;
 	top: 0;
 } */
+
+/* nrt page animation  */
+@keyframes beakerAnimation {
+    0%,
+    100% {
+        transform: translateY(0);
+	}
+    50% {
+        transform: translateY(20px);
+    }
+} 
+
+
+
 /* Menu CSS */
 .menu-float {
 	position: fixed;
@@ -3716,4 +3731,6 @@ a:focus{
 	z-index: 1;
 	pointer-events: auto;
 }
+
+
 

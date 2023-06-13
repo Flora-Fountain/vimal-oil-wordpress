@@ -217,3 +217,20 @@ window.addEventListener('scroll', (e) => {
     // document.querySelector('.oil-swirl').style.height = height + 'px';
 })
  
+
+gsap.registerPlugin(ScrollTrigger);
+
+gasp.from('.nrt-ills-sec', { duration:1.5, x:500,
+
+    ScrollTrigger : {
+        trigger:".nrt-ills",
+        start : "bottom, bottom",
+        end:"bottom, bottom",
+        scrub:2,
+    }
+
+})
+
+$(window).on("scroll", (e) => {
+    
+})
