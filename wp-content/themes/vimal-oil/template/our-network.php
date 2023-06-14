@@ -14,17 +14,17 @@ echo get_header();
                     <div class="text-aside">
                         <div class="banner-right">
                             <div class="h1-title">
-                                <h1 class="text-noeffect"><span>Far and Wide</span> Network</h1>
+                                <h1 class="text-noeffect"><span><?php echo the_field('benner_section_title');?></span> <?php the_field('banner_section_sub_title') ?></h1>
                             </div>
                         </div>
                         <div class="submit-button text-center">
-                            <a href="#" class="btn-effect">Let's Connect</a>
+                            <a href="<?php echo the_field('banner_button_link') ?>" class="btn-effect"><?php echo the_field('banner_section_button_name');?></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="inner-bnr-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/network-banner.png" alt="network-banner"/>
+                        <img src="<?php echo the_field('banner_image');?>" alt="network-banner"/>
                     </div>
                 </div>
             </div>
@@ -51,11 +51,11 @@ echo get_header();
             </div>
             <div class="container">
                 <div class="h2-white">
-                    <h2 class="text-noeffect">Our Network</h2>
+                    <h2 class="text-noeffect"><?php echo the_field('our_network_section_title');?></h2>
                 </div>
                 <div class="text-center">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survi</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survi</p>
+                    <p><?php echo the_field('our_network_section_description') ?></p>
+                    <p><?php echo the_field('our_network_section_description') ?></p>
                 </div>
             </div>
         </div>
@@ -65,22 +65,17 @@ echo get_header();
     <div class="default-section blue-bg net-cnt">
         <div class="container">
             <div class="counter-main">
-                <div class="count-box">
-                    <div class="counter" data-count="21"></div><span>+</span>
-                    <div class="count-name">STATES</div>
-                </div>
-                <div class="count-box">
-                    <div class="counter" data-count="50"></div><span>+</span>
-                    <div class="count-name">DEPOTS</div>
-                </div>
-                <div class="count-box">
-                    <div class="counter" data-count="1500"></div><span>+</span>
-                    <div class="count-name">DISTRIBUTORS</div>
-                </div>
-                <div class="count-box">
-                    <div class="counter" data-count="15000"></div><span>+</span>
-                    <div class="count-name">STORES</div>
-                </div>
+                <?php 
+                    if (have_rows('countdown_section')) {
+                        while (have_rows('countdown_section')) {
+                            the_row(); ?>
+                            <div class="count-box">
+                                <div class="counter" data-count="<?php the_sub_field('countdown_number') ?>"></div><span>+</span>
+                                <div class="count-name"><?php the_sub_field('countdown_title') ?></div>
+                            </div>
+                        <?php }
+                    }
+                ?>
             </div>
         </div>
     </div>
@@ -89,12 +84,12 @@ echo get_header();
     <div class="footer-before net-sec default-section">
         <div class="container">
             <div class="h2-white">
-                <h2 class="text-noeffect">Our locations</h2>
+                <h2 class="text-noeffect"><?php the_field('our_location_title');?></h2>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="loc-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/location-map.png" alt="location-map"/>
+                        <img src="<?php echo the_field('our_location_image'); ?>" alt="location-map"/>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
@@ -103,7 +98,9 @@ echo get_header();
                             <div class="h2-white">
                                 <h2 class="text-noeffect">Have Question? Ask Away</h2>
                             </div>
-                            <div class="form">
+                            <?php echo do_shortcode('[contact-form-7 id="673" title="Footer Contact Form"]');?>
+                            
+                            <!-- <div class="form">
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
                                 </div>
@@ -130,7 +127,7 @@ echo get_header();
                                 <div class="iimg text-center">
                                     <button class="btn-effect blue-back" type="submit">Share</button>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

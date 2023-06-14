@@ -1,4 +1,8 @@
-2023-06-14T04:25:15+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\woocommerce\src\Admin\DeprecatedClassFacade.php on line 20
-
-2023-06-14T04:25:26+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\woocommerce\src\Internal\Admin\Notes\WooSubscriptionsNotes.php on line 10
+2023-06-14T05:08:39+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_post_category() in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\blog-landing.php:29
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\blog-landing.php on line 29
 

@@ -65,17 +65,34 @@
                         </div>
                     </div>
                     <div class="nav-menu-right">
+                    
                         <ul class="nav left">
-                            <li class="nav-item active"><a class="nav-link" aria-current="page" href="#">About Us</a></li>
+                            <?php 
+                                wp_nav_menu( 
+                                    array( 
+                                        'theme_location' => 'header-custom-menu',
+                                        'menu_class' => 'nav-link'
+                                    ) 
+                                ); 
+                            ?>
+                            <!-- <li class="nav-item active"><a class="nav-link " aria-current="page" href="#">About Us</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Our Products</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Our Network</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Our Recipe</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Our Recipe</a></li> -->
                         </ul>
                         <ul class="nav right">
-                        <li class="nav-item"><a class="nav-link" href="#">Our Branding</a></li>
+                        <?php 
+                                wp_nav_menu( 
+                                    array( 
+                                        'theme_location' => 'header-custom-right-menu',
+                                        'menu_class' => 'nav-link'
+                                    ) 
+                                ); 
+                            ?>
+                            <!-- <li class="nav-item"><a class="nav-link" href="#">Our Branding</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Our Blogs</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Get In Touch</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Work With Vimal</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Work With Vimal</a></li> -->
                         </ul>
                     </div>
                 </div>
