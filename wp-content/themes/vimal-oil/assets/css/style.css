@@ -3309,16 +3309,13 @@ a:focus{
 .nrt-banner .oil-bottle-flow img {
 	width: 100%;
 	transition: 0.5s;
-	-webkit-transform: rotate(-120deg);
-	-ms-transform: rotate(-120deg);
-	transform: rotate(-120deg);
 	height: 310px;
 }
-.nrt-banner .oil-bottle-flow.rotate img{
+/* .nrt-banner .oil-bottle-flow.rotate img{
 	-webkit-transform: rotate(0deg);
 	-ms-transform: rotate(0deg);
 	transform: rotate(0deg);
-}
+} */
 .temp-section-nrt{
 	position: relative;
 	height: 100vh;
@@ -3382,6 +3379,10 @@ a:focus{
 	padding: 70px 0;
 	/* height: 100vh;*/
 }
+.nrt-benefits{
+	padding: 120px 0;
+}
+
 .nrt-tempe .h2-blue, .nrt-time .h2-white{
 	text-align: start;
 	text-transform: uppercase;
@@ -3392,6 +3393,12 @@ a:focus{
     display: block;
     margin: 0 auto;
 	animation: beakerAnimation 3s infinite linear;
+}
+.nrt-temp-left p{
+	color: #0c56a1;
+}
+.nrt-temp-right p{
+	color: #fff;
 }
 .nrt-content .text-center p {
 	color: #0C58A5;
@@ -3454,6 +3461,7 @@ a:focus{
 	transition: opacity 0.5s;
 	overflow: hidden;
 	width: 80%;
+	height: 450vh;
 }
  .oil-swirl .coffee-swirl-image.reveal{
 	opacity: 1;
@@ -3476,6 +3484,7 @@ a:focus{
 	height: 500px;
 	display: block;
 	margin: 0 auto;
+	margin-left: 27px;
 }
 .gen-sec-ben .benefits-content .ben-para p{
 	color: #fff;
@@ -3862,6 +3871,42 @@ a:focus{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.blog-detail-banner{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 20px;
+}
+.blog-detail-bottom .socials li a span svg{
+	fill: #0c54a0;
+}
+.blog-detail-bottom .connect-part h3{
+	color: #0c54a0;
+	font-size: 36px;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+.blog-detail-bottom .connect-part .socials{
+	margin-top: 0;
+}
+.blog-detail-bottom .connect-part{
+	text-align: end;
+}
+.blog-sidebar .h3-title{
+	color: #0c54a0;
+	margin-bottom: 10px;
+}
+.blog-sidebar .related-img img{
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+.blog-sidebar .h4-title h4{
+	font-size: 22px;
+	text-align: start;
+	color: #212529;
+	margin-top: 0;
 }
 
 

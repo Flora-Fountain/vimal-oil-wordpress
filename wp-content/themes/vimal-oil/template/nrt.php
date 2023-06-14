@@ -35,7 +35,7 @@ echo get_header();
             <div class="oil-spread">
                 <!-- <div class="oil-swirl-mask"></div> -->
                 <div class="oil-swirl" style="height:0px;" id="oil-swirl">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-spread.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image" id="oil-swirl" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-1.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image" id="oil-swirl" />
                 </div>
             </div>
             <!-- module-3 what is nrt -->
@@ -193,9 +193,12 @@ echo get_header();
                 </div>
             </div>
 
+
+            
+
             <!-- module-8 nrt benefits  -->
             <div class="temp-section-nrt">
-                <div class="nrt-tempe nrt-benefits p-5">
+                <div class="nrt-tempe nrt-benefits">
                     <div class="container">
                         <div class="gen-sec-ben">
                             <div class="can-image-sec">
