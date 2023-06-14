@@ -3808,6 +3808,42 @@ a:focus{
     align-items: center;
     justify-content: space-between;
 }
+.blog-detail-banner{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 20px;
+}
+.blog-detail-bottom .socials li a span svg{
+	fill: #0c54a0;
+}
+.blog-detail-bottom .connect-part h3{
+	color: #0c54a0;
+	font-size: 36px;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+.blog-detail-bottom .connect-part .socials{
+	margin-top: 0;
+}
+.blog-detail-bottom .connect-part{
+	text-align: end;
+}
+.blog-sidebar .h3-title{
+	color: #0c54a0;
+	margin-bottom: 10px;
+}
+.blog-sidebar .related-img img{
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+.blog-sidebar .h4-title h4{
+	font-size: 22px;
+	text-align: start;
+	color: #212529;
+	margin-top: 0;
+}
 
 
 
