@@ -51,7 +51,7 @@ echo get_header();
                     <div class="winter-oil season-oil">
                         <div class="pr-name">
                             <div class="pro-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kachi-ghani.png" alt="oil for winter" width="153px" height="225px">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-tikha-kachi-ghani.png" alt="oil for winter" width="153px" height="225px">
                             </div>
                             <div class="h3-title">
                                 <h3 class="text-noeffect">
@@ -84,7 +84,7 @@ echo get_header();
                     <div class="summer-oil season-oil">
                         <div class="pr-name">
                             <div class="pro-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pure-groundnut-oil.png" alt="oil for summer" width="153px" height="225px">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-groundnu.png" alt="oil for summer" width="153px" height="225px">
                             </div>
                             <div class="h3-title">
                                 <h3 class="text-noeffect">
@@ -117,7 +117,7 @@ echo get_header();
                     <div class="monsoon-oil season-oil">
                         <div class="pr-name">
                             <div class="pro-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sunheart-oil.png" alt="oil for monsoon" width="153px" height="225px">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-soyahart.png" alt="oil for monsoon" width="153px" height="225px">
                             </div>
                             <div class="h3-title">
                                 <h3 class="text-noeffect">

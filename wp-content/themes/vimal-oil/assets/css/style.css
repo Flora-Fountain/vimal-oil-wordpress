@@ -247,7 +247,7 @@ a:focus{
 	text-align: center;
 	background: url(../images/home-banner-bg.png) #0c56a1;
 	background-repeat: repeat;
-	background-size: 100px 100px;
+	background-size: 60px 60px;
 	padding-bottom: 0;
     z-index: 2;
 }
@@ -401,15 +401,18 @@ a:focus{
 	margin-top: 0;
 }
 .banner-slider .btn-effect {
-	background: transparent;
 	color: #0c54a0;
 	margin: 0;
 }
-.btn-effect:hover::before {
+/* .btn-effect:hover::before {
 	top: -100%;
 }
 .btn-effect.blue-back::before {
 	background: #136ab6;
+} */
+.btn-effect.blue-back {
+	background: #0c56a1;
+	color: #fff;
 }
 /* module-3 health-section css code  */
 .health-section {
@@ -447,9 +450,9 @@ a:focus{
 	background: url(../images/sun-flower.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 260px;
-	height: 270px;
-	right: -120px;
+	width: 200px;
+	height: 200px;
+	right: -100px;
 	top: 0;
 	/* animation: fl-rotate 20s infinite linear; */
 	animation: up-down 5s infinite linear;
@@ -472,9 +475,9 @@ a:focus{
 	background: url(../images/sun-flower.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 260px;
-	height: 270px;
-	left: -135px;
+	width: 200px;
+	height: 200px;
+	left: -100px;
 	bottom: 0px;
 	/* animation: fl-rotate 20s infinite linear; */
 	animation: up-down 5s infinite linear;
@@ -514,7 +517,13 @@ a:focus{
 	animation-delay: -7s;
 }
 .falling-leaf > div:nth-child(1) img {
-	width: 70px;
+	width: 60px;
+}
+.falling-leaf > div:nth-child(2) img{
+	width:80px;
+}
+.falling-leaf > div:nth-child(3) img{
+	width:70px;
 }
 .falling-leaf > div:nth-child(2) {
 	left: 50%;
@@ -784,12 +793,13 @@ a:focus{
     color: #0c54a0;
     font-size: 20px;
     position: relative;
-    background:transparent;
+    background:#fff;
     overflow: hidden;
 	z-index:0;
 	text-align: center;
+	animation: wave 2s infinite linear;
 }
-.btn-effect:before{
+/* .btn-effect:before{
 	position: absolute;
 	content: "";
 	width: 280px;
@@ -815,7 +825,7 @@ a:focus{
 }
 .btn-effect.blue-back {
 	color: #fff;
-}
+} */
 /* module-5 nrt-section css code  */
 .nrt-section{
     background-color: #ffffff;
@@ -873,6 +883,7 @@ a:focus{
 .floating-ele img{
 	position: absolute;
 	z-index: -1;
+	width: 100px;
 }
 .floating-ele img:nth-child(1) {
 	bottom: 30%;
@@ -2329,40 +2340,48 @@ a:focus{
 	left: 25%;
 	top: 2%;
 	animation: fl-rotate 50s infinite linear;
+	width: 110px;
 }
 .lab-ele img:nth-child(2) {
 	top: 30%;
 	left: 0;
 	animation: up-down 6s infinite linear;
 	animation-delay: 2s;
+	width: 100px;
 }
 .lab-ele img:nth-child(3) {
 	top: 70%;
 	left: 3%;
 	animation: up-down 6s infinite linear;
 	animation-delay: 1s;
+	width: 80px;
 }
 .lab-ele img:nth-child(4) {
 	left: 19%;
 	bottom: 0px;
 	animation: up-down 6s infinite linear;
 	animation-delay: 3s;
+	width: 60px;
 }
 .lab-ele img:nth-child(5) {
 	left: 70%;
 	bottom: 0;
 	animation: fl-rotate 50s infinite linear;
+	width: 110px;
 }
 .lab-ele img:nth-child(6) {
 	left: 75%;
 	top: 14%;
 	animation: fl-rotate 50s infinite linear;
 	animation-direction: reverse;
+	width: 70px;
 }
 .lab-ele img:nth-child(7) {
-	left: 95%;
+	left: auto;
 	top: 22%;
 	animation: up-down 6s infinite linear;
+	width: 60px;
+	right: 0;
 }
 
 /* branding page css  */
@@ -2516,6 +2535,42 @@ a:focus{
 }
 .blur-flw .floating-ele.after-banner img:nth-child(2){
 	right: -30px;
+}
+.legacy-section.why-vml, .sourcing-section.why-vml {
+	padding: 100px 0;
+}
+.qa-acc {
+	margin-top: 40px;
+}
+.qa-acc .accordion-item {
+	border-radius: 0;
+	border: 0;
+	border-top: 1px solid rgba(0,0,0,0.6);
+}
+.qa-acc .accordion-item .accordion-button {
+	font-size: 24px;
+	font-weight: 500;
+	color: #000;
+	font-family: 'Raleway', sans-serif;
+	background: transparent;
+	border: 0;
+	outline: none;
+	box-shadow: none;
+}
+.qa-acc .accordion-item .accordion-body {
+	font-size: 16px;
+}
+.sourcing-section .floating-ele img:nth-child(1) {
+	top: auto;
+	bottom: -100px;
+	left: 25%;
+}
+.sourcing-section .floating-ele img:nth-child(2) {
+	bottom: 0;
+	left: auto;
+	right: 0;
+	animation: up-down 4s infinite linear;
+	animation-delay: 0.7s;
 }
 /* Recipes Page */
 .recipes-sec .h1-title{
@@ -3498,7 +3553,7 @@ a:focus{
 	transition: .5s;
 	background: url(../images/home-banner-bg.png) #0c56a1;
 	background-repeat: repeat;
-	background-size: 100px 100px;
+	background-size: 60px 60px;
 }
 .menu-float::before {
 	z-index: -2;

@@ -315,6 +315,9 @@
     .menu-float .menu-ing {
         margin-left: 110px;
     }
+    .legacy-section.why-vml, .sourcing-section.why-vml {
+        padding: 80px 0;
+    }
 }
 @media screen and (max-width:1299px) {
     .nrt-logo {
@@ -1763,6 +1766,14 @@
     }
     .blur-flw .floating-ele.after-banner img:nth-child(1), .blur-flw .floating-ele.after-banner img:nth-child(2) {
         width: 70px;
+    }
+    .legacy-image.image-part,.quality-section .image-part,.sourcing-section .image-part {
+        padding-top: 0;
+    }
+    .net-sec .form-part .net-form .form .state-select::before {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 12px solid #0a4380;
     }
 }
 @media screen and (max-width:600px) {
