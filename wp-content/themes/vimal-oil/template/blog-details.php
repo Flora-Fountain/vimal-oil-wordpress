@@ -7,9 +7,23 @@
 ?>
 
 <!--module-2 hero banner html code  -->
-<div class="hero-banner default-section">
-    banner section
-</div>
+    <div class="inner-banner default-section center-cont">
+        <div class="container">
+            <div class="align-items-center">
+                <div class="text-aside">
+                    <div class="banner-right">
+                        <div class="h1-title">
+                            <h1 class="text-noeffect">Sr. HR <br/>Manager</h1>
+                        </div>
+                    </div>
+                    <div class="head-para">
+                        <p class="text-center mt-3 max-wd">Full time</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 <!-- module-3 health section -->
 <div class="health-section default-section">

@@ -13,8 +13,8 @@ echo get_header();
         </video>
         <div class="text-middle">
             <div class="banner-right">
-                <div class="h1-title">
-                    <h1 class="text-noeffect"><?php echo the_field('benner_title') ?> <span><?php echo the_field('benner_sub_title') ?></span></h1>
+                <div class="h1-title white-text">
+                    <h1 class="text-noeffect"><span><?php echo the_field('benner_title') ?></span><?php echo the_field('benner_sub_title') ?></h1>
                 </div>
             </div>
             <div class="hash-sec">
@@ -27,7 +27,7 @@ echo get_header();
     </div>
 
     <!-- module-3 change for health health section -->
-    <div class="health-section-wcv default-section">
+    <div class="health-section-wcv default-section help-pg">
         <div class="leaf-sec">
             <div class="falling-leaf">
                 <div>
