@@ -7,7 +7,7 @@ echo get_header();
 ?>
     
     <!--module-2 hero banner html code  -->
-    <div class="inner-banner default-section ani" id="ani">
+    <div class="inner-banner default-section ani rev-col" id="ani">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 colp-md-6 col-sm-12">
