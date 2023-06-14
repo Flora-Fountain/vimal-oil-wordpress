@@ -7,7 +7,7 @@ echo get_header();
 ?>
     
     <!--module-2 hero banner html code  -->
-    <div class="inner-banner default-section ani" id="ani">
+    <div class="inner-banner default-section ani rev-col" id="ani">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 colp-md-6 col-sm-12">
@@ -68,6 +68,9 @@ echo get_header();
                         <div class="pr-name">
                             <div class="pro-img">
                                 <img src="<?php print_r($image['0']);?>" alt="oil for winter" width="153px" height="225px">
+
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-tikha-kachi-ghani.png" alt="oil for winter" width="153px" height="225px">
+
                             </div>
                             <div class="h3-title">
                                 <h3 class="text-noeffect">
@@ -84,6 +87,7 @@ echo get_header();
                             <h3 class="text-noeffect">Buy now on</h3>
                         </div>
                         <div class="buy-btn">
+
                             <?php 
                                 if (have_rows('shop_button',$product->get_id())) {
                                     while (have_rows('shop_button',$product->get_id())) {
@@ -97,6 +101,82 @@ echo get_header();
                                     <?php }
                                 }
                             ?>
+                            <a href="#">
+                                <span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon_logo.png" alt="amazon logo" />Amazon
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jiomart_logo.png" alt="jiomart logo" />JioMart
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="summer-oil season-oil">
+                        <div class="pr-name">
+                            <div class="pro-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-groundnu.png" alt="oil for summer" width="153px" height="225px">
+                            </div>
+                            <div class="h3-title">
+                                <h3 class="text-noeffect">
+                                    <span>For Summer</span> <br>
+                                    Pure Gold Groundnut Oil
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="season-benefits">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quis sunt alias animi, ipsum totam maiores beatae eius voluptatum magnam rem culpa</p>
+                        </div>
+                        <div class="h3-title text-center">
+                            <h3 class="text-noeffect">Buy now on</h3>
+                        </div>
+                        <div class="buy-btn">
+                            <a href="#">
+                                <span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon_logo.png" alt="amazon logo" />Amazon
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jiomart_logo.png" alt="jiomart logo" />JioMart
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="monsoon-oil season-oil">
+                        <div class="pr-name">
+                            <div class="pro-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-soyahart.png" alt="oil for monsoon" width="153px" height="225px">
+                            </div>
+                            <div class="h3-title">
+                                <h3 class="text-noeffect">
+                                    <span>For Monsoon</span> <br>
+                                    Soyahart Refined Soyabean Oil
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="season-benefits">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quis sunt alias animi, ipsum totam maiores beatae eius voluptatum magnam rem culpa</p>
+                        </div>
+                        <div class="h3-title text-center">
+                            <h3 class="text-noeffect">Buy now on</h3>
+                        </div>
+                        <div class="buy-btn">
+                            <a href="#">
+                                <span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon_logo.png" alt="amazon logo" />Amazon
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jiomart_logo.png" alt="jiomart logo" />JioMart
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>

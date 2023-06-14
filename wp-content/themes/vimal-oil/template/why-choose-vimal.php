@@ -45,24 +45,24 @@ echo get_header();
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="white-flower">
             </div>
             <div class="container">
-            <div class="h2-white">
-                <h2 class="text-noeffect">
-                    <?php echo the_field('after_benner_section_title');?>
-                </h2>
-                <h2 class="text-noeffect">
-                    <?php echo the_field('after_benner_section_sub_title');?>
-                </h2>
+                <div class="h2-white">
+                    <h2 class="text-noeffect">
+                        <?php echo the_field('after_benner_section_title');?>
+                    </h2>
+                    <h2 class="text-noeffect">
+                        <?php echo the_field('after_benner_section_sub_title');?>
+                    </h2>
+                </div>
+                <div class="para">
+                    <p><?php echo the_field('after_benner_section_description1') ?></p>
+                    <p><?php echo the_field('after_benner_section_description2') ?></p>
+                </div>
             </div>
-            <div class="para">
-                <p><?php echo the_field('after_benner_section_description1') ?></p>
-                <p><?php echo the_field('after_benner_section_description2') ?></p>
-            </div>
-        </div>
         </div>
     </div>
 
     <!-- module-4 legacy of trust and promise  -->
-    <div class="legacy-section default-section blue-bg">
+    <div class="legacy-section default-section blue-bg why-vml">
         <div class="container">
             <div class="h2-blue">
                 <h2 class="text-noeffect"><?php echo the_field('legacy_section_title');?></h2>
@@ -101,7 +101,40 @@ echo get_header();
                     </div> -->
                     <div class="accordion-content-section">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores unde ipsam magni, dolorum sequi consequatur ut fugiat adipisci vel, optio iure voluptas, harum id! Voluptatibus?</p>
-                        div.
+                        <div class="qa-acc">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Measurement Factor 1</button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Hydrolysis of oil creates Free Fatty Acids in them. Raw oils and fats in their natural form contain a small amount of free fatty acids but they are removed while refining the oil. Hydrolysis of oil creates Free Fatty Acids in them. Raw oils and fats in their natural form contain a small amount of free fatty acids but they are removed while refining the oil.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Measurement Factor 2</button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Hydrolysis of oil creates Free Fatty Acids in them. Raw oils and fats in their natural form contain a small amount of free fatty acids but they are removed while refining the oil. Hydrolysis of oil creates Free Fatty Acids in them. Raw oils and fats in their natural form contain a small amount of free fatty acids but they are removed while refining the oil.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Measurement Factor 3</button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Hydrolysis of oil creates Free Fatty Acids in them. Raw oils and fats in their natural form contain a small amount of free fatty acids but they are removed while refining the oil. Hydrolysis of oil creates Free Fatty Acids in them. Raw oils and fats in their natural form contain a small amount of free fatty acids but they are removed while refining the oil.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -114,28 +147,44 @@ echo get_header();
     </div>
 
     <!-- module-6 sourcing and extraction  -->
-    <div class="sourcing-section default-section blue-bg">
+    <div class="sourcing-section default-section blue-bg why-vml">
+        <div class="leaf-sec">
+            <div class="falling-leaf">
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+                </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+                </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+                </div>
+            </div>
+            <div class="floating-ele after-banner">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="white-flower">
+            </div>
             <div class="container">
-            <div class="h2-blue">
-                <h2 class="text-noeffect">
-                    <?php echo the_field('sourcing_section_title');?>
-                </h2>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="image-part">
-                        <img src="<?php echo the_field('sourcing_section_image'); ?>" alt="Souring and Extraction">
+                <div class="h2-blue">
+                    <h2 class="text-noeffect">
+                        <?php echo the_field('sourcing_section_title');?>
+                    </h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="image-part">
+                            <img src="<?php echo the_field('sourcing_section_image'); ?>" alt="Souring and Extraction">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="content-part">
+                            <p><?php echo the_field('sourcing_section_description1');?></p>
+                            <p><?php echo the_field('sourcing_section_description2');?></p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="content-part">
-                        <p><?php echo the_field('sourcing_section_description1');?></p>
-                        <p><?php echo the_field('sourcing_section_description2');?></p>
-                    </div>
-                </div>
-                </div>
             </div>
-            </div>
+        </div>
     </div>
 
     <!-- module-7 NRT-section  -->
@@ -189,11 +238,9 @@ echo get_header();
                 </ul>
             </div>
             <div class="submit-button text-center">
-<<<<<<< HEAD
-                <a href="<?php echo the_field('nrt_section_button_link');?>" class="btn-effect"><?php echo the_field('nrt_section_button_name');?></a>
-=======
-                <button class="btn-effect blue-back" type="submit">Know More</button>
->>>>>>> ddad32eca35ca73de32af115fdb6918d3fac899e
+                <a href="<?php echo the_field('nrt_section_button_link');?>" class="btn-effect blue-back"><?php echo the_field('nrt_section_button_name');?></a>
+            <div class="submit-button text-center
+                <a class="btn-effect blue-back" href="<?php echo the_field('nrt_section_button_link');?>" class="btn-effect"><?php echo the_field('nrt_section_button_name');?></a>
             </div>
         </div>
     </div>
