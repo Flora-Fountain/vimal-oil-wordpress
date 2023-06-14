@@ -3867,9 +3867,16 @@ a:focus{
 
 }
 .blog-detail .blog-detail-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.blog-detail .blog-detail-bottom .prev-next-btn {
+	display: inline-block;
+	width: 100%;
+}
+.blog-detail .blog-detail-bottom .prev-next-btn .submit-button {
+	display: inline;
 }
 .blog-detail-banner{
     background-position: center;
