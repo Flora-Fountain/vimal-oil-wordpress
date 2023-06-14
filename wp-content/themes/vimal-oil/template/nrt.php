@@ -208,7 +208,7 @@ echo get_header();
                                     </h2>
                                 </div>
                                 <div class="ben-para">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquid aliquam facere quos esse tenetur veritatis pariatur excepturi, nulla voluptatum eius, id consequuntur ex? Recusandae nesciunt impedit nemo voluptatibus quibusdam? id consequuntur ex? Recusandae nesciunt impedit nemo voluptatibus quibusdam? id consequuntur ex? Recusandae nesciunt impedit nemo voluptatibus quibusdam?</p>
+                                    <p>Unlock maximum nutrition with Vimal Oil Nutrition Retention Technology (NRT) which preserves essential vitamins and antioxidants in your cooking oil. Our advanced NRT safeguards the natural flavour and aroma of the oils, even after refining. Enhancing the nutrient profile, NRT ensures every drop of Vimal Oil delivers maximum nutritional value. Elevate your cooking experience with Vimal Oil and unlock the goodness of nature.</p>
                                 </div>
                             </div>
                         </div>

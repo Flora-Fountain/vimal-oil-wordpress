@@ -695,3 +695,6 @@ window.addEventListener('scroll', (e) => {
 })
 
 
+
+// journery section 
+

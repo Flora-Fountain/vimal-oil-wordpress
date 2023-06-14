@@ -65,7 +65,7 @@ echo get_header();
                     <h2 class="text-noeffect">The journey <br>of Health &amp; Happiness!</h2>
                 </div>
                 <div class="jorney-main">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="tab-content" id="v-pills-tabContent">
                                 <div class="tab-pane fade show active" id="v-pills-1993" role="tabpanel" aria-labelledby="v-pills-1993-tab" tabindex="0">
@@ -161,7 +161,11 @@ echo get_header();
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="nav flex-row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <!-- flex-row nav-pills -->
+                            <div class="nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <span class="j-prev" id="j-prev">
+                                    <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#ffffff;}</style></defs><path id="angle-left-small" class="cls-1" d="M14.354,15.646a.5.5,0,0,1-.708.708l-4-4a.5.5,0,0,1,0-.708l4-4a.5.5,0,0,1,.708.708L10.707,12Z"/></svg>
+                                </span>
                                 <button class="nav-link active" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993.png" alt="1993">
                                     <span>1993</span>
@@ -186,6 +190,9 @@ echo get_header();
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993">
                                     <span>2022</span>
                                 </button>
+                                <span class="j-next" id="j-next">
+                                    <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#ffffff}</style></defs><path id="angle-right-small" class="cls-1" d="M14.354,12.354l-4,4a.5.5,0,0,1-.708-.708L13.293,12,9.646,8.354a.5.5,0,0,1,.708-.708l4,4A.5.5,0,0,1,14.354,12.354Z"/></svg>
+                                </span>
                             </div>
                         </div>
                     </div>

@@ -1228,6 +1228,13 @@ a:focus{
 	font-weight: bold;
 	color: #fff;
 }
+.jorney-main .nav .nav-link span {
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+}
 .jorney-main .slide-img {
 	display: flex;
 	justify-content: center;
@@ -1255,7 +1262,6 @@ a:focus{
       top: 50px;
       opacity: 0;
     }
-
     to {
       top: 0;
       opacity: 1;
@@ -1265,11 +1271,27 @@ a:focus{
 	width: 80%;
 	height: auto;
 	border-radius: 50%;
-	background: #fbef4d;
+	/* background: #fbef4d; */
+	background: linear-gradient(to right, #EA511B, #FCC804);
 	transition: 0.3s;
 }
+.jorney-main .nav .nav-link img {
+	width: 80%;
+	height: auto;
+	border-radius: 50%;
+	/* background: #fbef4d; */
+	background: linear-gradient(to right, #EA511B, #FCC804);
+	transition: 0.3s;
+}
+.jorney-main .nav span svg {
+	width:100px;
+	height: 100px;
+}
 .jorney-main .nav-pills .nav-link.active img {
-	padding: 5px;
+	padding: 8px;
+}
+.jorney-main .nav .nav-link.active img {
+	padding: 8px;
 }
 .jorney-main .tab-content .j-para {
 	display: block;
@@ -1291,6 +1313,9 @@ a:focus{
 }
 .jorney-main .nav-pills .nav-link {
 	width: 16.6%;
+}
+.jorney-main .nav .nav-link {
+	width: 12%;
 }
 .jorney-main {
 	margin-top: 40px;

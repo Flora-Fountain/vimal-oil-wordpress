@@ -127,7 +127,7 @@ echo get_header();
                             <div class="buy-btn">
                                 <a href="#">
                                     <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon_logo.png" alt="amazon logo">Amazon
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon-white.png" alt="amazon logo">Amazon
                                     </span>
                                 </a>
                                 <a href="#">

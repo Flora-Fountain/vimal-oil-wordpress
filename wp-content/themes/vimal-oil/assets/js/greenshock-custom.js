@@ -202,12 +202,19 @@ $( window ).on('scroll', function(){
 
 // oil-flow js 
 
+$(".next").click(function(event){
+    event.preventDefault();
+    $('html, body').animate({scrollTop: '+=700'}, 800);
 
+});
  
+$(window).on("scroll", function(){
+
+})
 
 gsap.registerPlugin(ScrollTrigger);
 
-gasp.from('.nrt-ills-sec', { duration:1.5, x:500,
+gsap.from('.nrt-ills-sec', { duration:1.5, x:500,
 
     ScrollTrigger : {
         trigger:".nrt-ills",
