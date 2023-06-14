@@ -72,3 +72,15 @@ function social_share_links()
 
 add_shortcode('social_share_links', 'social_share_links');
 
+function header_custom_menu() {
+    register_nav_menu('header-custom-menu',__( 'Header Custom Left Menu' ));
+    register_nav_menu('header-custom-right-menu',__( 'Header Custom Right Menu' ));
+}
+add_action( 'init', 'header_custom_menu' );
+
+function add_menu_link_class($atts, $item, $args)
+{
+    $atts['class'] = 'nav-link';
+    return $atts;
+}
+add_filter('nav_menu_link_attributes', 'add_menu_link_class', 1, 3);
