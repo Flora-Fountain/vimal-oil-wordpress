@@ -15,14 +15,14 @@ echo get_header();
                         <div class="banner-right">
                             <div class="h1-title">
                             <h1 class="text-noeffect">
-								<span>Great job!</span>
-                                You choose health!
+								<span><?php echo the_field('banner_title');?></span>
+                                <?php echo the_field('banner_sub_title');?>
 							</h1>
                             </div>
                         </div>
                         <div class="submit-button text-center">
-                            <a href="#" class="btn-effect" type="submit">
-                                Know More
+                            <a href="<?php echo the_field('banner_button_link');?>" class="btn-effect" type="submit">
+                                <?php the_field('button_name');?>
                             </a>
                             <a href="#" class="btn-effect" type="submit">
                                 Download
@@ -33,119 +33,75 @@ echo get_header();
                 <div class="col-lg-6 colp-md-6 col-sm-12">
                 <div class="quiz-cel" id="con-run">
 						<div class="box-image text-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/quiz-end-box.png" alt="quiz end banner image" />
+                            <img src="<?php echo the_field('banner_gift_box_image'); ?>" alt="quiz end banner image" />
                         </div>
                         <div class="oil-cans">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-cans.png" alt="quiz end banner image" />
+                            <img src="<?php echo the_field('banner_oil_cans_image'); ?>" alt="quiz end banner image" />
                         </div>
 					</div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Get Product -->
+    <?php 
+         $args = array(
+            'post_type' => 'product',
+            'status'    => 'publish',
+            'posts_per_page' => 3
+        );
     
+        $products = wc_get_products( $args );
+        // echo "<pre>";
+        // print_r($products);
+        // die;
+    ?>
     <div class="calender-product default-section footer-before">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="winter-oil season-oil">
+                <?php 
+                    foreach ($products as $product) {
+                        $image = wp_get_attachment_image_src( get_post_thumbnail_id($product->get_id()));
+                        $color = get_field('product_background_color',$product->get_id()); ?>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="winter-oil season-oil" style="background:<?php echo $color;?>">
                         <div class="pr-name">
                             <div class="pro-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kachi-ghani.png" alt="oil for winter" width="153px" height="225px">
+                                <img src="<?php print_r($image['0']);?>" alt="oil for winter" width="153px" height="225px">
                             </div>
                             <div class="h3-title">
                                 <h3 class="text-noeffect">
-                                    <span>For Winter</span> <br>
-                                    Tikha Kachi Ghani Musturd Oil
+                                    <span><?php echo the_field('season_name',$product->get_id()); ?></span> <br>
+                                    <?php echo $product->get_title();?>
                                 </h3>
                             </div>
                         </div>
                         <div class="season-benefits">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quis sunt alias animi, ipsum totam maiores beatae eius voluptatum magnam rem culpa</p>
+                            <?php echo the_field('season_description',$product->get_id());?>
+                            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quis sunt alias animi, ipsum totam maiores beatae eius voluptatum magnam rem culpa</p> -->
                         </div>
                         <div class="h3-title text-center">
                             <h3 class="text-noeffect">Buy now on</h3>
                         </div>
                         <div class="buy-btn">
-                            <a href="#">
-                                <span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon_logo.png" alt="amazon logo" />Amazon
-                                </span>
-                            </a>
-                            <a href="#">
-                                <span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jiomart_logo.png" alt="jiomart logo" />JioMart
-                                </span>
-                            </a>
+                            <?php 
+                                if (have_rows('shop_button',$product->get_id())) {
+                                    while (have_rows('shop_button',$product->get_id())) {
+                                        the_row(); ?>
+                                        <!-- echo the_sub_field('shop_button_brand_name'); -->
+                                        <a href="<?php echo the_sub_field('shop_brand_link',$product->get_id()); ?>">
+                                            <span>
+                                                <img src="<?php echo the_sub_field('shop_button_image',$product->get_id()); ?>" alt="<?php echo the_sub_field('shop_button_brand_name',$product->get_id());?>"><?php echo the_sub_field('shop_button_brand_name',$product->get_id());?>
+                                            </span>
+                                        </a>
+                                    <?php }
+                                }
+                            ?>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="summer-oil season-oil">
-                        <div class="pr-name">
-                            <div class="pro-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pure-groundnut-oil.png" alt="oil for summer" width="153px" height="225px">
-                            </div>
-                            <div class="h3-title">
-                                <h3 class="text-noeffect">
-                                    <span>For Summer</span> <br>
-                                    Pure Gold Groundnut Oil
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="season-benefits">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quis sunt alias animi, ipsum totam maiores beatae eius voluptatum magnam rem culpa</p>
-                        </div>
-                        <div class="h3-title text-center">
-                            <h3 class="text-noeffect">Buy now on</h3>
-                        </div>
-                        <div class="buy-btn">
-                            <a href="#">
-                                <span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon_logo.png" alt="amazon logo" />Amazon
-                                </span>
-                            </a>
-                            <a href="#">
-                                <span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jiomart_logo.png" alt="jiomart logo" />JioMart
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="monsoon-oil season-oil">
-                        <div class="pr-name">
-                            <div class="pro-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sunheart-oil.png" alt="oil for monsoon" width="153px" height="225px">
-                            </div>
-                            <div class="h3-title">
-                                <h3 class="text-noeffect">
-                                    <span>For Monsoon</span> <br>
-                                    Soyahart Refined Soyabean Oil
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="season-benefits">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quis sunt alias animi, ipsum totam maiores beatae eius voluptatum magnam rem culpa</p>
-                        </div>
-                        <div class="h3-title text-center">
-                            <h3 class="text-noeffect">Buy now on</h3>
-                        </div>
-                        <div class="buy-btn">
-                            <a href="#">
-                                <span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon_logo.png" alt="amazon logo" />Amazon
-                                </span>
-                            </a>
-                            <a href="#">
-                                <span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jiomart_logo.png" alt="jiomart logo" />JioMart
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    <?php }
+                ?>
             </div>
             <div class="row align-items-center justify-content-center mt-5">
                 <div class="h2-white">
