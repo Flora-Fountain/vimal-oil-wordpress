@@ -188,12 +188,8 @@ echo get_header();
                     </li> -->
                 </ul>
             </div>
-            <div class="submit-button text-center">
-<<<<<<< HEAD
-                <a href="<?php echo the_field('nrt_section_button_link');?>" class="btn-effect"><?php echo the_field('nrt_section_button_name');?></a>
-=======
-                <button class="btn-effect blue-back" type="submit">Know More</button>
->>>>>>> ddad32eca35ca73de32af115fdb6918d3fac899e
+            <div class="submit-button text-center
+                <a class="btn-effect blue-back" href="<?php echo the_field('nrt_section_button_link');?>" class="btn-effect"><?php echo the_field('nrt_section_button_name');?></a>
             </div>
         </div>
     </div>
