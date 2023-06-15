@@ -52,10 +52,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-8 col-sm-12">
+            <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="blog-sidebar">
                     <!-- module-5 search section  -->
-                    <h3 class="h3-title">Related Blogs</h3>
+                    <span class="search-txt">Search</span>
                     <form action="<?php echo home_url(); ?>" method="get">
                             <div class="blog-search">
                                 <span class="blog-search-icon">
@@ -70,6 +70,7 @@
                                 </button>
                             </div>
                     </form>
+                    <h3 class="h3-title">Related Blogs</h3>
                   
                     <?php
                         $post_id = get_the_ID();
