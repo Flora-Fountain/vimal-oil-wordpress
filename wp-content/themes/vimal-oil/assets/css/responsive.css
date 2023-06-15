@@ -446,6 +446,10 @@ css end for nrt page
     .legacy-section.why-vml, .sourcing-section.why-vml {
         padding: 80px 0;
     }
+    .season-oil .pr-name .pro-img img {
+        width: 130px;
+        height: auto;
+    }
 }
 @media screen and (max-width:1299px) {
     .nrt-logo {
@@ -490,7 +494,7 @@ css end for nrt page
     .floating-obj img:nth-child(5) {
         bottom: -30px;
     }
-    .inner-banner,.quiz-sec{
+    .inner-banner{
         padding: 140px 0 60px;
     }
     .panel-footer #back {
@@ -732,7 +736,6 @@ css end for nrt page
     .blog-detail h3{
         font-size: 26px;
     }
-
     .tvc-section #tvc-carousel {
         margin-bottom: 0;
     }
@@ -744,6 +747,28 @@ css end for nrt page
     }
     .tvc-section.default-section {
         padding: 50px 0 0;
+    }
+    .season-oil {
+        padding: 20px;
+    }
+    .season-oil .pr-name .pro-img img {
+        width: 110px;
+    }
+    .season-oil .h3-title {
+        font-size: 20px;
+    }
+    .season-oil .h3-title span {
+        font-size: 16px;
+    }
+    .season-oil .season-benefits p {
+        font-size: 18px;
+    }
+    .buy-btn a {
+        font-size: 16px;
+    }
+    .buy-btn a img {
+        width: 22px;
+        margin-right: 5px;
     }
 }
 
@@ -957,8 +982,14 @@ css end for nrt page
         align-items: center;
         gap: 10px;
     }
-    .season-oil .buy-btn a{
+    .season-oil .buy-btn a {
         padding: 8px 3px;
+        width: 100%;
+        display: block;
+    }
+    .buy-btn a + a {
+        margin-left: 0;
+        margin-top: 10px;
     }
     .buy-btn a img {
         width: 28px;
@@ -1912,6 +1943,33 @@ css end for nrt page
         border-right: 8px solid transparent;
         border-top: 12px solid #0a4380;
     }
+    .season-oil .buy-btn a {
+        padding: 8px 15px;
+        width: auto;
+        display: inline-block;
+    }
+    .buy-btn a + a {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+    .season-oil {
+        padding: 20px;
+        max-width: 320px;
+        margin: 0 auto 20px;
+        display: block;
+    }
+    .inner-banner.rev-col .row {
+        flex-direction: column-reverse;
+    }
+    .quiz-cel .box-image img {
+        max-width: 320px;
+    }
+    .quiz-cel .oil-cans img {
+        max-width: 170px;
+    }
+    .quiz-cel {
+        margin-bottom: 30px;
+    }
 }
 @media screen and (max-width:600px) {
     .nrt-logo {
@@ -2246,4 +2304,80 @@ css end for nrt page
         height: auto;
         z-index: 4;
     }
+    .season-oil .buy-btn a {
+        padding: 8px 15px;
+        width: auto;
+        display: block;
+        width: 200px;
+        margin:0 auto;
+    }
+    .season-oil .buy-btn a + a {
+        margin-top: 10px;
+    }
 }
+
+@media screen and (max-width:1699px) {
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -10px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 80%;
+        height: 437vh;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:1599px) {
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 80%;
+        height: 454vh;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:1499px) {
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 80%;
+        height: 437vh;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:1399px) {
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 80%;
+        height: 437vh;
+        margin-left: 0;
+    }
+}
+

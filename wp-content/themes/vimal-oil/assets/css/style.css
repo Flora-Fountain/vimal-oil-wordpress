@@ -2630,17 +2630,17 @@ a:focus{
 	background: url(../images/quiz-banner.png) #ffffff;
 	background-repeat: repeat;
 	background-size: cover;
-	padding-bottom: 0;
-    z-index: 1;
-	height: 100vh;
-    padding: 0;
+	/* padding-bottom: 0; */
+	z-index: 1;
+	/* height: 100vh; */
+	/* padding: 0; */
 }
 .quiz-sec .progress-bar{
 	background-color: #0C58A5;
 	height: 10px;
 }
 .quiz-sec .panel-footer {
-	margin-top: 20px;
+	margin-top: 0px;
 	text-align: left;
 }
 .quiz-sec .panel-footer #questCount {
@@ -2962,7 +2962,6 @@ a:focus{
 .season-oil .h3-title{
 	font-size: 24px;
 	font-weight: 500;
-	/* max-width: 222px; */
 }
 
 .season-oil .h3-title span{
@@ -3868,9 +3867,16 @@ a:focus{
 
 }
 .blog-detail .blog-detail-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.blog-detail .blog-detail-bottom .prev-next-btn {
+	display: inline-block;
+	width: 100%;
+}
+.blog-detail .blog-detail-bottom .prev-next-btn .submit-button {
+	display: inline;
 }
 .blog-detail-banner{
     background-position: center;
@@ -3907,6 +3913,36 @@ a:focus{
 	text-align: start;
 	color: #212529;
 	margin-top: 0;
+}
+.blog-sidebar .blog-search{
+	margin-bottom: 20px;
+	position: relative;
+}
+.blog-sidebar .blog-search .blog-search-btn{
+	position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 0;
+    border: 0;
+    box-shadow: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    background: #0c54a0;;
+}
+.blog-sidebar .blog-search .blog-search-btn span svg{
+	fill: #fff;
+
+}
+.blog-search input.blog-search-txt{
+	border: 0;
+	outline: 0;
+	box-shadow: none;
+	border-radius: 10px;
+	background: #D9D9D9;
+	padding: 5px;
+	width: 100%;
 }
 
 
