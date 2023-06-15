@@ -300,9 +300,12 @@ echo get_header();
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="-wenkit-apperence:none"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="-wenkit-apperence:none" placeholder="Enter Your Massage"></textarea>
                         </div>
                     </div>
+                </div>
+                <div class="submit-button text-center">
+                    <a class="btn-effect blue-back" href="#">Share</a>
                 </div>
             </div>
         </div>
