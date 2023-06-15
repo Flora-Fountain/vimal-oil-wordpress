@@ -2,3 +2,5 @@
 
 2023-06-14T04:25:26+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\woocommerce\src\Internal\Admin\Notes\WooSubscriptionsNotes.php on line 10
 
+2023-06-14T08:58:33+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\xammp\htdocs\vimal-oil-wordpress\wp-includes\functions.php on line 4550
+

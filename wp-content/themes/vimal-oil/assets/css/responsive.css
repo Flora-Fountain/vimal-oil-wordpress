@@ -4,6 +4,134 @@
         max-width: 300px;
     }
 }
+
+
+/* css for nrt page  */
+@media screen and (max-width:1699px) {
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -10px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 80%;
+        height: 437vh;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:1599px) {
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 80%;
+        height: 454vh;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:1499px) {
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 80%;
+        height: 437vh;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:1399px) {
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 80%;
+        height: 437vh;
+        margin-left: 0;
+    }
+}   
+@media screen and (max-width:1299px) {
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 80%;
+        height: 437vh;
+        margin-left: 0;
+    }
+}   
+@media screen and (max-width:1199px) {
+    .oil-swirl {
+        /* background-image: url(../images/oil.png); */
+        /* background-repeat: no-repeat; */
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        z-index: -100;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 85%;
+        /* height: 25px !important; */
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        opacity: 1;
+        overflow: hidden;
+        -webkit-transition: 0.5s;
+        -ms-transition: 0.5s;
+        transition: 0.5s;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 0px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 80%;
+        height: 443vh;
+        margin-left: 0;
+    }
+}   
+
+css end for nrt page
+
+/* other responsive scc  */
 @media screen and (max-width:1599px) {
     .pro-sld-main img {
         max-width: 216px;
@@ -2117,75 +2245,5 @@
         width: 230px;
         height: auto;
         z-index: 4;
-    }
-}
-
-
-
-
-/* css for nrt page  */
-
-@media screen and (max-width:1699px) {
-    .gen-sec-ben .can-image-sec img {
-        height: 500px;
-        display: block;
-        margin: 0 auto;
-        margin-left: -10px;
-    }
-    .oil-swirl .coffee-swirl-image {
-        /* opacity: 0; */
-        transition: opacity 0.5s;
-        overflow: hidden;
-        width: 80%;
-        height: 437vh;
-        margin-left: 0;
-    }
-}
-@media screen and (max-width:1599px) {
-    .gen-sec-ben .can-image-sec img {
-        height: 500px;
-        display: block;
-        margin: 0 auto;
-        margin-left: 50px;
-    }
-    .oil-swirl .coffee-swirl-image {
-        /* opacity: 0; */
-        transition: opacity 0.5s;
-        overflow: hidden;
-        width: 80%;
-        height: 454vh;
-        margin-left: 0;
-    }
-}
-@media screen and (max-width:1499px) {
-    .gen-sec-ben .can-image-sec img {
-        height: 500px;
-        display: block;
-        margin: 0 auto;
-        margin-left: 50px;
-    }
-    .oil-swirl .coffee-swirl-image {
-        /* opacity: 0; */
-        transition: opacity 0.5s;
-        overflow: hidden;
-        width: 80%;
-        height: 437vh;
-        margin-left: 0;
-    }
-}
-@media screen and (max-width:1399px) {
-    .gen-sec-ben .can-image-sec img {
-        height: 500px;
-        display: block;
-        margin: 0 auto;
-        margin-left: 50px;
-    }
-    .oil-swirl .coffee-swirl-image {
-        /* opacity: 0; */
-        transition: opacity 0.5s;
-        overflow: hidden;
-        width: 80%;
-        height: 437vh;
-        margin-left: 0;
     }
 }
