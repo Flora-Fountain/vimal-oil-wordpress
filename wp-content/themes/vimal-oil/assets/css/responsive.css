@@ -1976,6 +1976,20 @@
         margin-bottom: 30px;
     }
 
+    /* Blog Landing */
+    .blog-landing .blog-subscribe{
+        margin-top: 40px;
+    }
+    .blog-landing .blog-tab .accordion-item .collapse:not(.show){
+        display: block;
+    }
+    .blog-subscribe .h3-title{
+        font-size: 28px;
+    }
+    .blog-subscribe .email-input-field input[type="email"]{
+        width: 70%;
+    }
+
     /* Blog Detail */
     .blog-detail .blog-detail-bottom{
         display: block;
@@ -2280,6 +2294,9 @@
     }
     .nrt-ills {
         padding: 20px 0 60px;
+    }
+    .blog-subscribe .email-input-field input[type="email"]{
+        width: 100%;
     }
 }
 @media screen and (max-width:412px) {

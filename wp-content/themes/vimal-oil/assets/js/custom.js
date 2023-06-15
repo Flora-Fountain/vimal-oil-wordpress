@@ -243,18 +243,18 @@ $(document).ready(function(){
         $(".bg-item[data-item=" + get_active + "]").addClass("active");
     }
     $("#dp-next").click(function () {
-        var total = $(".dp_item").length;
-        $("#dp-slider .dp_item:first-child").hide().appendTo("#dp-slider").fadeIn();
-        $.each($(".dp_item"), function (index, dp_item) {
+        var total = $(".tinder--card").length;
+        $(".tinder--cards .tinder--card:first-child").hide().appendTo("#tinder--card").fadeIn();
+        $.each($(".tinder--card"), function (index, dp_item) {
         $(dp_item).attr("data-position", index + 1);
         });
         detect_active();
     });
     
     $("#dp-prev").click(function () {
-        var total = $(".dp_item").length;
-        $("#dp-slider .dp_item:last-child").hide().prependTo("#dp-slider").fadeIn();
-        $.each($(".dp_item"), function (index, dp_item) {
+        var total = $(".tinder--card").length;
+        $(".tinder--cards .tinder--card:last-child").hide().prependTo("#tinder--card").fadeIn();
+        $.each($(".tinder--card"), function (index, dp_item) {
         $(dp_item).attr("data-position", index + 1);
         });
     

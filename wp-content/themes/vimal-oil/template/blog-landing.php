@@ -37,7 +37,7 @@ echo get_header();
                 <p>simply dummy text of the printing and typesetting industry. Lorem</p>
             </div>
             <div class="blog-tab">
-                <ul class="nav nav-tabs d-none d-lg-flex" id="myTab" role="tablist">
+                <ul class="nav nav-tabs  d-lg-flex" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">All</button>
                     </li>

@@ -62,17 +62,25 @@ echo get_header();
         <div class="container">
             <div class="row align-items-center">
                 <div class="h2-blue">
-                    <h2 class="text-noeffect">The journey <br>of Health &amp; Happiness!</h2>
+                    <h2 class="text-noeffect">The journey <br/>of Health & Happiness!</h2>
                 </div>
                 <div class="jorney-main">
-                    <div class="row align-items-center">
+                    <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="tab-content" id="v-pills-tabContent">
+                                <?php 
+                                    // if (have_rows('main_jorney_section')) {
+                                    //     while (have_rows('main_jorney_section')) {
+                                    //         the_row();
+                                            
+                                    //     }
+                                    // }
+                                ?>
                                 <div class="tab-pane fade show active" id="v-pills-1993" role="tabpanel" aria-labelledby="v-pills-1993-tab" tabindex="0">
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -87,7 +95,7 @@ echo get_header();
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -102,7 +110,7 @@ echo get_header();
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -117,7 +125,7 @@ echo get_header();
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -132,7 +140,7 @@ echo get_header();
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -147,7 +155,7 @@ echo get_header();
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -161,38 +169,31 @@ echo get_header();
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                        <!-- flex-row nav-pills -->
-                            <div class="nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <span class="j-prev" id="j-prev">
-                                    <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#ffffff;}</style></defs><path id="angle-left-small" class="cls-1" d="M14.354,15.646a.5.5,0,0,1-.708.708l-4-4a.5.5,0,0,1,0-.708l4-4a.5.5,0,0,1,.708.708L10.707,12Z"/></svg>
-                                </span>
+                            <div class="nav flex-row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                 <button class="nav-link active" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993.png" alt="1993">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993.png" alt="1993"/>
                                     <span>1993</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2010-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2010" type="button" role="tab" aria-controls="v-pills-2010" aria-selected="false" tabindex="-1">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993">
+                                <button class="nav-link" id="v-pills-2010-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2010" type="button" role="tab" aria-controls="v-pills-2010" aria-selected="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993"/>
                                     <span>2010</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2015-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2015" type="button" role="tab" aria-controls="v-pills-2015" aria-selected="false" tabindex="-1">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993">
+                                <button class="nav-link" id="v-pills-2015-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2015" type="button" role="tab" aria-controls="v-pills-2015" aria-selected="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
                                     <span>2015</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2018" type="button" role="tab" aria-controls="v-pills-2018" aria-selected="false" tabindex="-1">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993">
+                                <button class="nav-link" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2018" type="button" role="tab" aria-controls="v-pills-2018" aria-selected="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993"/>
                                     <span>2018</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2020" type="button" role="tab" aria-controls="v-pills-2020" aria-selected="false" tabindex="-1">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993">
+                                <button class="nav-link" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2020" type="button" role="tab" aria-controls="v-pills-2020" aria-selected="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
                                     <span>2020</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false" tabindex="-1">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993">
+                                <button class="nav-link" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
                                     <span>2022</span>
                                 </button>
-                                <span class="j-next" id="j-next">
-                                    <svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#ffffff}</style></defs><path id="angle-right-small" class="cls-1" d="M14.354,12.354l-4,4a.5.5,0,0,1-.708-.708L13.293,12,9.646,8.354a.5.5,0,0,1,.708-.708l4,4A.5.5,0,0,1,14.354,12.354Z"/></svg>
-                                </span>
                             </div>
                         </div>
                     </div>
@@ -200,7 +201,7 @@ echo get_header();
             </div>
         </div>
     </div>
-
+    
     <!-- module-5 our mission section  -->
     <div class="health-section default-section cnt-sec">
         <div class="leaf-sec">
