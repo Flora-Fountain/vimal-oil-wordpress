@@ -12,14 +12,14 @@ echo get_header();
 		<div class="row align-items-center">
 			<div class="col-lg-6 col-md-12 col-sm-12">
 				<div class="inner-bnr-img">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/quiz-banner-image.png" alt="Quiz Banner image">
+					<img src="<?php the_field('banner_image'); ?>" alt="Quiz Banner image">
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12">
 				<div class="text-aside">
 					<div class="banner-right">
 						<div class="h1-title">
-							<h1 class="text-noeffect">Lorem ipsum</h1>
+							<h1 class="text-noeffect"><?php the_field('banner_section_title');?></h1>
 						</div>
 						<div class="submit-button text-center">
                             <a href="#quiz-question" class="btn-effect" type="submit">
@@ -85,15 +85,21 @@ echo get_header();
 				while (have_rows('quiz_section')) {
 					the_row(); ?>
 					["<p><?php echo $count; ?>. <?php echo the_sub_field('quiz_section_question'); ?><p/>", 
-						["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
+						[<?php 
+                            if (have_rows('quiz_question_answer')) {
+                                while (have_rows('quiz_question_answer')) {
+                                    the_row();
+                                    echo '"';
+                                    the_sub_field('quiz_question_answers');
+                                    echo '",';
+                                 }
+                            }
+                        ?> 
+                    ], 1],
 				<?php $count++; }
 			}	
 		?>
-        // ["<p>1. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
-        // ["<p>2. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
-        // ["<p>3. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
-        // ["<p>4. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1],
-        // ["<p>5. What kind of oil do you eat in winters?<p/>", ["simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem ", "simply dummy text of the printing and typesetting industry. Lorem "], 1]
+
     ].map(newQuestion);
     // Create and initialize the total (to 0), number (to 0), and totalQuestions (to the length of allQuestions) variables
     var total = 0, number = 0, totalQuestions = allQuestions.length, answers = [];

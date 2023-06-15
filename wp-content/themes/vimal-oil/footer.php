@@ -35,20 +35,36 @@
                             <h4>Quick Links</h4>
                             <div class="two-col">
                                 <ul class="quick-links">
-                                    <li><a href="#">About Us</a></li>
+                                    <?php 
+                                        wp_nav_menu( 
+                                            array( 
+                                                'theme_location' => 'footer-custom-menu',
+                                                // 'menu_class' => 'nav-link'
+                                            ) 
+                                        ); 
+                                    ?>
+                                    <!-- <li><a href="#">About Us</a></li>
                                     <li><a href="#">Our Products</a></li>
                                     <li><a href="#">Our Networks</a></li>
                                     <li><a href="#">Our Recipes</a></li>
                                     <li><a href="#">Our Branding</a></li>
-                                    <li><a href="#">Our Branding</a></li>
+                                    <li><a href="#">Our Branding</a></li> -->
                                 </ul>
                                 <ul class="quick-links">
-                                    <li><a href="#">Our Blogs</a></li>
+                                    <?php 
+                                            wp_nav_menu( 
+                                                array( 
+                                                    'theme_location' => 'footer-custom-right-menu',
+                                                    // 'menu_class' => 'nav-link'
+                                                ) 
+                                            ); 
+                                    ?>
+                                    <!-- <li><a href="#">Our Blogs</a></li>
                                     <li><a href="#">Get In Touch</a></li>
                                     <li><a href="#">Work With Vimal</a></li>
                                     <li><a href="#">NRT</a></li>
                                     <li><a href="#">Calendar</a></li>
-                                    <li><a href="#">Calendar</a></li>
+                                    <li><a href="#">Calendar</a></li> -->
                                 </ul>
                             </div>
                         </div>

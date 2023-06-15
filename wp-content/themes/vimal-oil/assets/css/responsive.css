@@ -692,6 +692,9 @@
     .blog-detail h3{
         font-size: 26px;
     }
+    .blog-detail h4{
+        font-size: 24px;
+    }
     .tvc-section #tvc-carousel {
         margin-bottom: 0;
     }
@@ -762,7 +765,7 @@
         margin-top: 10px;
     }
     .submit-button .btn-effect {
-        max-width: 150px;
+        max-width: 130px;
         padding: 8px 0;
         font-size: 18px;
     }
@@ -966,6 +969,13 @@
         margin-right: 5px;
     }
 
+    /* Blog DEtail */
+    .blog-detail-bottom .connect-part h3{
+        font-size: 28px;
+    }
+    .blog-detail h2{
+        font-size: 34px;
+    }
     /* Product Single */
     .oil-details .h2-white, .oil-details .oil-size .h4-title, .oil-details .shop-button .h3-title, .oil-details .shop-button .buy-btn, .oil-benefits-sec .h2-blue{
         text-align: center;
@@ -1965,6 +1975,46 @@
     .quiz-cel {
         margin-bottom: 30px;
     }
+
+    /* Blog Landing */
+    .blog-landing .blog-subscribe{
+        margin-top: 40px;
+    }
+    .blog-landing .blog-tab .accordion-item .collapse:not(.show){
+        display: block;
+    }
+    .blog-subscribe .h3-title{
+        font-size: 28px;
+    }
+    .blog-subscribe .email-input-field input[type="email"]{
+        width: 70%;
+    }
+
+    /* Blog Detail */
+    .blog-detail .blog-detail-bottom{
+        display: block;
+    }
+    .blog-detail .blog-detail-bottom .prev-next-btn, .blog-detail-bottom .connect-part{
+        text-align: center;
+    }
+    .blog-detail-bottom .connect-part{
+       margin: 20px 0;
+    }
+    .blog-sidebar .blog-search .blog-search-btn{
+        height: 37px;
+    }
+    .blog-sidebar .h3-title{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .blog-sidebar .search-txt{
+        display: block;
+        text-align: center;
+    }
+    .blog-sidebar .blog-search{
+        width: 80%;
+        margin: 0 auto 20px
+    }
 }
 @media screen and (max-width:600px) {
     .nrt-logo {
@@ -2244,6 +2294,9 @@
     }
     .nrt-ills {
         padding: 20px 0 60px;
+    }
+    .blog-subscribe .email-input-field input[type="email"]{
+        width: 100%;
     }
 }
 @media screen and (max-width:412px) {
