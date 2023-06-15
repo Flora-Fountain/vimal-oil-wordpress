@@ -84,3 +84,10 @@ function add_menu_link_class($atts, $item, $args)
     return $atts;
 }
 add_filter('nav_menu_link_attributes', 'add_menu_link_class', 1, 3);
+
+// Footer Link
+function footer_custom_menu() {
+    register_nav_menu('footer-custom-menu',__( 'Footer Custom Left Menu' ));
+    register_nav_menu('footer-custom-right-menu',__( 'Footer Custom Right Menu' ));
+}
+add_action( 'init', 'footer_custom_menu' );
