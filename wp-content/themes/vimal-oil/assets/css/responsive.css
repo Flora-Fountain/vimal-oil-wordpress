@@ -12,15 +12,22 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: -10px;
+        margin-left: -60px;
     }
     .oil-swirl .coffee-swirl-image {
         /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
         width: 80%;
-        height: 437vh;
+        height: 452vh;
         margin-left: 0;
+    }
+    .gen-sec-ben {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        align-items: center;
+        justify-content: center;
+        padding: 149px 41px;
     }
 }
 @media screen and (max-width:1599px) {
@@ -28,7 +35,7 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: 50px;
+        margin-left: -30px;
     }
     .oil-swirl .coffee-swirl-image {
         /* opacity: 0; */
@@ -50,8 +57,8 @@
         /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
-        width: 80%;
-        height: 437vh;
+        width: 92%;
+        height: 452vh;
         margin-left: 0;
     }
 }
@@ -60,14 +67,14 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: 50px;
+        margin-left: 0px;
     }
     .oil-swirl .coffee-swirl-image {
         /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
-        width: 80%;
-        height: 437vh;
+        width: 100%;
+        height: 454vh;
         margin-left: 0;
     }
 }   
@@ -76,14 +83,14 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: 50px;
+        margin-left: 30px;
     }
     .oil-swirl .coffee-swirl-image {
         /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
-        width: 80%;
-        height: 437vh;
+        width: 100%;
+        height: 454vh;
         margin-left: 0;
     }
 }   
@@ -124,12 +131,142 @@
         transition: opacity 0.5s;
         overflow: hidden;
         width: 80%;
-        height: 443vh;
+        height: 457vh;
         margin-left: 0;
     }
 }   
 
-css end for nrt page
+@media screen and (max-width:1099px) {
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 100%;
+        height: 466vh;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:999px) {
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 88%;
+        height: 466vh;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:899px) {
+    .gen-sec-ben {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        align-items: center;
+        justify-content: center;
+        padding: 99px 41px;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -42px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 88%;
+        height: 466vh;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:799px) {
+    .gen-sec-ben {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        align-items: center;
+        justify-content: center;
+        padding: 99px 41px;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 0px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 88%;
+        height: 466vh;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:699px) {
+    .gen-sec-ben {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 75px;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -45px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 100%;
+        height: 480vh;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:599px) {
+    .gen-sec-ben {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 75px;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -45px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 100%;
+        height: 482vh;
+    }
+}
+
 
 /* other responsive scc  */
 @media screen and (max-width:1599px) {
@@ -150,6 +287,7 @@ css end for nrt page
         font-size: 26px;
     }
 }
+
 @media screen and (max-width:1499px){
     .banner-info {
         padding: 30px 130px 80px;
@@ -2315,7 +2453,7 @@ css end for nrt page
         margin-top: 10px;
     }
 }
-
+/* 
 @media screen and (max-width:1699px) {
     .gen-sec-ben .can-image-sec img {
         height: 500px;
@@ -2324,15 +2462,14 @@ css end for nrt page
         margin-left: -10px;
     }
     .oil-swirl .coffee-swirl-image {
-        /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
         width: 80%;
         height: 437vh;
         margin-left: 0;
     }
-}
-@media screen and (max-width:1599px) {
+} */
+/* @media screen and (max-width:1599px) {
     .gen-sec-ben .can-image-sec img {
         height: 500px;
         display: block;
@@ -2340,15 +2477,14 @@ css end for nrt page
         margin-left: 50px;
     }
     .oil-swirl .coffee-swirl-image {
-        /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
         width: 80%;
         height: 454vh;
         margin-left: 0;
     }
-}
-@media screen and (max-width:1499px) {
+} */
+/* @media screen and (max-width:1499px) {
     .gen-sec-ben .can-image-sec img {
         height: 500px;
         display: block;
@@ -2356,15 +2492,14 @@ css end for nrt page
         margin-left: 50px;
     }
     .oil-swirl .coffee-swirl-image {
-        /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
         width: 80%;
         height: 437vh;
         margin-left: 0;
     }
-}
-@media screen and (max-width:1399px) {
+} */
+/* @media screen and (max-width:1399px) {
     .gen-sec-ben .can-image-sec img {
         height: 500px;
         display: block;
@@ -2372,12 +2507,11 @@ css end for nrt page
         margin-left: 50px;
     }
     .oil-swirl .coffee-swirl-image {
-        /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
         width: 80%;
         height: 437vh;
         margin-left: 0;
     }
-}
+} */
 
