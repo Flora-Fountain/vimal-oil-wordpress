@@ -3460,7 +3460,7 @@ a:focus{
 	transition: opacity 0.5s;
 	overflow: hidden;
 	width: 80%;
-	height: 450vh;
+	height: 455vh;
 }
  .oil-swirl .coffee-swirl-image.reveal{
 	opacity: 1;
@@ -3483,7 +3483,7 @@ a:focus{
 	height: 500px;
 	display: block;
 	margin: 0 auto;
-	margin-left: 27px;
+	margin-left: 50px;
 }
 .gen-sec-ben .benefits-content .ben-para p{
 	color: #fff;
