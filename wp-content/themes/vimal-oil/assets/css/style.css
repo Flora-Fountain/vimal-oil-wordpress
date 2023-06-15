@@ -3848,7 +3848,7 @@ a:focus{
 
 /* Blog Landing */
 .blog-landing {
-	padding: 50px 0;
+	padding: 50px 0 100px;
 }
 .blog-landing .cont-para{
 	color: #0C58A5;
@@ -3858,7 +3858,7 @@ a:focus{
 }
 .blog-landing .blog-tab .blog-pane::after{
 	content: "";
-	border-bottom: 1px solid #212529;
+	border-bottom: 2px solid #d9d9d9;
 	width: 100%;
 	display: block;
 	margin-top: 10px;
