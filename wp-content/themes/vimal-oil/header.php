@@ -71,7 +71,6 @@
                                 wp_nav_menu( 
                                     array( 
                                         'theme_location' => 'header-custom-menu',
-                                        'menu_class' => 'nav-link'
                                     ) 
                                 ); 
                             ?>
@@ -85,7 +84,6 @@
                                 wp_nav_menu( 
                                     array( 
                                         'theme_location' => 'header-custom-right-menu',
-                                        'menu_class' => 'nav-link'
                                     ) 
                                 ); 
                             ?>
