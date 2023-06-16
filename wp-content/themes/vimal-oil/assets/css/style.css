@@ -759,7 +759,9 @@ a:focus{
 	transition: 0.3s;
 }
 .pro-sld-main:hover img {
-	filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+    top: -10px;
+    transition: 0.5s ease-in-out;
 }
 .pro-sld-main a {
 	font-size: 32px;
