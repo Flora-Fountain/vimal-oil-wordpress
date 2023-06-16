@@ -2211,7 +2211,10 @@ a:focus{
     transform: translateY(-50%);
     pointer-events: none;
 }
-
+.form-control option {
+	background: #0c54a0;
+	color: #fff;
+}
 /* privacy policy style  */
 .privacy-banner{
 	background-color: #0c56a1;
