@@ -51,7 +51,7 @@ echo get_header();
             </div>
 
             <!-- temrature section  -->
-            <div class="temp-section-nrt ">           
+            <div class="temp-section-nrt">           
                 <div class="nrt-tempe fisrt-temp-sec nrt-temp-gen" id="temp-nrt">
                     <div class="container">
                     <div class="gen-sec">
@@ -124,13 +124,13 @@ echo get_header();
 
             <!-- module-6 pressure section  -->
             <div class="temp-section-nrt p-3">
-                <div class=" nrt-tempe nrt-pressure ">
+                <div class="nrt-tempe nrt-pressure ">
                     <div class="container">
                     <div class="gen-sec">
                         <div class="row align-items-center">
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="nrt-temp-left">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/temp-oil.png" alt="temperature oil">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pressure-beakers.png" alt="Pressure Oil">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -138,7 +138,8 @@ echo get_header();
                                     <div class="h2-blue">
                                         <h2 class="text-noeffect">Pressure</h2>
                                     </div>
-                                    <p>The Vimal Oil Nutrition Retention Technology incorporates controlled vacuum conditions. By subjecting the oils to a carefully regulated vacuum environment, we minimise exposure to oxygen and prevent oxidation, which can lead to nutrient degradation. This controlled vacuum helps maintain the integrity of vitamins, healthy fats, and other vital components, ensuring you receive the maximum nutritional benefits from our oils.</p>
+                                    <p>
+                                    Vimal Oil's Nutrition Retention Technology uses controlled vacuum conditions to minimize oxidation and preserve vital nutrients like vitamins and healthy fats. This ensures maximum nutritional benefits from their oils by protecting against nutrient degradation caused by oxygen exposure.</p>
                                 </div>
                             </div>
                         </div>
@@ -173,14 +174,14 @@ echo get_header();
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="nrt-temp-right">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/time-beakers.png" alt="Time Beakers">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vacumm-beakers.png" alt="Time Beakers">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 </div>
-                <div class="back-white footer-before">
+                <div class="back-white">
                     <div class="lab-ele">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hexa.png" alt="hexa">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tube.png" alt="tube">
@@ -217,7 +218,7 @@ echo get_header();
                         </div>
                     </div>
                 </div>
-                <div class="back-sec"></div>
+                <div class="back-sec blue-bg"></div>
             </div>
         </div>
     </div>
