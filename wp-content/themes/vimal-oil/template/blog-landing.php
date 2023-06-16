@@ -68,7 +68,7 @@ echo get_header();
                                         </div>
                                     </div>
                                     <div class="submit-button">
-                                        <a class="btn-effect blue-back" href="http://localhost/vimal-oil-wordpress/test-2/" title="Test 2">Read More</a>                           
+                                        <a class="btn-effect blue-back" href="<?php site_url();?>test-2/" title="Test 2">Read More</a>                           
                                     </div>
                                 </div>   
                             </div>
