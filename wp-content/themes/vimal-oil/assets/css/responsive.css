@@ -2484,7 +2484,6 @@
     .menu-float .menu-right .menu-last {
         margin: 0 10px;
     }
-
     /* nrt-page css  */
     .nrt-tempe {
         padding: 100px 0;
@@ -2529,5 +2528,6 @@
         padding: 0;
         gap: 15px;
     }
+}
 }
 
