@@ -592,34 +592,7 @@
                                         <div class="h2-white">
                                             <h2 class="text-noeffect">Have Question? Ask Away</h2>
                                         </div>
-                                        <div class="form">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" name="name" placeholder="Email ID" required="">
-                                            </div>
-                                            <div class="form-group state-select">
-                                                <select name="State" id="state" class="form-control">
-                                                    <option value="gujrat">Gujrat</option>
-                                                    <option value="rajsthan">Rajsthan</option>
-                                                    <option value="panjab">Panjab</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group state-select">
-                                                <select name="State" id="state" class="form-control">
-                                                    <option value="ahmedabad">Ahmedabad</option>
-                                                    <option value="rajkot">Rajkot</option>
-                                                    <option value="surat">Surat</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
-                                            </div>
-                                            <div class="iimg text-center">
-                                                <button class="btn-effect blue-back" type="submit">Share</button>
-                                            </div>
-                                        </div>
+                                        <?php echo do_shortcode('[contact-form-7 id="673" title="Footer Contact Form"]');?>
                                     </div>
                                 </div>
                                 <div class="col-lg-5 col-md-5 col-sm-12">

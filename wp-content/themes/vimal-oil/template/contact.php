@@ -44,7 +44,8 @@ echo get_header();
                             <div class="h2-white">
                                 <h2 class="text-noeffect">Have Question? Ask Away</h2>
                             </div>
-                            <div class="form">
+                                <?php echo do_shortcode('[contact-form-7 id="673" title="Footer Contact Form"]');?>
+                            <!-- <div class="form">
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
                                 </div>
@@ -71,7 +72,7 @@ echo get_header();
                                 <div class="iimg text-center">
                                     <button class="btn-effect blue-back" type="submit">Share</button>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>  

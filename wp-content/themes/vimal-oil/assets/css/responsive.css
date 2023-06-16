@@ -32,11 +32,15 @@
 
 /* other responsive scc  */
 @media screen and (max-width:1599px) {
-    .hero-banner .owl-dots .owl-dot, .product-single-banner .owl-dots .owl-dot{
+    .hero-banner .owl-dots .owl-dot {
         width: 21px;
+        height: 21px;
     }
     .hero-banner .owl-dots .owl-dot::before,.product-single-banner .owl-dots .owl-dot::before{
-        top: -12px;
+        top: -13px;
+    }
+    .hero-banner .owl-dots .owl-dot::before {
+        filter: drop-shadow(0px -1px 0px #0c54a0);
     }
     .pro-sld-main img {
         max-width: 216px;
@@ -1315,6 +1319,7 @@
     }
     .hero-banner .owl-dots {
         bottom: -40px;
+        bottom: -30px;
         margin: 0;
     }
     /* .hero-banner .owl-dots .owl-dot {
