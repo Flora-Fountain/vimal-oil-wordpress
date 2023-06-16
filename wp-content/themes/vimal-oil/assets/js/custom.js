@@ -276,16 +276,16 @@ $(document).ready(function(){
     });
 });
     // Sticky Header JS Starts
-    // if ($(window).width() > 0) {
-    //     $(window).scroll(function() {
-    //         var scroll = $(window).scrollTop();
-    //         if (scroll >= 20) {
-    //             $("header").addClass("sticky");
-    //         } else {
-    //             $("header").removeClass("sticky");
-    //         }
-    //     });
-    // }
+    if ($(window).width() > 0) {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 20) {
+                $("header").addClass("sticky");
+            } else {
+                $("header").removeClass("sticky");
+            }
+        });
+    }
 
 
     $(document).ready(function(){
