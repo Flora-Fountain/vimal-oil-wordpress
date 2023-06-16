@@ -68,7 +68,7 @@ echo get_header();
                                         </div>
                                     </div>
                                     <div class="submit-button">
-                                        <a class="btn-effect blue-back" href="http://localhost/vimal-oil-wordpress/test-2/" title="Test 2">Read More</a>                           
+                                        <a class="btn-effect blue-back" href="http://localhost/vimal-oil-wordpress/test-1/" title="Test 2">Read More</a>                           
                                     </div>
                                 </div>   
                             </div>
@@ -110,7 +110,7 @@ echo get_header();
                         <input type="email" name="email" placeholder="Enter Email" required="">
                     </div>
                     <div class="submit-button">
-                        <a class="btn-effect blue-back" href="http://localhost/vimal-oil-wordpress/test-2/" title="Test 2">Send</a>                           
+                        <a class="btn-effect blue-back" href="http://localhost/vimal-oil-wordpress/test-1/" title="Test 2">Send</a>                           
                     </div>
                 </div>
             </div>
