@@ -1251,6 +1251,9 @@
         width: 100%;
         padding: 15px 0px;
     } 
+    .header.sticky{
+        padding: 15px;
+    }
     .nav-menu .logo img{
         width: auto;
         height: 70px;
@@ -1311,10 +1314,10 @@
         animation-delay: 0.5s;
     }
     .hero-banner .owl-dots {
-        bottom: -23px;
+        bottom: -40px;
         margin: 0;
     }
-    .hero-banner .owl-dots .owl-dot {
+    /* .hero-banner .owl-dots .owl-dot {
         width: 14px;
         height: 14px;
     }
@@ -1336,7 +1339,7 @@
         box-shadow: 1px 1px 0 0 white;
         right: 4px;
         bottom: 4px;
-    }
+    } */
     .health-section.default-section {
         padding: 50px 0 80px 0;
     }
@@ -1937,15 +1940,6 @@
     .product-section.home-pro {
         padding: 60px 0 0;
     }
-    .nav-menu .menu-btn span:nth-child(1),.nav-menu .menu-btn span {
-        width: 30px;
-    }
-    .nav-menu .menu-btn span{
-        height: 2px;
-    }
-    .nav-menu .menu-btn span + span {
-        margin-top: 7px;
-    }
     .faq-item .accordion .accordion-item .accordion-button {
         font-size: 22px;
     }
@@ -2026,6 +2020,9 @@
     .blog-sidebar .blog-search{
         width: 80%;
         margin: 0 auto 20px
+    }
+    .footer .footer-quick-links ul + ul {
+        margin-top: 10px;
     }
 }
 @media screen and (max-width:600px) {
