@@ -123,9 +123,9 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
             </div>
         </div>
-        <div class="white-sec">
-            <div class="container">
-                <div class="align-items-center">
+            <div class="white-sec">
+                <div class="container">
+                    <div class="align-items-center">
                     <div class="nrt-top">
                         <div class="h2-blue">
                             <h2 class="text-noeffect">
@@ -135,11 +135,29 @@
                         <p class="text-center"><?php echo the_field('default_nrt_section_discription');?></p>
                     </div>
                 </div>
-                <div class="nrt-logo">
+                    <div class="nrt-logo">
                     <img src="<?php echo the_field('default_nrt_section_logo');?>" alt="NRT-logo"/>
                 </div>
+                </div> 
             </div>
-        </div>
+            <!-- <div class="nrt-blue-drop p-0">
+                <div class="nrt-blue-head-sec">
+                    <div class="h2-blue">
+                        <h2 class="text-noeffect">
+                            <?php echo the_field('default_nrt_section_title');?>
+                        </h2>
+                    </div>
+                    <p class="text-center"><?php echo the_field('default_nrt_section_discription');?></p> 
+                </div>
+                <div class="nrt-drop-logo">
+                    <div class="blue-drop text-center">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-oil-flow.png" alt="temperature oil" class="b-o-drop">
+                    </div>
+                    <div class="nrt-d-logo text-center">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nrt-logo.png" alt="temperature oil" class="nrt-logo-drop">
+                    </div>
+                </div>
+            </div> -->
     </div>
     <div class="nrt-section default-section nrt-ills-sec">
         <div class="floating-ele">
