@@ -1010,7 +1010,7 @@ a:focus{
     font-family: 'Rimouski', sans-serif;
 }
 .nrt-ills {
-	background: #0c56a1;
+	/* background: #0c56a1; */
 	padding: 0px 0px;
 }
 .nrt-top-head{
@@ -1084,7 +1084,7 @@ a:focus{
 	line-height: 1.4;
     color: #fff;
 }
-.nrt-ills::before, .nrt-ills::after {
+/* .nrt-ills::before, .nrt-ills::after {
 	position: absolute;
     content: '';
     border-radius: 0 100% 100% 0 / 50%;
@@ -1101,7 +1101,7 @@ a:focus{
 	border-radius: 100% 0 0 100% / 50%;
     left: auto;
     right: 0;
-} 
+}  */
 
 .nrt-logo img {
     max-width: 300px;
@@ -4110,7 +4110,7 @@ a:focus{
 	transition: opacity 0.1s ease-in-out;
   }
   
-  .loaded.tinder {
+  .tinder.loaded {
 	opacity: 1;
   }
   
@@ -4171,6 +4171,14 @@ a:focus{
 	cursor: grab;
   }
   
+  .tinder--card.swipe-left {
+	transform: translateX(-1000px);
+  }
+  
+  .tinder--card.swipe-right {
+	transform: translateX(1000px);
+  }
+
   .moving.tinder--card {
 	transition: none;
 	cursor: -webkit-grabbing;

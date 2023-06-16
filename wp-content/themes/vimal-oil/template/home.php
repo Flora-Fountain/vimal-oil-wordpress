@@ -123,7 +123,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
             </div>
         </div>
-            <div class="white-sec">
+            <!-- <div class="white-sec">
                 <div class="container">
                     <div class="align-items-center">
                     <div class="nrt-top">
@@ -139,8 +139,8 @@
                     <img src="<?php echo the_field('default_nrt_section_logo');?>" alt="NRT-logo"/>
                 </div>
                 </div> 
-            </div>
-            <!-- <div class="nrt-blue-drop p-0">
+            </div> -->
+            <div class="nrt-blue-drop p-0">
                 <div class="nrt-blue-head-sec">
                     <div class="h2-blue">
                         <h2 class="text-noeffect">
@@ -157,7 +157,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nrt-logo.png" alt="temperature oil" class="nrt-logo-drop">
                     </div>
                 </div>
-            </div> -->
+            </div>
     </div>
     <div class="nrt-section default-section nrt-ills-sec">
         <div class="floating-ele">
@@ -634,7 +634,7 @@
             </div>
         </div>
     </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script type="text/javascript">
 'use strict';
 
@@ -649,7 +649,7 @@ function initCards(card, index) {
   newCards.forEach(function (card, index) {
     card.style.zIndex = allCards.length - index;
     card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
-    card.style.opacity = (10 - index) / 10;
+    // card.style.opacity = (10 - index) / 10;
   });
   
   tinderContainer.classList.add('loaded');
@@ -734,5 +734,5 @@ var loveListener = createButtonListener(true);
 nope.addEventListener('click', nopeListener);
 love.addEventListener('click', loveListener); 
 
-</script>
+// </script>
 <?php get_footer(); ?>
