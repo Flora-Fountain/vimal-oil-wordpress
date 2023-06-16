@@ -1256,7 +1256,7 @@
         padding: 15px 0px;
     } 
     .header.sticky{
-        padding: 15px;
+        padding: 15px 10px;
     }
     .nav-menu .logo img{
         width: auto;
