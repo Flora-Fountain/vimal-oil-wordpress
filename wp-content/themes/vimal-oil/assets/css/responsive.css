@@ -32,11 +32,15 @@
 
 /* other responsive scc  */
 @media screen and (max-width:1599px) {
-    .hero-banner .owl-dots .owl-dot, .product-single-banner .owl-dots .owl-dot{
+    .hero-banner .owl-dots .owl-dot {
         width: 21px;
+        height: 21px;
     }
     .hero-banner .owl-dots .owl-dot::before,.product-single-banner .owl-dots .owl-dot::before{
-        top: -12px;
+        top: -13px;
+    }
+    .hero-banner .owl-dots .owl-dot::before {
+        filter: drop-shadow(0px -1px 0px #0c54a0);
     }
     .pro-sld-main img {
         max-width: 216px;
@@ -65,7 +69,7 @@
         transition: opacity 0.5s;
         overflow: hidden;
         width: 80%;
-        height: 454vh;
+        min-height: 458vh;
         margin-left: 0;
     }
 }
@@ -1311,7 +1315,7 @@
         animation-delay: 0.5s;
     }
     .hero-banner .owl-dots {
-        bottom: -23px;
+        bottom: -30px;
         margin: 0;
     }
     .hero-banner .owl-dots .owl-dot {
@@ -2145,10 +2149,6 @@
         height: auto;
         z-index: 4;
     }
-    .nrt-temp-left img, .nrt-temp-right img {
-        width: 100%;
-        max-width: 290px;
-    }
     .nrt-banner .nrt-logo-img img {
         display: block;
         margin: 0 auto;
@@ -2165,12 +2165,35 @@
         margin: 0 auto;
         margin-left: 27px;
     }
+    .nrt-tempe {
+        padding: 100px 0;
+        min-height: 100vh;
+    }
+    .nrt-temp-left img, .nrt-temp-right img {
+        width: 100%;
+        max-width: 300px;
+    }
     .oil-swirl .coffee-swirl-image {
         /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
         width: 100%;
-        height: 478vh;
+        height: 580vh;
+    }
+    .gen-sec {
+        position: relative;
+        /* z-index: 0; */
+        padding: 160px 27px;
+    }
+    .gen-sec-ben {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        gap: 15px;
     }
 
 }
@@ -2265,11 +2288,6 @@
     }
 
     /* nrt-page css  */
-    .nrt-temp-left img, .nrt-temp-right img {
-        width: 100%;
-        max-width: 290px;
-    }
-
     .nrt-banner .oil-bottle-flow {
         position: absolute;
         bottom: -59px;
@@ -2301,18 +2319,36 @@
         opacity: 1;
         overflow: hidden;
     }
-    .oil-swirl .coffee-swirl-image {
-        /* opacity: 0; */
-        transition: opacity 0.5s;
-        overflow: hidden;
-        width: 100%;
-        height: 485vh;
-    }
     .nrt-ills {
         padding: 20px 0 60px;
     }
     .blog-subscribe .email-input-field input[type="email"]{
         width: 100%;
+    }
+    .nrt-tempe {
+        padding: 100px 0;
+        min-height: 100vh;
+    }
+    .nrt-temp-left img, .nrt-temp-right img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 100%;
+        height: 580vh;
+    }
+    .gen-sec-ben {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        gap: 15px;
     }
 }
 @media screen and (max-width:412px) {
@@ -2320,12 +2356,30 @@
         margin: 271px auto 0;
         max-width: 113px;
     }
+    .nrt-tempe {
+        padding: 100px 0;
+        min-height: 100vh;
+    }
+    .nrt-temp-left img, .nrt-temp-right img {
+        width: 100%;
+        max-width: 280px;
+    }
     .oil-swirl .coffee-swirl-image {
         /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
         width: 100%;
-        height: 485vh;
+        height: 588vh;
+    }
+    .gen-sec-ben {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        gap: 15px;
     }
 }
 @media screen and (max-width:399px) {
@@ -2339,18 +2393,66 @@
         width: 100%;
         height: 485vh;
     }
+    .nrt-tempe {
+        padding: 100px 0;
+        min-height: 100vh;
+    }
+    .nrt-temp-left img, .nrt-temp-right img {
+        width: 100%;
+        max-width: 280px;
 }
 @media screen and (max-width:375px) {
     .nrt-logo {
         margin: 150px auto 0;
         max-width: 106px;
+
     }
     .oil-swirl .coffee-swirl-image {
         /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
         width: 100%;
-        height: 485vh;
+        height: 588vh;
+    }
+    .gen-sec-ben {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        gap: 15px;
+    }
+}
+@media screen and (max-width:375px) {
+    .nrt-logo {
+        margin: 253px auto 0;
+    }
+    .nrt-tempe {
+        padding: 100px 0;
+        min-height: 100vh;
+    }
+    .nrt-temp-left img, .nrt-temp-right img {
+        width: 100%;
+        max-width: 280px;
+    }
+    .oil-swirl .coffee-swirl-image {
+        /* opacity: 0; */
+        transition: opacity 0.5s;
+        overflow: hidden;
+        width: 100%;
+        height: 588vh;
+    }
+    .gen-sec-ben {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        gap: 15px;
     }
 }
 @media screen and (max-width:359px) {
@@ -2386,11 +2488,14 @@
     .menu-float .menu-right .menu-last {
         margin: 0 10px;
     }
-
     /* nrt-page css  */
+    .nrt-tempe {
+        padding: 100px 0;
+        min-height: 100vh;
+    }
     .nrt-temp-left img, .nrt-temp-right img {
         width: 100%;
-        max-width: 180px;
+        max-width: 280px;
     }
     .nrt-banner .oil-bottle-flow {
         position: absolute;
@@ -2415,7 +2520,18 @@
         transition: opacity 0.5s;
         overflow: hidden;
         width: 100%;
-        height: 485vh;
+        height: 588vh;
     }
+    .gen-sec-ben {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        gap: 15px;
+    }
+}
 }
 
