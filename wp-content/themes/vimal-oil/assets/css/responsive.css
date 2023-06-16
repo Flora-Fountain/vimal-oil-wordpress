@@ -32,10 +32,10 @@
 
 /* other responsive scc  */
 @media screen and (max-width:1599px) {
-    .hero-banner .owl-dots .owl-dot{
+    .hero-banner .owl-dots .owl-dot, .product-single-banner .owl-dots .owl-dot{
         width: 21px;
     }
-    .hero-banner .owl-dots .owl-dot::before{
+    .hero-banner .owl-dots .owl-dot::before,.product-single-banner .owl-dots .owl-dot::before{
         top: -12px;
     }
     .pro-sld-main img {
