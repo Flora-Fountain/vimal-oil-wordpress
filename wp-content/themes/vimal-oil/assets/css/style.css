@@ -142,7 +142,7 @@ a:focus{
 	height: 0;
 	border-bottom: 45px solid #ffffff;
 	border-left: 100vw solid transparent;
-	bottom: -1px;
+	bottom: -2px;
 	left: 0;
 	right: 0;
 	z-index: 2;
@@ -1327,7 +1327,7 @@ a:focus{
 	width: 16.6%;
 }
 .jorney-main .nav .nav-link {
-	width: 12%;
+	width: 15%;
 }
 .jorney-main {
 	margin-top: 40px;

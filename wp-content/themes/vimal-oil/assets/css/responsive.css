@@ -32,6 +32,12 @@
 
 /* other responsive scc  */
 @media screen and (max-width:1599px) {
+    .hero-banner .owl-dots .owl-dot{
+        width: 21px;
+    }
+    .hero-banner .owl-dots .owl-dot::before{
+        top: -12px;
+    }
     .pro-sld-main img {
         max-width: 216px;
     }
@@ -532,14 +538,14 @@
         padding: 0;
     }
     .hero-banner .owl-dots .owl-dot {
-        width: 18px;
+        width: 17px;
         height: 18px;
     }
     .hero-banner .owl-dots .owl-dot::before {
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-bottom: 18px solid rgb(255, 255, 255);
-        top: -12px;
+        top: -11px;
     }
     .hero-banner .owl-dots .owl-dot.active::before {
         border-bottom: 18px solid #0c54a0;
@@ -1674,6 +1680,9 @@
     }
     .quiz-sec .panel-footer #answers .options label {
         font-size: 18px;
+    }
+    .jorney-main .nav .nav-link img{
+        width: 100%;
     }
 
     /* career-page style  */
