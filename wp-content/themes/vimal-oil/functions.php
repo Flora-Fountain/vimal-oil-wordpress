@@ -13,6 +13,8 @@ function AllScript()
     wp_enqueue_script('scroll-min-js','https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js', true);
     wp_enqueue_script('jquery-min-js','https://code.jquery.com/jquery-3.6.4.min.js', true);
     wp_enqueue_script('custom-js',get_template_directory_uri().'/assets/js/custom.js', true);
+    wp_enqueue_script('hammer-min-js','https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js', true);
+    wp_enqueue_script('swiper-js',get_template_directory_uri().'/assets/js/swiper.js', true);
     wp_enqueue_script('owl-carousel-min-js','https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', true);
     wp_enqueue_script('greenshock-custom-js',get_template_directory_uri().'/assets/js/greenshock-custom.js', true);
 }

@@ -3,139 +3,6 @@
 /* Template Name: Home Template */
 ?>
 <?php echo get_header();?>
-<style>
-    .tinder {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  opacity: 0;
-  transition: opacity 0.1s ease-in-out;
-}
-
-.loaded.tinder {
-  opacity: 1;
-}
-
-.tinder--status {
-  position: absolute;
-  top: 50%;
-  margin-top: -30px;
-  z-index: 2;
-  width: 100%;
-  text-align: center;
-  pointer-events: none;
-}
-
-.tinder--status i {
-  font-size: 100px;
-  opacity: 0;
-  transform: scale(0.3);
-  transition: all 0.2s ease-in-out;
-  position: absolute;
-  width: 100px;
-  margin-left: -50px;
-}
-
-.tinder_love .fa-heart {
-  opacity: 0.7;
-  transform: scale(1);
-}
-
-.tinder_nope .fa-remove {
-  opacity: 0.7;
-  transform: scale(1);
-}
-
-.tinder--cards {
-  flex-grow: 1;
-  padding-top: 40px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  z-index: 1;
-}
-
-.tinder--card {
-  display: inline-block;
-  width: 90vw;
-  max-width: 400px;
-  height: 70vh;
-  background: #FFFFFF;
-  padding-bottom: 40px;
-  border-radius: 8px;
-  overflow: hidden;
-  position: absolute;
-  will-change: transform;
-  transition: all 0.3s ease-in-out;
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: grab;
-}
-
-.moving.tinder--card {
-  transition: none;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: grabbing;
-}
-
-.tinder--card img {
-  max-width: 100%;
-  pointer-events: none;
-}
-
-.tinder--card h3 {
-  margin-top: 32px;
-  font-size: 32px;
-  padding: 0 16px;
-  pointer-events: none;
-}
-
-.tinder--card p {
-  margin-top: 24px;
-  font-size: 20px;
-  padding: 0 16px;
-  pointer-events: none;
-}
-
-.tinder--buttons {
-  flex: 0 0 100px;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.tinder--buttons button {
-  border-radius: 50%;
-  line-height: 60px;
-  width: 60px;
-  border: 0;
-  background: #FFFFFF;
-  display: inline-block;
-  margin: 0 8px;
-}
-
-.tinder--buttons button:focus {
-  outline: 0;
-}
-
-.tinder--buttons i {
-  font-size: 32px;
-  vertical-align: middle;
-}
-
-.fa-heart {
-  color: #FFACE4;
-}
-
-.fa-remove {
-  color: #CDD6DD;
-}
-
-</style>
     <!--module-2 hero banner html code  -->
     <div class="hero-banner default-section blue-bg-banner">
         <div class="back-pattern">
@@ -582,7 +449,7 @@
             <div class="h2-blue">
                 <h2 class="text-noeffect"><?php echo the_field('social_presence_title'); ?></h2>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <!-- <div id="insrta-slider">
                         <div class="dp-wrap">
@@ -619,43 +486,30 @@
                         </div>
                     </div> -->
                     <div class="tinder">
-                      <div class="tinder--status">
-                        <i class="fa fa-remove"></i>
-                        <i class="fa fa-heart"></i>
-                      </div>
-
-                      <div class="tinder--cards">
-                        <div class="tinder--card">
-                          <img src="https://placeimg.com/600/300/people">
-                          <h3>Demo card 1</h3>
-                          <p>This is a demo for Tinder like swipe cards</p>
+                        <span class=""></span>
+                        <div class="tinder--cards">
+                            <div class="tinder--card" id="tinder--card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" alt="social post" />
+                            </div>
+                            <div class="tinder--card" id="tinder--card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" alt="social post" />
+                            </div>
+                            <div class="tinder--card" id="tinder--card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" alt="social post" />
+                            </div>
+                            <div class="tinder--card" id="tinder--card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" alt="social post" />
+                            </div>
+                            <div class="tinder--card" id="tinder--card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video.png" alt="social post" />
+                            </div>
+                            <span id="dp-next">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/></svg>
+                            </span>
+                            <span id="dp-prev">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/></svg>
+                            </span>
                         </div>
-                        <div class="tinder--card">
-                          <img src="https://placeimg.com/600/300/animals">
-                          <h3>Demo card 2</h3>
-                          <p>This is a demo for Tinder like swipe cards</p>
-                        </div>
-                        <div class="tinder--card">
-                          <img src="https://placeimg.com/600/300/nature">
-                          <h3>Demo card 3</h3>
-                          <p>This is a demo for Tinder like swipe cards</p>
-                        </div>
-                        <div class="tinder--card">
-                          <img src="https://placeimg.com/600/300/tech">
-                          <h3>Demo card 4</h3>
-                          <p>This is a demo for Tinder like swipe cards</p>
-                        </div>
-                        <div class="tinder--card">
-                          <img src="https://placeimg.com/600/300/arch">
-                          <h3>Demo card 5</h3>
-                          <p>This is a demo for Tinder like swipe cards</p>
-                        </div>
-                      </div>
-
-                      <div class="tinder--buttons">
-                        <button id="nope"><i class="fa fa-remove"></i></button>
-                        <button id="love"><i class="fa fa-heart"></i></button>
-                      </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
@@ -860,7 +714,7 @@ var nopeListener = createButtonListener(false);
 var loveListener = createButtonListener(true);
 
 nope.addEventListener('click', nopeListener);
-love.addEventListener('click', loveListener);
+love.addEventListener('click', loveListener); 
 
 </script>
 <?php get_footer(); ?>

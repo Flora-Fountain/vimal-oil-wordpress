@@ -26,7 +26,12 @@ echo get_header();
             </div>
         </div>
     </div>
-
+    <?php 
+    $terms = get_terms([
+        'taxonomy' => 'category',
+        'hide_empty' => true,
+    ]);
+    ?>
     <!-- module-3 all blog list -->
     <div class="default-section blog-landing footer-before">
         <div class="container">
