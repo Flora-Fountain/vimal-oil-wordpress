@@ -32,6 +32,12 @@
 
 /* other responsive scc  */
 @media screen and (max-width:1599px) {
+    .hero-banner .owl-dots .owl-dot, .product-single-banner .owl-dots .owl-dot{
+        width: 21px;
+    }
+    .hero-banner .owl-dots .owl-dot::before,.product-single-banner .owl-dots .owl-dot::before{
+        top: -12px;
+    }
     .pro-sld-main img {
         max-width: 216px;
     }
@@ -539,7 +545,7 @@
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-bottom: 18px solid rgb(255, 255, 255);
-        top: -12px;
+        top: -11px;
     }
     .hero-banner .owl-dots .owl-dot.active::before {
         border-bottom: 18px solid #0c54a0;
@@ -1225,6 +1231,9 @@
     .nrt-section .h2-title {
         font-size: 40px;
     }
+    .blue-bg .j-para p{
+        text-align: center;
+    }
     .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white,.form-inner .h2-white {
         font-size: 36px;
     }
@@ -1672,6 +1681,9 @@
     .quiz-sec .panel-footer #answers .options label {
         font-size: 18px;
     }
+    .jorney-main .nav .nav-link img{
+        width: 100%;
+    }
 
     /* career-page style  */
     .job-opening .job-card{
@@ -2018,7 +2030,8 @@
 }
 @media screen and (max-width:600px) {
     .nrt-logo {
-        margin: 288px auto 0;
+        margin: 240px auto 0;
+        max-width: 170px;
     }
     .oil-swirl .coffee-swirl-image {
         /* opacity: 0; */
@@ -2042,7 +2055,7 @@
     }
     .nrt-logo {
         max-width: 130px;
-        margin: 227px auto 0;
+        margin: 170px auto 0;
         padding: 20px;
     }
     .white-sec::before {
@@ -2184,6 +2197,9 @@
     .pro-sld-main a {
         font-size: 16px;
         max-width: 140px;
+    }
+    .nrt-section .h2-white {
+        font-size: 55px;
     }
     .hero-banner .banner-right .h1-title, .inner-banner .banner-right .h1-title{
         font-size: 46px;
@@ -2380,6 +2396,12 @@
     .nrt-temp-left img, .nrt-temp-right img {
         width: 100%;
         max-width: 280px;
+}
+@media screen and (max-width:375px) {
+    .nrt-logo {
+        margin: 150px auto 0;
+        max-width: 106px;
+
     }
     .oil-swirl .coffee-swirl-image {
         /* opacity: 0; */
@@ -2432,6 +2454,9 @@
 @media screen and (max-width:359px) {
     .pro-sld-main a {
         font-size: 16px;
+    }
+    .nrt-section .h2-white {
+        font-size: 48px;
     }
     .jorney-main .nav-pills .nav-link {
         width: 33.33%;
