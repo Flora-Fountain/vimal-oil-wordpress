@@ -1,0 +1,31 @@
+2023-06-19T06:09:30+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\class-wpdb.php on line 2431
+
+2023-06-19T06:39:40+00:00 CRITICAL Unclosed '{' on line 50 in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\blog-landing.php on line 156
+
+2023-06-19T06:40:00+00:00 CRITICAL Unclosed '{' on line 50 in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\blog-landing.php on line 156
+
+2023-06-19T09:12:15+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\blog-landing.php:72
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\blog-landing.php on line 72
+
+2023-06-19T11:53:22+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_cat_name(), 0 passed in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\category.php on line 99 and exactly 1 expected in C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\category.php:223
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\category.php(99): get_cat_name()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\category.php on line 223
+
+2023-06-19T11:55:11+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_cat_name() in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\category.php:99
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\category.php on line 99
+
