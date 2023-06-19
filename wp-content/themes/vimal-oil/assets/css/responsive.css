@@ -144,6 +144,13 @@
         height: 454vh;
         margin-left: 0;
     }
+    .nrt-drop-logo {
+        height: 620px;
+        min-height: 710px;
+    }
+    .nrt-drop-logo .nrt-d-logo img {
+        max-width: 230px;
+    }
 }
 @media screen and (max-width:1399px) {
     .hero-banner .banner-left {
@@ -490,6 +497,12 @@
         height: 454vh;
         margin-left: 0;
     }
+    .nrt-drop-logo {
+        min-height: 620px;
+    }
+    .nrt-drop-logo .nrt-d-logo img {
+        max-width: 200px;
+    }
 }
 @media screen and (max-width:1199px) {
     .header {
@@ -753,6 +766,13 @@
         width: 80%;
         height: 460vh;
         margin-left: 0;
+    }
+    .nrt-drop-logo {
+        min-height: 570px;
+        height: 570px;
+    }
+    .nrt-drop-logo .nrt-d-logo img {
+        max-width: 180px;
     }
 }
 
@@ -1144,6 +1164,13 @@
         height: 460vh;
         margin-left: 0;
     }
+    .nrt-drop-logo {
+        min-height: 480px;
+        height: 480px;
+    }
+    .nrt-drop-logo .nrt-d-logo img {
+        max-width: 160px;
+    }
 }
 @media screen and (max-width:799px) {
     .nrt-ills::before, .nrt-ills::after {
@@ -1412,15 +1439,12 @@
         margin-top: 30px;
     }
     .jorney-main .nav-pills .nav-link {
-        width: 33.33%;
+        width: 15%;
         padding: 0;
     }
     .jorney-main .slide-img img {
         width: 100%;
         max-width: 270px;
-    }
-    .jorney-main .nav-pills .nav-link:nth-last-child(-n+3) {
-        margin-top: 20px;
     }
     .jorney-main .nav {
         margin: 30px 0;
@@ -1454,13 +1478,7 @@
     }
 
     /* homepage nrt section  */
-    .nrt-drop-logo{
-        background: url('../images/blue-oil-flow.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 600px;
-    }
+
     .nrt-blue-drop .nrt-drop-logo .blue-drop.text-center {
         display: none;
 
@@ -2051,6 +2069,13 @@
     .footer .footer-quick-links ul + ul {
         margin-top: 10px;
     }
+    .nrt-drop-logo {
+        min-height: 380px;
+        height: 380px;
+    }
+    .nrt-drop-logo .nrt-d-logo img {
+        max-width: 120px;
+    }
 }
 @media screen and (max-width:600px) {
     .nrt-logo {
@@ -2371,6 +2396,12 @@
         padding: 0;
         gap: 15px;
     }
+    .jorney-main .nav-pills .nav-link {
+        width: 26%;
+    }
+    .jorney-main .nav-pills .nav-link:nth-last-child(-n+3) {
+        margin-top: 15px;
+    }
 }
 @media screen and (max-width:412px) {
     .nrt-logo {
@@ -2421,6 +2452,7 @@
     .nrt-temp-left img, .nrt-temp-right img {
         width: 100%;
         max-width: 280px;
+    }
 }
 @media screen and (max-width:375px) {
     .nrt-logo {
@@ -2482,10 +2514,6 @@
     }
     .nrt-section .h2-white {
         font-size: 48px;
-    }
-    .jorney-main .nav-pills .nav-link {
-        width: 33.33%;
-        padding: 0;
     }
     .animate-text span {
         font-size: 30px;
@@ -2554,5 +2582,3 @@
         gap: 15px;
     }
 }
-}
-

@@ -838,8 +838,8 @@ a:focus{
 	background: url(../images/sun-flower.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 260px;
-	height: 270px;
+	width: 240px;
+	height: 250px;
 	right: -120px;
 	top: 0;
 	animation: fl-rotate 20s infinite linear;
@@ -1035,31 +1035,30 @@ a:focus{
 	position: relative;
 }
 
-.nrt-drop-logo{
+.nrt-drop-logo {
 	background: url('../images/blue-oil-flow.png');
 	background-size: cover;
-	background-position: center;
+	background-position: center top;
 	background-repeat: no-repeat;
 	height: 800px;
 	margin-top: -2px;
+	min-height: 900px;
 }
-
 .nrt-blue-drop .nrt-drop-logo .blue-drop{
 	/* position: absolute; */
 }
 .nrt-blue-drop .nrt-drop-logo .blue-drop img{
 	width: 100%;
 }
-.nrt-drop-logo .nrt-d-logo{
+.nrt-drop-logo .nrt-d-logo {
 	position: absolute;
 	left: 50%;
-	bottom: 28px;
+	bottom: 6%;
 	transform: translateX(-50%);
 }
 .nrt-drop-logo .nrt-d-logo img{
-	max-width: 250px;
+	max-width: 300px;
 }
-
 .nrt-logo {
     display: block;
     width: 100%;
@@ -1650,6 +1649,9 @@ a:focus{
 	position: absolute;
 	z-index: -1;
 }
+.floating-obj img{
+	width: 100px;
+}
 .floating-obj img:nth-child(1) {
 	left: 15%;
 	top: 3%;
@@ -1667,7 +1669,7 @@ a:focus{
 	left: 15%;
 }
 .floating-obj img:nth-child(5) {
-	bottom: -5%;
+	bottom: 0;
 	left: 42%;
 }
 .floating-obj img:nth-child(6) {
