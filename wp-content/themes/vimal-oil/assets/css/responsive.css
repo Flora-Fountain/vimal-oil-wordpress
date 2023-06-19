@@ -144,6 +144,13 @@
         height: 454vh;
         margin-left: 0;
     }
+    .nrt-drop-logo {
+        height: 620px;
+        min-height: 710px;
+    }
+    .nrt-drop-logo .nrt-d-logo img {
+        max-width: 230px;
+    }
 }
 @media screen and (max-width:1399px) {
     .hero-banner .banner-left {
@@ -490,6 +497,12 @@
         height: 454vh;
         margin-left: 0;
     }
+    .nrt-drop-logo {
+        min-height: 620px;
+    }
+    .nrt-drop-logo .nrt-d-logo img {
+        max-width: 200px;
+    }
 }
 @media screen and (max-width:1199px) {
     .header {
@@ -753,6 +766,13 @@
         width: 80%;
         height: 460vh;
         margin-left: 0;
+    }
+    .nrt-drop-logo {
+        min-height: 570px;
+        height: 570px;
+    }
+    .nrt-drop-logo .nrt-d-logo img {
+        max-width: 180px;
     }
 }
 
