@@ -69,7 +69,7 @@ echo get_header();
                         // 'post_type' => 'post',
                         // 'post_status' => 'publish',
                         // 'tax_query' => [
-                        //     [
+                        //     [ 
                         //         'taxonomy' => 'category',
                         //         // 'terms' => $cat_obj->cat_ID,
                         //         // 'include_children' => false // Remove if you need posts from term 7 child terms
@@ -92,7 +92,10 @@ echo get_header();
                                                 <div class="blog-img">
                                                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="blur-leaf">
                                                 </div>
-                                                <h5><?php the_category(); ?></h5>
+                                                <div>
+                                                    <span><?php the_category();?></span>
+                                                    <span><?php the_date();?></span>
+                                                </div>
                                                 <h4><?php the_title();?></h4>
                                                 <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block" aria-labelledby="headingOne" data-bs-parent="#myTabContent">
                                                     <div class="accordion-body">
