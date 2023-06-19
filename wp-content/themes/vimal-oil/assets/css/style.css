@@ -759,9 +759,11 @@ a:focus{
 	transition: 0.3s;
 }
 .pro-sld-main:hover img {
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
-    top: -10px;
-    transition: 0.5s ease-in-out;
+	filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+	-webkit-transform: translateY(-40px);
+	-ms-transform: translateY(-40px);
+	transform: translateY(-40px);
+	transition: 0.5s ease-in-out;
 }
 .pro-sld-main a {
 	font-size: 32px;
@@ -3725,7 +3727,7 @@ a:focus{
 	transition: .3s;
 }
 .menu-float .menu-ing {
-	margin-left: 200px;
+	margin-left: 100px;
 }
 .menu-float .menu-ing img {
 	width: 100%;

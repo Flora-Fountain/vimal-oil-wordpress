@@ -18,15 +18,18 @@
 }
 @media screen and (max-width:1799px) {
     .nav-menu-right .nav li .nav-link {
-        font-size: 44px;
+        font-size: 42px;
     }
 }
 @media screen and (max-width:1699px) {
     .nav-menu-right .nav li .nav-link {
-        font-size: 40px;
+        font-size: 38px;
     }
     .menu-float.m-open .nav-menu-right .nav.right::before {
         height: calc(100% - 60px);
+    }
+    .menu-float .menu-ing {
+        margin-left: 60px;
     }
     .nrt-logo {
         max-width: 300px;
@@ -84,7 +87,7 @@
         padding: 260px 0 180px;
     }
     .nav-menu-right .nav li .nav-link {
-        font-size: 26px;
+        font-size: 30px;
     }
     .gen-sec-ben .can-image-sec img {
         height: 500px;
@@ -152,12 +155,6 @@
     .nrt-section .h2-white {
         font-size: 80px;
     }
-    .nav-menu-right .nav li .nav-link {
-        font-size: 30px;
-    }
-    .menu-float .menu-ing {
-        margin-left: 140px;
-    }
     .gen-sec-ben .can-image-sec img {
         height: 500px;
         display: block;
@@ -181,9 +178,6 @@
     }
 }
 @media screen and (max-width:1399px) {
-    .nav-menu-right .nav li .nav-link {
-        font-size: 26px;
-    }
     .hero-banner .banner-left {
         margin-top: 40px;
     }
@@ -417,7 +411,7 @@
         font-size: 70px;
     }
     .menu-float .menu-ing {
-        margin-left: 110px;
+        margin-left: 30px;
     }
     .legacy-section.why-vml, .sourcing-section.why-vml {
         padding: 80px 0;
@@ -503,7 +497,10 @@
         padding-left: 70px;
     }
     .menu-float .menu-ing {
-        margin-left: 40px;
+        margin-left:0px;
+    }
+    .nav-menu-right .nav li .nav-link {
+        font-size: 26px;
     }
     .recipe-section {
         padding-top: 40px;
@@ -1205,6 +1202,11 @@
     }
     .nrt-drop-logo .nrt-d-logo img {
         max-width: 160px;
+    }
+    .pro-sld-main:hover img {
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
     }
 }
 @media screen and (max-width:799px) {
@@ -1994,9 +1996,8 @@
         align-items: flex-start;
         opacity: 1;
         overflow: hidden;
-     }
-    
-     .oil-swirl .coffee-swirl-image{
+    }
+    .oil-swirl .coffee-swirl-image{
         /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
@@ -2120,6 +2121,11 @@
     }
     .oil-quiz.hm-qz .row {
         flex-direction: column-reverse;
+    }
+    .pro-sld-main:hover img {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
     }
 }
 @media screen and (max-width:600px) {
