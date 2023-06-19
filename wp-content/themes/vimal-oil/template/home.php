@@ -150,9 +150,9 @@
                     <p class="text-center"><?php echo the_field('default_nrt_section_discription');?></p> 
                 </div>
                 <div class="nrt-drop-logo">
-                    <div class="blue-drop text-center">
+                    <!-- <div class="blue-drop text-center">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-oil-flow.png" alt="temperature oil" class="b-o-drop">
-                    </div>
+                    </div> -->
                     <div class="nrt-d-logo text-center">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nrt-logo.png" alt="temperature oil" class="nrt-logo-drop">
                     </div>

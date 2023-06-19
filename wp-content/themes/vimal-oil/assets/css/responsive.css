@@ -690,7 +690,8 @@
         padding: 80px 0px;
     }
     .nrt-ills {
-        padding: 20px 0 60px;
+        padding:20px 0 60px;
+        padding-top: 0;
     }
     .recipe-section {
         padding-top: 20px;
@@ -1360,6 +1361,10 @@
     .nrt-top .text-center {
         font-size: 20px;
     }
+    .nrt-ills {
+        padding: 20px 0 60px;
+        padding-top: 0;
+    }
     .nrt-ills::before, .nrt-ills::after {
         height: calc(100% - 374px);
     }
@@ -1446,6 +1451,19 @@
     }
     .reci-sec .row >div:nth-child(-n + 1) {
         margin-top: 0px;
+    }
+
+    /* homepage nrt section  */
+    .nrt-drop-logo{
+        background: url('../images/blue-oil-flow.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 600px;
+    }
+    .nrt-blue-drop .nrt-drop-logo .blue-drop.text-center {
+        display: none;
+
     }
 
     /* Product Landing */
@@ -1936,6 +1954,10 @@
     .default-section {
         padding: 60px 0px;
     }
+    .nrt-ills {
+        padding: 20px 0 60px;
+        padding-top: 0;
+    }
     .droplets > div:nth-child(7),.droplets > div:nth-child(9),.droplets > div:nth-child(4),.droplets > div:nth-child(5) {
         display: none;
     }
@@ -2319,6 +2341,7 @@
     }
     .nrt-ills {
         padding: 20px 0 60px;
+        padding-top: 0;
     }
     .blog-subscribe .email-input-field input[type="email"]{
         width: 100%;
