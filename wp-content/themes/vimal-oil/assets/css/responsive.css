@@ -777,6 +777,7 @@
 }
 
 @media screen and (max-width:991px) {
+
     .h1-title{
         font-size: 70px;
     }
@@ -1116,6 +1117,9 @@
     .menu-float.m-open .nav-menu-right .nav.left li:nth-child(4) {
         transition-delay: 1.9s;
     }
+    .menu-float.m-open .nav-menu-right .nav.left li:nth-child(5){
+        transition-delay: 2s;
+    }
     .menu-float.m-open .nav-menu-right .nav.right li:nth-child(1) {
         transition-delay: 2.0s;
     }
@@ -1127,6 +1131,9 @@
     }
     .menu-float.m-open .nav-menu-right .nav.right li:nth-child(4) {
         transition-delay: 2.3s;
+    }
+    .menu-float.m-open .nav-menu-right .nav.right li:nth-child(5){
+        transition-delay: 2.4s;
     }
     .nrt-ills::before, .nrt-ills::after {
         height: calc(100% - 330px);
