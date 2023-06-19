@@ -244,7 +244,7 @@ echo get_header();
             </div>
         </div>
     </div>
-    
+    </div>
     <!-- Get Product -->
     <?php 
          $args = array(
