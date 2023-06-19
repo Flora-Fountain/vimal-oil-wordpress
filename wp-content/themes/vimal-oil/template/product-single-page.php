@@ -7,7 +7,7 @@ echo get_header();
 ?>
     
     <!--module-2 hero banner html code  -->
-    <div class="default-section blue-bg-banner product-single-banner hero-banner">
+    <div class="default-section blue-bg-banner product-single-banner hero-banner ">
             <div class="container-fluid">
                 <div class="banner-slider owl-carousel owl-theme">
                     <div class="item">
