@@ -838,8 +838,8 @@ a:focus{
 	background: url(../images/sun-flower.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 260px;
-	height: 270px;
+	width: 240px;
+	height: 250px;
 	right: -120px;
 	top: 0;
 	animation: up-down 4s infinite linear;
@@ -1653,6 +1653,9 @@ a:focus{
 	position: absolute;
 	z-index: -1;
 }
+.floating-obj img{
+	width: 100px;
+}
 .floating-obj img:nth-child(1) {
 	left: 15%;
 	top: 3%;
@@ -1670,7 +1673,7 @@ a:focus{
 	left: 15%;
 }
 .floating-obj img:nth-child(5) {
-	bottom: -5%;
+	bottom: 0;
 	left: 42%;
 }
 .floating-obj img:nth-child(6) {
@@ -1797,7 +1800,7 @@ a:focus{
 }
 .footer .about-us-col .footer-logo img{
     width: auto;
-    height: 180px;
+    height: 130px;
 }
 .footer .about-us-col .text-content .h3-title {
 	font-size: 32px;
