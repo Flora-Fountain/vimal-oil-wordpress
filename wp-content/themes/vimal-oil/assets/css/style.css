@@ -1012,6 +1012,7 @@ a:focus{
 .nrt-ills {
 	/* background: #0c56a1; */
 	padding: 0px 0px;
+	margin-top: -5px;
 }
 .nrt-top-head{
 	background-color: #0c56a1;
@@ -1032,6 +1033,15 @@ a:focus{
 }
 .nrt-drop-logo{
 	position: relative;
+}
+
+.nrt-drop-logo{
+	background: url('../images/blue-oil-flow.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 800px;
+	margin-top: -2px;
 }
 
 .nrt-blue-drop .nrt-drop-logo .blue-drop{

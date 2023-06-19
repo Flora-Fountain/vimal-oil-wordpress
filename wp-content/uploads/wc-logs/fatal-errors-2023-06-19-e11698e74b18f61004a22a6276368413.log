@@ -1,0 +1,2 @@
+2023-06-19T06:46:43+00:00 CRITICAL Out of memory (allocated 58720256) (tried to allocate 73728 bytes) in D:\xammp\htdocs\vimal-oil-wordpress\wp-content\plugins\woocommerce\includes\class-wc-autoloader.php on line 54
+
