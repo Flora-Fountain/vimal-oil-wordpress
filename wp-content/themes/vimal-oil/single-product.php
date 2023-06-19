@@ -9,7 +9,7 @@
     // echo '<div style="background-color:'.get_field('product_background_color',$product->get_id()).'">';
     // echo "<center><br><br><br><br><br>";
     // echo $product->get_image()."<br><br>";
-    $product_name = $product->get_name()."<br><br>";
+    $product_name = $product->get_name();
     $product_gellery_id = $product->get_gallery_image_ids();
     // $product_gellery_image = wp_get_attachment_image_src($product_gellery_id);
     // echo "</center></div>"; 
@@ -17,7 +17,7 @@
     // die;
 ?>
     <!--module-2 hero banner html code  -->
-    <div class="default-section blue-bg-banner product-single-banner">
+    <div class="default-section blue-bg-banner product-single-banner hero-banner">
             <div class="container-fluid">
                 <div class="banner-slider owl-carousel owl-theme">
                     <?php 
@@ -54,9 +54,7 @@
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="oil-det-right">
                         <div class="h2-white">
-                            <h2 class="text-noeffect">
-                                <?php echo $product_name; ?>
-                            </h2>
+                            <h2 class="text-noeffect"><?php echo $product_name; ?></h2>
                         </div>
                         <div class="oil-para">
                             <p><?php echo the_field('product_description');?></p>

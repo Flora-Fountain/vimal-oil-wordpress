@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2023-06-19T06:09:30+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\class-wpdb.php on line 2431
 
 2023-06-19T06:39:40+00:00 CRITICAL Unclosed '{' on line 50 in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\blog-landing.php on line 156
@@ -28,4 +29,7 @@ Stack trace:
 #2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
 #3 {main}
   thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\category.php on line 99
+=======
+2023-06-19T06:46:43+00:00 CRITICAL Out of memory (allocated 58720256) (tried to allocate 73728 bytes) in D:\xammp\htdocs\vimal-oil-wordpress\wp-content\plugins\woocommerce\includes\class-wc-autoloader.php on line 54
+>>>>>>> 572096df4d9b948f80f87017943ae5f181f08570
 

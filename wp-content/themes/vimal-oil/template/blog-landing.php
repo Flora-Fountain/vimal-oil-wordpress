@@ -84,8 +84,6 @@ echo get_header();
                     <div class="tab-pane fade show active accordion-item" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
                         <div class="row">
                             <?php 
-                                // print_r($blogs);
-                                // die;
                                 if ($blogs->have_posts()) {
                                     while ($blogs->have_posts()) {
                                         $blogs->the_post(); ?>

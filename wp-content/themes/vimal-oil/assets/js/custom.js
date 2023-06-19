@@ -693,3 +693,40 @@ window.addEventListener('scroll', (e) => {
     // height = Math.min(height, maxElementHeight); // Ensure the height doesn't exceed the maximum
     // document.querySelector('.oil-swirl').style.height = height + 'px';
 })
+
+
+
+// tinder swipe effect 
+var card = document.getElementById('tinder--card');
+var startX;
+var currentX;
+var threshold = 150; // Minimum distance to trigger swipe
+
+card.addEventListener('touchstart', function(e) {
+  startX = e.touches[0].clientX;
+  card.style.transition = 'none';
+});
+
+card.addEventListener('touchmove', function(e) {
+  currentX = e.touches[0].clientX;
+  var deltaX = currentX - startX;
+  card.style.transform = 'translateX(' + deltaX + 'px)';
+});
+
+card.addEventListener('touchend', function(e) {
+  var deltaX = currentX - startX;
+  card.style.transition = 'transform 0.3s ease';
+  
+  if (deltaX > threshold) {
+    card.classList.add('swipe-right');
+  } else if (deltaX < -threshold) {
+    card.classList.add('swipe-left');
+  } else {
+    card.style.transform = 'translateX(0)';
+  }
+});
+
+card.addEventListener('transitionend', function(e) {
+  card.classList.remove('swipe-left', 'swipe-right');
+});
+

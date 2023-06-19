@@ -123,7 +123,7 @@ echo get_header();
             </div>
 
             <!-- module-6 pressure section  -->
-            <div class="temp-section-nrt p-3">
+            <div class="temp-section-nrt">
                 <div class="nrt-tempe nrt-pressure ">
                     <div class="container">
                     <div class="gen-sec">

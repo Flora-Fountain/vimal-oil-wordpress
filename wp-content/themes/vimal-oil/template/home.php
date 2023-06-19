@@ -123,7 +123,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
             </div>
         </div>
-            <div class="white-sec">
+            <!-- <div class="white-sec">
                 <div class="container">
                     <div class="align-items-center">
                     <div class="nrt-top">
@@ -139,8 +139,8 @@
                     <img src="<?php echo the_field('default_nrt_section_logo');?>" alt="NRT-logo"/>
                 </div>
                 </div> 
-            </div>
-            <!-- <div class="nrt-blue-drop p-0">
+            </div> -->
+            <div class="nrt-blue-drop p-0">
                 <div class="nrt-blue-head-sec">
                     <div class="h2-blue">
                         <h2 class="text-noeffect">
@@ -150,14 +150,14 @@
                     <p class="text-center"><?php echo the_field('default_nrt_section_discription');?></p> 
                 </div>
                 <div class="nrt-drop-logo">
-                    <div class="blue-drop text-center">
+                    <!-- <div class="blue-drop text-center">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-oil-flow.png" alt="temperature oil" class="b-o-drop">
-                    </div>
+                    </div> -->
                     <div class="nrt-d-logo text-center">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nrt-logo.png" alt="temperature oil" class="nrt-logo-drop">
                     </div>
                 </div>
-            </div> -->
+            </div>
     </div>
     <div class="nrt-section default-section nrt-ills-sec">
         <div class="floating-ele">
@@ -338,7 +338,7 @@
     </div>
 
     <!-- module-7 oil-quiz  -->
-    <div class="oil-quiz default-section">
+    <div class="oil-quiz default-section hm-qz">
         <div class="droplets">
             <div>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-blur-drop.png" alt="left-blur-drop"/>
@@ -380,6 +380,11 @@
                     <div class="oil-quiz-left">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/quiz-heart.png" width="434" height="651">
                     </div>
+                    <div class="submit-button text-center mobile-show">
+                        <a href="<?php the_field('quiz_page_link') ?>" class="btn-effect blue-back">
+                            <?php echo the_field('quiz_button_name');?>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="oil-quiz-right">
@@ -389,7 +394,7 @@
                             </h2>
                         </div>
                         <p><?php echo the_field('quiz_description') ?></p>
-                        <div class="submit-button text-center">
+                        <div class="submit-button text-center mobile-hide">
                             <a href="<?php the_field('quiz_page_link') ?>" class="btn-effect blue-back">
                                 <?php echo the_field('quiz_button_name');?>
                             </a>
@@ -607,14 +612,14 @@
             </div>
         </div>
     </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script type="text/javascript">
 'use strict';
 
 var tinderContainer = document.querySelector('.tinder');
 var allCards = document.querySelectorAll('.tinder--card');
-var nope = document.getElementById('nope');
-var love = document.getElementById('love');
+var nope = document.getElementById('dp-prev');
+var love = document.getElementById('dp-next');
 
 function initCards(card, index) {
   var newCards = document.querySelectorAll('.tinder--card:not(.removed)');
@@ -622,7 +627,7 @@ function initCards(card, index) {
   newCards.forEach(function (card, index) {
     card.style.zIndex = allCards.length - index;
     card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
-    card.style.opacity = (10 - index) / 10;
+    // card.style.opacity = (10 - index) / 10;
   });
   
   tinderContainer.classList.add('loaded');
@@ -707,5 +712,5 @@ var loveListener = createButtonListener(true);
 nope.addEventListener('click', nopeListener);
 love.addEventListener('click', loveListener); 
 
-</script>
+// </script>
 <?php get_footer(); ?>
