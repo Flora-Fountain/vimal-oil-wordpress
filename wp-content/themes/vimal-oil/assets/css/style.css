@@ -1033,21 +1033,21 @@ a:focus{
 .nrt-drop-logo{
 	position: relative;
 }
-.nrt-d-logo{
-	position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 0%);
-}
+
 .nrt-blue-drop .nrt-drop-logo .blue-drop{
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, 0%);
-	margin-top: -23px;
+	/* position: absolute; */
 }
 .nrt-blue-drop .nrt-drop-logo .blue-drop img{
 	width: 100%;
+}
+.nrt-drop-logo .nrt-d-logo{
+	position: absolute;
+	left: 50%;
+	bottom: 28px;
+	transform: translateX(-50%);
+}
+.nrt-drop-logo .nrt-d-logo img{
+	max-width: 250px;
 }
 
 .nrt-logo {
