@@ -842,7 +842,8 @@ a:focus{
 	height: 270px;
 	right: -120px;
 	top: 0;
-	animation: fl-rotate 20s infinite linear;
+	animation: up-down 4s infinite linear;
+	animation-delay: 0.5s;
 	z-index: 0;
 }
 .nrt-bottom {
@@ -1419,6 +1420,9 @@ a:focus{
     display: block;
     height: auto;
     margin: 0 auto;
+}
+.oil-quiz .submit-button.mobile-show {
+	display: none;
 }
 .h4-title{
     text-align: center;

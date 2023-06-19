@@ -338,7 +338,7 @@
     </div>
 
     <!-- module-7 oil-quiz  -->
-    <div class="oil-quiz default-section">
+    <div class="oil-quiz default-section hm-qz">
         <div class="droplets">
             <div>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-blur-drop.png" alt="left-blur-drop"/>
@@ -380,6 +380,11 @@
                     <div class="oil-quiz-left">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/quiz-heart.png" width="434" height="651">
                     </div>
+                    <div class="submit-button text-center mobile-show">
+                        <a href="<?php the_field('quiz_page_link') ?>" class="btn-effect blue-back">
+                            <?php echo the_field('quiz_button_name');?>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="oil-quiz-right">
@@ -389,7 +394,7 @@
                             </h2>
                         </div>
                         <p><?php echo the_field('quiz_description') ?></p>
-                        <div class="submit-button text-center">
+                        <div class="submit-button text-center mobile-hide">
                             <a href="<?php the_field('quiz_page_link') ?>" class="btn-effect blue-back">
                                 <?php echo the_field('quiz_button_name');?>
                             </a>

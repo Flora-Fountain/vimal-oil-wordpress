@@ -2076,6 +2076,16 @@
     .nrt-drop-logo .nrt-d-logo img {
         max-width: 120px;
     }
+    .oil-quiz .submit-button.mobile-hide {
+        display: none;
+    }
+    .oil-quiz .submit-button.mobile-show {
+        display: block;
+        margin: 20px 0;
+    }
+    .oil-quiz.hm-qz .row {
+        flex-direction: column-reverse;
+    }
 }
 @media screen and (max-width:600px) {
     .nrt-logo {
