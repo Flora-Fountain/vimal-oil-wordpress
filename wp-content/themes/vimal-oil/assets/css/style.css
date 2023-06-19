@@ -3303,19 +3303,18 @@ a:focus{
 	position: relative;
 }
 
-.nrt-banner .oil-bottle-flow{
+.nrt-banner .oil-bottle-flow {
 	position: absolute;
-	bottom: -59px;
-	left: -123px;
+	bottom: -200px;
+	left: -25px;
 	width: 400px;
 	height: auto;
 	z-index: 4;
 }
-
 .nrt-banner .oil-bottle-flow img {
 	width: 100%;
 	transition: 0.5s;
-	height: 310px;
+	min-width: 500px;
 }
 /* .nrt-banner .oil-bottle-flow.rotate img{
 	-webkit-transform: rotate(0deg);
@@ -3324,17 +3323,19 @@ a:focus{
 } */
 .temp-section-nrt{
 	position: relative;
-	min-height: 100vh;
+	/* min-height: 100vh; */
+	padding: 100px 0;
 }
 
-.temp-section-nrt .back-sec{
-	min-height: 100vh;
+.temp-section-nrt .back-sec {
+	min-height: auto;
 	width: 100vw;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: -99999;
 	background-color: #0c56a1;
+	bottom: 0;
 }
 .temp-section-nrt .back-sec::before{
 	position: absolute;
@@ -3351,21 +3352,22 @@ a:focus{
 .temp-section-nrt .back-sec .lab-ele img{
 	opacity: 0.5;
 }
-.temp-section-nrt .back-white{
-	height: 100vh;
+.temp-section-nrt .back-white {
+	height: auto;
 	width: 100vw;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: -99999;
 	/* background-color: #0c56a1; */
+	bottom: 0;
 }
 .temp-section-nrt .fisrt-temp-sec{
 	/* position: absolute; */
 	/* top:0; */
 	/* left: 0; */
+	position: relative;
 	background-color: #ffffff00;
-	height: 100vh;
 }
 .nrt-banner .nrt-logo-img img {
     display: block;
@@ -3383,7 +3385,7 @@ a:focus{
 }
 .nrt-tempe{
 	padding: 0 0;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 }
 .nrt-benefits{
 	padding: 125px 0;
@@ -3462,12 +3464,15 @@ a:focus{
 	transition: 0.5s;
  }
 
- .oil-swirl .coffee-swirl-image{
+ .oil-swirl .coffee-swirl-image {
 	/* opacity: 0; */
 	transition: opacity 0.5s;
 	overflow: hidden;
-	width: 80%;
-	height: 455vh;
+	width: 74%;
+	height: auto;
+	left: 175px;
+	position: relative;
+	top: 130px;
 }
  .oil-swirl .coffee-swirl-image.reveal{
 	opacity: 1;
@@ -3761,7 +3766,7 @@ a:focus{
 	transition-delay: 1.5s;
 }
 .menu-float.m-open .nav-menu-right .nav.right::before{
-	height: calc(100% - 150px);
+	height: calc(100% - 100px);
 }
 .nav-menu-right .nav li {
 	display: inline-block;
