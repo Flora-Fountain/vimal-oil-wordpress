@@ -33,6 +33,7 @@ echo get_header();
         'taxonomy' => 'category',
         'hide_empty' => true,
     ]);
+    $cat_obj = get_queried_object();
     ?>
     <!-- module-3 all blog list -->
     <div class="default-section blog-landing footer-before">
@@ -46,35 +47,35 @@ echo get_header();
             <div class="blog-tab">
                 <ul class="nav nav-tabs  d-lg-flex" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <a href="<?php echo site_url();?>/blog-landing" class="nav-link active">All</a>
+                        <a href="<?php echo site_url();?>/blog-landing" class="nav-link <?php if ($cat_obj->name == "") {echo "";} ?>">All</a>
                     </li>
                     <?php
                         $count = 0; 
                         foreach ($terms as $term) { ?>
                             <li class="nav-item" role="presentation">
                                 <!-- <a class="nav-link active" id="<?php echo $term->name;?>-tab" data-bs-toggle="tab" data-bs-target="#<?php echo $term->name;?>-tab-pane" type="button" role="tab" aria-controls="<?php echo $term->name;?>-tab-pane" aria-selected="true"><?php echo $term->name;?></a> -->
-                                <a href="<?php echo get_term_link($term->term_id); ?>" class="nav-link"><?php echo $term->name;?></a>
+                                <a href="<?php echo get_term_link($term->term_id); ?>" class="nav-link <?php if ($term->name == $cat_obj->name) { echo "active";} ?>"><?php echo $term->name;?></a>
                             </li>   
                             <!-- echo $term->name;-->
                         <?php }
                     ?>
                 </ul>
                 <?php 
-                    // $cat_obj = get_queried_object();
+                    $cat_obj = get_queried_object();
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     $args = [
                         'post_type'=> 'post',
                         'post_status' => 'publish',
-                        'posts_per_page' => -1 // this will retrive all the post that is published
+                        'posts_per_page' => -1, // this will retrive all the post that is published
                         // 'post_type' => 'post',
                         // 'post_status' => 'publish',
-                        // 'tax_query' => [
-                        //     [
-                        //         'taxonomy' => 'category',
-                        //         // 'terms' => $cat_obj->cat_ID,
-                        //         // 'include_children' => false // Remove if you need posts from term 7 child terms
-                        //     ],
-                        // ],
+                        'tax_query' => [
+                            [
+                                'taxonomy' => 'category',
+                                'terms' => $cat_obj->cat_ID,
+                                'include_children' => false // Remove if you need posts from term 7 child terms
+                            ],
+                        ],
                 
                     ];
 
@@ -84,6 +85,8 @@ echo get_header();
                     <div class="tab-pane fade show active accordion-item" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
                         <div class="row">
                             <?php 
+                                // print_r($blogs);
+                                // die;
                                 if ($blogs->have_posts()) {
                                     while ($blogs->have_posts()) {
                                         $blogs->the_post(); ?>
@@ -92,7 +95,7 @@ echo get_header();
                                                 <div class="blog-img">
                                                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="blur-leaf">
                                                 </div>
-                                                <h5><?php the_category(); ?></h5>
+                                                <h5><?php echo $cat_obj->cat_name;?></h5>
                                                 <h4><?php the_title();?></h4>
                                                 <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block" aria-labelledby="headingOne" data-bs-parent="#myTabContent">
                                                     <div class="accordion-body">
