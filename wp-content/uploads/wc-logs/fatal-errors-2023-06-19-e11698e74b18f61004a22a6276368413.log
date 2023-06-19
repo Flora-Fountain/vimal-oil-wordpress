@@ -33,3 +33,12 @@ Stack trace:
 2023-06-19T06:46:43+00:00 CRITICAL Out of memory (allocated 58720256) (tried to allocate 73728 bytes) in D:\xammp\htdocs\vimal-oil-wordpress\wp-content\plugins\woocommerce\includes\class-wc-autoloader.php on line 54
 >>>>>>> 572096df4d9b948f80f87017943ae5f181f08570
 
+2023-06-19T12:42:40+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_term_link(), 0 passed in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\category.php on line 99 and at least 1 expected in C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\taxonomy.php:4550
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\category.php(99): get_term_link()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\taxonomy.php on line 4550
+

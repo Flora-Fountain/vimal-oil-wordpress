@@ -95,10 +95,6 @@ echo get_header();
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <!-- <div class="content-part">
-                        <p><?php echo the_field('quality_section_description'); ?></p>
-                        <p><?php echo the_field('quality_section_description2'); ?></p>
-                    </div> -->
                     <div class="accordion-content-section">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores unde ipsam magni, dolorum sequi consequatur ut fugiat adipisci vel, optio iure voluptas, harum id! Voluptatibus?</p>
                         <div class="qa-acc">
@@ -228,7 +224,7 @@ echo get_header();
             </div>
         </div>
     </div>
-    
+    </div>
     <!-- Get Product -->
     <?php 
          $args = array(

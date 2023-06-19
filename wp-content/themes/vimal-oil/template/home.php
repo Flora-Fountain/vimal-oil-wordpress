@@ -154,7 +154,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-oil-flow.png" alt="temperature oil" class="b-o-drop">
                     </div> -->
                     <div class="nrt-d-logo text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nrt-logo.png" alt="temperature oil" class="nrt-logo-drop">
+                        <img src="<?php echo the_field('default_nrt_section_logo');?>" alt="temperature oil" class="nrt-logo-drop">
                     </div>
                 </div>
             </div>
