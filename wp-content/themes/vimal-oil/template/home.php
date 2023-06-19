@@ -195,10 +195,10 @@
     <!-- module-6 journey section  -->
     <div class="vimal-journey default-section blue-bg">
         <div class="container">
+            <div class="h2-blue">
+                <h2 class="text-noeffect">The journey <br/>of Health & Happiness!</h2>
+            </div>
             <div class="row align-items-center">
-                <div class="h2-blue">
-                    <h2 class="text-noeffect">The journey <br/>of Health & Happiness!</h2>
-                </div>
                 <div class="jorney-main">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
