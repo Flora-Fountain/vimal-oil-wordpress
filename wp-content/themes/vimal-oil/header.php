@@ -58,7 +58,7 @@
                 <div class="menu-left">
                     <div class="nav-menu">
                         <div class="logo">
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="vimal oil"></a>
+                            <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="vimal oil"></a>
                         </div>
                         <div class="menu-ing">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu-model.png" alt="menu-model" />
