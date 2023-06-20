@@ -4136,6 +4136,11 @@ a:focus{
 }
 
 /* social presense css tinder effect */
+
+
+
+
+
  .tinder {
 	/* width: 100vw; */
 	height: 100vh;
@@ -4198,7 +4203,7 @@ a:focus{
 	/* height: 70vh; */
 	/* background: #FFFFFF; */
 	/* padding-bottom: 40px; */
-	/* border-radius: 8px; */
+	border-radius: 8px;
 	overflow: hidden;
 	position: absolute;
 	will-change: transform;
@@ -4206,7 +4211,7 @@ a:focus{
 	cursor: -webkit-grab;
 	cursor: -moz-grab;
 	cursor: grab;
-  }
+  } 
   
   .tinder--card.swipe-left {
 	transform: translateX(-1000px);
@@ -4262,10 +4267,6 @@ a:focus{
 	color: #CDD6DD;
   }
   
-
-
-
-
   /* swipe css homepage  */
 .frame {
   position: relative;
