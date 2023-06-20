@@ -101,7 +101,6 @@ echo get_header();
                             <div class="accordion" id="accordionExample">
                                 <?php 
                                     $count = 1;
-
                                     if (have_rows('quality_section_accordion')) {
                                         while (have_rows('quality_section_accordion')) {
                                             the_row(); ?>
