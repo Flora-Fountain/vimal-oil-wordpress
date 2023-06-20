@@ -2291,7 +2291,9 @@
         padding: 0;
         gap: 15px;
     }
-
+    .vimal-journey .gen-sec {
+        padding: 0;
+    }
 }
 @media screen and (max-width:479px) {
     .pro-sld-main a {
@@ -2453,6 +2455,12 @@
     .jorney-main .nav-pills .nav-link:nth-last-child(-n+3) {
         margin-top: 15px;
     }
+    .social-post {
+        gap: 10px;
+    }
+    .img-mx {
+        max-width: 230px;
+    }
 }
 @media screen and (max-width:412px) {
     .nrt-logo {
@@ -2557,6 +2565,9 @@
         text-align: center;
         padding: 0;
         gap: 15px;
+    }
+    .vimal-journey .h2-blue {
+        font-size: 30px;
     }
 }
 @media screen and (max-width:359px) {

@@ -95,6 +95,7 @@ echo get_header();
                                                 <div class="blog-img">
                                                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="blur-leaf">
                                                 </div>
+
                                                 <div class="post-cate-date">
                                                     <div class="blog-cate"><?php the_category();?></div>
                                                     <div class="blog-date"><?php the_date(); ?></div>

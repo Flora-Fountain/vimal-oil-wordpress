@@ -69,7 +69,7 @@ echo get_header();
                         // 'post_type' => 'post',
                         // 'post_status' => 'publish',
                         // 'tax_query' => [
-                        //     [
+                        //     [ 
                         //         'taxonomy' => 'category',
                         //         // 'terms' => $cat_obj->cat_ID,
                         //         // 'include_children' => false // Remove if you need posts from term 7 child terms
@@ -92,6 +92,7 @@ echo get_header();
                                                 <div class="blog-img">
                                                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="blur-leaf">
                                                 </div>
+
                                                 <div class="post-cate-date">
                                                     <div class="blog-cate"><?php the_category(); ?></div>
                                                     <div class="blog-date"><?php the_date(); ?></div>

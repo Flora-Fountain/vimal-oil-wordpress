@@ -95,10 +95,6 @@ echo get_header();
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <!-- <div class="content-part">
-                        <p><?php echo the_field('quality_section_description'); ?></p>
-                        <p><?php echo the_field('quality_section_description2'); ?></p>
-                    </div> -->
                     <div class="accordion-content-section">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores unde ipsam magni, dolorum sequi consequatur ut fugiat adipisci vel, optio iure voluptas, harum id! Voluptatibus?</p>
                         <div class="qa-acc">
@@ -219,32 +215,14 @@ echo get_header();
                             <?php }
                         }
                     ?>
-                    <!-- <li>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/temperature.png" alt="temperature"/>
-                        <h4>Temperature<span>Lorem Ipsum is simply dummy text of the </span></h4>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/time.png" alt="time"/>
-                        <h4>Time<span>Lorem Ipsum is simply dummy text of the </span></h4>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pressure.png" alt="pressure"/>
-                        <h4>Pressure<span>Lorem Ipsum is simply dummy text of the </span></h4>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vacuum.png" alt="vacuum"/>
-                        <h4>Vacuum<span>Lorem Ipsum is simply dummy text of the </span></h4>
-                    </li> -->
                 </ul>
             </div>
-            <div class="submit-button text-center">
-                <a href="<?php echo the_field('nrt_section_button_link');?>" class="btn-effect blue-back"><?php echo the_field('nrt_section_button_name');?></a>
             <div class="submit-button text-center">
                 <a class="btn-effect blue-back" href="<?php echo the_field('nrt_section_button_link');?>" class="btn-effect"><?php echo the_field('nrt_section_button_name');?></a>
             </div>
         </div>
     </div>
-    
+    </div>
     <!-- Get Product -->
     <?php 
          $args = array(
@@ -305,41 +283,12 @@ echo get_header();
                                 <h2 class="text-noeffect">Have Question? Ask Away</h2>
                             </div>
                             <?php echo do_shortcode('[contact-form-7 id="673" title="Footer Contact Form"]');?>
-                            <!-- <div class="form">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="name" placeholder="Full Name" required="">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" name="name" placeholder="Email ID" required="">
-                                </div>
-                                <div class="form-group state-select">
-                                    <select name="State" id="state" class="form-control">
-                                        <option value="gujrat">Gujrat</option>
-                                        <option value="rajsthan">Rajsthan</option>
-                                        <option value="panjab">Panjab</option>
-                                    </select>
-                                </div>
-                                <div class="form-group state-select">
-                                    <select name="State" id="state" class="form-control">
-                                        <option value="ahmedabad">Ahmedabad</option>
-                                        <option value="rajkot">Rajkot</option>
-                                        <option value="surat">Surat</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" name="contact" placeholder="Contact No." required="">
-                                </div>
-                                <div class="iimg text-center">
-                                    <button class="btn-effect blue-back" type="submit">Share</button>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
 <?php 
     echo get_footer();
 ?>
