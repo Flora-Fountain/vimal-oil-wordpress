@@ -48,6 +48,7 @@
     </div>
 
     <!-- module-3 oil details -->
+
     <div class="default-section oil-details pro-ani">
         <div class="falling-leaf">
             <div>
@@ -62,6 +63,25 @@
         </div>
         <div class="container">
             <div class="row align-items-center">
+
+    <div class="default-section oil-details">
+        <div class="leaf-sec prod-leaf-sec">
+        <div class="falling-leaf cook-fall-leaf">
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+                </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
+                </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-flower-blur.png" alt="blur-leaf">
+                </div>
+            </div>
+            <div class="floating-ele after-banner cook-oil-float-ele">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="oil-det-right">
                         <div class="h2-white">
@@ -143,6 +163,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>

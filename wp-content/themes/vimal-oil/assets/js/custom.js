@@ -673,6 +673,12 @@ $(window).scroll(function() {
 
 });
 
+// scroll to section 
+// $('#nrt-ills-section').bind('scroll', function(event) {
+//     $(window).scrollTo($('#nrt-ills-section-1'), 1000);
+// });
+
+
 // oil-flow js 
 window.addEventListener('scroll', (e) => {
     document.querySelector('.oil-swirl').style.height = window.scrollY + 'px';

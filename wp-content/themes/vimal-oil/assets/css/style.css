@@ -3261,14 +3261,14 @@ a:focus{
     bottom: -120px;
     left: 150px;
     top: auto;
-    animation: up-down 6s infinite linear;
+    animation: animate 6s infinite linear;
     filter: blur(3px);
     animation-delay: 0.5s;
 }
 .oil-benefits-sec .falling-leaf > div:nth-child(3) {
     left: 70%;
     bottom: -70px;
-    animation: up-down 6s infinite linear;
+    animation: animate 6s infinite linear;
     animation-delay: 0s;
 }
 .oil-benefits-sec .leaf-sec::after, .oil-benefits-sec .leaf-sec::before{
@@ -3278,6 +3278,7 @@ a:focus{
     left: auto;
     top: -70px;
     right: 100px;
+    animation: animate 6s infinite linear;
     animation: animate 15s linear infinite;	
     animation-delay: -5s;
 }
@@ -4225,6 +4226,11 @@ a:focus{
 }
 
 /* social presense css tinder effect */
+
+
+
+
+
  .tinder {
 	/* width: 100vw; */
 	height: 100vh;
@@ -4287,7 +4293,7 @@ a:focus{
 	/* height: 70vh; */
 	/* background: #FFFFFF; */
 	/* padding-bottom: 40px; */
-	/* border-radius: 8px; */
+	border-radius: 8px;
 	overflow: hidden;
 	position: absolute;
 	will-change: transform;
@@ -4295,7 +4301,7 @@ a:focus{
 	cursor: -webkit-grab;
 	cursor: -moz-grab;
 	cursor: grab;
-  }
+  } 
   
   .tinder--card.swipe-left {
 	transform: translateX(-1000px);
@@ -4351,10 +4357,6 @@ a:focus{
 	color: #CDD6DD;
   }
   
-
-
-
-
   /* swipe css homepage  */
 .frame {
   position: relative;

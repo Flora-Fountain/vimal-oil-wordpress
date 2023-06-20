@@ -140,7 +140,7 @@ echo get_header();
                         <input type="email" name="email" placeholder="Enter Email" required="">
                     </div>
                     <div class="submit-button">
-                        <a class="btn-effect blue-back" href="http://localhost/vimal-oil-wordpress/test-1/" title="Test 2">Send</a>                           
+                        <button class="btn-effect blue-back" type="submit">Send</button>                         
                     </div>
                 </div>
             </div>
