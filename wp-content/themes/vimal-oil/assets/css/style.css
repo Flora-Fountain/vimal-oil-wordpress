@@ -3124,6 +3124,13 @@ a:focus{
 .oil-details .shop-button .buy-btn a{
 	background: #0C54A0;
 	color: #fff;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+.oil-details .shop-button .buy-btn a:hover {
+	background: #ffdd00;
+	color: #000;
 }
 .product-accor .accordion .accordion-item{
 	border: none;
@@ -3210,7 +3217,7 @@ a:focus{
     left: auto;
     top: -70px;
     right: 100px;
-    animation: up-down 6s infinite linear;
+    animation: animate 15s linear infinite;	
     animation-delay: -5s;
 }
 .oil-benefits-sec .floating-ele{
