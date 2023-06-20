@@ -3924,6 +3924,22 @@ a:focus{
 	font-weight: 600;
 	margin: 10px 0;
 }
+.blog-tab .blog-pane .blog-cate a{
+	font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+	display: block;
+    color: #0c56a1;
+}
+.blog-tab .blog-pane .blog-date{
+	font-size: 18px;
+	font-weight: 500;
+}
+.blog-tab .blog-pane .post-cate-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .blog-landing .blog-subscribe{
 	margin-top: 100px;
 }

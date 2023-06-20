@@ -92,9 +92,10 @@ echo get_header();
                                                 <div class="blog-img">
                                                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="blur-leaf">
                                                 </div>
-                                                <div>
-                                                    <span><?php the_category();?></span>
-                                                    <span><?php the_date();?></span>
+
+                                                <div class="post-cate-date">
+                                                    <div class="blog-cate"><?php the_category(); ?></div>
+                                                    <div class="blog-date"><?php the_date(); ?></div>
                                                 </div>
                                                 <h4><?php the_title();?></h4>
                                                 <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block" aria-labelledby="headingOne" data-bs-parent="#myTabContent">
