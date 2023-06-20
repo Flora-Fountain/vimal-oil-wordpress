@@ -87,7 +87,7 @@
     </div>
 
     <!-- module-5 nrt-section  -->
-    <div class="default-section nrt-ills">
+    <div class="default-section nrt-ills" id="nrt-ills-section">
         <div class="droplets">
             <div>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-blur-drop.png" alt="left-blur-drop"/>
@@ -123,23 +123,6 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
             </div>
         </div>
-            <!-- <div class="white-sec">
-                <div class="container">
-                    <div class="align-items-center">
-                    <div class="nrt-top">
-                        <div class="h2-blue">
-                            <h2 class="text-noeffect">
-                                <?php echo the_field('default_nrt_section_title');?>
-                            </h2>
-                        </div>
-                        <p class="text-center"><?php echo the_field('default_nrt_section_discription');?></p>
-                    </div>
-                </div>
-                    <div class="nrt-logo">
-                    <img src="<?php echo the_field('default_nrt_section_logo');?>" alt="NRT-logo"/>
-                </div>
-                </div> 
-            </div> -->
             <div class="nrt-blue-drop p-0">
                 <div class="nrt-blue-head-sec">
                     <div class="h2-blue">
@@ -159,7 +142,7 @@
                 </div>
             </div>
     </div>
-    <div class="nrt-section default-section nrt-ills-sec">
+    <div class="nrt-section default-section nrt-ills-sec" id="nrt-ills-section-1">
         <div class="floating-ele">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/yellow-flower.png" alt="yellow-flower" />
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-flower.png" alt="white-flower" />

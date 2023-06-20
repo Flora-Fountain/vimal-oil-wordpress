@@ -3193,14 +3193,14 @@ a:focus{
     bottom: -120px;
     left: 150px;
     top: auto;
-    animation: up-down 6s infinite linear;
+    animation: animate 6s infinite linear;
     filter: blur(3px);
     animation-delay: 0.5s;
 }
 .oil-benefits-sec .falling-leaf > div:nth-child(3) {
     left: 70%;
     bottom: -70px;
-    animation: up-down 6s infinite linear;
+    animation: animate 6s infinite linear;
     animation-delay: 0s;
 }
 .oil-benefits-sec .leaf-sec::after, .oil-benefits-sec .leaf-sec::before{
@@ -3210,7 +3210,7 @@ a:focus{
     left: auto;
     top: -70px;
     right: 100px;
-    animation: up-down 6s infinite linear;
+    animation: animate 6s infinite linear;
     animation-delay: -5s;
 }
 .oil-benefits-sec .floating-ele{
