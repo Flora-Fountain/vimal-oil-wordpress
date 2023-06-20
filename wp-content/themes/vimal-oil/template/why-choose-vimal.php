@@ -238,8 +238,6 @@ echo get_header();
                 </ul>
             </div>
             <div class="submit-button text-center">
-                <a href="<?php echo the_field('nrt_section_button_link');?>" class="btn-effect blue-back"><?php echo the_field('nrt_section_button_name');?></a>
-            <div class="submit-button text-center">
                 <a class="btn-effect blue-back" href="<?php echo the_field('nrt_section_button_link');?>" class="btn-effect"><?php echo the_field('nrt_section_button_name');?></a>
             </div>
         </div>
