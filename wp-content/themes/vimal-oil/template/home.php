@@ -162,7 +162,7 @@
                         <h2 class="text-noeffect"><?php echo the_field('nrt_section_title');?></h2>
                     </div>
                     <div class="animate-text">
-                        <span><?php echo the_field('nrt_section_sub_title'); ?></span>
+                        <span><?php echo the_field('nrt_section_sub_title'); ?></span>  
                     </div>
                     <p class="text-center"><?php echo the_field('nrt_section_discription');?></p>
                 </div>

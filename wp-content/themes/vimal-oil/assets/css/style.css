@@ -1012,6 +1012,15 @@ a:focus{
     font-size: 64px;
     font-family: 'Rimouski', sans-serif;
 }
+
+
+
+
+@keyframes text-fill {
+    100% {
+        width: 100%;
+    }
+}
 .nrt-ills {
 	/* background: #0c56a1; */
 	padding: 0px 0px;
