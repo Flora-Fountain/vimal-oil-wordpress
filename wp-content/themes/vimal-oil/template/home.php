@@ -460,7 +460,7 @@
                     </div>
                 </div>
                 <div class="submit-button text-center">
-                    <button class="btn-effect blue-back" type="submit">Let's Explore</button>
+                    <a href="#" class="btn-effect blue-back">Let's Explore</a>
                 </div>
             </div>
         </div>
