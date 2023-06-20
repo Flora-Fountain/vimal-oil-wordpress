@@ -2541,7 +2541,7 @@ a:focus{
     transition: 0.3s;
     fill: #201b12;
 }
-.tvc-owl .tvc-video:hover .wl-modal-btn.video-play-btn, .pro-vdo-sld .owl-item .video-sld:hover .wl-modal-btn.video-play-btn {
+.tvc-owl .tvc-video:hover .wl-modal-btn.video-play-btn, .pro-vdo-sld .owl-item .video-sld:hover .wl-modal-btn.video-play-btn,.recipe-section .cook-video:hover .wl-modal-btn.video-play-btn {
 	background: #fd0;
 	filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
 	-webkit-transform: scale(1.1) translate(-50%,-50%);
@@ -2551,7 +2551,7 @@ a:focus{
 	-ms-transform-origin: center center;
 	transform-origin: center center;
 }
-.tvc-owl .tvc-video:hover .wl-modal-btn.video-play-btn span svg, .pro-vdo-sld .owl-item .video-sld:hover .wl-modal-btn.video-play-btn span svg {
+.tvc-owl .tvc-video:hover .wl-modal-btn.video-play-btn span svg, .pro-vdo-sld .owl-item .video-sld:hover .wl-modal-btn.video-play-btn span svg,.reci-sec .recipe-video .cook-video:hover .wl-modal-btn.video-play-btn span svg, .recipe-section .cook-video:hover .wl-modal-btn.video-play-btn span svg {
 	fill:#0c56a1;
 }
 .tvc-owl .tvc-video img{
@@ -2686,10 +2686,6 @@ a:focus{
 	margin-bottom: 50px;
 
 }
-.reci-sec .recipe-video .cook-video .wl-modal-btn.video-play-btn span svg {
-	fill: #D9D9D9;
-}
-
 
 /* Quiz Page */
 .quiz-image{
@@ -3124,6 +3120,13 @@ a:focus{
 .oil-details .shop-button .buy-btn a{
 	background: #0C54A0;
 	color: #fff;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+.oil-details .shop-button .buy-btn a:hover {
+	background: #ffdd00;
+	color: #000;
 }
 .product-accor .accordion .accordion-item{
 	border: none;
@@ -3211,6 +3214,7 @@ a:focus{
     top: -70px;
     right: 100px;
     animation: animate 6s infinite linear;
+    animation: animate 15s linear infinite;	
     animation-delay: -5s;
 }
 .oil-benefits-sec .floating-ele{
@@ -3896,8 +3900,26 @@ a:focus{
 	border-bottom: none;
 	margin-bottom: 20px;
 }
-.blog-landing .blog-tab .accordion-body{
+.blog-landing .blog-tab .accordion-body {
 	padding: 0;
+	margin: 20px 0;
+}
+.blog-tab .accordion-item .blog-pane .submit-button .btn-effect.blue-back {
+	min-width: 170px;
+}
+.blog-landing .blog-tab .accordion-item .blog-box {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.blog-landing .blog-tab .accordion-item .blog-pane {
+	display: flex;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
 }
 .blog-tab .nav-tabs .nav-link{
 	border: 2px solid #0F5FA8;
@@ -3918,7 +3940,9 @@ a:focus{
 	border-radius: 10px;
 	height: auto;
 }
-.blog-tab .blog-pane h4{
+.blog-tab .blog-pane h4 {
+	display: inline-block;
+	width: 100%;
 	font-size: 26px;
 	line-height: 1.3;
 	font-weight: 600;
@@ -3936,23 +3960,38 @@ a:focus{
 	font-weight: 500;
 }
 .blog-tab .blog-pane .post-cate-date {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
 }
 .blog-landing .blog-subscribe{
 	margin-top: 100px;
 }
 .blog-subscribe .email-input-field input[type="email"] {
-    border: 0;
-    outline: none;
-    box-shadow: none;
-    background: #d9d9d9;
-    border-radius: 10px;
-    margin: 0 auto;
-    display: block;
-    padding: 5px;
-    width: 40%;
+	width: 100%;
+	outline: none;
+	background-color: #f9faff;
+	color: #c3c3c3;
+	padding: 0.7rem 0.65rem;
+	margin: 0;
+	border: 1px solid #eae8f3;
+	border-radius: 10px;
+}
+.blog-landing .blog-subscribe .form .email-input-field {
+	width: 40%;
+	margin: 0 auto;
+}
+.blog-tab .blog-pane .post-cate-date ul li a {
+	margin-top: 0;
+}
+.blog-landing .blog-tab .accordion-item .blog-pane .blog-img {
+	margin-bottom: 20px;
+}
+.blog-landing .blog-tab .accordion-item .blog-pane .blog-img {
+	margin-bottom: 20px;
+	display: inline-block;
+	width: 100%;
 }
 .blog-subscribe .submit-button {
     text-align: center;
