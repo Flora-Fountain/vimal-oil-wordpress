@@ -96,10 +96,29 @@ echo get_header();
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="accordion-content-section">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores unde ipsam magni, dolorum sequi consequatur ut fugiat adipisci vel, optio iure voluptas, harum id! Voluptatibus?</p>
+                        <p><?php the_field('quality_section_description');?></p>
                         <div class="qa-acc">
                             <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
+                                <?php 
+                                    $count = 1;
+
+                                    if (have_rows('quality_section_accordion')) {
+                                        while (have_rows('quality_section_accordion')) {
+                                            the_row(); ?>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading<?php echo $count;?>">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $count;?>" aria-expanded="<?php if ($count == 1) { echo"true"; }else{ echo "false";} ?>" aria-controls="collapse<?php echo $count;?>"><?php the_sub_field('quality_section_accordion_title') ?></button>
+                                                </h2>
+                                                <div id="collapse<?php echo $count;?>" class="accordion-collapse collapse <?php if ($count == 1) { echo "show";} ?>" aria-labelledby="heading<?php echo $count;?>" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <?php the_sub_field('quality_section_accordion_description');?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php $count++; }
+                                    }
+                                ?>
+                                <!-- <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Measurement Factor 1</button>
                                     </h2>
@@ -118,8 +137,8 @@ echo get_header();
                                             Hydrolysis of oil creates Free Fatty Acids in them. Raw oils and fats in their natural form contain a small amount of free fatty acids but they are removed while refining the oil. Hydrolysis of oil creates Free Fatty Acids in them. Raw oils and fats in their natural form contain a small amount of free fatty acids but they are removed while refining the oil.
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion-item">
+                                </div> -->
+                                <!-- <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Measurement Factor 3</button>
                                     </h2>
@@ -128,7 +147,7 @@ echo get_header();
                                             Hydrolysis of oil creates Free Fatty Acids in them. Raw oils and fats in their natural form contain a small amount of free fatty acids but they are removed while refining the oil. Hydrolysis of oil creates Free Fatty Acids in them. Raw oils and fats in their natural form contain a small amount of free fatty acids but they are removed while refining the oil.
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
