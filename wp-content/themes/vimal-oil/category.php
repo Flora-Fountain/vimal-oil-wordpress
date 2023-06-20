@@ -91,23 +91,23 @@ echo get_header();
                                     while ($blogs->have_posts()) {
                                         $blogs->the_post(); ?>
                                         <div class="col-lg-4 col-md-6 col-sm-12">
-                                            <div class="blog-pane">
-                                                <div class="blog-img">
-                                                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="blur-leaf">
-                                                </div>
+                                            <div class="blog-box">
+                                                <div class="blog-pane">
+                                                    <div class="blog-img">
+                                                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="blur-leaf">
+                                                    </div>
 
-                                                <div class="post-cate-date">
-                                                    <div class="blog-cate"><?php the_category();?></div>
-                                                    <div class="blog-date"><?php the_date(); ?></div>
-                                                </div>
-                                                <h4><?php the_title();?></h4>
-                                                <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block" aria-labelledby="headingOne" data-bs-parent="#myTabContent">
+                                                    <div class="post-cate-date">
+                                                        <div class="blog-cate"><?php the_category();?></div>
+                                                        <div class="blog-date"><?php the_date(); ?></div>
+                                                    </div>
+                                                    <h4><?php the_title();?></h4>
                                                     <div class="accordion-body">
                                                         <p class="mb-0"><?php echo wp_trim_words( get_the_content(), 17, '...' );?></p>
                                                     </div>
-                                                </div>
-                                                <div class="submit-button">
-                                                    <a class="btn-effect blue-back" href="<?php the_permalink();?>" title="Test 2">Read More</a>
+                                                    <div class="submit-button">
+                                                        <a class="btn-effect blue-back" href="<?php the_permalink();?>" title="Test 2">Read More</a>
+                                                    </div>
                                                 </div>
                                             </div>   
                                         </div>
