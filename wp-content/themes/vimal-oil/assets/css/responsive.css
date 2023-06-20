@@ -2156,6 +2156,9 @@
     .product-accor .accordion-collapse .accordion-body p,.product-accor .accordion-collapse .accordion-body {
         font-size: 16px;
     }
+    .blog-landing .blog-subscribe .form .email-input-field,.calender-product .form-group {
+        width: 100%;
+    }
 }
 @media screen and (max-width:600px) {
     .nrt-logo {

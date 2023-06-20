@@ -136,7 +136,7 @@ echo get_header();
                     <h3 class="text-noeffect">Subscribe Today</h3>
                 </div>
                 <div class="form">
-                    <div class="email-input-field">
+                    <div class="email-input-field text-center">
                         <input type="email" name="email" placeholder="Enter Email" required="">
                     </div>
                     <div class="submit-button">
