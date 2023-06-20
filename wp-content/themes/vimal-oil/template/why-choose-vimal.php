@@ -95,10 +95,6 @@ echo get_header();
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <!-- <div class="content-part">
-                        <p><?php echo the_field('quality_section_description'); ?></p>
-                        <p><?php echo the_field('quality_section_description2'); ?></p>
-                    </div> -->
                     <div class="accordion-content-section">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores unde ipsam magni, dolorum sequi consequatur ut fugiat adipisci vel, optio iure voluptas, harum id! Voluptatibus?</p>
                         <div class="qa-acc">
@@ -219,22 +215,6 @@ echo get_header();
                             <?php }
                         }
                     ?>
-                    <!-- <li>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/temperature.png" alt="temperature"/>
-                        <h4>Temperature<span>Lorem Ipsum is simply dummy text of the </span></h4>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/time.png" alt="time"/>
-                        <h4>Time<span>Lorem Ipsum is simply dummy text of the </span></h4>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pressure.png" alt="pressure"/>
-                        <h4>Pressure<span>Lorem Ipsum is simply dummy text of the </span></h4>
-                    </li>
-                    <li>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vacuum.png" alt="vacuum"/>
-                        <h4>Vacuum<span>Lorem Ipsum is simply dummy text of the </span></h4>
-                    </li> -->
                 </ul>
             </div>
             <div class="submit-button text-center">

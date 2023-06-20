@@ -1954,7 +1954,7 @@ a:focus{
 	color: #fff;
 	font-size: 24px;
 }
-.ft-cont a:hover,.footer .footer-quick-links ul li a:hover,.ft-add a:hover,.copy-sec a:hover{
+.ft-cont a:hover,.footer .footer-quick-links ul li a:hover,.ft-add a:hover,.copy-sec a:hover,.footer .footer-quick-links ul li.current-menu-item a{
 	color:#ffdd00;
 }
 .ft-cont a + a {
@@ -2541,7 +2541,19 @@ a:focus{
     transition: 0.3s;
     fill: #201b12;
 }
-
+.tvc-owl .tvc-video:hover .wl-modal-btn.video-play-btn, .pro-vdo-sld .owl-item .video-sld:hover .wl-modal-btn.video-play-btn {
+	background: #fd0;
+	filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+	-webkit-transform: scale(1.1) translate(-50%,-50%);
+	-ms-transform: scale(1.1) translate(-50%,-50%);
+	transform: scale(1.1) translate(-50%,-50%);
+	-webkit-transform-origin: center center;
+	-ms-transform-origin: center center;
+	transform-origin: center center;
+}
+.tvc-owl .tvc-video:hover .wl-modal-btn.video-play-btn span svg, .pro-vdo-sld .owl-item .video-sld:hover .wl-modal-btn.video-play-btn span svg {
+	fill:#0c56a1;
+}
 .tvc-owl .tvc-video img{
 	border-radius: 10px;
 }
@@ -2657,9 +2669,10 @@ a:focus{
 .reci-sec .cook-video img{
 	border-radius: 0;
 }
-.reci-sec .recipe-video{
+.reci-sec .recipe-video {
 	box-shadow: 0px 0px 5px rgba(20, 110, 187, 0.2);
 	border-radius: 10px;
+	margin-top: 20px;
 }
 .recipe-video .reci-video-des{
 	padding: 20px;
@@ -2672,9 +2685,6 @@ a:focus{
 	color: #0C58A5;
 	margin-bottom: 50px;
 
-}
-.reci-sec .row >div:nth-last-child(-n+4) {
-    margin-top: 30px;
 }
 .reci-sec .recipe-video .cook-video .wl-modal-btn.video-play-btn span svg {
 	fill: #D9D9D9;
@@ -3836,12 +3846,12 @@ a:focus{
 	-ms-transform-origin: center center;
 	transform-origin: center center;
 }
-.nav-menu-right .nav li .nav-link:hover:before,.nav-menu-right .nav li.active .nav-link::before{
+.nav-menu-right .nav li .nav-link:hover:before,.nav-menu-right .nav li.active .nav-link::before,.nav-menu-right .nav li.current-menu-item .nav-link:before{
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
 }
-.nav-menu-right .nav li .nav-link:hover,.nav-menu-right .nav li.active>.nav-link{
+.nav-menu-right .nav li .nav-link:hover,.nav-menu-right .nav li.active>.nav-link,.nav-menu-right .nav li.current-menu-item>.nav-link{
 	color:#0c54a0;
 }
 .menu-float .container-fluid {
