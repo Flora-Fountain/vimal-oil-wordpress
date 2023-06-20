@@ -117,7 +117,7 @@
                                                     </span>
                                                 </button>
                                             </h4>
-                                            <div id="collapse<?php echo $count;?>" class="accordion-collapse collapse <?php if ($count == 1) { echo "show";}?> " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div id="collapse<?php echo $count;?>" class="accordion-collapse collapse <?php if ($count == 1) { echo "show";}?> " aria-labelledby="heading<?php echo $count;?>" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
                                                     <p><?php echo the_sub_field('product_accordion_description') ?></p>
                                                 </div>

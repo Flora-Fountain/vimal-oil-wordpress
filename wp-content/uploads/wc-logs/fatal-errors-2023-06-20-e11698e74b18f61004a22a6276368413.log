@@ -1,0 +1,51 @@
+2023-06-20T05:39:54+00:00 CRITICAL syntax error, unexpected identifier "collapse" in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php on line 110
+
+2023-06-20T05:40:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php on line 107 and at least 1 expected in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php:70
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php(107): the_field()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 70
+
+2023-06-20T05:42:24+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php on line 107 and at least 1 expected in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php:70
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php(107): the_field()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 70
+
+2023-06-20T05:42:54+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php on line 107 and at least 1 expected in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php:70
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php(107): the_field()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 70
+
+2023-06-20T05:43:06+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php on line 107 and at least 1 expected in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php:70
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php(107): the_field()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 70
+
+2023-06-20T05:43:25+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php on line 107 and at least 1 expected in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php:70
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php(107): the_field()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 70
+
+2023-06-20T05:50:36+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php on line 112
+
+2023-06-20T05:55:04+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\why-choose-vimal.php on line 112
+
