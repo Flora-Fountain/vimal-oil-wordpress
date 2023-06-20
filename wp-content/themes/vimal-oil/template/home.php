@@ -69,7 +69,7 @@
                             $color = get_field('product_background_color',$product->get_id());
                             ?>
                                 <div class="item">
-                                    <div class="pro-sld-main <?php if($color == '#fbef4d'){echo "ylw";} ?>" style="background:<?php echo get_field('product_background_color',$product->get_id()); ?>">
+                                    <div class="pro-sld-main <?php if($color == '#e2c722'){echo "ylw";} ?>" style="background:<?php echo get_field('product_background_color',$product->get_id()); ?>">
                                         <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
                                         <a href="<?php the_permalink($product->get_id()); ?>"><?php echo $product->get_title(); ?></a>
                                     </div>

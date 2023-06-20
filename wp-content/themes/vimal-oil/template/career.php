@@ -55,7 +55,7 @@ echo get_header();
                     Current openings
                 </h2>
             </div>
-            <div class="job-opening">
+            <!-- <div class="job-opening">
                 <div class="job-card">
                     <div class="role-title">
                         <h2 class="text-noeffect">Sales Manager</h2>
@@ -236,6 +236,9 @@ echo get_header();
                         </div>
                     </div>
                 </div>
+            </div> -->
+            <div class="job-opening">
+            <?php echo do_shortcode('[awsmjobs]') ?>
             </div>
         </div>
     </div>

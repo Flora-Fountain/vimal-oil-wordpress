@@ -1748,7 +1748,7 @@ a:focus{
 	margin: 0 auto;
 }
 .form-part .form-inner {
-	padding: 50px 50px;
+	padding: 30px 50px 50px;
 }
 .form-inner .h2-white {
 	font-size: 32px;
@@ -1776,8 +1776,34 @@ a:focus{
 .form-part .form-image-part img {
 	max-width: 300px;
 }
-.form-section .form .form-group{
- 	margin: 0 0 20px;   
+.form-section .form .form-group {
+	margin: 0 0 20px;
+	display: inline-block;
+	width: 100%;
+}
+.wpcf7-form-control-wrap {
+	position: relative;
+	width: 100%;
+	display: block;
+}
+.form-section .form .form-group span.wpcf7-not-valid-tip {
+	text-align: left;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin: 3px 0 0;
+	font-size: 13px;
+}
+.wpcf7 form .form-submit .wpcf7-response-output {
+	margin: 0;
+	padding: 4px 0px;
+	position: absolute;
+	font-size: 15px;
+	line-height: 1;
+	width: 100%;
+}
+.form-section .form .form-group p {
+	margin: 0;
 }
 .form-section .btm-cta {
 	padding: 0 60px;
@@ -2089,10 +2115,43 @@ a:focus{
 	color: #0c56a1;
 	font-weight: 600;
 }
-.job-opening .job-card .role-title{
+.job-opening .job-card .role-title,.awsm-list-item .awsm-job-item .awsm-job-post-title a{
 	font-size: 26px;
 	font-weight: 600;
 	color: #000;
+}
+.awsm-lists {
+	border: 0;
+}
+.awsm-job-item {
+	background: #fff;
+	font-size: 14px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 0;
+}
+.awsm-list-item .awsm-job-item {
+	border: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.awsm-list-right-col .awsm-job-specification-item span {
+	font-size: 18px;
+}
+.awsm-list-right-col .awsm-job-more-container a {
+	font-size: 18px;
+	color: #0c56a1;
+	font-weight: 600;
+}
+.awsm-list-item + .awsm-list-item {
+	margin-top: 12px;
+}
+.awsm-job-wrap .awsm-filter-items .awsm-filter-item .awsm-filter-option {
+	padding: 10px;
+	background: #fff;
+	border: 0;
+	border-radius: 10px;
 }
 .role-small-details .view-button a span svg{
 	width: 30px;
@@ -2653,14 +2712,20 @@ a:focus{
 	color: #fff;
 	margin-bottom: 20px;
 }
-.recipes-sec .max-para, .recipe-section .max-para{
+.recipes-sec .max-para, .recipe-section .max-para, .inner-banner .max-para{
 	display: block;
 	margin: 0 auto;
 	max-width: 500px;
 }
-.recipes-sec .max-para p{
+.recipes-sec .max-para p, .inner-banner .max-para p{
 	color: #ffffff;
 	margin-bottom: 0;
+}
+.inner-banner .max-para p{
+	text-align: center;
+}
+.inner-banner .max-para {
+	margin: 20px auto;
 }
 .reci-video-des .h3-title h3{
 	text-align: left;
@@ -3571,7 +3636,7 @@ a:focus{
 
 
 /* Menu CSS */
-.menu-float {
+/* .menu-float {
 	position: fixed;
 	left: 0;
 	overflow-x: hidden;
@@ -3589,6 +3654,30 @@ a:focus{
 	background: url(../images/home-banner-bg.png) #0c56a1;
 	background-repeat: repeat;
 	background-size: 60px 60px;
+} */
+.menu-float {
+	overflow-x: hidden;
+	padding: 0;
+	bottom: 0;right: 0;
+	z-index: 9999;
+	overflow-y: hidden;
+	-webkit-transition: 1s;
+	-ms-transition: 1s;
+	transition: .5s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(-135deg, #c850c0, #4158d0);
+	background: linear-gradient(375deg, #1cc7d0, #2ede98);
+	background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);
+	clip-path: circle(25px at calc(0% + 45px) 45px);
+	background: url(../images/home-banner-bg.png) #0c56a1;
+	background-repeat: repeat;
+	background-size: 60px 60px;
+	clip-path: circle(0px at calc(100% - 0px) 0px);
+	transition: all 0.5s ease-in-out;
 }
 .menu-float::before {
 	z-index: -2;
@@ -3602,7 +3691,8 @@ a:focus{
 .menu-float.m-open {
 	height: 100%;
 	top: 0;
-	overflow-y: auto;
+	/* overflow-y: auto; */
+	clip-path: circle(75%);
 }
 .menu-float.m-open::before {
 	height: 100%;
@@ -3842,17 +3932,17 @@ a:focus{
 	-webkit-transition: 0.3s;
 	-ms-transition: 0.3s;
 	transition: 0.3s;
-	-webkit-transform: scale(0);
-	-ms-transform: scale(0);
-	transform: scale(0);
+	-webkit-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	transform: scaleY(0);
 	-webkit-transform-origin: center center;
 	-ms-transform-origin: center center;
 	transform-origin: center center;
 }
 .nav-menu-right .nav li .nav-link:hover:before,.nav-menu-right .nav li.active .nav-link::before,.nav-menu-right .nav li.current-menu-item .nav-link:before{
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
+	-webkit-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	transform: scaleY(1);
 }
 .nav-menu-right .nav li .nav-link:hover,.nav-menu-right .nav li.active>.nav-link,.nav-menu-right .nav li.current-menu-item>.nav-link{
 	color:#0c54a0;
@@ -4378,7 +4468,35 @@ a:focus{
   margin: 3% 0 0 2%;
   font-size: clamp(10px, 1.1em, 20px);
 }
-
+.pro-ani::before {
+	position: absolute;
+	content: '';
+	background: url(../images/sun-flower.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	right: -100px;
+	top: 0;
+	animation: fl-rotate 20s infinite linear;
+	animation: up-down 5s infinite linear;
+	z-index: 1;
+}
+.pro-ani::after {
+	position: absolute;
+	content: '';
+	background: url(../images/sun-flower.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	left: -100px;
+	bottom: 0px;
+	/* animation: fl-rotate 20s infinite linear; */
+	animation: up-down 5s infinite linear;
+	animation-direction: reverse;
+	z-index: -1;
+}
 @media screen and (max-height: 540px) {
   .frame {
     width: 54vh;

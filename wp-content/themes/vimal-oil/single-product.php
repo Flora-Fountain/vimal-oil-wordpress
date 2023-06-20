@@ -48,7 +48,18 @@
     </div>
 
     <!-- module-3 oil details -->
-    <div class="default-section oil-details">
+    <div class="default-section oil-details pro-ani">
+        <div class="falling-leaf">
+            <div>
+                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+            </div>
+            <div>
+                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+            </div>
+            <div>
+                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+            </div>
+        </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-sm-12">

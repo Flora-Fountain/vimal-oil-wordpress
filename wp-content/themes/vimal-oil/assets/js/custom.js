@@ -673,11 +673,6 @@ $(window).scroll(function() {
 
 });
 
-
-// instagram swipe effect 
-
-
-
 // oil-flow js 
 window.addEventListener('scroll', (e) => {
     document.querySelector('.oil-swirl').style.height = window.scrollY + 'px';
@@ -794,3 +789,4 @@ window.addEventListener('scroll', (e) => {
 
 // nope.addEventListener('click', nopeListener);
 // love.addEventListener('click', loveListener);
+

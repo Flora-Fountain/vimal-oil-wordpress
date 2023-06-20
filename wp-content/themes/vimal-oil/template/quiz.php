@@ -21,6 +21,9 @@ echo get_header();
 						<div class="h1-title">
 							<h1 class="text-noeffect"><?php the_field('banner_section_title');?></h1>
 						</div>
+                        <div class="max-para">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                        </div>
 						<div class="submit-button text-center">
                             <a href="#quiz-question" class="btn-effect" type="submit">
                                 Start Quiz
