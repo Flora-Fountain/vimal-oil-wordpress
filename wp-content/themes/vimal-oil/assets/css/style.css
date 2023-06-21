@@ -1915,7 +1915,7 @@ header.sticky .nav-menu .menu-btn {
 	letter-spacing: 1px;
 }
 .footer .about-us-col .text-content .para {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 300;
 	color: #ffffff;
 	margin: 10px 0 40px;
@@ -1945,7 +1945,7 @@ header.sticky .nav-menu .menu-btn {
 	margin-top: 20px;
 }
 .footer .footer-quick-links ul li a{
-    font-size: 22px;
+    font-size: 20px;
     color: #ffffff;
     font-weight: 500;
 }
@@ -2055,7 +2055,7 @@ header.sticky .nav-menu .menu-btn {
 	display: inline-block;
 	width: 100%;
 	color: #fff;
-	font-size: 24px;
+	font-size: 20px;
 }
 .ft-cont a:hover,.footer .footer-quick-links ul li a:hover,.ft-add a:hover,.copy-sec a:hover,.footer .footer-quick-links ul li.current-menu-item a{
 	color:#ffdd00;
