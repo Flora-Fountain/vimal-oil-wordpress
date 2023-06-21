@@ -279,10 +279,7 @@ echo get_header();
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
             </div>
         </div>
-        <div class="floating-ele after-banner">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/groundnut-clear.png" alt="white-flower">
-        </div>
+      
         <div class="container">
             <div class="gen-sec">
                 <div class="h2-blue">

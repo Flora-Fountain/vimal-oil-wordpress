@@ -2183,7 +2183,7 @@
     .inner-banner {
         padding-top: 110px;
     }
-    .stats-desc .h2-white {
+    .stats-desc .h2-white, .stats-desc p {
         text-align: center;
     }
 }
