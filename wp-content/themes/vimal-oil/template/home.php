@@ -565,113 +565,6 @@
         </div>
     </div>
 
-    <!-- <script>
-        'use strict';
-        var tinderContainer = document.querySelector('.tinder');
-        var allCards = document.querySelectorAll('.tinder--card');
-        var nope = document.getElementById('dp-prev');
-        var love = document.getElementById('dp-next');
-
-        function initCards(card, index) {
-        var newCards = document.querySelectorAll('.tinder--card:not(.removed)');
-
-        newCards.forEach(function (card, index) {
-            card.style.zIndex = allCards.length - index;
-            card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
-            // card.style.opacity = (10 - index) / 10;
-        });
-        
-        tinderContainer.classList.add('loaded');
-        }
-
-        initCards();
-
-        allCards.forEach(function (el) {
-        var hammertime = new Hammer(el);
-
-        hammertime.on('pan', function (event) {
-            el.classList.add('moving');
-        });
-
-        hammertime.on('pan', function (event) {
-            if (event.deltaX === 0) return;
-            if (event.center.x === 0 && event.center.y === 0) return;
-
-            tinderContainer.classList.toggle('tinder_love', event.deltaX > 0);
-            tinderContainer.classList.toggle('tinder_nope', event.deltaX < 0);
-
-            var xMulti = event.deltaX * 0.03;
-            var yMulti = event.deltaY / 80;
-            var rotate = xMulti * yMulti;
-
-            event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px) rotate(' + rotate + 'deg)';
-        });
-
-        hammertime.on('panend', function (event) {
-            el.classList.remove('moving');
-            tinderContainer.classList.remove('tinder_love');
-            tinderContainer.classList.remove('tinder_nope');
-
-            var moveOutWidth = document.body.clientWidth;
-            var keep = Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
-
-            event.target.classList.toggle('removed', !keep);
-
-            if (keep) {
-            event.target.style.transform = '';
-            } else {
-            var endX = Math.max(Math.abs(event.velocityX) * moveOutWidth, moveOutWidth);
-            var toX = event.deltaX > 0 ? endX : -endX;
-            var endY = Math.abs(event.velocityY) * moveOutWidth;
-            var toY = event.deltaY > 0 ? endY : -endY;
-            var xMulti = event.deltaX * 0.03;
-            var yMulti = event.deltaY / 80;
-            var rotate = xMulti * yMulti;
-
-            event.target.style.transform = 'translate(' + toX + 'px, ' + (toY + event.deltaY) + 'px) rotate(' + rotate + 'deg)';
-            initCards();
-            }
-        });
-        });
-
-        // tinder swipe effect reset the card 
-
-
-
-        function createButtonListener(love) {
-        return function (event) {
-            var cards = document.querySelectorAll('.tinder--card:not(.removed)');
-            var moveOutWidth = document.body.clientWidth * 1.5;
-
-            if (!cards.length) return false;
-
-            var card = cards[0];
-
-            card.classList.add('removed');
-
-            if (love) {
-            card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
-            } else {
-            card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
-            }
-
-            initCards();
-
-            event.preventDefault();
-        };
-        }
-
-        var nopeListener = createButtonListener(false);
-        var loveListener = createButtonListener(true);
-
-        nope.addEventListener('click', nopeListener);
-        love.addEventListener('click', loveListener);
-
-
-        
-
-    </script> -->
-
     <script>
         "use strict";
 
@@ -852,44 +745,13 @@
             //run the addHammers to allow card movement
             addHammers();
 
-            //function for the love and hate buttons
-            function createButtonListener(love) {
-                return function (event) {
-                    //if the card is not given the removed class
-                    var cards = document.querySelectorAll(".tinder--card:not(.removed)");
 
-                    //the body width (including padding) multiplied by 1.5
-                    var moveOutWidth = document.body.clientWidth * 1.5;
+            // swipe effcet on button click 
+            $("#dp-prev").on("click", function(){
 
-                    //if there are no more cards, do nothing
-                    // if (!cards.length) return false;
+            })
 
-                    //only operate on the current card
-                    var card = cards[0];
-
-                    //add the removed class to the current card
-                    card.classList.add("removed");
-
-                    //if love (true) has been passed in,
-                    if (love) {
-                        //move the card right and rotate it
-                        card.style.transform =
-                            "translate(" + moveOutWidth + "px, -100px) rotate(-30deg)";
-                        //if nope (false) has been passed in,
-                    } else {
-                        //move the card left and rotate it
-                        card.style.transform =
-                            "translate(-" + moveOutWidth + "px, -100px) rotate(30deg)";
-                    }
-
-                    //intitialize cards again to determine the top card (and add a new one)
-                    addNewCard(card);
-
-                    //prevent the default action from happening for the button
-                    event.preventDefault();
-                };
-            }
-
+            // function for button 
             function createButtonListener(love) {
                 return function (event) {
                     var cards = document.querySelectorAll(".tinder--card:not(.removed)");
@@ -908,16 +770,18 @@
                     card.style.transform =
                         "translate(-" + moveOutWidth + "px, -100px) rotate(30deg)";
                     }
+                    addNewCard(card);
 
                     initCards();
 
-                    event.preventDefault();
+
+                    // event.preventDefault();
                 };
                 }
 
             //create love and nope button listeners
             var nopeListener = createButtonListener(true);
-            var loveListener = createButtonListener(true);
+            var loveListener = createButtonListener(false);
 
             //add click events to love and nope buttons
             nope.addEventListener("click", nopeListener);
