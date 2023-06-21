@@ -289,15 +289,14 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.owl-tabbing-jour ').owlCarousel({
-        loop: false,
+        loop: true,
         autoplay: false,
         responsiveClass: true,
         nav: true,
-        margin: 10,    
-        autoplayTimeout: 4000,
+        margin: 10,
         smartSpeed: 400,
-        center: true,
-        
+        center: false,
+        owlNav:true,
         responsive: {
             0: {
                 items: 3,
@@ -305,8 +304,6 @@ $(document).ready(function(){
                 loop: true,
                 autoplay: false,
                 center: true,
-                autoplayTimeout: 4000,
-                smartSpeed: 400,
             },
             480: {
                 items: 3,
@@ -314,8 +311,6 @@ $(document).ready(function(){
                 loop: true,
                 autoplay: false,
                 center: true,
-                autoplayTimeout: 4000,
-                smartSpeed: 400,
             },
             575: {
                 items: 7,
@@ -323,19 +318,15 @@ $(document).ready(function(){
                 loop: true,
                 autoplay: false,
                 center: true,
-                autoplayTimeout: 4000,
-                smartSpeed: 400,
             },
             991: {
-                items: 7,
+                items: 6,
                 loop: true,
                 autoplay: false,
                 center: true,
-                autoplayTimeout: 4000,
-                smartSpeed: 400,
             },
             1200: {
-                items: 7,
+                items: 6
             },
         }
     });
