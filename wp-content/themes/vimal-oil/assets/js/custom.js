@@ -388,7 +388,7 @@ $(document).ready(function(){
         });
         function inViewport(){
             $('.nrt-ills').each(function(){
-                var divPos = $(this).offset().top,
+                var divPos = $(this).offset().top - 500,
                     topOfWindow = $(window).scrollTop();
                 
                 if( divPos < topOfWindow+400 ){
@@ -793,8 +793,7 @@ window.addEventListener('scroll', (e) => {
 // var loveListener = createButtonListener(true);
 
 // nope.addEventListener('click', nopeListener);
+
 // love.addEventListener('click', loveListener);
 
-
-
-// 
+// love.addEventListener('click', loveListener);

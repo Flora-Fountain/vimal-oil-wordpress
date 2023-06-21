@@ -4513,6 +4513,9 @@ a:focus{
 	animation-direction: reverse;
 	z-index: -1;
 }
+.h1-title span.white-text {
+	color: #fff;
+}
 @media screen and (max-height: 540px) {
   .frame {
     width: 54vh;
