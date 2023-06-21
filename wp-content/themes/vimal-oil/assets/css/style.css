@@ -1421,6 +1421,8 @@ header.sticky .nav-menu .menu-btn {
 	/* background: #fbef4d; */
 	background: linear-gradient(to right, #EA511B, #FCC804);
 	transition: 0.3s;
+	display: block;
+	margin: 0 auto;
 }
 .jorney-main .nav span svg {
 	width:100px;
