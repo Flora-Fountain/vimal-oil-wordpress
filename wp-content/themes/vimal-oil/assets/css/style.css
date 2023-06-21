@@ -1053,13 +1053,13 @@ a:focus{
 }
 
 .nrt-drop-logo {
-	background: url('../images/blue-oil-flow.png');
+	background: url('../images/blue-oil-flow-1.png');
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
-	height: 800px;
-	margin-top: -2px;
-	min-height: 900px;
+	height: 600px;
+	margin-top: -10px;
+	min-height: 700px;
 }
 .nrt-blue-drop .nrt-drop-logo .blue-drop{
 	/* position: absolute; */
@@ -1074,7 +1074,7 @@ a:focus{
 	transform: translateX(-50%);
 }
 .nrt-drop-logo .nrt-d-logo img{
-	max-width: 300px;
+	max-width: 190px;
 }
 .nrt-logo {
     display: block;
@@ -1395,7 +1395,9 @@ a:focus{
 	width: 16.6%;
 }
 .jorney-main .nav .nav-link {
-	width: 15%;
+	width: 80%;
+	display: block;
+	margin: 0 auto;
 }
 .jorney-main {
 	margin-top: 40px;

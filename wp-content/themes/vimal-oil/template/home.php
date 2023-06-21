@@ -318,28 +318,28 @@
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="nav flex-row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link active" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
+                            <div class="nav flex-row nav-pills owl-carousel owl-tabbing-jour owl-theme" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active item" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993.png" alt="1993"/>
                                     <span>1993</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2010-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2010" type="button" role="tab" aria-controls="v-pills-2010" aria-selected="false">
+                                <button class="nav-link item" id="v-pills-2010-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2010" type="button" role="tab" aria-controls="v-pills-2010" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993"/>
                                     <span>2010</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2015-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2015" type="button" role="tab" aria-controls="v-pills-2015" aria-selected="false">
+                                <button class="nav-link item" id="v-pills-2015-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2015" type="button" role="tab" aria-controls="v-pills-2015" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
                                     <span>2015</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2018" type="button" role="tab" aria-controls="v-pills-2018" aria-selected="false">
+                                <button class="nav-link item" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2018" type="button" role="tab" aria-controls="v-pills-2018" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993"/>
                                     <span>2018</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2020" type="button" role="tab" aria-controls="v-pills-2020" aria-selected="false">
+                                <button class="nav-link item" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2020" type="button" role="tab" aria-controls="v-pills-2020" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
                                     <span>2020</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
+                                <button class="nav-link item" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
                                     <span>2022</span>
                                 </button>
