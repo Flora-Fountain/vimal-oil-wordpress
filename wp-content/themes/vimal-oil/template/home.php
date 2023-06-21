@@ -71,7 +71,7 @@
                             <a href="<?php the_permalink($product->get_id()); ?>">
                                 <div class="item">
                                     <div class="pro-sld-main <?php if($color == '#e2c722'){echo "ylw";} ?>" style="background:<?php echo get_field('product_background_color',$product->get_id()); ?>">
-                                        <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
+                                        <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390" class="vimal-oil-can-img"/>
                                         <!-- <a href="<?php the_permalink($product->get_id()); ?>"><?php echo $product->get_title(); ?></a> -->
                                         <p><?php echo $product->get_title(); ?></p>
                                     </div>
@@ -169,6 +169,30 @@
             yPercent: -50,
             scale: 0,
             delay: -1.5,
+            ease: Power2.out
+          });
+        });
+
+        let canImg = document.querySelectorAll(".vimal-oil-can-img");
+
+        canImg.forEach((container) => {
+          let tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: container,
+              toggleActions: "restart none none reset"
+            }
+          });
+
+          tl.set(canImg, { autoAlpha: 1 });
+          // tl.from(revealContainers, 1.5, {
+          //   duration: 1.4,
+          //   ease: Power2.easeInOut,
+          //   width: "0%"
+
+          // });
+          tl.from(canImg, 0.5, {
+            y: "-400px",
+            scale: 1,
             ease: Power2.out
           });
         });
