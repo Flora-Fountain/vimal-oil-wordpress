@@ -135,7 +135,7 @@
                     </div>
                     <p class="text-center"><?php echo the_field('default_nrt_section_discription');?></p> 
                 </div>
-            <div class="nrt-drop-logo">
+            <div class="nrt-drop-logo reveal" >
                     <!-- <div class="blue-drop text-center">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-oil-flow.png" alt="temperature oil" class="b-o-drop">
                     </div> -->
@@ -145,6 +145,34 @@
                 </div>
         </div>
     </div>
+    <script type="text/javascript">
+        gsap.registerPlugin(ScrollTrigger);
+
+        let revealContainers = document.querySelectorAll(".reveal");
+
+        revealContainers.forEach((container) => {
+          let tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: container,
+              toggleActions: "restart none none reset"
+            }
+          });
+
+          tl.set(revealContainers, { autoAlpha: 1 });
+          // tl.from(revealContainers, 1.5, {
+          //   duration: 1.4,
+          //   ease: Power2.easeInOut,
+          //   width: "0%"
+
+          // });
+          tl.from(revealContainers, 2.5, {
+            yPercent: -50,
+            scale: 0,
+            delay: -1.5,
+            ease: Power2.out
+          });
+        });
+    </script>
     <div class="nrt-section default-section nrt-ills-sec" id="nrt-ills-section-1">
         <div class="floating-ele">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/yellow-flower.png" alt="yellow-flower" />
