@@ -61,6 +61,9 @@ echo get_header();
     ?>
     <div class="calender-product default-section footer-before">
         <div class="container">
+            <div class="h2-white">
+                <h2 class="text-noeffect">Here’s your oil calendar</h2>
+            </div>
             <div class="row">
                 <?php 
                     foreach ($products as $product) {
