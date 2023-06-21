@@ -318,7 +318,7 @@ $(document).ready(function(){
                 smartSpeed: 400,
             },
             575: {
-                items: 4,
+                items: 7,
                 margin: 0, 
                 loop: true,
                 autoplay: false,
@@ -335,7 +335,7 @@ $(document).ready(function(){
                 smartSpeed: 400,
             },
             1200: {
-                items: 7
+                items: 7,
             },
         }
     });
