@@ -164,8 +164,19 @@
                     <div class="h2-white">
                         <h2 class="text-noeffect"><?php echo the_field('nrt_section_title');?></h2>
                     </div>
-                    <div class="animate-text">
-                        <span><?php echo the_field('nrt_section_sub_title'); ?></span>  
+                    <!-- <div class="animate-text">
+                        <span><?php //echo the_field('nrt_section_sub_title'); ?></span>  
+                    </div> -->
+                    <div class="stroke-text">
+                        <div class="text-animation">
+                            <svg height="100" stroke="#0c54a0" stroke-width="1" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">NUTRIENT-RICH</text></svg>
+                        </div>
+                        <div class="text-animation">
+                            <svg height="100" stroke="#0c54a0" stroke-width="1" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">PURE & NATURAL</text></svg>
+                        </div>
+                        <div class="text-animation">
+                            <svg height="100" stroke="#0c54a0" stroke-width="1" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">ANTIOXIDANT-RICH</text></svg>
+                        </div>
                     </div>
                     <p class="text-center"><?php echo the_field('nrt_section_discription');?></p>
                 </div>

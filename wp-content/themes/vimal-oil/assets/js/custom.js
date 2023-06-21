@@ -387,12 +387,12 @@ $(document).ready(function(){
             inViewport();
         });
         function inViewport(){
-            $('.nrt-ills').each(function(){
+            $('.nrt-section ').each(function(){
                 var divPos = $(this).offset().top - 500,
                     topOfWindow = $(window).scrollTop();
                 
                 if( divPos < topOfWindow+400 ){
-                    $(this).addClass('slip-sec');
+                    $(this).addClass('text-ani');
                 }
             });
         }
