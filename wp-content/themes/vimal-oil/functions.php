@@ -93,6 +93,7 @@ function footer_custom_menu() {
     register_nav_menu('footer-custom-right-menu',__( 'Footer Custom Right Menu' ));
 }
 add_action( 'init', 'footer_custom_menu' );
+<<<<<<< Updated upstream
 function add_banner_image_after_job_single_content() {
         
 
@@ -112,3 +113,15 @@ function add_banner_image_after_job_single_content() {
 </div>'; // Output the banner image HTML
 }
 add_action( 'before_awsm_jobs_main_content', 'add_banner_image_after_job_single_content',3);
+=======
+
+add_filter( 'submit_job_form_fields', 'custom_submit_job_form_fields_dm' );
+ 
+function custom_submit_job_form_fields_dm( $fields ) {
+    // in this example, we remove the job_tags field
+    unset($fields['form']['cover_letter']);
+ 
+    // And return the modified fields
+    return $fields;
+}
+>>>>>>> Stashed changes
