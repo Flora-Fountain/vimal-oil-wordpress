@@ -287,6 +287,50 @@ $(document).ready(function(){
         });
     }
 
+$(document).ready(function(){
+    $('.owl-tabbing-jour ').owlCarousel({
+        loop: true,
+        autoplay: false,
+        responsiveClass: true,
+        nav: true,
+        margin: 10,
+        smartSpeed: 400,
+        center: false,
+        owlNav:true,
+        responsive: {
+            0: {
+                items: 3,
+                margin: 0, 
+                loop: true,
+                autoplay: false,
+                center: true,
+            },
+            480: {
+                items: 3,
+                margin: 0, 
+                loop: true,
+                autoplay: false,
+                center: true,
+            },
+            575: {
+                items: 7,
+                margin: 0, 
+                loop: true,
+                autoplay: false,
+                center: true,
+            },
+            991: {
+                items: 6,
+                loop: true,
+                autoplay: false,
+                center: true,
+            },
+            1200: {
+                items: 6
+            },
+        }
+    });
+})
 
     $(document).ready(function(){
         // Video Play Button
@@ -387,12 +431,12 @@ $(document).ready(function(){
             inViewport();
         });
         function inViewport(){
-            $('.nrt-ills').each(function(){
+            $('.nrt-section ').each(function(){
                 var divPos = $(this).offset().top - 500,
                     topOfWindow = $(window).scrollTop();
                 
                 if( divPos < topOfWindow+400 ){
-                    $(this).addClass('slip-sec');
+                    $(this).addClass('text-ani');
                 }
             });
         }

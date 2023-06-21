@@ -93,3 +93,37 @@ function footer_custom_menu() {
     register_nav_menu('footer-custom-right-menu',__( 'Footer Custom Right Menu' ));
 }
 add_action( 'init', 'footer_custom_menu' );
+function add_banner_image_after_job_single_content() {
+        
+    $job_types = get_the_terms( get_the_ID(), 'job-type' );
+if ( ! empty( $job_types ) ) {
+    $job_type = array_shift( $job_types );
+
+    echo'<div class="inner-banner default-section center-cont jd-page">
+            <div class="container">
+                <div class="align-items-center">
+                    <div class="text-aside">
+                        <div class="banner-right">
+                            <div class="h1-title">
+                                <h2 class="text-noeffect">'.get_the_title().'<span>'.$job_type->name.'</span></h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>'; // Output the banner image HTML
+}
+}
+add_action( 'before_awsm_jobs_main_content', 'add_banner_image_after_job_single_content',3);
+
+
+add_filter( 'submit_job_form_fields', 'custom_submit_job_form_fields_dm' );
+ 
+function custom_submit_job_form_fields_dm( $fields ) {
+    // in this example, we remove the job_tags field
+    unset($fields['form']['cover_letter']);
+ 
+    // And return the modified fields
+    return $fields;
+}

@@ -236,7 +236,7 @@
     .pro-sld-main img {
         max-width: 200px;
     }
-    .pro-sld-main a {
+    .pro-sld-main a,.pro-sld-main p {
         font-size: 26px;
         max-width: 240px;
     }
@@ -336,7 +336,7 @@
     .animate-text {
        max-width: 490px;
     }
-    .animate-text span {
+    .animate-text span,.text-line {
         font-size: 48px;
     }
     .floating-obj img:nth-child(1) {
@@ -449,7 +449,7 @@
     .nrt-top .text-center {
         font-size: 24px;
     }
-    .h2-title,.oil-quiz .h2-title,.animate-text span {
+    .h2-title,.oil-quiz .h2-title,.animate-text span,.text-line {
         font-size: 45px;
     }
     .nrt-section .h2-title {
@@ -491,7 +491,7 @@
     .panel-footer #back {
         font-size: 20px;
     }
-    .pro-sld-main a {
+    .pro-sld-main a,.pro-sld-main p {
         font-size: 22px;
     }
     .product-single-banner .banner-info{
@@ -534,6 +534,9 @@
     }
     .nrt-drop-logo .nrt-d-logo img {
         max-width: 200px;
+    }
+    .social-post {
+        margin-bottom: 30px;
     }
 }
 @media screen and (max-width:1199px) {
@@ -611,14 +614,12 @@
     .home-prod-sldr.owl-carousel {
         padding: 0
     }
-    .pro-sld-main a {
+    .pro-sld-main a,.pro-sld-main p {
         font-size: 20px;
+        max-width: 170px;
     }
     .pro-sld-main img {
         max-width: 200px;
-    }
-    .pro-sld-main a {
-        max-width: 170px;
     }
     .nrt-ills::before, .nrt-ills::after {
         height: calc(100% - 300px);
@@ -792,7 +793,6 @@
         margin-left: -17px;
     }
     .oil-swirl .coffee-swirl-image {
-        /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
         width: 80%;
@@ -805,6 +805,13 @@
     }
     .nrt-drop-logo .nrt-d-logo img {
         max-width: 180px;
+    }
+    .social-post {
+        margin: 40px 0 20px;
+    }
+    .inner-banner.jd-page .text-aside .h1-title span {
+        margin-top: 30px;
+        font-size: 22px;
     }
 }
 
@@ -1288,18 +1295,6 @@
     .h1-title {
         font-size: 60px;
     }
-
-    /* .pro-sld-main p {
-        font-size: 21px;
-        color: #fff;
-        max-width: 210px;
-        display: inline-block;
-        line-height: 1.4;
-        margin-top: 45px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
-    } */
-
     .nrt-section .h1-title, .vimal-journey .h1-title, .recipe-section .h1-title {
         font-size: 54px;
     }
@@ -1346,7 +1341,7 @@
     .blue-bg .j-para p{
         text-align: center;
     }
-    .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white,.form-inner .h2-white,.awsm-job-form-inner h2 {
+    .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white,.form-inner .h2-white,.awsm-job-form-inner h2,.text-line {
         font-size: 36px;
     }
     .h4-title h4 {
@@ -1364,16 +1359,18 @@
         padding: 15px 0px;
     } 
     .header.sticky{
-        padding: 15px 10px;
+        padding: 10px 0px;
     }
     .nav-menu .logo img{
         width: auto;
         height: 70px;
     } 
+    .header.sticky .nav-menu .logo img {
+        height: 50px;
+    }
     .footer{
         text-align: center;
     }
-
     .footer .footer-quick-links ul li a {
         font-size: 24px;
         font-weight: 500;
@@ -1514,7 +1511,7 @@
         margin: 0;
         text-align: center;
     }
-    .pro-sld-main a {
+    .pro-sld-main a,.pro-sld-main p {
         font-size: 18px;
         margin-top: 30px;
     }
@@ -2151,9 +2148,10 @@
     .nrt-drop-logo {
         min-height: 380px;
         height: 380px;
+        margin-top: -14px;
     }
     .nrt-drop-logo .nrt-d-logo img {
-        max-width: 120px;
+        max-width: 100px;
     }
     .oil-quiz .submit-button.mobile-hide {
         display: none;
@@ -2205,6 +2203,14 @@
     .stats-desc .h2-white, .stats-desc p {
         text-align: center;
     }
+    .text-animation .text-line {
+        width: 100%;
+        height: 50px;
+    }
+    .inner-banner.jd-page .text-aside {
+        max-width: 400px;
+        margin: 30px auto;
+    }
 }
 @media screen and (max-width:600px) {
     .nrt-logo {
@@ -2224,7 +2230,7 @@
     .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white,.form-inner .h2-white,.awsm-job-form-inner h2 {
         font-size: 36px;
     }
-    .pro-sld-main a {
+    .pro-sld-main a,.pro-sld-main p {
         font-size: 15px;
         max-width: 140px;
     }
@@ -2372,9 +2378,23 @@
     .vimal-journey .gen-sec {
         padding: 0;
     }
+    .text-animation .text-line {
+        width: 100%;
+        height: 40px;
+        font-size: 34px;
+    }
+    .nrt-drop-logo {
+        min-height: 380px;
+        height: 380px;
+        margin-top: -30px;
+    }
+    .social-post {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 @media screen and (max-width:479px) {
-    .pro-sld-main a {
+    .pro-sld-main a,.pro-sld-main p {
         font-size: 16px;
         max-width: 140px;
     }
@@ -2544,7 +2564,7 @@
         gap: 15px;
     }
     .jorney-main .nav-pills .nav-link {
-        width: 26%;
+        width: 70%;
     }
     .jorney-main .nav-pills .nav-link:nth-last-child(-n+3) {
         margin-top: 15px;
@@ -2589,6 +2609,11 @@
         padding: 0;
         gap: 15px;
     }
+    .nrt-drop-logo {
+        min-height: 380px;
+        height: 380px;
+        margin-top: -40px;
+    }
 }
 @media screen and (max-width:399px) {
     .nrt-logo {
@@ -2608,6 +2633,11 @@
     .nrt-temp-left img, .nrt-temp-right img {
         width: 100%;
         max-width: 280px;
+    }
+    .nrt-drop-logo {
+        min-height: 380px;
+        height: 380px;
+        margin-top: -40px;
     }
 }
 @media screen and (max-width:375px) {
@@ -2632,6 +2662,11 @@
         text-align: center;
         padding: 0;
         gap: 15px;
+    }
+    .nrt-drop-logo {
+        min-height: 380px;
+        height: 380px;
+        margin-top: -40px;
     }
 }
 @media screen and (max-width:375px) {
@@ -2666,15 +2701,20 @@
     .vimal-journey .h2-blue {
         font-size: 30px;
     }
+    .nrt-drop-logo {
+        min-height: 380px;
+        height: 380px;
+        margin-top: -40px;
+    }
 }
 @media screen and (max-width:359px) {
-    .pro-sld-main a {
+    .pro-sld-main a,.pro-sld-main p {
         font-size: 16px;
     }
     .nrt-section .h2-white {
         font-size: 48px;
     }
-    .animate-text span {
+    .animate-text span,.text-line {
         font-size: 30px;
     }
     .nrt-ills::before, .nrt-ills::after {
@@ -2739,5 +2779,13 @@
         text-align: center;
         padding: 0;
         gap: 15px;
+    }
+    .text-animation .text-line {
+        font-size: 30px;
+    }
+    .nrt-drop-logo {
+        min-height: 380px;
+        height: 380px;
+        margin-top: -40px;
     }
 }

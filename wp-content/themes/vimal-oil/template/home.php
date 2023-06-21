@@ -71,7 +71,7 @@
                             <a href="<?php the_permalink($product->get_id()); ?>">
                                 <div class="item">
                                     <div class="pro-sld-main <?php if($color == '#e2c722'){echo "ylw";} ?>" style="background:<?php echo get_field('product_background_color',$product->get_id()); ?>">
-                                        <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
+                                        <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390" class="vimal-oil-can-img"/>
                                         <!-- <a href="<?php the_permalink($product->get_id()); ?>"><?php echo $product->get_title(); ?></a> -->
                                         <p><?php echo $product->get_title(); ?></p>
                                     </div>
@@ -135,7 +135,7 @@
                     </div>
                     <p class="text-center"><?php echo the_field('default_nrt_section_discription');?></p> 
                 </div>
-            <div class="nrt-drop-logo">
+            <div class="nrt-drop-logo reveal" >
                     <!-- <div class="blue-drop text-center">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-oil-flow.png" alt="temperature oil" class="b-o-drop">
                     </div> -->
@@ -145,6 +145,58 @@
                 </div>
         </div>
     </div>
+    <script type="text/javascript">
+        gsap.registerPlugin(ScrollTrigger);
+
+        let revealContainers = document.querySelectorAll(".reveal");
+
+        revealContainers.forEach((container) => {
+          let tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: container,
+              toggleActions: "restart none none reset"
+            }
+          });
+
+          tl.set(revealContainers, { autoAlpha: 1 });
+          // tl.from(revealContainers, 1.5, {
+          //   duration: 1.4,
+          //   ease: Power2.easeInOut,
+          //   width: "0%"
+
+          // });
+          tl.from(revealContainers, 2.5, {
+            yPercent: -50,
+            scale: 0,
+            delay: -1.5,
+            ease: Power2.out
+          });
+        });
+
+        let canImg = document.querySelectorAll(".vimal-oil-can-img");
+
+        canImg.forEach((container) => {
+          let tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: container,
+              toggleActions: "restart none none reset"
+            }
+          });
+
+          tl.set(canImg, { autoAlpha: 1 });
+          // tl.from(revealContainers, 1.5, {
+          //   duration: 1.4,
+          //   ease: Power2.easeInOut,
+          //   width: "0%"
+
+          // });
+          tl.from(canImg, 0.5, {
+            y: "-400px",
+            scale: 1,
+            ease: Power2.out
+          });
+        });
+    </script>
     <div class="nrt-section default-section nrt-ills-sec" id="nrt-ills-section-1">
         <div class="floating-ele">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/yellow-flower.png" alt="yellow-flower" />
@@ -164,8 +216,19 @@
                     <div class="h2-white">
                         <h2 class="text-noeffect"><?php echo the_field('nrt_section_title');?></h2>
                     </div>
-                    <div class="animate-text">
-                        <span><?php echo the_field('nrt_section_sub_title'); ?></span>  
+                    <!-- <div class="animate-text">
+                        <span><?php //echo the_field('nrt_section_sub_title'); ?></span>  
+                    </div> -->
+                    <div class="stroke-text">
+                        <div class="text-animation">
+                            <svg height="100" stroke="#0c54a0" stroke-width="1" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">NUTRIENT-RICH</text></svg>
+                        </div>
+                        <div class="text-animation">
+                            <svg height="100" stroke="#0c54a0" stroke-width="1" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">PURE & NATURAL</text></svg>
+                        </div>
+                        <div class="text-animation">
+                            <svg height="100" stroke="#0c54a0" stroke-width="1" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">ANTIOXIDANT-RICH</text></svg>
+                        </div>
                     </div>
                     <p class="text-center"><?php echo the_field('nrt_section_discription');?></p>
                 </div>
@@ -290,28 +353,32 @@
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="nav flex-row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link active" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
+                            <div class="nav flex-row nav-pills owl-carousel owl-tabbing-jour owl-theme" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active item" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993.png" alt="1993"/>
                                     <span>1993</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2010-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2010" type="button" role="tab" aria-controls="v-pills-2010" aria-selected="false">
+                                <button class="nav-link item" id="v-pills-2010-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2010" type="button" role="tab" aria-controls="v-pills-2010" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993"/>
                                     <span>2010</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2015-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2015" type="button" role="tab" aria-controls="v-pills-2015" aria-selected="false">
+                                <button class="nav-link item" id="v-pills-2015-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2015" type="button" role="tab" aria-controls="v-pills-2015" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
                                     <span>2015</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2018" type="button" role="tab" aria-controls="v-pills-2018" aria-selected="false">
+                                <button class="nav-link item" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2018" type="button" role="tab" aria-controls="v-pills-2018" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993"/>
                                     <span>2018</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2020" type="button" role="tab" aria-controls="v-pills-2020" aria-selected="false">
+                                <button class="nav-link item" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2020" type="button" role="tab" aria-controls="v-pills-2020" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
                                     <span>2020</span>
                                 </button>
-                                <button class="nav-link" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
+                                <button class="nav-link item" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
+                                    <span>2022</span>
+                                </button>
+                                <button class="nav-link item" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
                                     <span>2022</span>
                                 </button>
