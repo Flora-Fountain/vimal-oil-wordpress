@@ -223,42 +223,46 @@ echo get_header();
         </div>
     </div>
 
+
+    <!-- get products  -->
+    <?php 
+         $args = array(
+            'post_type' => 'product',
+            'status'    => 'publish'
+        );
+    
+        $products = wc_get_products( $args );
+    ?>
+
     <!-- module-9 oil range -->
-    <div class="product-section-1 default-section footer-before nrt-product">
+    <div class="product-section-1 default-section">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="h2-white">
-                    <h2 class="text-noeffect">Our Healthy Oils</h2>
+                <div class="h2-blue">
+                    <h2 class="text-noeffect"><?php echo the_field('product_section_title') ?></h2>
                 </div>
-                <div class="home-prod-sldr owl-carousel owl-theme owl-loaded owl-drag"> 
-                <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0.4s ease 0s; width: 1397px;"><div class="owl-item active" style="width: 249.372px; margin-right: 30px;"><div class="item">
-                        <div class="pro-sld-main light-blue">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-oil-slider.png" alt="vimal-cottonseed-oil" width="259" height="390">
-                            <a href="#">Refined Cottonseed Oil</a>
-                        </div>
-                    </div></div><div class="owl-item active" style="width: 249.372px; margin-right: 30px;"><div class="item">
-                        <div class="pro-sld-main red">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-kachi-ghani-oil-slider.png" alt="kachi-ghani-oil" width="259" height="390">
-                            <a href="#">Tikha Kachi Ghani Musterd Oil</a>
-                        </div>
-                    </div></div><div class="owl-item active" style="width: 249.372px; margin-right: 30px;"><div class="item">
-                        <div class="pro-sld-main ylw">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-gold-groundnut-oil-slider.png" alt="vimal-pure-gold-oil" width="259" height="390">
-                            <a href="#">Pure Gold Groundnut Oil</a>
-                        </div>
-                    </div></div><div class="owl-item active" style="width: 249.372px; margin-right: 30px;"><div class="item">
-                        <div class="pro-sld-main grn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahary-soyabean-oil-slider.png" alt="vimal-soyahart-oil" width="259" height="390">
-                            <a href="#">Soyahart Refined Soyabean Oil</a>
-                        </div>
-                    </div></div><div class="owl-item active" style="width: 249.372px; margin-right: 30px;"><div class="item">
-                        <div class="pro-sld-main red">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-sunhart-oil-slider.png" alt="vimal-sunhart-oil" width="259" height="390">
-                            <a href="#">Sunhart Refined Sunflower Oil</a>
-                        </div>
-                    </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
+                <div class="home-prod-sldr owl-carousel owl-theme">
+                    <?php 
+                        foreach ($products as $product) {
+                            $image = wp_get_attachment_image_src( get_post_thumbnail_id($product->get_id()));
+                            $color = get_field('product_background_color',$product->get_id());
+                            ?>
+                            <a href="<?php the_permalink($product->get_id()); ?>">
+                                <div class="item">
+                                    <div class="pro-sld-main <?php if($color == '#e2c722'){echo "ylw";} ?>" style="background:<?php echo get_field('product_background_color',$product->get_id()); ?>">
+                                        <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
+                                        <!-- <a href="<?php the_permalink($product->get_id()); ?>"><?php echo $product->get_title(); ?></a> -->
+                                        <p><?php echo $product->get_title(); ?></p>
+                                    </div>
+                                </div> 
+                            </a>       
+                        <?php }
+                    ?>
+                </div>
                 <div class="submit-button text-center">
-                    <a href="#" class="btn-effect blue-back" type="submit">All Products</a>
+                    <a href="<?php echo the_field('product_section_button_link') ?>" class="btn-effect blue-back" type="submit">
+                        <?php the_field('products_section_button_name') ?>
+                    </a>
                 </div>
             </div>
         </div>

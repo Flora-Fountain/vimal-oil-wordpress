@@ -388,7 +388,7 @@ $(document).ready(function(){
         });
         function inViewport(){
             $('.nrt-ills').each(function(){
-                var divPos = $(this).offset().top,
+                var divPos = $(this).offset().top - 500,
                     topOfWindow = $(window).scrollTop();
                 
                 if( divPos < topOfWindow+400 ){
@@ -673,10 +673,9 @@ $(window).scroll(function() {
 
 });
 
-// scroll to section 
-// $('#nrt-ills-section').bind('scroll', function(event) {
-//     $(window).scrollTo($('#nrt-ills-section-1'), 1000);
-// });
+// scroll to section blue drop to nrt section
+// $('#nrt-ills-section').scrollTo('#nrt-ills-section-1');
+
 
 
 // oil-flow js 
@@ -794,5 +793,7 @@ window.addEventListener('scroll', (e) => {
 // var loveListener = createButtonListener(true);
 
 // nope.addEventListener('click', nopeListener);
+
 // love.addEventListener('click', loveListener);
 
+// love.addEventListener('click', loveListener);

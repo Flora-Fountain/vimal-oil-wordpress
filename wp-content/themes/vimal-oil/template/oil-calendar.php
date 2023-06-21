@@ -14,11 +14,14 @@ echo get_header();
                     <div class="text-aside">
                         <div class="banner-right">
                             <div class="h1-title">
-                            <h1 class="text-noeffect">
-								<span><?php echo the_field('banner_title');?></span>
-                                <?php echo the_field('banner_sub_title');?>
-							</h1>
+                                <h1 class="text-noeffect">
+                                    <span class="white-text"><?php echo the_field('banner_title');?></span>
+                                    <?php echo the_field('banner_sub_title');?>
+                                </h1>
                             </div>
+                        </div>
+                        <div class="head-para">
+                            <p>Lorem ipsum is simply dummy text of printing and typesetting industries</p>
                         </div>
                         <div class="submit-button text-center">
                             <a href="<?php echo the_field('banner_button_link');?>" class="btn-effect" type="submit">
@@ -58,6 +61,9 @@ echo get_header();
     ?>
     <div class="calender-product default-section footer-before">
         <div class="container">
+            <div class="h2-white">
+                <h2 class="text-noeffect">Here’s your oil calendar</h2>
+            </div>
             <div class="row">
                 <?php 
                     foreach ($products as $product) {

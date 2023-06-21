@@ -765,7 +765,7 @@ a:focus{
 	transform: translateY(-40px);
 	transition: 0.5s ease-in-out;
 }
-.pro-sld-main a {
+.pro-sld-main p {
 	font-size: 32px;
 	color: #fff;
 	max-width: 210px;
@@ -999,6 +999,11 @@ a:focus{
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
+
+/* blur-oil flow animation  */
+
+
+
 .animate-text {
 	text-align: center;
 	margin: 0 auto;
@@ -2065,6 +2070,97 @@ a:focus{
 	box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 /* career page css code */
+.career-form, .awsm-job-form-inner {
+	display: inline-block;
+	width: 100%;
+	border-radius: 20px;
+	box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.42);
+	padding: 30px 50px;
+	border: 0;
+}
+.career-form .form-group .form-control, .awsm-job-form-inner .awsm-job-form-group .awsm-job-form-field {
+	background: #D9D9D9;
+	color: #000;
+	border-radius: 10px;
+	box-shadow: none;
+	outline: none;
+	border: 0;
+	padding: 10px 20px;
+	line-height: 1.2;
+	height: 50px;
+}
+.career-form .form-group .form-control::-webkit-input-placeholder,.awsm-job-form-inner .awsm-job-form-group .awsm-job-form-field::-webkit-input-placeholder{color:rgba(0,0,0,0.6);}
+.career-form .form-group .form-control::-moz-placeholder,.awsm-job-form-inner .awsm-job-form-group .awsm-job-form-field::-moz-placeholder{color:rgba(0,0,0,0.6);}
+.career-form .form-group .form-control:-ms-input-placeholder,.awsm-job-form-inner .awsm-job-form-group .awsm-job-form-field::-ms-input-placeholder{color:rgba(0,0,0,0.6);}
+.career-form .form-group .form-control::-moz-placeholder,.awsm-job-form-inner .awsm-job-form-group .awsm-job-form-field::-moz-placeholder{color:rgba(0,0,0,0.6);}
+.career-form .form-group textarea.form-control,.awsm-job-form-inner .awsm-job-form-group textarea.awsm-job-form-field {
+	height: 130px;
+}
+.career-form .form-group.state-select {
+	position: relative;
+}
+.career-form .form-group.state-select::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 12px solid #0a4380;
+	right: 14px;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+	z-index: 1;
+}
+.awsm-job-container {
+	padding: 50px 15px;
+}
+.awsm-job-form-inner h2 {
+	display: inline-block;
+	width: 100%;
+	color: #0c56a1;
+	text-align: center;
+	font-size: 55px;
+	font-weight: 600;
+	line-height: 1.3;
+	margin-bottom: 26px;
+	padding: 0;
+}
+.awsm-job-form-inner .awsm-job-form-group #awsm-application-file {
+	background: transparent;
+	padding: 0;
+}
+.awsm-job-form-inner .awsm-job-form-group #awsm_form_privacy_policy {
+	height: auto;
+}
+.awsm-job-form-inner .awsm-job-form-group #awsm-application-file {
+	display: inline-block;
+	width: 100%;
+	border: 0;
+	padding: 10px;
+	max-width: 380px;
+}
+.awsm-job-form-inner .awsm-job-form-group #awsm-application-file + small {
+	display: inline-block;
+	width: 100%;
+}
+.awsm-job-form-inner .awsm-job-form-group #awsm-application-submit-btn {
+	display: inline-block;
+	width: 100%;
+	max-width: 180px;
+	padding: 10px 0;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 20px;
+	position: relative;
+	background: #0c56a1;
+	overflow: hidden;
+	z-index: 0;
+	text-align: center;
+	animation: wave 2s infinite linear;
+}
 .grow-section {
 	padding: 50px 0;
 }
@@ -4507,6 +4603,9 @@ a:focus{
 	animation: up-down 5s infinite linear;
 	animation-direction: reverse;
 	z-index: -1;
+}
+.h1-title span.white-text {
+	color: #fff;
 }
 @media screen and (max-height: 540px) {
   .frame {
