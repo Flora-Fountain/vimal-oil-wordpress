@@ -76,6 +76,7 @@
     .pro-sld-main img {
         max-width: 216px;
     }
+
     .nrt-ills::before, .nrt-ills::after {
         height: calc(100% - 392px);
     }
@@ -1287,6 +1288,18 @@
     .h1-title {
         font-size: 60px;
     }
+
+    /* .pro-sld-main p {
+        font-size: 21px;
+        color: #fff;
+        max-width: 210px;
+        display: inline-block;
+        line-height: 1.4;
+        margin-top: 45px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    } */
+
     .nrt-section .h1-title, .vimal-journey .h1-title, .recipe-section .h1-title {
         font-size: 54px;
     }
