@@ -287,6 +287,59 @@ $(document).ready(function(){
         });
     }
 
+$(document).ready(function(){
+    $('.owl-tabbing-jour ').owlCarousel({
+        loop: false,
+        autoplay: false,
+        responsiveClass: true,
+        nav: true,
+        margin: 10,    
+        autoplayTimeout: 4000,
+        smartSpeed: 400,
+        center: true,
+        
+        responsive: {
+            0: {
+                items: 3,
+                margin: 0, 
+                loop: true,
+                autoplay: false,
+                center: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            480: {
+                items: 3,
+                margin: 0, 
+                loop: true,
+                autoplay: false,
+                center: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            575: {
+                items: 7,
+                margin: 0, 
+                loop: true,
+                autoplay: false,
+                center: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            991: {
+                items: 7,
+                loop: true,
+                autoplay: false,
+                center: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
+            },
+            1200: {
+                items: 7,
+            },
+        }
+    });
+})
 
     $(document).ready(function(){
         // Video Play Button
@@ -387,12 +440,12 @@ $(document).ready(function(){
             inViewport();
         });
         function inViewport(){
-            $('.nrt-ills').each(function(){
+            $('.nrt-section ').each(function(){
                 var divPos = $(this).offset().top - 500,
                     topOfWindow = $(window).scrollTop();
                 
                 if( divPos < topOfWindow+400 ){
-                    $(this).addClass('slip-sec');
+                    $(this).addClass('text-ani');
                 }
             });
         }
