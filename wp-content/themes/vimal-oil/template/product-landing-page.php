@@ -90,12 +90,15 @@ echo get_header();
                         $color = get_field('product_background_color',$product->get_id()); ?>
 
                         <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="<?php echo the_permalink($product->get_id());?>">
                             <div class="prod-item">
                                 <div class="pro-sld-main <?php if($color == '#e2c722'){echo "ylw";} ?>" style="background:<?php echo $color;?>" >
                                     <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil-slider" width="259" height="390">
-                                    <a href="<?php echo the_permalink($product->get_id());?>"><?php echo $product->get_title();?></a>
+                                    <!-- <a href="<?php echo the_permalink($product->get_id());?>"><?php echo $product->get_title();?></a> -->
+                                    <p><?php echo $product->get_title();?></p>
                                 </div>
                             </div>
+                        </a>
                         </div>
                     <?php }
                 ?>

@@ -68,12 +68,15 @@
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id($product->get_id()));
                             $color = get_field('product_background_color',$product->get_id());
                             ?>
+                            <a href="<?php the_permalink($product->get_id()); ?>">
                                 <div class="item">
                                     <div class="pro-sld-main <?php if($color == '#e2c722'){echo "ylw";} ?>" style="background:<?php echo get_field('product_background_color',$product->get_id()); ?>">
                                         <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
-                                        <a href="<?php the_permalink($product->get_id()); ?>"><?php echo $product->get_title(); ?></a>
+                                        <!-- <a href="<?php the_permalink($product->get_id()); ?>"><?php echo $product->get_title(); ?></a> -->
+                                        <p><?php echo $product->get_title(); ?></p>
                                     </div>
-                                </div>        
+                                </div>   
+                        </a>     
                         <?php }
                     ?>
                 </div>
@@ -123,8 +126,8 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
             </div>
         </div>
-            <div class="nrt-blue-drop p-0">
-                <div class="nrt-blue-head-sec">
+        <div class="nrt-blue-drop p-0">
+            <div class="nrt-blue-head-sec">
                     <div class="h2-blue">
                         <h2 class="text-noeffect">
                             <?php echo the_field('default_nrt_section_title');?>
@@ -132,7 +135,7 @@
                     </div>
                     <p class="text-center"><?php echo the_field('default_nrt_section_discription');?></p> 
                 </div>
-                <div class="nrt-drop-logo">
+            <div class="nrt-drop-logo">
                     <!-- <div class="blue-drop text-center">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-oil-flow.png" alt="temperature oil" class="b-o-drop">
                     </div> -->
@@ -140,7 +143,7 @@
                         <img src="<?php echo the_field('default_nrt_section_logo');?>" alt="temperature oil" class="nrt-logo-drop">
                     </div>
                 </div>
-            </div>
+        </div>
     </div>
     <div class="nrt-section default-section nrt-ills-sec" id="nrt-ills-section-1">
         <div class="floating-ele">
@@ -564,102 +567,101 @@
 
     <script>
         'use strict';
+        var tinderContainer = document.querySelector('.tinder');
+        var allCards = document.querySelectorAll('.tinder--card');
+        var nope = document.getElementById('dp-prev');
+        var love = document.getElementById('dp-next');
 
-var tinderContainer = document.querySelector('.tinder');
-var allCards = document.querySelectorAll('.tinder--card');
-var nope = document.getElementById('dp-prev');
-var love = document.getElementById('dp-next');
+        function initCards(card, index) {
+        var newCards = document.querySelectorAll('.tinder--card:not(.removed)');
 
-function initCards(card, index) {
-  var newCards = document.querySelectorAll('.tinder--card:not(.removed)');
+        newCards.forEach(function (card, index) {
+            card.style.zIndex = allCards.length - index;
+            card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
+            // card.style.opacity = (10 - index) / 10;
+        });
+        
+        tinderContainer.classList.add('loaded');
+        }
 
-  newCards.forEach(function (card, index) {
-    card.style.zIndex = allCards.length - index;
-    card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
-    // card.style.opacity = (10 - index) / 10;
-  });
-  
-  tinderContainer.classList.add('loaded');
-}
+        initCards();
 
-initCards();
+        allCards.forEach(function (el) {
+        var hammertime = new Hammer(el);
 
-allCards.forEach(function (el) {
-  var hammertime = new Hammer(el);
+        hammertime.on('pan', function (event) {
+            el.classList.add('moving');
+        });
 
-  hammertime.on('pan', function (event) {
-    el.classList.add('moving');
-  });
+        hammertime.on('pan', function (event) {
+            if (event.deltaX === 0) return;
+            if (event.center.x === 0 && event.center.y === 0) return;
 
-  hammertime.on('pan', function (event) {
-    if (event.deltaX === 0) return;
-    if (event.center.x === 0 && event.center.y === 0) return;
+            tinderContainer.classList.toggle('tinder_love', event.deltaX > 0);
+            tinderContainer.classList.toggle('tinder_nope', event.deltaX < 0);
 
-    tinderContainer.classList.toggle('tinder_love', event.deltaX > 0);
-    tinderContainer.classList.toggle('tinder_nope', event.deltaX < 0);
+            var xMulti = event.deltaX * 0.03;
+            var yMulti = event.deltaY / 80;
+            var rotate = xMulti * yMulti;
 
-    var xMulti = event.deltaX * 0.03;
-    var yMulti = event.deltaY / 80;
-    var rotate = xMulti * yMulti;
+            event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px) rotate(' + rotate + 'deg)';
+        });
 
-    event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px) rotate(' + rotate + 'deg)';
-  });
+        hammertime.on('panend', function (event) {
+            el.classList.remove('moving');
+            tinderContainer.classList.remove('tinder_love');
+            tinderContainer.classList.remove('tinder_nope');
 
-  hammertime.on('panend', function (event) {
-    el.classList.remove('moving');
-    tinderContainer.classList.remove('tinder_love');
-    tinderContainer.classList.remove('tinder_nope');
+            var moveOutWidth = document.body.clientWidth;
+            var keep = Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
 
-    var moveOutWidth = document.body.clientWidth;
-    var keep = Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
+            event.target.classList.toggle('removed', !keep);
 
-    event.target.classList.toggle('removed', !keep);
+            if (keep) {
+            event.target.style.transform = '';
+            } else {
+            var endX = Math.max(Math.abs(event.velocityX) * moveOutWidth, moveOutWidth);
+            var toX = event.deltaX > 0 ? endX : -endX;
+            var endY = Math.abs(event.velocityY) * moveOutWidth;
+            var toY = event.deltaY > 0 ? endY : -endY;
+            var xMulti = event.deltaX * 0.03;
+            var yMulti = event.deltaY / 80;
+            var rotate = xMulti * yMulti;
 
-    if (keep) {
-      event.target.style.transform = '';
-    } else {
-      var endX = Math.max(Math.abs(event.velocityX) * moveOutWidth, moveOutWidth);
-      var toX = event.deltaX > 0 ? endX : -endX;
-      var endY = Math.abs(event.velocityY) * moveOutWidth;
-      var toY = event.deltaY > 0 ? endY : -endY;
-      var xMulti = event.deltaX * 0.03;
-      var yMulti = event.deltaY / 80;
-      var rotate = xMulti * yMulti;
+            event.target.style.transform = 'translate(' + toX + 'px, ' + (toY + event.deltaY) + 'px) rotate(' + rotate + 'deg)';
+            initCards();
+            }
+        });
+        });
 
-      event.target.style.transform = 'translate(' + toX + 'px, ' + (toY + event.deltaY) + 'px) rotate(' + rotate + 'deg)';
-      initCards();
-    }
-  });
-});
+        function createButtonListener(love) {
+        return function (event) {
+            var cards = document.querySelectorAll('.tinder--card:not(.removed)');
+            var moveOutWidth = document.body.clientWidth * 1.5;
 
-function createButtonListener(love) {
-  return function (event) {
-    var cards = document.querySelectorAll('.tinder--card:not(.removed)');
-    var moveOutWidth = document.body.clientWidth * 1.5;
+            if (!cards.length) return false;
 
-    if (!cards.length) return false;
+            var card = cards[0];
 
-    var card = cards[0];
+            card.classList.add('removed');
 
-    card.classList.add('removed');
+            if (love) {
+            card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
+            } else {
+            card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
+            }
 
-    if (love) {
-      card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
-    } else {
-      card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
-    }
+            initCards();
 
-    initCards();
+            event.preventDefault();
+        };
+        }
 
-    event.preventDefault();
-  };
-}
+        var nopeListener = createButtonListener(false);
+        var loveListener = createButtonListener(true);
 
-var nopeListener = createButtonListener(false);
-var loveListener = createButtonListener(true);
-
-nope.addEventListener('click', nopeListener);
-love.addEventListener('click', loveListener);
+        nope.addEventListener('click', nopeListener);
+        love.addEventListener('click', loveListener);
 
     </script>
 
