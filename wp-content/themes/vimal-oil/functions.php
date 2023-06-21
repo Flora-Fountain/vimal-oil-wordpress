@@ -99,13 +99,13 @@ function add_banner_image_after_job_single_content() {
 if ( ! empty( $job_types ) ) {
     $job_type = array_shift( $job_types );
 
-    echo'<div class="inner-banner default-section center-cont">
+    echo'<div class="inner-banner default-section center-cont jd-page">
             <div class="container">
                 <div class="align-items-center">
                     <div class="text-aside">
                         <div class="banner-right">
                             <div class="h1-title">
-                                <h1 class="text-noeffect">'.get_the_title().'<span>'.$job_type->name.'</span></h1>
+                                <h2 class="text-noeffect">'.get_the_title().'<span>'.$job_type->name.'</span></h2>
                             </div>
                         </div>
                     </div>
