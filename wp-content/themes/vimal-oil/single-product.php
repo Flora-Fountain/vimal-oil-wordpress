@@ -63,111 +63,98 @@
         </div>
         <div class="container">
             <div class="row align-items-center">
-
-    <div class="default-section oil-details">
-        <div class="leaf-sec prod-leaf-sec">
-        <div class="falling-leaf cook-fall-leaf">
-                <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
-                </div>
-                <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
-                </div>
-                <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-flower-blur.png" alt="blur-leaf">
-                </div>
-            </div>
-            <div class="floating-ele after-banner cook-oil-float-ele">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peanut.png" alt="yellow-flower">
-            </div>
-            <div class="container">
-                <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="oil-det-right">
-                        <div class="h2-white">
-                            <h2 class="text-noeffect"><?php echo $product_name; ?></h2>
-                        </div>
-                        <div class="oil-para">
-                            <p><?php echo the_field('product_description');?></p>
-                        </div>
-                        <div class="oil-size">
-                            <div class="h4-title">
-                                <h4 class="text-noeffect">
-                                    Size available
-                                </h4>
+                <div class="default-section oil-details">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="oil-det-right">
+                            <div class="h2-white">
+                                <h2 class="text-noeffect"><?php echo $product_name; ?></h2>
                             </div>
-                            <div class="size-icon">
-                                <?php $size_array = get_field('product_available_size'); 
-                                    // $size = implode(",",$size_array);
-                                    foreach ($size_array as $size) { ?>
-                                        <div class="size">
-                                            <a href="#"><?php echo $size;?></a>
-                                        </div>
-                                    <?php }
-                                ?>
+                            <div class="oil-para">
+                                <p><?php echo the_field('product_description');?></p>
+                            </div>
+                            <div class="oil-size">
+                                <div class="h4-title">
+                                    <h4 class="text-noeffect">
+                                        Size available
+                                    </h4>
+                                </div>
+                                <div class="size-icon">
+                                    <?php $size_array = get_field('product_available_size'); 
+                                        // $size = implode(",",$size_array);
+                                        foreach ($size_array as $size) { ?>
+                                            <div class="size">
+                                                <a href="#"><?php echo $size;?></a>
+                                            </div>
+                                        <?php }
+                                    ?>
+                                </div>
+                            </div>
+                            <div class="shop-button">
+                                <div class="h3-title">
+                                    <h3 class="text-noeffect">
+                                        <?php echo the_field('shop_button_title');?>
+                                    </h3>
+                                </div>
+                                <div class="buy-btn">
+                                    <?php 
+                                        if (have_rows('shop_button')) {
+                                            while (have_rows('shop_button')) {
+                                                the_row(); ?>
+                                                <!-- echo the_sub_field('shop_button_brand_name'); -->
+                                                <a href="<?php echo the_sub_field('shop_brand_link'); ?>">
+                                                    <span>
+                                                        <img src="<?php echo the_sub_field('shop_button_image'); ?>" alt="<?php echo the_sub_field('shop_button_brand_name');?>"><?php echo the_sub_field('shop_button_brand_name');?>
+                                                    </span>
+                                                </a>
+                                        <?php }
+                                        }
+                                    ?>
+                                </div>
                             </div>
                         </div>
-                        <div class="shop-button">
-                            <div class="h3-title">
-                                <h3 class="text-noeffect">
-                                    <?php echo the_field('shop_button_title');?>
-                                </h3>
-                            </div>
-                            <div class="buy-btn">
+                    </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="product-accor">
+                            <div class="accordion" id="accordionExample">
                                 <?php 
-                                    if (have_rows('shop_button')) {
-                                        while (have_rows('shop_button')) {
+                                    $count = 1;
+                                    if (have_rows('product_accordion')) {
+                                        while (have_rows('product_accordion')) {
                                             the_row(); ?>
-                                            <!-- echo the_sub_field('shop_button_brand_name'); -->
-                                            <a href="<?php echo the_sub_field('shop_brand_link'); ?>">
-                                                <span>
-                                                    <img src="<?php echo the_sub_field('shop_button_image'); ?>" alt="<?php echo the_sub_field('shop_button_brand_name');?>"><?php echo the_sub_field('shop_button_brand_name');?>
-                                                </span>
-                                            </a>
-                                       <?php }
+                                            <div class="accordion-item">
+                                                <h4 class="accordion-header" id="heading<?php echo $count;?>">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $count;?>" aria-expanded="<?php if ($count == 1) { echo "true";} else{echo "false";} ?>" aria-controls="collapse<?php echo $count;?>">
+                                                        <span>
+                                                            <img src="<?php echo the_sub_field('product_accordion_image'); ?>" alt="<?php echo the_sub_field('product_accordion_title'); ?>">
+                                                            <?php echo the_sub_field('product_accordion_title'); ?>
+                                                        </span>
+                                                    </button>
+                                                </h4>
+                                                <div id="collapse<?php echo $count;?>" class="accordion-collapse collapse <?php if ($count == 1) { echo "show";}?> " aria-labelledby="heading<?php echo $count;?>" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p><?php echo the_sub_field('product_accordion_description') ?></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php
+                                            $count++;    
+                                    }
+                                        
                                     }
                                 ?>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="product-accor">
-                        <div class="accordion" id="accordionExample">
-                            <?php 
-                                $count = 1;
-                                if (have_rows('product_accordion')) {
-                                    while (have_rows('product_accordion')) {
-                                        the_row(); ?>
-                                        <div class="accordion-item">
-                                            <h4 class="accordion-header" id="heading<?php echo $count;?>">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $count;?>" aria-expanded="<?php if ($count == 1) { echo "true";} else{echo "false";} ?>" aria-controls="collapse<?php echo $count;?>">
-                                                    <span>
-                                                        <img src="<?php echo the_sub_field('product_accordion_image'); ?>" alt="<?php echo the_sub_field('product_accordion_title'); ?>">
-                                                        <?php echo the_sub_field('product_accordion_title'); ?>
-                                                    </span>
-                                                </button>
-                                            </h4>
-                                            <div id="collapse<?php echo $count;?>" class="accordion-collapse collapse <?php if ($count == 1) { echo "show";}?> " aria-labelledby="heading<?php echo $count;?>" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    <p><?php echo the_sub_field('product_accordion_description') ?></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <?php
-                                        $count++;    
-                                }
-                                    
-                                }
-                            ?>
-                        </div>
                     </div>
                 </div>
-            </div>
+                </div>
             </div>
         </div>
+        </div>
+        </div>
     </div>
-
     <!-- module-4 oil benefits section  -->
     <div class="default-section blue-bg oil-benefits-sec">
         <div class="leaf-sec prod-leaf-sec">

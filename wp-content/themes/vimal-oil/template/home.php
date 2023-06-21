@@ -68,12 +68,15 @@
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id($product->get_id()));
                             $color = get_field('product_background_color',$product->get_id());
                             ?>
+                            <a href="<?php the_permalink($product->get_id()); ?>">
                                 <div class="item">
                                     <div class="pro-sld-main <?php if($color == '#e2c722'){echo "ylw";} ?>" style="background:<?php echo get_field('product_background_color',$product->get_id()); ?>">
                                         <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
-                                        <a href="<?php the_permalink($product->get_id()); ?>"><?php echo $product->get_title(); ?></a>
+                                        <!-- <a href="<?php the_permalink($product->get_id()); ?>"><?php echo $product->get_title(); ?></a> -->
+                                        <p><?php echo $product->get_title(); ?></p>
                                     </div>
-                                </div>        
+                                </div>   
+                        </a>     
                         <?php }
                     ?>
                 </div>
@@ -123,8 +126,8 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drop.png" alt="drop"/>
             </div>
         </div>
-            <div class="nrt-blue-drop p-0">
-                <div class="nrt-blue-head-sec">
+        <div class="nrt-blue-drop p-0">
+            <div class="nrt-blue-head-sec">
                     <div class="h2-blue">
                         <h2 class="text-noeffect">
                             <?php echo the_field('default_nrt_section_title');?>
@@ -132,7 +135,7 @@
                     </div>
                     <p class="text-center"><?php echo the_field('default_nrt_section_discription');?></p> 
                 </div>
-                <div class="nrt-drop-logo">
+            <div class="nrt-drop-logo">
                     <!-- <div class="blue-drop text-center">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-oil-flow.png" alt="temperature oil" class="b-o-drop">
                     </div> -->
@@ -140,7 +143,7 @@
                         <img src="<?php echo the_field('default_nrt_section_logo');?>" alt="temperature oil" class="nrt-logo-drop">
                     </div>
                 </div>
-            </div>
+        </div>
     </div>
     <div class="nrt-section default-section nrt-ills-sec" id="nrt-ills-section-1">
         <div class="floating-ele">
@@ -564,7 +567,6 @@
 
     <script>
         'use strict';
-
 var tinderContainer = document.querySelector('.tinder');
 var allCards = document.querySelectorAll('.tinder--card');
 var nope = document.getElementById('dp-prev');

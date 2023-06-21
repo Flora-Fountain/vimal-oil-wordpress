@@ -765,7 +765,7 @@ a:focus{
 	transform: translateY(-40px);
 	transition: 0.5s ease-in-out;
 }
-.pro-sld-main a {
+.pro-sld-main p {
 	font-size: 32px;
 	color: #fff;
 	max-width: 210px;
@@ -999,6 +999,11 @@ a:focus{
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
+
+/* blur-oil flow animation  */
+
+
+
 .animate-text {
 	text-align: center;
 	margin: 0 auto;
