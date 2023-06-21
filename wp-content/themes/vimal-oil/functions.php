@@ -95,20 +95,24 @@ function footer_custom_menu() {
 add_action( 'init', 'footer_custom_menu' );
 function add_banner_image_after_job_single_content() {
         
+    $job_types = get_the_terms( get_the_ID(), 'job-type' );
+if ( ! empty( $job_types ) ) {
+    $job_type = array_shift( $job_types );
 
-    echo '<div class="inner-banner default-section center-cont">
-    <div class="container">
-        <div class="align-items-center">
-            <div class="text-aside">
-                <div class="banner-right">
-                    <div class="h1-title">
-                        <h1 class="text-noeffect">'.get_the_title().'</h1>
+    echo'<div class="inner-banner default-section center-cont">
+            <div class="container">
+                <div class="align-items-center">
+                    <div class="text-aside">
+                        <div class="banner-right">
+                            <div class="h1-title">
+                                <h1 class="text-noeffect">'.get_the_title().'<span>'.$job_type->name.'</span></h1>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
-
-        </div>
-    </div>
-</div>'; // Output the banner image HTML
+        </div>'; // Output the banner image HTML
+}
 }
 add_action( 'before_awsm_jobs_main_content', 'add_banner_image_after_job_single_content',3);
