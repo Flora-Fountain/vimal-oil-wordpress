@@ -434,6 +434,12 @@
         height: 454vh;
         margin-left: 0;
     }
+    .buy-btn a img {
+        width: 30px;
+    }
+    .buy-btn a {
+        font-size: 18px;
+    }
 }
 @media screen and (max-width:1299px) {
     .nrt-logo {
@@ -647,7 +653,7 @@
     .ft-cont {
         margin: 20px 0;
     }
-    .h2-blue,.h2-white {
+    .h2-blue,.h2-white,.awsm-job-form-inner h2 {
         font-size: 45px;
     }
     .h3-ttl {
@@ -1327,7 +1333,7 @@
     .blue-bg .j-para p{
         text-align: center;
     }
-    .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white,.form-inner .h2-white {
+    .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white,.form-inner .h2-white,.awsm-job-form-inner h2 {
         font-size: 36px;
     }
     .h4-title h4 {
@@ -2202,7 +2208,7 @@
 
 }
 @media screen and (max-width:575px) {
-    .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white,.form-inner .h2-white {
+    .h2-title, .oil-quiz .h2-title, .animate-text span,.h2-blue,.h2-white,.form-inner .h2-white,.awsm-job-form-inner h2 {
         font-size: 36px;
     }
     .pro-sld-main a {
@@ -2535,6 +2541,9 @@
     }
     .img-mx {
         max-width: 230px;
+    }
+    .career-form, .awsm-job-form-inner {
+        padding: 30px 20px;
     }
 }
 @media screen and (max-width:412px) {
