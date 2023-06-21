@@ -317,7 +317,7 @@ $(document).ready(function(){
                 smartSpeed: 400,
             },
             575: {
-                items: 4,
+                items: 7,
                 margin: 0, 
                 loop: true,
                 autoplay: false,
