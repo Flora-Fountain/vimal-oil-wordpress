@@ -87,7 +87,7 @@
     </div>
 
     <!-- module-5 nrt-section  -->
-    <div class="default-section nrt-ills" id="nrt-ills-section">
+    <div class="default-section nrt-ills" id="nrt-ills-section" data-anchor="NRTSection">
         <div class="droplets">
             <div>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-blur-drop.png" alt="left-blur-drop"/>

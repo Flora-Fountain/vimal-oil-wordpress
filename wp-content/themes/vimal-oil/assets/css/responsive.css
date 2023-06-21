@@ -2408,15 +2408,31 @@
         bottom: 5%;
     }
     .counter-main .count-box {
-        max-width: 270px;
-        width: 100%;
-        margin: 0 auto;
+        width: 47%;
+    }
+    .counter-main .count-box .counter, .counter-main .count-box .counter + span {
+        font-size: 36px;
+    }
+    .counter-main .count-box .count-name {
+        font-size: 17px;
     }
     .nr-det ul li {
-        width: 100%;
+        width: 47%;
+    }
+    .nr-det ul li:nth-child(2n+2) {
+        margin-left: 2%;
+    }
+    .nr-det ul li img {
+        max-width: 60px;
     }
     .nr-det ul li + li {
         margin-top: 20px;
+    }
+    .nr-det ul li h4 {
+        font-size: 20px;
+    }
+    .nr-det ul li h4 span {
+        font-size: 14px;
     }
     .product-section .row > div {
         flex-shrink: 0;
