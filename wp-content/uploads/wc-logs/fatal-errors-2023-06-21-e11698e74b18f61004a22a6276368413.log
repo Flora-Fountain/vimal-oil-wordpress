@@ -1,4 +1,13 @@
-2023-06-21T10:53:20+00:00 CRITICAL syntax error, unexpected string content "cover-letter]);", expecting "]" in C:\xampp2\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\functions.php on line 101
-
-2023-06-21T11:35:39+00:00 CRITICAL syntax error, unexpected token "<<", expecting end of file in C:\xampp2\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\functions.php on line 96
+2023-06-21T11:32:01+00:00 CRITICAL Uncaught TypeError: array_shift(): Argument #1 ($array) must be of type array, WP_Error given in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\functions.php:102
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\functions.php(102): array_shift(Object(WP_Error))
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\class-wp-hook.php(308): add_banner_image_after_job_single_content('')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\vimal-oil-wordpress\wp-content\plugins\wp-job-openings\inc\templates\single-job.php(22): do_action('before_awsm_job...')
+#5 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\functions.php on line 102
 

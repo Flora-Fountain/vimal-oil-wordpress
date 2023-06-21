@@ -1356,6 +1356,30 @@ header.sticky .nav-menu .menu-btn {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 40px;
+	position: relative;
+}
+.jorney-main .nav .owl-nav {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.jorney-main .nav .owl-nav button {
+	width: 40px;
+	height: 50px;
+	position: relative;
+}
+.jorney-main .nav .owl-nav button.owl-prev {
+	float: left;
+}
+.jorney-main .nav .owl-nav button.owl-next {
+	float: right;
+}
+.jorney-main .nav .owl-nav button span {
+	font-size: 90px;
+	line-height: 1;
+	color: #fff;
 }
 .jorney-main .nav-pills .nav-link.active {
 	background: transparent;
@@ -1462,6 +1486,26 @@ header.sticky .nav-menu .menu-btn {
 }
 .jorney-main {
 	margin-top: 40px;
+}
+.jorney-main .owl-carousel .owl-stage-outer {
+	position: relative;
+	z-index: 0;
+}
+.jorney-main .owl-carousel .owl-stage-outer::before,.jorney-main .owl-carousel .owl-stage-outer::after {
+	position: absolute;
+	content: '';
+	z-index: 2;
+	background: linear-gradient(90deg, rgba(12, 86, 161, 0.86) 60%, rgba(255, 255, 255, 0) 100%);
+	width: 10%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.jorney-main .owl-carousel .owl-stage-outer::after {
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(12, 86, 161, 0.86) 50%);
+	left: auto;
+	top: 0;
+	right: 0;
 }
 .start {
 	display: inline-block;
@@ -2203,6 +2247,7 @@ header.sticky .nav-menu .menu-btn {
 	border: 0;
 	padding: 10px;
 	max-width: 380px;
+	background: #d9d9d9;
 }
 .awsm-job-form-inner .awsm-job-form-group #awsm-application-file + small {
 	display: inline-block;
@@ -2364,7 +2409,18 @@ header.sticky .nav-menu .menu-btn {
 .job-desc-sec .job-data p span{
 	font-weight: 600;
 }
-
+.inner-banner.jd-page .text-aside {
+	max-width: 500px;
+	margin: 40px auto;
+}
+.inner-banner.jd-page .text-aside .h1-title {
+	line-height: 1;
+}
+.inner-banner.jd-page .text-aside .h1-title span {
+	color: #fff;
+	margin-top: 40px;
+	font-size: 32px;
+}
 /* contact page css code  */
 .contact-banner{
 	background: #0c56a1;

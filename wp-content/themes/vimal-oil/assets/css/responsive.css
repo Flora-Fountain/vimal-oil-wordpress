@@ -535,6 +535,9 @@
     .nrt-drop-logo .nrt-d-logo img {
         max-width: 200px;
     }
+    .social-post {
+        margin-bottom: 30px;
+    }
 }
 @media screen and (max-width:1199px) {
     .header {
@@ -790,7 +793,6 @@
         margin-left: -17px;
     }
     .oil-swirl .coffee-swirl-image {
-        /* opacity: 0; */
         transition: opacity 0.5s;
         overflow: hidden;
         width: 80%;
@@ -803,6 +805,13 @@
     }
     .nrt-drop-logo .nrt-d-logo img {
         max-width: 180px;
+    }
+    .social-post {
+        margin: 40px 0 20px;
+    }
+    .inner-banner.jd-page .text-aside .h1-title span {
+        margin-top: 30px;
+        font-size: 22px;
     }
 }
 
@@ -1286,18 +1295,6 @@
     .h1-title {
         font-size: 60px;
     }
-
-    /* .pro-sld-main p {
-        font-size: 21px;
-        color: #fff;
-        max-width: 210px;
-        display: inline-block;
-        line-height: 1.4;
-        margin-top: 45px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
-    } */
-
     .nrt-section .h1-title, .vimal-journey .h1-title, .recipe-section .h1-title {
         font-size: 54px;
     }
@@ -2203,12 +2200,16 @@
     .inner-banner {
         padding-top: 110px;
     }
-    .stats-desc .h2-white {
+    .stats-desc .h2-white, .stats-desc p {
         text-align: center;
     }
     .text-animation .text-line {
         width: 100%;
         height: 50px;
+    }
+    .inner-banner.jd-page .text-aside {
+        max-width: 400px;
+        margin: 30px auto;
     }
 }
 @media screen and (max-width:600px) {
@@ -2222,17 +2223,6 @@
         overflow: hidden;
         width: 100%;
         height: 484vh;
-    }
-
-    .pro-sld-main p {
-        font-size: 25px;
-        color: #fff;
-        max-width: 210px;
-        display: inline-block;
-        line-height: 1.4;
-        margin-top: 45px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
     }
 
 }
@@ -2398,15 +2388,9 @@
         height: 380px;
         margin-top: -30px;
     }
-    .pro-sld-main p {
-        font-size: 24px;
-        color: #fff;
-        max-width: 210px;
-        display: inline-block;
-        line-height: 1.4;
-        margin-top: 45px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
+    .social-post {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 @media screen and (max-width:479px) {
@@ -2594,16 +2578,6 @@
     .career-form, .awsm-job-form-inner {
         padding: 30px 20px;
     }
-    .pro-sld-main p {
-        font-size: 20px;
-        color: #fff;
-        max-width: 210px;
-        display: inline-block;
-        line-height: 1.4;
-        margin-top: 45px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
-    }
 }
 @media screen and (max-width:412px) {
     .nrt-logo {
@@ -2640,16 +2614,6 @@
         height: 380px;
         margin-top: -40px;
     }
-    .pro-sld-main p {
-        font-size: 20px;
-        color: #fff;
-        max-width: 210px;
-        display: inline-block;
-        line-height: 1.4;
-        margin-top: 45px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
-    }
 }
 @media screen and (max-width:399px) {
     .nrt-logo {
@@ -2674,16 +2638,6 @@
         min-height: 380px;
         height: 380px;
         margin-top: -40px;
-    }
-    .pro-sld-main p {
-        font-size: 20px;
-        color: #fff;
-        max-width: 210px;
-        display: inline-block;
-        line-height: 1.4;
-        margin-top: 45px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
     }
 }
 @media screen and (max-width:375px) {
@@ -2713,16 +2667,6 @@
         min-height: 380px;
         height: 380px;
         margin-top: -40px;
-    }
-    .pro-sld-main p {
-        font-size: 19px;
-        color: #fff;
-        max-width: 210px;
-        display: inline-block;
-        line-height: 1.4;
-        margin-top: 45px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
     }
 }
 @media screen and (max-width:375px) {
@@ -2761,16 +2705,6 @@
         min-height: 380px;
         height: 380px;
         margin-top: -40px;
-    }
-    .pro-sld-main p {
-        font-size: 18px;
-        color: #fff;
-        max-width: 210px;
-        display: inline-block;
-        line-height: 1.4;
-        margin-top: 45px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
     }
 }
 @media screen and (max-width:359px) {
@@ -2853,15 +2787,5 @@
         min-height: 380px;
         height: 380px;
         margin-top: -40px;
-    }
-    .pro-sld-main p {
-        font-size: 18px;
-        color: #fff;
-        max-width: 210px;
-        display: inline-block;
-        line-height: 1.4;
-        margin-top: 45px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
     }
 }
