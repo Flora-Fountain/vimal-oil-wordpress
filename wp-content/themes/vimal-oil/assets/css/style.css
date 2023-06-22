@@ -1021,19 +1021,53 @@ header.sticky .nav-menu .menu-btn {
 	color: #0c54a0;
 	font-size: 30px;
 	max-width: 740px;
-	margin: 40px auto;
+	margin: 20px auto;
 	line-height: 1.4;
 }
+/* .nrt-section .nrt-text-ani p {
+    color: #0c54a0;
+    font-size: 40px;
+    max-width: 740px;
+    margin: 0px auto;
+    line-height: 1.4;
+	font-weight: 700;
+	font-family: 'quicksand', sans-serif;
+} */
 .nrt-section .h2-white {
-	font-size: 90px;
+	font-size: 60px;
 	align-items: center;
 	text-transform: uppercase;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
+}
+
+.nrt-text-ani > p {
+	/* background: linear-gradient(
+	  to right,
+	  #0c56a1,
+	  #ffffff81
+	); */
+	background: #0c56a1;
+	background-size: 200% 100%;
+	background-position-x: 100%;
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	margin-bottom: -250px;
+	margin-left: 50px;
+	line-height: 1.2;
+  /*   outline: 6px dotted teal; */
+  }
+  .nrt-section .nrt-text-ani p {
+    /* stroke: 1px solid #0c56a1; */
+    font-size: 40px;
+    max-width: 740px;
+    margin: 0px auto;
+    line-height: 1.4;
+	font-weight: 700;
+	font-family: 'quicksand', sans-serif;
 }
 
 /* blur-oil flow animation  */
-
-
 
 .animate-text {
 	text-align: center;
@@ -1045,7 +1079,7 @@ header.sticky .nav-menu .menu-btn {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #0c54a0;
-    font-size: 64px;
+    font-size: 40px;
     font-family: 'Rimouski', sans-serif;
 }
 @keyframes text-fill {
@@ -1066,7 +1100,7 @@ header.sticky .nav-menu .menu-btn {
 	stroke-dasharray: 500;
 	stroke-dashoffset: 500;
 	animation: none;
-	font-size: 64px;
+	font-size: 40px;
 }
 .text-animation .text-line{
 	opacity: 0;
@@ -1090,7 +1124,7 @@ header.sticky .nav-menu .menu-btn {
 }
 .text-line text {
 	font-style: normal;
-	font-family: 'Rimouski', sans-serif;
+	font-family: 'quicksand', sans-serif;
 	font-weight: bold;
 }
 @keyframes dash {
@@ -1177,7 +1211,7 @@ header.sticky .nav-menu .menu-btn {
     color: #0c56a1;
 }
 .nrt-section.default-section {
-	padding: 60px 0 100px;
+	padding: 20px 100px 60px 100px;
 }
 .nrt-top .text-center {
 	font-size: 30px;

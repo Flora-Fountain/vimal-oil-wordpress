@@ -845,4 +845,6 @@ if(window.location.href === "http://localhost/vimal-oil-wordpress/nrt/"){
 
 
 // autoscroll nrt section 
-$("")
+$(document).ready(function() {
+    $.scrollTo( $('#nrt-ills-section'), 500); // index start with 0
+});

@@ -219,17 +219,23 @@
                     <!-- <div class="animate-text">
                         <span><?php //echo the_field('nrt_section_sub_title'); ?></span>  
                     </div> -->
+    
                     <div class="stroke-text">
                         <div class="text-animation">
-                            <svg height="100" stroke="#0c54a0" stroke-width="1" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">NUTRIENT-RICH</text></svg>
+                            <svg height="70" stroke="#0c54a0" stroke-width="1" class="text-line text-line-1" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">NUTRIENT-RICH</text></svg>
                         </div>
                         <div class="text-animation">
-                            <svg height="100" stroke="#0c54a0" stroke-width="1" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">PURE & NATURAL</text></svg>
+                            <svg height="70" stroke="#0c54a0" stroke-width="1" class="text-line text-line-2" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">PURE & NATURAL</text></svg>
                         </div>
                         <div class="text-animation">
-                            <svg height="100" stroke="#0c54a0" stroke-width="1" class="text-line" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">ANTIOXIDANT-RICH</text></svg>
+                            <svg height="70" stroke="#0c54a0" stroke-width="1" class="text-line text-line-2" width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">ANTIOXIDANT-RICH</text></svg>
                         </div>
                     </div>
+                    <!-- <div class="nrt-text-ani text-center">
+                        <p>NUTRIENT-RICH</p>
+                        <p>PURE & NATURAL</p>
+                        <p>ANTIOXIDANT-RICH</p>
+                    </div> -->
                     <p class="text-center"><?php echo the_field('nrt_section_discription');?></p>
                 </div>
                 <div class="submit-button text-center">
@@ -240,6 +246,10 @@
             </div>
         </div>
     </div>
+
+    <script>
+        
+    </script>
 
     <!-- module-6 journey section  -->
     <div class="vimal-journey default-section blue-bg">
