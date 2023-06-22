@@ -789,7 +789,7 @@
     }
 }
 /* For the nrt page */
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1023px) {
     .nrt-banner .oil-bottle-flow img {
         width: 320px;
     }
@@ -2393,7 +2393,8 @@
         height: 4270px;
     }
     .gen-sec-ben .can-image-sec img {
-        height: 360px;
+        height: 330px;
+        margin: 50px auto 0;
         margin-left: 30px;
     }
     .oil-swirl {
@@ -2408,13 +2409,13 @@
     }
     .nrt-banner .oil-bottle-flow {
         width: 280px;
-        left: -130px;
+        left: -110px;
         bottom: -160px;
     }
     .oil-swirl .coffee-swirl-image.mob {
         height: 4350px;
-        top: 130px;
-        left: 10px;
+        top: 123px;
+        left: 0;
     }
 }
 @media screen and (max-width:479px) {
@@ -2528,6 +2529,14 @@
         padding: 20px 0 60px;
         padding-top: 0;
     }
+    .nrt-banner .oil-bottle-flow {
+        width: 280px;
+        left: -110px;
+        bottom: -186px;
+    }
+    .gen-sec-ben .can-image-sec img {
+        margin-left: 10px;
+    }
     .oil-swirl {
         left: 0;
         width: 100%;
@@ -2578,7 +2587,7 @@
 @media screen and (max-width:428px) {
     .nrt-banner .oil-bottle-flow {
         width: 270px;
-        bottom: -160px;
+        bottom: -188px;
     }
     .oil-swirl .coffee-swirl-image.mob {
         height: 4500px;
@@ -2587,9 +2596,6 @@
 @media screen and (max-width:414px) {
     .oil-swirl .coffee-swirl-image.mob {
         height: 4580px;
-    }
-    .nrt-banner .oil-bottle-flow {
-        bottom: -165px;
     }
 }
 @media screen and (max-width:412px) {
@@ -2609,7 +2615,7 @@
     }
     .nrt-banner .oil-bottle-flow {
         width: 260px;
-        bottom: -167px;
+        bottom: -173px;
         left: -120px;
     }
     .gen-sec-ben {

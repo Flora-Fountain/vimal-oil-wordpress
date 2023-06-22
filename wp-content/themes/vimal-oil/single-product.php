@@ -52,13 +52,13 @@
     <div class="default-section oil-details pro-ani">
         <div class="falling-leaf">
             <div>
-                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
             </div>
             <div>
-                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
             </div>
             <div>
-                <img src="http://localhost/vimal-oil-wordpress/wp-content/themes/vimal-oil/assets/images/blur-leaf.png" alt="blur-leaf">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blur-leaf.png" alt="blur-leaf">
             </div>
         </div>
         <div class="container">

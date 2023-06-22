@@ -585,7 +585,9 @@ header.sticky .nav-menu .menu-btn {
 .pro-vdo-sld.owl-carousel .item {
     padding: 1rem;
     opacity: 1;
-    transition: .4s ease all;
+    -webkit-transition: .4s ease all;
+	-ms-transition: .4s ease all;
+	transition: .4s ease all;
     margin: 0 20px;
     transform: scale(0.9);
 }
@@ -615,9 +617,13 @@ header.sticky .nav-menu .menu-btn {
 	left: 50%;
 	right: 0;
 	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
 	border-radius: 50px;
 	padding: 10px;
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
 	transition: 0.3s;
 }
 .pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn span, .recipe-section .cook-video .wl-modal-btn.video-play-btn span {
@@ -631,7 +637,11 @@ header.sticky .nav-menu .menu-btn {
 	width: 100%;
 	left: 50%;
 	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
 	transition: 0.3s;
 	fill: #201b12;
 }
@@ -794,6 +804,8 @@ header.sticky .nav-menu .menu-btn {
 	-webkit-transform: translateY(-40px);
 	-ms-transform: translateY(-40px);
 	transform: translateY(-40px);
+	-webkit-transition: 0.5s ease-in-out;
+	-ms-transition: 0.5s ease-in-out;
 	transition: 0.5s ease-in-out;
 }
 .pro-sld-main p {
@@ -1104,6 +1116,8 @@ header.sticky .nav-menu .menu-btn {
 }
 .text-animation .text-line{
 	opacity: 0;
+	-webkit-transition: 1s;
+	-ms-transition: 1s;
 	transition: 1s;
 }
 .nrt-section.text-ani .text-animation:nth-child(1) .text-line {
@@ -1460,9 +1474,13 @@ header.sticky .nav-menu .menu-btn {
 	border-radius: 20px;
 	border: 1px solid #fff;
 	filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.5));
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
 	transition: 0.3s;
 }
 .jorney-main .tab-content > .tab-pane {
+	-webkit-transition: top 0.5s ease;
+	-ms-transition: top 0.5s ease;
 	transition: top 0.5s ease;
 	position: relative;
 }
@@ -1488,6 +1506,8 @@ header.sticky .nav-menu .menu-btn {
 	border-radius: 50%;
 	/* background: #fbef4d; */
 	background: linear-gradient(to right, #EA511B, #FCC804);
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
 	transition: 0.3s;
 }
 .jorney-main .nav .nav-link img {
@@ -1496,6 +1516,8 @@ header.sticky .nav-menu .menu-btn {
 	border-radius: 50%;
 	/* background: #fbef4d; */
 	background: linear-gradient(to right, #EA511B, #FCC804);
+	-webkit-transition: 0.3s;
+	-ms-transition: 0.3s;
 	transition: 0.3s;
 	display: block;
 	margin: 0 auto;
@@ -1662,6 +1684,8 @@ header.sticky .nav-menu .menu-btn {
 }
 
 .demo__card.reset{
+	-webkit-transition: transform 0.3s;
+	-ms-transition: transform 0.3s;
 	transition: transform 0.3s;
     transform: translateX(0) !important;
 }
@@ -1691,7 +1715,9 @@ header.sticky .nav-menu .menu-btn {
     text-align: center;
     color: #fff;
     border-radius: 10px;
-    transition: transform 1.2s; 
+    -webkit-transition: transform 1.2s; 
+	-ms-transition: transform 1.2s; 
+	transition: transform 1.2s; 
     overflow: hidden;
     right:20%;
     width: 350px;  
@@ -1701,19 +1727,27 @@ header.sticky .nav-menu .menu-btn {
 }
 .dp_item[data-position="1"] {
     z-index: 1;
-    transform: rotateY(0deg) translateY(35%) scale(0.8);
+    -webkit-transform: rotateY(0deg) translateY(35%) scale(0.8);
+	-ms-transform: rotateY(0deg) translateY(35%) scale(0.8);
+	transform: rotateY(0deg) translateY(35%) scale(0.8);
 }
 .dp_item[data-position="2"] {
     z-index: 2;
-    transform: rotateY(0deg) translateY(25%) scale(0.85);
+    -webkit-transform: rotateY(0deg) translateY(25%) scale(0.85);
+	-ms-transform: rotateY(0deg) translateY(25%) scale(0.85);
+	transform: rotateY(0deg) translateY(25%) scale(0.85);
 }
 .dp_item[data-position="3"] {
     z-index: 3;
-    transform: rotateY(0deg) translateY(15%) scale(0.9);
+    -webkit-transform: rotateY(0deg) translateY(15%) scale(0.9);
+	-ms-transform: rotateY(0deg) translateY(15%) scale(0.9);
+	transform: rotateY(0deg) translateY(15%) scale(0.9);
 }
 #dp-slider .dp_item:last-child {
     z-index: 4 !important;
-    transform: rotateY(0deg) translateY(0px) !important;
+    -webkit-transform: rotateY(0deg) translateY(0px) !important;
+	-ms-transform: rotateY(0deg) translateY(0px) !important;
+	transform: rotateY(0deg) translateY(0px) !important;
 }
 #dp-next, #dp-prev {
 	position: absolute;
@@ -2859,6 +2893,8 @@ header.sticky .nav-menu .menu-btn {
     transform: translate(-50%,-50%);
     border-radius: 50px;
     padding: 10px;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
     transition: 0.3s;
 }
 .tvc-owl .tvc-video .wl-modal-btn.video-play-btn span{
@@ -2871,9 +2907,13 @@ header.sticky .nav-menu .menu-btn {
     width: 100%;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     transition: 0.3s;
-    fill: #201b12;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
 }
 .tvc-owl .tvc-video:hover .wl-modal-btn.video-play-btn, .pro-vdo-sld .owl-item .video-sld:hover .wl-modal-btn.video-play-btn,.recipe-section .cook-video:hover .wl-modal-btn.video-play-btn {
 	background: #fd0;
@@ -2891,12 +2931,9 @@ header.sticky .nav-menu .menu-btn {
 .tvc-owl .tvc-video img{
 	border-radius: 10px;
 }
-
 .billboard-owl{
 	padding: 8px 8px;
 }
-
-
 /* why choose vimal css  */
 .h1-title.white-text {
 	color: #fff;
@@ -3026,7 +3063,6 @@ header.sticky .nav-menu .menu-btn {
 	margin-bottom: 50px;
 
 }
-
 /* Quiz Page */
 .quiz-image{
 	margin-top: 100px;
@@ -3034,8 +3070,6 @@ header.sticky .nav-menu .menu-btn {
 .quiz-image img{
 	width: 100%;
 }
-
-
 .quiz-sec {
 	background: url(../images/quiz-banner.png) #ffffff;
 	background-repeat: repeat;
@@ -3306,26 +3340,29 @@ header.sticky .nav-menu .menu-btn {
 	z-index: 11111;
 	width: 50%;
 	text-align: center;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
 	transform: scale(0);
+	-webkit-transition: 1s ;
+	-ms-transition: 1s ;
 	transition: 1s ;
 	opacity: 0;
 	z-index: -1111;
 }
 .quiz-cel .oil-cans.aniactive {
 	bottom: 45%;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
 	transform: scale(1);
 	z-index: 1111;
 	opacity: 1;
 }
-
 .quiz-cel .oil-cans img{
 	width: 100%;
 }
-
 .quiz-cel .box-image img{
 	width: 100%;
 }
-
 .season-oil{
 	display: inline-block;
     width: 100%;
@@ -3335,7 +3372,6 @@ header.sticky .nav-menu .menu-btn {
     position: relative;
     overflow: hidden;
 }
-
 .season-oil::before{
 	position: absolute;
     content: '';
@@ -3346,7 +3382,6 @@ header.sticky .nav-menu .menu-btn {
     height: 80px;
     animation: oil-wave 4s infinite linear;
 }
-
 .winter-oil{
 	background: #FD8066;
 	color: white;
@@ -3359,25 +3394,18 @@ header.sticky .nav-menu .menu-btn {
 	background: #7EBC4F;
 	color: white;
 }
-
 .season-oil .pr-name{
 	display: flex;
 	align-items: center;
 	gap: 10px;
 }
-/* .season-oil .pr-name .pro-img img{
-	width: 100%;
-} */
-
 .season-oil .h3-title{
 	font-size: 24px;
 	font-weight: 500;
 }
-
 .season-oil .h3-title span{
 	font-size: 18px;
 }
-
 .season-oil .season-benefits{
 	margin-top: 10px;
 }
@@ -3571,12 +3599,9 @@ header.sticky .nav-menu .menu-btn {
 }
 .product-accor .accordion-item .accordion-button::after, .faq-item .accordion-item .accordion-button::after{
 	background-image: url("../images/chevron-down.svg");
-
 }
 .must-oil-accor .accordion-item .accordion-button::after {
-
     background-image: url("../images/chevron-down-white.svg");
-
 }
 .faq-sec{
 	padding: 50px 0 100px;
@@ -3654,11 +3679,9 @@ header.sticky .nav-menu .menu-btn {
 	left: 0;
 	bottom: 0;
 } */
-
 .nrt-banner{
 	position: relative;
 }
-
 .nrt-banner .oil-bottle-flow {
 	position: absolute;
 	bottom: -200px;
@@ -3669,20 +3692,15 @@ header.sticky .nav-menu .menu-btn {
 }
 .nrt-banner .oil-bottle-flow img {
 	width: 100%;
+	-webkit-transition: 0.5s;
+	-ms-transition: 0.5s;
 	transition: 0.5s;
 	min-width: 500px;
 }
-/* .nrt-banner .oil-bottle-flow.rotate img{
-	-webkit-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	transform: rotate(0deg);
-} */
 .temp-section-nrt{
 	position: relative;
-	/* min-height: 100vh; */
 	padding: 100px 0;
 }
-
 .temp-section-nrt .back-sec {
 	min-height: auto;
 	width: 100vw;
@@ -3822,6 +3840,8 @@ header.sticky .nav-menu .menu-btn {
 
  .oil-swirl .coffee-swirl-image {
 	/* opacity: 0; */
+	-webkit-transition: opacity 0.5s;
+	-ms-transition: opacity 0.5s;
 	transition: opacity 0.5s;
 	overflow: hidden;
 	width: 74%;
@@ -3836,7 +3856,6 @@ header.sticky .nav-menu .menu-btn {
 .oil-swirl .coffee-swirl-image.mob {
 	display: none;
 }
-
 .gen-sec-ben{
 	display: flex;
 	/* grid-template-columns: 1fr 1fr; */
@@ -3860,23 +3879,16 @@ header.sticky .nav-menu .menu-btn {
 	font-weight: 400;
 	font-size: 20px;
 }
-
-
- 
  /* .oil-swirl .coffee-swirl-image{
 	visibility: hidden;
- } */
-
-
-
-
-/* .oil-swirl {
+ } 
+ .oil-swirl {
 	position: relative;
     width: 500px;
     height: 300px;
     overflow: hidden;
-} */
-/* .oil-swirl .coffee-swirl-image{
+}
+.oil-swirl .coffee-swirl-image{
 	position: fixed;
     top: 100vh;
     left: 0;
@@ -3887,8 +3899,8 @@ header.sticky .nav-menu .menu-btn {
 .nrt-content {
 	position: relative;
 	z-index: 0;
-} */
-/* .nrt-content::before {
+}
+.nrt-content::before {
 	position: absolute;
 	content: '';
 	background: url(../images/oil-bottle.png);
@@ -3910,8 +3922,6 @@ header.sticky .nav-menu .menu-btn {
         transform: translateY(20px);
     }
 } 
-
-
 
 /* Menu CSS */
 /* .menu-float {
@@ -4043,6 +4053,8 @@ header.sticky .nav-menu .menu-btn {
 	width: 34px;
 	height: 4px;
 	background-color: #fff;
+	-webkit-transition: .3s;
+	-ms-transition: .3s;
 	transition: .3s;
 	border-radius: 2px;
 	content: "";
@@ -4240,7 +4252,6 @@ header.sticky .nav-menu .menu-btn {
 	animation: up-down 2s infinite linear;
 	animation-delay: 0.7s;
 }
-
 /* Blog Landing */
 .blog-landing {
 	padding: 50px 0 100px;
@@ -4375,7 +4386,6 @@ header.sticky .nav-menu .menu-btn {
     margin-bottom: 20px;
     padding: 0;
 }
-
 /* Blog Detail Page */
 .blog-detail h2{
 	display: inline-block;
@@ -4469,7 +4479,6 @@ header.sticky .nav-menu .menu-btn {
 }
 .blog-sidebar .blog-search .blog-search-btn span svg{
 	fill: #fff;
-
 }
 .blog-search input.blog-search-txt{
 	border: 0;
@@ -4485,11 +4494,6 @@ header.sticky .nav-menu .menu-btn {
 	font-weight: 500;
 	font-size: 22px;
 }
-
-
-
-
-
 /* confeti  */
 #canvas {
 	background: transparent;
@@ -4501,14 +4505,8 @@ header.sticky .nav-menu .menu-btn {
 	z-index: 1;
 	pointer-events: auto;
 }
-
 /* social presense css tinder effect */
-
-
-
-
-
- .tinder {
+.tinder {
 	/* width: 100vw; */
 	height: 100vh;
 	overflow: hidden;
@@ -4516,14 +4514,14 @@ header.sticky .nav-menu .menu-btn {
 	flex-direction: column;
 	position: relative;
 	opacity: 0;
+	-webkit-transition: opacity 0.1s ease-in-out;
+	-ms-transition: opacity 0.1s ease-in-out;
 	transition: opacity 0.1s ease-in-out;
-  }
-  
-  .tinder.loaded {
+}
+.tinder.loaded {
 	opacity: 1;
-  }
-  
-  .tinder--status {
+}
+.tinder--status {
 	position: absolute;
 	top: 50%;
 	margin-top: -30px;
@@ -4531,8 +4529,7 @@ header.sticky .nav-menu .menu-btn {
 	width: 100%;
 	text-align: center;
 	pointer-events: none;
-  }
-  
+}
   .tinder--status i {
 	font-size: 100px;
 	opacity: 0;
