@@ -12,11 +12,11 @@ function AllScript()
     wp_enqueue_script('tweenmax-min-js','https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js', true);
     wp_enqueue_script('scroll-min-js','https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js', true);
     wp_enqueue_script('jquery-min-js','https://code.jquery.com/jquery-3.6.4.min.js', true);
-    wp_enqueue_script('custom-js',get_template_directory_uri().'/assets/js/custom.js', true);
     wp_enqueue_script('hammer-min-js','https://hammerjs.github.io/dist/hammer.min.js', true);
     wp_enqueue_script('swiper-js',get_template_directory_uri().'/assets/js/swiper.js', true);
     wp_enqueue_script('owl-carousel-min-js','https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', true);
     wp_enqueue_script('greenshock-custom-js',get_template_directory_uri().'/assets/js/greenshock-custom.js', true);
+    wp_enqueue_script('custom-js',get_template_directory_uri().'/assets/js/custom.js', true);
 }
 add_action('wp_enqueue_scripts','AllScript');
 

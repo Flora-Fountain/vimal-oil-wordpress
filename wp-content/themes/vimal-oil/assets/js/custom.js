@@ -843,10 +843,7 @@ if(window.location.href === "http://localhost/vimal-oil-wordpress/nrt/"){
 
 
 // autoscroll nrt section 
-$(document).ready(function() {
-    $("#nrt-ills-section").on("scroll",function() {
-         $('html, body').animate({
-             scrollTop: $("#nrt-ills-section-1").offset().top
-         }, 1500);
-    });
-});
+
+
+
+

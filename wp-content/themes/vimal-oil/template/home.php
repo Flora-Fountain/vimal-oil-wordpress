@@ -173,7 +173,7 @@
           });
         });
 
-        let canImg = document.querySelectorAll(".vimal-oil-can-img");
+        // let canImg = document.querySelectorAll(".vimal-oil-can-img");
 
         let cards = gsap.utils.toArray(".vimal-oil-can-img");
 
@@ -189,27 +189,29 @@
         });
 
 
-        // canImg.forEach((container) => {
-        //   let tl = gsap.timeline({
-        //     scrollTrigger: {
-        //       trigger: container,
-        //       toggleActions: "restart none none reset"
-        //     }
-        //   });
+        // section trigger animation code
+        function jumpToSection(sectionId) {
+        const section = document.querySelector(sectionId);
+            gsap.to(window, { duration: 1, scrollTo: { y: section, offsetY: 70 } });
+        }
 
-        //   tl.set(canImg, { autoAlpha: 1 });
-        //   // tl.from(revealContainers, 1.5, {
-        //   //   duration: 1.4,
-        //   //   ease: Power2.easeInOut,
-        //   //   width: "0%"
+        // Add scroll event listener
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            const section1 = document.querySelector('#nrt-ill-section');
+            const section2 = document.querySelector('#nrt-ills-section-1');
+            const section3 = document.querySelector('#vimal-journey');
 
-        //   // });
-        //   tl.from(canImg, 0.5, {
-        //     y: "-00px",
-        //     scale: 1,
-        //     ease: Power2.out
-        //   });
-        // });
+            if (scrollPosition >= section1.offsetTop && scrollPosition < section2.offsetTop) {
+                jumpToSection('#section1');
+            } else if (scrollPosition >= section2.offsetTop && scrollPosition < section3.offsetTop) {
+                jumpToSection('#section2');
+            } else if (scrollPosition >= section3.offsetTop) {
+                jumpToSection('#section3');
+            }
+        });
+
+
     </script>
     <div class="nrt-section default-section nrt-ills-sec" id="nrt-ills-section-1">
         <div class="floating-ele">
@@ -262,7 +264,7 @@
     </div>
 
     <!-- module-6 journey section  -->
-    <div class="vimal-journey default-section blue-bg">
+    <div class="vimal-journey default-section blue-bg" id="vimal-journey">
         <div class="container">
             <div class="h2-blue">
                 <h2 class="text-noeffect">The journey <br/>of Health & Happiness!</h2>
