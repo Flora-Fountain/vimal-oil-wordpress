@@ -555,10 +555,10 @@
                             <div class="tinder--card" id="tinder--card">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cook-video-4.jpg" alt="social post" />
                             </div>
-                            <span id="dp-prev">
+                            <span id="dp-prev" onclick="prev()">
                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/></svg>
                             </span>
-                            <span id="dp-next">
+                            <span id="dp-next" onclick="next()">
                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/></svg>
                             </span>
                         </div>
@@ -644,7 +644,7 @@
 
     <script>
         "use strict";
-
+        var countPost = 0;
             //Random Number generator
             function randomNumber(min, max) {
                 return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -733,6 +733,7 @@
             function addHammers() {
                 //redefined to be able to reinitialize on new card add
                 allCards = document.querySelectorAll(".tinder--card");
+                console.log('called add hammer');
 
                 allCards.forEach(function (el) {
                     //initialize hammer on each card
@@ -760,7 +761,7 @@
 
                         //rotation is a combo of both
                         var rotate = xMulti * yMulti;
-
+                        console.log("called");
                         //apply the movement and rotation
                         event.target.style.transform =
                             "translate(" +
@@ -825,44 +826,64 @@
 
             // swipe effcet on button click 
             $("#dp-prev").on("click", function(){
+                // console.log('Called Prev');
+                // var cards = document.querySelectorAll(".tinder--card:not(.removed)");
+                //     var moveOutWidth = document.body.clientWidth * 1.5;
 
+                //     if (!cards.length) return false;
+
+                //     var card = cards[countPost];
+                //     countPost++;
+                //     card.classList.add("removed");
+
+                //     if (love) {
+                //     card.style.transform =
+                //         "translate(" + moveOutWidth + "px, -100px) rotate(-30deg)";
+                //     } else {
+                //     card.style.transform =
+                //         "translate(-" + moveOutWidth + "px, 100px) rotate(30deg)";
+                //     }
+                //     addNewCard(card);
+                //     console.log(cards);
+                //     initCards();
+                //     addHammers();
             })
 
-            // function for button 
-            function createButtonListener(love) {
-                return function (event) {
-                    var cards = document.querySelectorAll(".tinder--card:not(.removed)");
-                    var moveOutWidth = document.body.clientWidth * 1.5;
+            // // function for button 
+            // function createButtonListener(love) {
+            //     return function (event) {
+            //         var cards = document.querySelectorAll(".tinder--card:not(.removed)");
+            //         var moveOutWidth = document.body.clientWidth * 1.5;
 
-                    if (!cards.length) return false;
+            //         if (!cards.length) return false;
 
-                    var card = cards[0];
+            //         var card = cards[countPost];
+            //         countPost++;
+            //         card.classList.add("removed");
 
-                    card.classList.add("removed");
-
-                    if (love) {
-                    card.style.transform =
-                        "translate(" + moveOutWidth + "px, -100px) rotate(-30deg)";
-                    } else {
-                    card.style.transform =
-                        "translate(-" + moveOutWidth + "px, -100px) rotate(30deg)";
-                    }
-                    addNewCard(card);
-
-                    initCards();
+            //         if (love) {
+            //         card.style.transform =
+            //             "translate(" + moveOutWidth + "px, -100px) rotate(-30deg)";
+            //         } else {
+            //         card.style.transform =
+            //             "translate(-" + moveOutWidth + "px, 100px) rotate(30deg)";
+            //         }
+            //         addNewCard(card);
+            //         console.log(cards);
+            //         initCards();
 
 
-                    // event.preventDefault();
-                };
-                }
+            //         // event.preventDefault();
+            //     };
+            // }
 
-            //create love and nope button listeners
-            var nopeListener = createButtonListener(true);
-            var loveListener = createButtonListener(false);
+            // //create love and nope button listeners
+            // var nopeListener = createButtonListener(true);
+            // var loveListener = createButtonListener(false);
 
-            //add click events to love and nope buttons
-            nope.addEventListener("click", nopeListener);
-            love.addEventListener("click", loveListener);
+            // //add click events to love and nope buttons
+            // nope.addEventListener("click", nopeListener);
+            // love.addEventListener("click", loveListener);
 
             // document.querySelector(".closeMe").addEventListener("click", function () {
             //     toggleInfoClose(true);
@@ -911,6 +932,43 @@
             // document.querySelector("body").addEventListener("touchmove", function () {
             //     myFunction(300, 15000);
             // });
+            function prev()
+            {
+                console.log('Called Prev');
+                var cards = document.querySelectorAll(".tinder--card:not(.removed)");
+                    var moveOutWidth = document.body.clientWidth * -1.5;
+
+                    if (!cards.length) return false;
+
+                    var card = cards[0];
+                    countPost++;
+                    card.classList.add("removed");
+
+                    card.style.transform = "translate(" + moveOutWidth + "px, -100px) rotate(-30deg)";
+                    addNewCard(card);
+                    console.log(cards);
+                    initCards();
+                    addHammers();
+            }
+
+            function next()
+            {
+                console.log('Called Prev');
+                var cards = document.querySelectorAll(".tinder--card:not(.removed)");
+                    var moveOutWidth = document.body.clientWidth * 1.5;
+
+                    if (!cards.length) return false;
+
+                    var card = cards[0];
+                    countPost++;
+                    card.classList.add("removed");
+
+                    card.style.transform = "translate(" + moveOutWidth + "px, -100px) rotate(-30deg)";
+                    addNewCard(card);
+                    console.log(cards);
+                    initCards();
+                    addHammers();
+            }
 
     </script>
 

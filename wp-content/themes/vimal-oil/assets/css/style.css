@@ -1415,6 +1415,7 @@ header.sticky .nav-menu .menu-btn {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	z-index: -1;
 }
 .jorney-main .nav .owl-nav button {
 	width: 40px;
