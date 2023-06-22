@@ -4556,11 +4556,15 @@ header.sticky .nav-menu .menu-btn {
   
   .tinder_love .fa-heart {
 	opacity: 0.7;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
 	transform: scale(1);
   }
   
   .tinder_nope .fa-remove {
 	opacity: 0.7;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
 	transform: scale(1);
   }
   
@@ -4585,6 +4589,8 @@ header.sticky .nav-menu .menu-btn {
 	overflow: hidden;
 	position: absolute;
 	will-change: transform;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	cursor: -webkit-grab;
 	cursor: -moz-grab;
@@ -4592,14 +4598,20 @@ header.sticky .nav-menu .menu-btn {
   } 
   
   .tinder--card.swipe-left {
+	-webkit-transform: translateX(-1000px);
+	-ms-transform: translateX(-1000px);
 	transform: translateX(-1000px);
   }
   
   .tinder--card.swipe-right {
+	-webkit-transform: translateX(1000px);
+	-ms-transform: translateX(1000px);
 	transform: translateX(1000px);
   }
 
   .moving.tinder--card {
+	-webkit-transition: none;
+	-ms-transition: none;
 	transition: none;
 	cursor: -webkit-grabbing;
 	cursor: -moz-grabbing;
