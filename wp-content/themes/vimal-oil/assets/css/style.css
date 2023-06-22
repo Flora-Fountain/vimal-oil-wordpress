@@ -1542,22 +1542,21 @@ header.sticky .nav-menu .menu-btn {
 .jorney-main {
 	margin-top: 40px;
 }
-.jorney-main .owl-carousel .owl-stage-outer {
+.jorney-main .owl-carousel {
 	position: relative;
-	z-index: 0;
 }
-.jorney-main .owl-carousel .owl-stage-outer::before,.jorney-main .owl-carousel .owl-stage-outer::after {
+.jorney-main .owl-carousel::before, .jorney-main .owl-carousel::after {
 	position: absolute;
 	content: '';
-	z-index: 2;
-	background: linear-gradient(90deg, rgba(12, 86, 161, 0.86) 60%, rgba(255, 255, 255, 0) 100%);
-	width: 10%;
+	z-index: 1;
+	background: linear-gradient(90deg, rgba(12, 86, 161, 0.86) 30%, rgba(255, 255, 255, 0) 100%);
+	width: 15%;
 	height: 100%;
 	left: 0;
 	top: 0;
 }
-.jorney-main .owl-carousel .owl-stage-outer::after {
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(12, 86, 161, 0.86) 50%);
+.jorney-main .owl-carousel::after {
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(12, 86, 161, 0.86) 70%);
 	left: auto;
 	top: 0;
 	right: 0;
@@ -3848,7 +3847,9 @@ header.sticky .nav-menu .menu-btn {
  .oil-swirl .coffee-swirl-image.reveal{
 	opacity: 1;
 }
-
+.oil-swirl .coffee-swirl-image.mob {
+	display: none;
+}
 
 .gen-sec-ben{
 	display: flex;
