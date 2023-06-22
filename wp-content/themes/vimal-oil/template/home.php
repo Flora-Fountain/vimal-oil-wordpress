@@ -175,27 +175,41 @@
 
         let canImg = document.querySelectorAll(".vimal-oil-can-img");
 
-        canImg.forEach((container) => {
-          let tl = gsap.timeline({
+        let cards = gsap.utils.toArray(".vimal-oil-can-img");
+
+        cards.forEach((card, i) => {
+        gsap.from(card,  {duration: 3, x: 0, y: -200, 
             scrollTrigger: {
-              trigger: container,
-              toggleActions: "restart none none reset"
+            trigger: card,    
+            start: "top bottom",
+            end: "center center",
+            scrub: true
             }
-          });
-
-          tl.set(canImg, { autoAlpha: 1 });
-          // tl.from(revealContainers, 1.5, {
-          //   duration: 1.4,
-          //   ease: Power2.easeInOut,
-          //   width: "0%"
-
-          // });
-          tl.from(canImg, 0.5, {
-            y: "-400px",
-            scale: 1,
-            ease: Power2.out
-          });
         });
+        });
+
+
+        // canImg.forEach((container) => {
+        //   let tl = gsap.timeline({
+        //     scrollTrigger: {
+        //       trigger: container,
+        //       toggleActions: "restart none none reset"
+        //     }
+        //   });
+
+        //   tl.set(canImg, { autoAlpha: 1 });
+        //   // tl.from(revealContainers, 1.5, {
+        //   //   duration: 1.4,
+        //   //   ease: Power2.easeInOut,
+        //   //   width: "0%"
+
+        //   // });
+        //   tl.from(canImg, 0.5, {
+        //     y: "-00px",
+        //     scale: 1,
+        //     ease: Power2.out
+        //   });
+        // });
     </script>
     <div class="nrt-section default-section nrt-ills-sec" id="nrt-ills-section-1">
         <div class="floating-ele">
@@ -246,10 +260,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        
-    </script>
 
     <!-- module-6 journey section  -->
     <div class="vimal-journey default-section blue-bg">
