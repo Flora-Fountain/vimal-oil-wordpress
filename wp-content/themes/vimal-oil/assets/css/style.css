@@ -3843,6 +3843,8 @@ header.sticky .nav-menu .menu-btn {
 	left: 175px;
 	position: relative;
 	top: 130px;
+	display: block;
+	margin: 0 auto;
 }
  .oil-swirl .coffee-swirl-image.reveal{
 	opacity: 1;
@@ -3858,10 +3860,10 @@ header.sticky .nav-menu .menu-btn {
 	justify-content: center;
 }
 .gen-sec-ben .can-image-sec{
-	flex: 1;
+	flex: 5;
 }
 .gen-sec-ben .benefits-content{
-	flex: 1;
+	flex: 5;
 }
 .gen-sec-ben .can-image-sec img{
 	height: 500px;
