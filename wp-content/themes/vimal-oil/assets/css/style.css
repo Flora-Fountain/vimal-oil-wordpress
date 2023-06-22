@@ -743,13 +743,30 @@ header.sticky .nav-menu .menu-btn {
     height: 80px;
     animation: oil-wave 4s infinite linear;
 }
-@keyframes oil-wave{
+/* @keyframes oil-wave{
     0%,100%{
       clip-path: polygon(0% 69%, 6% 74%, 12% 78%, 18% 76%, 23% 70%, 28% 66%, 33% 62%, 38% 63%, 42% 67%, 46% 74%, 50% 78%, 54% 79%, 59% 78%, 63% 75%, 68% 71%, 73% 68%, 79% 66%, 84% 68%, 93% 72%, 97% 74%, 100% 75%, 100% 100%, 0% 100%);
     }
     50%{
       clip-path: polygon(0% 64%, 6% 69%, 12% 73%, 18% 71%, 23% 65%, 28% 61%, 33% 57%, 38% 58%, 42% 62%, 46% 69%, 50% 73%, 54% 74%, 59% 74%, 63% 70%, 68% 66%, 73% 59%, 79% 61%, 84% 63%, 93% 67%, 97% 69%, 100% 70%, 100% 100%, 0% 100%);
     }
+} */
+@keyframes oil-wave{
+    0%,100%{
+      	clip-path: polygon(0% 49%, 12% 45%, 25% 45%, 37% 48%, 49% 53%, 65% 52%, 80% 48%, 95% 44%, 100% 41%, 100% 100%, 0% 100%);
+    }
+	20%{
+		clip-path: polygon(0% 45%, 12% 50%, 25% 50%, 37% 48%, 49% 53%, 65% 52%, 80% 48%, 95% 44%, 100% 41%, 100% 100%, 0% 100%);
+	}
+	40%{
+		clip-path: polygon(0% 54%, 12% 55%, 25% 55%, 37% 48%, 49% 53%, 65% 52%, 80% 48%, 95% 44%, 100% 41%, 100% 100%, 0% 100%);
+	}
+	60%{
+		clip-path: polygon(0% 49%, 12% 50%, 25% 50%, 37% 48%, 49% 53%, 65% 52%, 80% 48%, 95% 44%, 100% 41%, 100% 100%, 0% 100%);
+	}
+	80%{
+		clip-path: polygon(0% 45%, 12% 45%, 25% 45%, 37% 48%, 49% 53%, 65% 52%, 80% 48%, 95% 44%, 100% 41%, 100% 100%, 0% 100%);
+	}
 }
 .pro-sld-main.light-blue{
     background:#018bcc;
@@ -1004,19 +1021,53 @@ header.sticky .nav-menu .menu-btn {
 	color: #0c54a0;
 	font-size: 30px;
 	max-width: 740px;
-	margin: 40px auto;
+	margin: 20px auto;
 	line-height: 1.4;
 }
+/* .nrt-section .nrt-text-ani p {
+    color: #0c54a0;
+    font-size: 40px;
+    max-width: 740px;
+    margin: 0px auto;
+    line-height: 1.4;
+	font-weight: 700;
+	font-family: 'quicksand', sans-serif;
+} */
 .nrt-section .h2-white {
-	font-size: 90px;
+	font-size: 60px;
 	align-items: center;
 	text-transform: uppercase;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
+}
+
+.nrt-text-ani > p {
+	/* background: linear-gradient(
+	  to right,
+	  #0c56a1,
+	  #ffffff81
+	); */
+	background: #0c56a1;
+	background-size: 200% 100%;
+	background-position-x: 100%;
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	margin-bottom: -250px;
+	margin-left: 50px;
+	line-height: 1.2;
+  /*   outline: 6px dotted teal; */
+  }
+  .nrt-section .nrt-text-ani p {
+    /* stroke: 1px solid #0c56a1; */
+    font-size: 40px;
+    max-width: 740px;
+    margin: 0px auto;
+    line-height: 1.4;
+	font-weight: 700;
+	font-family: 'quicksand', sans-serif;
 }
 
 /* blur-oil flow animation  */
-
-
 
 .animate-text {
 	text-align: center;
@@ -1028,7 +1079,7 @@ header.sticky .nav-menu .menu-btn {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #0c54a0;
-    font-size: 64px;
+    font-size: 40px;
     font-family: 'Rimouski', sans-serif;
 }
 @keyframes text-fill {
@@ -1049,7 +1100,7 @@ header.sticky .nav-menu .menu-btn {
 	stroke-dasharray: 500;
 	stroke-dashoffset: 500;
 	animation: none;
-	font-size: 64px;
+	font-size: 40px;
 }
 .text-animation .text-line{
 	opacity: 0;
@@ -1073,7 +1124,7 @@ header.sticky .nav-menu .menu-btn {
 }
 .text-line text {
 	font-style: normal;
-	font-family: 'Rimouski', sans-serif;
+	font-family: 'quicksand', sans-serif;
 	font-weight: bold;
 }
 @keyframes dash {
@@ -1117,7 +1168,7 @@ header.sticky .nav-menu .menu-btn {
 	background-position: center top;
 	background-repeat: no-repeat;
 	height: 600px;
-	margin-top: -10px;
+	margin-top: -20px;
 	min-height: 700px;
 }
 .nrt-blue-drop .nrt-drop-logo .blue-drop{
@@ -1160,7 +1211,7 @@ header.sticky .nav-menu .menu-btn {
     color: #0c56a1;
 }
 .nrt-section.default-section {
-	padding: 60px 0 100px;
+	padding: 20px 100px 60px 100px;
 }
 .nrt-top .text-center {
 	font-size: 30px;
@@ -1364,7 +1415,7 @@ header.sticky .nav-menu .menu-btn {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	z-index: 2;
+	z-index: 1;
 }
 .jorney-main .nav .owl-nav button {
 	width: 40px;
@@ -1959,7 +2010,7 @@ header.sticky .nav-menu .menu-btn {
 	letter-spacing: 1px;
 }
 .footer .about-us-col .text-content .para {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 300;
 	color: #ffffff;
 	margin: 10px 0 40px;
@@ -1989,7 +2040,7 @@ header.sticky .nav-menu .menu-btn {
 	margin-top: 20px;
 }
 .footer .footer-quick-links ul li a{
-    font-size: 22px;
+    font-size: 20px;
     color: #ffffff;
     font-weight: 500;
 }
@@ -2099,7 +2150,7 @@ header.sticky .nav-menu .menu-btn {
 	display: inline-block;
 	width: 100%;
 	color: #fff;
-	font-size: 24px;
+	font-size: 20px;
 }
 .ft-cont a:hover,.footer .footer-quick-links ul li a:hover,.ft-add a:hover,.copy-sec a:hover,.footer .footer-quick-links ul li.current-menu-item a{
 	color:#ffdd00;
