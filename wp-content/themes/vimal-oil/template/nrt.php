@@ -35,7 +35,8 @@ echo get_header();
             <div class="oil-spread">
                 <!-- <div class="oil-swirl-mask"></div> -->
                 <div class="oil-swirl" style="height:0px;" id="oil-swirl">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-1.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image" id="oil-swirl" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-1.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image desk" id="oil-swirl" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-drop-mobile.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image mob" id="oil-swirl" />
                 </div>
             </div>
             <!-- module-3 what is nrt -->

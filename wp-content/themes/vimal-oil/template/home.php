@@ -279,7 +279,7 @@
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main"/>
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tab-img2.jpg" alt="1993-main"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -294,7 +294,7 @@
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main"/>
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tab-img3.jpg" alt="1993-main"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -309,7 +309,7 @@
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main"/>
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tab-img4.jpg" alt="1993-main"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -324,7 +324,7 @@
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main"/>
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tab-img5.jpg" alt="1993-main"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -339,7 +339,7 @@
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main"/>
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tab-img6.jpg" alt="1993-main"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
@@ -354,7 +354,7 @@
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="nav flex-row nav-pills owl-carousel owl-tabbing-jour owl-theme" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link active item" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
+                                <button class="nav-link item active" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993.png" alt="1993"/>
                                     <span>1993</span>
                                 </button>

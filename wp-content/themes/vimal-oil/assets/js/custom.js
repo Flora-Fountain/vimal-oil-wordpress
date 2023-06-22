@@ -305,25 +305,23 @@ $(document).ready(function(){
                 autoplay: false,
                 center: true,
             },
-            480: {
-                items: 3,
+            479: {
+                items: 4,
                 margin: 0, 
                 loop: true,
                 autoplay: false,
-                center: true,
+                center: false,
             },
-            575: {
-                items: 7,
+            576: {
+                items: 5,
                 margin: 0, 
                 loop: true,
                 autoplay: false,
-                center: true,
             },
             991: {
                 items: 6,
                 loop: true,
                 autoplay: false,
-                center: true,
             },
             1200: {
                 items: 6
