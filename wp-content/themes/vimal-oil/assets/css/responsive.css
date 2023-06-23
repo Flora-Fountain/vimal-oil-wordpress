@@ -1,4 +1,17 @@
 /* NRT page oil flow CSS */
+@media screen and (max-width:2149px) {
+    .oil-swirl .coffee-swirl-image {
+        /* height: 439vh; */
+        height: 3620px;
+        left: 60px;
+    }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 580px;
+    }
+    .nrt-banner .oil-bottle-flow img {
+        min-width: 100%;
+    }
+}
 @media screen and (max-width:2099px) {
     .oil-swirl .coffee-swirl-image {
         /* height: 439vh; */
@@ -149,7 +162,7 @@
 }
 @media screen and (max-width:1549px) {
     .oil-swirl .coffee-swirl-image {
-        left: 30px;
+        left: 20px;
         height: 3598px;
     }
     .nrt-banner .oil-bottle-flow {
