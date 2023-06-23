@@ -5,8 +5,11 @@
         height: 3620px;
         left: 60px;
     }
-    .nrt-banner .oil-bottle-flow img {
+    .nrt-banner .oil-bottle-flow {
         min-width: 580px;
+    }
+    .nrt-banner .oil-bottle-flow img {
+        min-width: 100%;
     }
 }
 @media screen and (max-width:2049px) {
@@ -15,8 +18,11 @@
         height: 3620px;
         left: 60px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 580px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 570px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1999px) {
@@ -25,8 +31,12 @@
         height: 3620px;
         left: 30px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 580px;
+        left: -90px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 520px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1949px) {
@@ -35,8 +45,12 @@
         height: 3620px;
         left: 30px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 580px;
+        left: -90px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 520px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1899px) {
@@ -45,8 +59,12 @@
         height: 3600px;
         left: 0px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 580px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 480px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1849px) {
@@ -55,8 +73,12 @@
         height: 3600px;
         left: 0px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 580px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 480px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1799px) {
@@ -65,8 +87,12 @@
         height: 3645px;
         left: 0px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 580px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 450px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1749px) {
@@ -74,8 +100,12 @@
         /* left: 66px; */
         height: 3670px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 550px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 450px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1699px) {
@@ -83,8 +113,12 @@
         /* left: 66px; */
         height: 3770px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 540px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 430px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1649px) {
@@ -92,8 +126,12 @@
         /* left: 66px; */
         height: 3832px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 530px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 420px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1599px) {
@@ -101,8 +139,12 @@
         left: 30px;
         height: 3598px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 550px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 450px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1549px) {
@@ -110,8 +152,12 @@
         left: 30px;
         height: 3598px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 540px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 450px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1499px) {
@@ -119,8 +165,12 @@
         /* left: 30px; */
         height: 3950px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 530px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 450px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1449px) {
@@ -128,8 +178,12 @@
         /* left: 30px; */
         height: 4000px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 510px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 450px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1399px) {
@@ -137,8 +191,12 @@
         /* left: 30px; */
         height: 3900px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 500px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 450px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1349px) {
@@ -146,8 +204,12 @@
         /* left: 30px; */
         height: 3900px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 500px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 420px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1299px) {
@@ -155,8 +217,12 @@
         /* left: 30px; */
         height: 3900px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 480px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 420px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1249px) {
@@ -164,8 +230,12 @@
         /* left: 30px; */
         height: 3900px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 470px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 410px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1199px) {
@@ -173,8 +243,12 @@
         /* left: 30px; */
         height: 3970px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 450px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 390px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1149px) {
@@ -182,8 +256,12 @@
         /* left: 30px; */
         height: 4050px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 445px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 390px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1099px) {
@@ -191,8 +269,12 @@
         left: 0px;
         height: 4133px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 400px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 390px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:1049px) {
@@ -200,8 +282,25 @@
         left: 0px;
         height: 4133px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 400px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 390px;
+        min-width: 100%;
+    }
+}
+@media screen and (max-width:1024px) {
+    .oil-swirl .coffee-swirl-image {
+        left: 0px;
+        height: 4133px;
+    }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 400px;
+        left: -140px;
+    }
+    .nrt-banner .oil-bottle-flow img {
+        min-width: 100%;
     }
 }
 @media screen and (max-width:999px) {
@@ -209,8 +308,12 @@
         left: -20px;
         height: 4133px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 400px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 390px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:949px) {
@@ -218,8 +321,12 @@
         left: 30px;
         height: 3650px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 400px;
+        left: -140px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 390px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:899px) {
@@ -227,8 +334,12 @@
         left: 30px;
         height: 3650px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 400px;
+        left: -160px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 390px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:849px) {
@@ -236,8 +347,12 @@
         left: 20px;
         height: 3650px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: 400px;
+        left: -180px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 390px;
+        min-width: 100%;
     }
 }
 @media screen and (max-width:799px) {
@@ -245,8 +360,63 @@
         left: 0px;
         height: 3650px;
     }
+    .nrt-banner .oil-bottle-flow {
+        min-width: auto;    
+        width: 300px;
+        left: -121px;
+        bottom: -174px;
+    }
     .nrt-banner .oil-bottle-flow img {
-        min-width: 390px;
+        min-width: 100%;
+        width: 100%;
+    }
+}
+@media screen and (max-width:767px) {
+    .oil-swirl .coffee-swirl-image.desk{
+        display: none;
+    }
+    .oil-swirl .coffee-swirl-image.mob {
+        display: block;
+        height: 4060px;
+    }
+    .nrt-banner .oil-bottle-flow {
+        position: absolute;
+        bottom: -173px;
+        left: -2px;
+        width: 300px;
+    }
+    .nrt-banner .oil-bottle-flow img {
+        min-width: 100%;
+    }
+}
+@media screen and (max-width:699px) {
+    .oil-swirl .coffee-swirl-image.mob {
+        display: block;
+        height: 4060px;
+    }
+    .nrt-banner .oil-bottle-flow {
+        position: absolute;
+        bottom: -173px;
+        left: -2px;
+        width: 275px;
+    }
+    .nrt-banner .oil-bottle-flow img {
+        min-width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    .oil-swirl .coffee-swirl-image.mob {
+        display: block;
+        height: 4060px;
+    }
+    .nrt-banner .oil-bottle-flow {
+        position: absolute;
+        bottom: -173px;
+        left: -2px;
+        width: 275px;
+    }
+    .nrt-banner .oil-bottle-flow img {
+        min-width: 100%;
     }
 }
 
@@ -274,10 +444,6 @@
     }
     .gen-sec-ben .can-image-sec img {
         margin-left: 15px;
-    }
-    .nrt-banner .oil-bottle-flow {
-        bottom: -210px;
-        left: -25px;
     }
     .gen-sec-ben {
         display: flex;
@@ -320,10 +486,6 @@
     }
     .nav-menu-right .nav li .nav-link {
         font-size: 30px;
-    }
-    .nrt-banner .oil-bottle-flow {
-        bottom: -200px;
-        left: -65px;
     }
     .gen-sec-ben .can-image-sec img {
         height: 500px;
@@ -737,10 +899,6 @@
     }
     .social-post {
         margin-bottom: 30px;
-    }
-    .nrt-banner .oil-bottle-flow {
-        bottom: -180px;
-        left: -85px;
     }
 }
 @media screen and (max-width:1199px) {
@@ -1441,10 +1599,6 @@
     .nrt-content .text-center p {
         max-width: 400px;
     }
-    .nrt-banner .oil-bottle-flow {
-        bottom: -170px;
-        left: -65px;
-    }
 }
 @media screen and (max-width:799px) {
     .nrt-ills::before, .nrt-ills::after {
@@ -1458,9 +1612,6 @@
         max-width: 158px;
         margin: 320px auto 0;
         padding: 20px;
-    }
-    .nrt-banner .oil-bottle-flow {
-        bottom: -190px;
     }
 }
 @media screen and (max-width:767px) {
@@ -2181,15 +2332,6 @@
         margin-left: 0;
         margin-top: 40px;
     }
-    .nrt-banner .oil-bottle-flow {
-        position: absolute;
-        bottom: -174px;
-        left: 0;
-        width: 292px;
-    }
-    .nrt-banner .oil-bottle-flow img {
-        width: 100%;
-    }
     .oil-swirl {
         left: 40px;
         width: 85%;
@@ -2197,13 +2339,6 @@
     }
     .nrt-content .text-center p {
         max-width: 300px;
-    }
-    .oil-swirl .coffee-swirl-image.desk{
-        display: none;
-    }
-    .oil-swirl .coffee-swirl-image.mob {
-        display: block;
-        height: 4060px;
     }
     .nrt-benefits{
         padding: 0;
@@ -2525,7 +2660,7 @@
     }
     .nrt-banner .oil-bottle-flow {
         width: 320px;
-        left: -150px;
+        left: -115px;
         bottom: -173px;
     }
     .oil-swirl {
@@ -2535,9 +2670,9 @@
     }
     .oil-swirl .coffee-swirl-image.mob {
         display: block;
-        height: 4110px;
+        height: 4137px;
         width: 100%;
-        left: -30px;
+        left: -3px;
     }
     .gen-sec-ben .can-image-sec img {
         height: 390px;
@@ -2606,11 +2741,11 @@
     }
     .nrt-banner .oil-bottle-flow {
         width: 280px;
-        left: -110px;
+        left: -94px;
         bottom: -160px;
     }
     .oil-swirl .coffee-swirl-image.mob {
-        height: 4350px;
+        height: 4275px;
         top: 123px;
         left: 0;
     }
@@ -2727,7 +2862,7 @@
         padding-top: 0;
     }
     .nrt-banner .oil-bottle-flow {
-        width: 280px;
+        width: 300px;
         left: -110px;
         bottom: -186px;
     }
@@ -2743,7 +2878,7 @@
         top: 135px;
         left: 0;
         width: 90%;
-        height: 4330px;
+        height: 4365px;
     }
     .blog-subscribe .email-input-field input[type="email"]{
         width: 100%;
@@ -2783,11 +2918,11 @@
 }
 @media screen and (max-width:428px) {
     .nrt-banner .oil-bottle-flow {
-        width: 270px;
+        width: 290px;
         bottom: -188px;
     }
     .oil-swirl .coffee-swirl-image.mob {
-        height: 4500px;
+        height: 4570px;
     }
 }
 @media screen and (max-width:414px) {
@@ -2805,13 +2940,13 @@
         max-width: 280px;
     }
     .oil-swirl .coffee-swirl-image.mob {
-        height: 4500px;
+        height: 4475px;
     }
     .gen-sec-ben .can-image-sec img {
         height: 320px;
     }
     .nrt-banner .oil-bottle-flow {
-        width: 260px;
+        width: 280px;
         bottom: -173px;
         left: -120px;
     }
@@ -2839,7 +2974,7 @@
         left: -125px;
     }
     .oil-swirl .coffee-swirl-image.mob {
-        height: 4560px;
+        height: 4505px;
     }
     .nrt-temp-left img, .nrt-temp-right img {
         width: 100%;
