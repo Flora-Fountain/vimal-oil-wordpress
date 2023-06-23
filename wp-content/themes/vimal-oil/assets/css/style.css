@@ -3860,7 +3860,7 @@ header.sticky .nav-menu .menu-btn {
 	overflow: hidden;
 	width: 74%;
 	height: auto;
-	left: 175px;
+	/* left: 175px; */
 	position: relative;
 	top: 130px;
 	display: block;
