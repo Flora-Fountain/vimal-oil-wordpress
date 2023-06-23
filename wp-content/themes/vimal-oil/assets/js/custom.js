@@ -845,5 +845,6 @@ if(window.location.href === "http://localhost/vimal-oil-wordpress/nrt/"){
 // autoscroll nrt section 
 
 
+// custom slider 
 
 
