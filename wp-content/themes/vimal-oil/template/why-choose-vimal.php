@@ -267,7 +267,7 @@ echo get_header();
             'post_type' => 'product',
             'status' => 'publish',
             'orderby' => 'date',
-            'order' => 'DESC',
+            'order' => 'ASC',
             'meta_query' => array(
                 array(
                     'key' => 'product_home_page_show',
@@ -311,8 +311,8 @@ echo get_header();
                     ?>
                 </div>
                 <div class="submit-button text-center">
-                    <a href="<?php echo the_field('product_section_button_page_link'); ?>" class="btn-effect" type="submit">
-                    <?php echo the_field('product_section_button_name'); ?>
+                    <a href="<?php echo the_field('product_section_button_link'); ?>" class="btn-effect" type="submit">
+                    <?php echo the_field('products_section_button_name'); ?>
                         </a>
                 </div>
             </div>
