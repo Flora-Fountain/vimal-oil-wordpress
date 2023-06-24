@@ -311,8 +311,8 @@ echo get_header();
                     ?>
                 </div>
                 <div class="submit-button text-center">
-                    <a href="<?php echo the_field('product_section_button_page_link'); ?>" class="btn-effect" type="submit">
-                    <?php echo the_field('product_section_button_name'); ?>
+                    <a href="<?php echo the_field('product_section_button_link'); ?>" class="btn-effect" type="submit">
+                    <?php echo the_field('products_section_button_name'); ?>
                         </a>
                 </div>
             </div>
