@@ -227,12 +227,29 @@ echo get_header();
 
     <!-- get products  -->
     <?php 
-         $args = array(
-            'post_type' => 'product',
-            'status'    => 'publish'
-        );
+        //  $args = array(
+        //     'post_type' => 'product',
+        //     'status'    => 'publish'
+        // );
     
-        $products = wc_get_products( $args );
+        // $products = wc_get_products( $args );
+
+        $args = array(
+            'post_type' => 'product',
+            'status' => 'publish',
+            'orderby' => 'date',
+            'order' => 'DESC',
+            'meta_query' => array(
+                array(
+                    'key' => 'product_home_page_show',
+                    'value' => '1',
+                    'type' => 'BOOLEAN',
+                    'compare' => '==',
+                ),
+            ),
+        );
+        
+        $products = new WP_Query( $args );
     ?>
 
     <!-- module-9 oil range -->
@@ -244,20 +261,33 @@ echo get_header();
                 </div>
                 <div class="home-prod-sldr owl-carousel owl-theme">
                     <?php 
-                        foreach ($products as $product) {
-                            $image = wp_get_attachment_image_src( get_post_thumbnail_id($product->get_id()));
-                            $color = get_field('product_background_color',$product->get_id());
+                        // foreach ($products as $product) {
+                        //     $image = wp_get_attachment_image_src( get_post_thumbnail_id($product->get_id()));
+                        //     $color = get_field('product_background_color',$product->get_id());
                             ?>
-                            <a href="<?php the_permalink($product->get_id()); ?>">
+                          
+                        <?php /*}*/
+                    ?>
+
+                    <?php 
+                        if ( $products->have_posts() ) {
+                            while ( $products->have_posts() ) {
+                                $products->the_post();
+                                $color = get_field('product_background_color');?>
+                                <a href="<?php the_permalink($product->get_id()); ?>">
                                 <div class="item">
-                                    <div class="pro-sld-main <?php if($color == '#e2c722'){echo "ylw";} ?>" style="background:<?php echo get_field('product_background_color',$product->get_id()); ?>">
-                                        <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
-                                        <!-- <a href="<?php the_permalink($product->get_id()); ?>"><?php echo $product->get_title(); ?></a> -->
-                                        <p><?php echo $product->get_title(); ?></p>
+                                    <div class="pro-sld-main <?php if($color == '#e2c722'){echo "ylw";} ?>" style="background:<?php the_field('product_background_color'); ?>">
+                                        <img src="<?php the_post_thumbnail_url(); ?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
+                                        <p><?php the_title(); ?></p>
                                     </div>
-                                </div> 
-                            </a>       
-                        <?php }
+                                </div>
+                                </a>
+                                
+                            <?php }
+                            wp_reset_postdata(); // Reset the post data
+                        } else {
+                            // No posts found
+                        }
                     ?>
                 </div>
                 <div class="submit-button text-center">

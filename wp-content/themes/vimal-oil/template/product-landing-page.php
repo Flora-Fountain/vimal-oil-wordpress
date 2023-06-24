@@ -69,13 +69,12 @@ echo get_header();
 <?php 
          $args = array(
             'post_type' => 'product',
-            'status'    => 'publish'
+            'status'    => 'publish',
+            'orderby' => 'date',
+            'order' => 'ASC',
         );
     
         $products = wc_get_products( $args );
-        // echo "<pre>";
-        // print_r($products);
-        // die;
     ?>
     <!-- module-4 product section  -->
     <div class="default-section product-section blue-bg">
