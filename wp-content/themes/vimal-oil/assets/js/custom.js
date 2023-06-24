@@ -289,7 +289,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.owl-tabbing-jour ').owlCarousel({
-        loop: true,
+        loop: false,
         autoplay: false,
         responsiveClass: true,
         nav: true,
@@ -846,5 +846,3 @@ if(window.location.href === "http://localhost/vimal-oil-wordpress/nrt/"){
 
 
 // custom slider 
-
-

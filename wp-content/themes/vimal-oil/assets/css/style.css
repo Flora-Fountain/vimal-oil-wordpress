@@ -1526,8 +1526,9 @@ header.sticky .nav-menu .menu-btn {
 	margin: 0 auto;
 }
 .jorney-main .nav span svg {
-	width:100px;
-	height: 100px;
+	width:60px;
+	height: 60px;
+	fill: #fff;
 }
 .jorney-main .nav-pills .nav-link.active img {
 	padding: 8px;
@@ -1556,19 +1557,56 @@ header.sticky .nav-menu .menu-btn {
 .jorney-main .nav-pills .nav-link {
 	width: 16.6%;
 }
-.jorney-main .nav .nav-link {
+
+.jorney-main .nav-pills{
+	position: relative;
+}
+.jorney-main .nav-pills {
+	/* width: 1000px;
+	height:250px;
+	position: relative; */
+}
+.jorney-main .nav-pills .btn-tabs {
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	display: grid;
+  	grid-template-columns: repeat(6, 400px);
+  	grid-gap: 20px;
+  	pointer-events: none;
+}
+.jorney-main .nav-pills .btn-tabs.active{
+	cursor: grab;
+}
+.jorney-main .nav-pills .tab-prev-btn{
+	position: absolute;
+	left: -30px;
+}
+.jorney-main .nav-pills .tab-next-btn{
+	position: absolute;
+	right: -30px;
+}
+
+
+/* .jorney-main .nav .nav-link {
 	width: 80%;
 	display: block;
 	margin: 0 auto;
-}
+} */
 
+.jorney-main .nav .nav-link {
+	/* width: 16%; */
+	width: 170px;
+	display: block;
+	margin: 0 auto;
+}
 .jorney-main {
 	margin-top: 40px;
 }
 .jorney-main .owl-carousel {
 	position: relative;
 }
-.jorney-main .owl-carousel::before, .jorney-main .owl-carousel::after {
+/* .jorney-main .owl-carousel::before, .jorney-main .owl-carousel::after {
 	position: absolute;
 	content: '';
 	z-index: 1;
@@ -1583,7 +1621,7 @@ header.sticky .nav-menu .menu-btn {
 	left: auto;
 	top: 0;
 	right: 0;
-}
+} */
 .start {
 	display: inline-block;
 	width: 100%;
@@ -4525,7 +4563,7 @@ header.sticky .nav-menu .menu-btn {
 /* social presense css tinder effect */
 .tinder {
 	/* width: 100vw; */
-	height: 100vh;
+	height: 70vh;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;

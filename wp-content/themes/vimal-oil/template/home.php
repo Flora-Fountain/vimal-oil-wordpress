@@ -175,9 +175,9 @@
 
         // let canImg = document.querySelectorAll(".vimal-oil-can-img");
 
-        let cards = gsap.utils.toArray(".vimal-oil-can-img");
+        let canCard = gsap.utils.toArray(".vimal-oil-can-img");
 
-        cards.forEach((card, i) => {
+        canCard.forEach((card, i) => {
         gsap.from(card,  {duration: 3, x: 0, y: -200, 
             scrollTrigger: {
             trigger: card,    
@@ -187,31 +187,6 @@
             }
         });
         });
-
-
-        // section trigger animation code
-        function jumpToSection(sectionId) {
-        const section = document.querySelector(sectionId);
-            gsap.to(window, { duration: 1, scrollTo: { y: section, offsetY: 70 } });
-        }
-
-        // Add scroll event listener
-        window.addEventListener('scroll', () => {
-            const scrollPosition = window.scrollY;
-            const section1 = document.querySelector('#nrt-ill-section');
-            const section2 = document.querySelector('#nrt-ills-section-1');
-            const section3 = document.querySelector('#vimal-journey');
-
-            if (scrollPosition >= section1.offsetTop && scrollPosition < section2.offsetTop) {
-                jumpToSection('#section1');
-            } else if (scrollPosition >= section2.offsetTop && scrollPosition < section3.offsetTop) {
-                jumpToSection('#section2');
-            } else if (scrollPosition >= section3.offsetTop) {
-                jumpToSection('#section3');
-            }
-        });
-
-
     </script>
     <div class="nrt-section default-section nrt-ills-sec" id="nrt-ills-section-1">
         <div class="floating-ele">
@@ -291,7 +266,7 @@
                                         <div class="col-lg-8 col-md-12 col-sm-12">
                                             <div class="j-para">
                                                 <span class="j-year">1993</span>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                                <p>Birth of <b>Vimal Oils</b> in a small 50-ton refinery, inaugurated by Pramukh Swami Maharaj.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -306,7 +281,7 @@
                                         <div class="col-lg-8 col-md-12 col-sm-12">
                                             <div class="j-para">
                                                 <span class="j-year">2010</span>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                                <p>Expansion of refinery to XXX tonnes capacity, in Mehsana district of Gujarat.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -321,7 +296,7 @@
                                         <div class="col-lg-8 col-md-12 col-sm-12">
                                             <div class="j-para">
                                                 <span class="j-year">2015</span>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                                <p>Got listed on National Stock Exchange (NSE) and Bombay Stock Exchange (BSE)</p>
                                             </div>
                                         </div>
                                     </div>
@@ -335,8 +310,8 @@
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">
                                             <div class="j-para">
-                                                <span class="j-year">2018</span>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                                <span class="j-year">2023</span>
+                                                <p><b>Vimal Oils</b> now has evolved into a fully-integrated automatic oil-processing unit.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -389,7 +364,7 @@
                                 </button>
                                 <button class="nav-link item" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2018" type="button" role="tab" aria-controls="v-pills-2018" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993"/>
-                                    <span>2018</span>
+                                    <span>2023</span>
                                 </button>
                                 <button class="nav-link item" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2020" type="button" role="tab" aria-controls="v-pills-2020" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
@@ -405,6 +380,42 @@
                                 </button>
                             </div>
                         </div>
+                        <!-- <div class="col-lg-12 col-md-12 col-sm-12">
+                            <nav class="nav flex-row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <div class="btn-tabs">
+                                    <button class="nav-link item active" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993.png" alt="1993"/>
+                                    <span>1993</span>
+                                    </button>
+                                    <button class="nav-link item" id="v-pills-2010-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2010" type="button" role="tab" aria-controls="v-pills-2010" aria-selected="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993"/>
+                                    <span>2010</span>
+                                    </button>
+                                    <button class="nav-link item" id="v-pills-2015-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2015" type="button" role="tab" aria-controls="v-pills-2015" aria-selected="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
+                                    <span>2015</span>
+                                    </button>
+                                    <button class="nav-link item" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2018" type="button" role="tab" aria-controls="v-pills-2018" aria-selected="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993"/>
+                                    <span>2018</span>
+                                    </button>
+                                    <button class="nav-link item" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2020" type="button" role="tab" aria-controls="v-pills-2020" aria-selected="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
+                                    <span>2020</span>
+                                    </button>
+                                    <button class="nav-link item" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
+                                    <span>2022</span>
+                                    </button>
+                                    <button class="nav-link item" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
+                                    <span>2022</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div> -->
+
+
                     </div>
                     
                 </div>
@@ -486,7 +497,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="h2-white">
-                    <h2 class="text-noeffect">Cook Healthy With Vimal Oils</h2>
+                    <h2 class="text-noeffect">Cook Healthy with Vimal Oils</h2>
                 </div>
 
 
@@ -499,7 +510,7 @@
                             </button>
                         </div>
                         <div class="h4-title">
-                            <h4>Aloo Patties</h4>
+                            <h4>Dry Manchurian</h4>
                         </div>
                     </div>
                     <div class="item">
@@ -510,7 +521,7 @@
                             </button>
                         </div>
                         <div class="h4-title">
-                            <h4>Aloo Patties</h4>
+                            <h4>Amritsari Chole</h4>
                         </div>
                     </div>
                     <div class="item">
@@ -520,7 +531,7 @@
                                 <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"/></svg></span>
                         </div>
                         <div class="h4-title">
-                            <h4>Aloo Patties</h4>
+                            <h4>Corn Croquettes</h4>
                         </div>
                     </div>
                     <div class="item">
@@ -636,7 +647,7 @@
                                 <div class="col-lg-7 col-md-7 col-sm-12">
                                     <div class="form-inner">
                                         <div class="h2-white">
-                                            <h2 class="text-noeffect">Have Question? Ask Away</h2>
+                                            <h2 class="text-noeffect">Have questions? Ask away!</h2>
                                         </div>
                                         <?php echo do_shortcode('[contact-form-7 id="673" title="Footer Contact Form"]');?>
                                     </div>
@@ -981,7 +992,6 @@
                     initCards();
                     addHammers();
             }
-
     </script>
 
 
