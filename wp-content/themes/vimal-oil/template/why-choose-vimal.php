@@ -242,44 +242,78 @@ echo get_header();
     </div>
     </div>
     <!-- Get Product -->
-    <?php 
-         $args = array(
+    <?php
+        // $product_home = get_field('product_home_page_show');
+        // // var_dump($product_home);
+        // // die; 
+        //  $args = array(
+        //     'post_type' => 'product',
+        //     'status'    => 'publish',
+        //     'orderby' => 'date',
+        //     'order' => 'DESC',
+        //     'meta_query' =>array(
+        //         array(
+        //         'key' => 'product_home_page_show',
+        //         'value' => true, 
+        //         'type' => 'BOOLEAN',
+        //         'compare' => '=='
+        //         ),
+        //     ),
+        // );
+        // $products = wc_get_products( $args );
+        // print_r($products);
+        // die;
+        $args = array(
             'post_type' => 'product',
-            'status'    => 'publish'
+            'status' => 'publish',
+            'orderby' => 'date',
+            'order' => 'DESC',
+            'meta_query' => array(
+                array(
+                    'key' => 'product_home_page_show',
+                    'value' => '1',
+                    'type' => 'BOOLEAN',
+                    'compare' => '==',
+                ),
+            ),
         );
-    
-        $products = wc_get_products( $args );
+        
+        $products = new WP_Query( $args );
     ?>
-
-    <!-- module-8 product Slider  -->
-    <div class="product-section-1 default-section blue-bg">
+    <!-- module-4 product section  -->
+    <div class="product-section default-section blue-bg no-bottom-des home-pro">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="h2-blue">
-                    <h2 class="text-noeffect"><?php echo the_field('product_section_title') ?></h2>
+                    <h2 class="text-noeffect"><?php echo the_field('product_section_title'); ?></h2>
                 </div>
                 <div class="home-prod-sldr owl-carousel owl-theme">
+                    
                     <?php 
-                        foreach ($products as $product) {
-                            $image = wp_get_attachment_image_src( get_post_thumbnail_id($product->get_id()));
-                            $color = get_field('product_background_color',$product->get_id());
-                            ?>
-                            <a href="<?php the_permalink($product->get_id()); ?>">
+                        if ( $products->have_posts() ) {
+                            while ( $products->have_posts() ) {
+                                $products->the_post();
+                                $color = get_field('product_background_color');?>
+                                <a href="<?php the_permalink($product->get_id()); ?>">
                                 <div class="item">
-                                    <div class="pro-sld-main <?php if($color == '#e2c722'){echo "ylw";} ?>" style="background:<?php echo get_field('product_background_color',$product->get_id()); ?>">
-                                        <img src="<?php print_r($image['0']);?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
-                                        <!-- <a href="<?php the_permalink($product->get_id()); ?>"><?php echo $product->get_title(); ?></a> -->
-                                        <p><?php echo $product->get_title(); ?></p>
+                                    <div class="pro-sld-main <?php if($color == '#e2c722'){echo "ylw";} ?>" style="background:<?php the_field('product_background_color'); ?>">
+                                        <img src="<?php the_post_thumbnail_url(); ?>" alt="vimal-cottonseed-oil" width="259" height="390"/>
+                                        <p><?php the_title(); ?></p>
                                     </div>
-                                </div> 
-                            </a>       
-                        <?php }
+                                </div>
+                                </a>
+                                
+                            <?php }
+                            wp_reset_postdata(); // Reset the post data
+                        } else {
+                            // No posts found
+                        }
                     ?>
                 </div>
                 <div class="submit-button text-center">
-                    <a href="<?php echo the_field('product_section_button_link') ?>" class="btn-effect" type="submit">
-                       <?php the_field('products_section_button_name') ?>
-                    </a>
+                    <a href="<?php echo the_field('product_section_button_page_link'); ?>" class="btn-effect" type="submit">
+                    <?php echo the_field('product_section_button_name'); ?>
+                        </a>
                 </div>
             </div>
         </div>

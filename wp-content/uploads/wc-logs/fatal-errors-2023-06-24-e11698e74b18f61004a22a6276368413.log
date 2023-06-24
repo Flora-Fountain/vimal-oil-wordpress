@@ -1,0 +1,80 @@
+2023-06-24T06:56:52+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php:70
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php on line 70
+
+2023-06-24T06:57:48+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on array in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php:100
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php on line 100
+
+2023-06-24T07:00:43+00:00 CRITICAL Uncaught Error: Class "wc_get_products" not found in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php:88
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php on line 88
+
+2023-06-24T07:01:57+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Query as array in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php:90
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php on line 90
+
+2023-06-24T07:04:27+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php:89
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php on line 89
+
+2023-06-24T07:14:27+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on array in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php:112
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php on line 112
+
+2023-06-24T07:14:46+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on array in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php:112
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php on line 112
+
+2023-06-24T07:15:01+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on array in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php:112
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php on line 112
+
+2023-06-24T09:24:23+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_field() in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php:101
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\home.php on line 101
+
+2023-06-24T09:35:29+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\nrt.php:268
+Stack trace:
+#0 C:\xampp\htdocs\vimal-oil-wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\vimal-oil-wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vimal-oil-wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\nrt.php on line 268
+
