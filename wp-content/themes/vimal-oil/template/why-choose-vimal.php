@@ -267,7 +267,7 @@ echo get_header();
             'post_type' => 'product',
             'status' => 'publish',
             'orderby' => 'date',
-            'order' => 'DESC',
+            'order' => 'ASC',
             'meta_query' => array(
                 array(
                     'key' => 'product_home_page_show',

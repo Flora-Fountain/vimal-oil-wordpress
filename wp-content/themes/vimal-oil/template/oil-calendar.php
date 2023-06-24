@@ -51,7 +51,10 @@ echo get_header();
          $args = array(
             'post_type' => 'product',
             'status'    => 'publish',
-            'posts_per_page' => 3
+            'posts_per_page' => 3,
+            'orderby' => 'date',
+            'order' => 'ASC',
+
         );
     
         $products = wc_get_products( $args );

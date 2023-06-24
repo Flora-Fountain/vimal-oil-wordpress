@@ -261,15 +261,6 @@ echo get_header();
                 </div>
                 <div class="home-prod-sldr owl-carousel owl-theme">
                     <?php 
-                        // foreach ($products as $product) {
-                        //     $image = wp_get_attachment_image_src( get_post_thumbnail_id($product->get_id()));
-                        //     $color = get_field('product_background_color',$product->get_id());
-                            ?>
-                          
-                        <?php /*}*/
-                    ?>
-
-                    <?php 
                         if ( $products->have_posts() ) {
                             while ( $products->have_posts() ) {
                                 $products->the_post();

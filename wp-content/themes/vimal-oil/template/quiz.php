@@ -212,7 +212,7 @@ echo get_header();
             $("#bar").width('80%');
             if (number > 4){
             $("#bar").width('100%');
-            window.location.replace("http://localhost/vimal-oil-wordpress/oil-calendar/")
+            window.location.replace("<?php echo site_url();?>/oil-calendar/")
             }
         });
 
@@ -220,7 +220,7 @@ echo get_header();
 
         $("#next").on('click', function(){
             if(number == allQuestions[4]){
-                window.location.replace("http://localhost/vimal-oil-wordpress/oil-calendar/")
+                window.location.replace("<?php echo site_url();?>/oil-calendar/")
             }
         })
 
