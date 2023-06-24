@@ -55,7 +55,7 @@ echo get_header();
                 </div>
                 <div class="text-center">
                     <p><?php echo the_field('our_network_section_description') ?></p>
-                    <p><?php echo the_field('our_network_section_description') ?></p>
+                    <p><?php echo the_field('our_network_section_description2') ?></p>
                 </div>
             </div>
         </div>

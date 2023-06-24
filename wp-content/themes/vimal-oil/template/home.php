@@ -508,7 +508,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="oil-quiz-right">
-                        <div class="h2-title">
+                        <div class="h2-white">
                             <h2 class="text-noeffect">
                                 <?php echo the_field('quiz_title'); ?>
                             </h2>
