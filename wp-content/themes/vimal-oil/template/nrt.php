@@ -299,6 +299,14 @@ echo get_header();
         </div>
     </div>
     
+    <script>
+        window.addEventListener('scroll', (e) => {
+            document.querySelector('.oil-swirl').style.height = window.scrollY + 'px';
+            document.querySelector('.oil-swirl').style.transitionDelay = "0.1s";
+            document.querySelector('.oil-swirl').style.transitionTimingFunction = 'ease-in';
+        }) 
+    </script>
+
 <?php 
     echo get_footer();
 ?>

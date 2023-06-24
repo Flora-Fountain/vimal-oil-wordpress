@@ -330,12 +330,13 @@ echo get_header();
                         <img src="http://localhost/vimal-oil-wordpress/wp-content/uploads/2023/06/oil-heart.png" alt="">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                        <p><?php the_field('change_for_health_section_description1');?></p>
+                        <p><?php the_field('change_for_health_section_description2');?></p>
+                        <p><?php the_field('change_for_health_section_description3');?></p>
                     </div>
                 </div>
                 <div class="submit-button text-center">
-                    <a href="http://localhost/vimal-oil-wordpress/product-landing/" class="btn-effect" type="submit">All Products</a>
+                    <a href="<?php the_field(('change_for_health_section_link')) ?>" class="btn-effect" type="submit"><?php the_field(('change_for_health_section_button_name')) ?></a>
                 </div>
             </div>
         </div>

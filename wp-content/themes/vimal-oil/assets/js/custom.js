@@ -722,13 +722,13 @@ $(window).scroll(function() {
 
 // oil-flow js 
 
-if(window.location.href === "http://localhost/vimal-oil-wordpress/nrt/"){
-    window.addEventListener('scroll', (e) => {
-        document.querySelector('.oil-swirl').style.height = window.scrollY + 'px';
-        document.querySelector('.oil-swirl').style.transitionDelay = "0.1s";
-        document.querySelector('.oil-swirl').style.transitionTimingFunction = 'ease-in';
-    }) 
-}
+// if(window.location.href === "http://localhost/vimal-oil-wordpress/nrt/"){
+//     window.addEventListener('scroll', (e) => {
+//         document.querySelector('.oil-swirl').style.height = window.scrollY + 'px';
+//         document.querySelector('.oil-swirl').style.transitionDelay = "0.1s";
+//         document.querySelector('.oil-swirl').style.transitionTimingFunction = 'ease-in';
+//     }) 
+// }
 
 // window.addEventListener('scroll', (e) => {
 //     document.querySelector('.oil-swirl').style.height = window.scrollY + 'px';
