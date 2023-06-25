@@ -2,14 +2,20 @@
 @media screen and (max-width:2999px) {
     .oil-swirl .coffee-swirl-image {
         /* height: 439vh; */
-        height: 3620px;
-        left: 120px;
+        height: 3600px;
+        left: 230px;
     }
     .nrt-banner .oil-bottle-flow {
-        min-width: 740px;
+        min-width: 940px;
     }
     .nrt-banner .oil-bottle-flow img {
         min-width: 100%;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -45px;
     }
 }
 @media screen and (max-width:2949px) {
@@ -19,10 +25,16 @@
         left: 120px;
     }
     .nrt-banner .oil-bottle-flow {
-        min-width: 740px;
+        min-width: 830px;
     }
     .nrt-banner .oil-bottle-flow img {
         min-width: 100%;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -140px;
     }
 }
 @media screen and (max-width:2899px) {
@@ -32,10 +44,16 @@
         left: 120px;
     }
     .nrt-banner .oil-bottle-flow {
-        min-width: 740px;
+        min-width: 820px;
     }
     .nrt-banner .oil-bottle-flow img {
         min-width: 100%;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -140px;
     }
 }
 @media screen and (max-width:2849px) {
@@ -45,10 +63,16 @@
         left: 120px;
     }
     .nrt-banner .oil-bottle-flow {
-        min-width: 740px;
+        min-width: 810px;
     }
     .nrt-banner .oil-bottle-flow img {
         min-width: 100%;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -115px;
     }
 }
 @media screen and (max-width:2799px) {
@@ -58,10 +82,16 @@
         left: 120px;
     }
     .nrt-banner .oil-bottle-flow {
-        min-width: 740px;
+        min-width: 800px;
     }
     .nrt-banner .oil-bottle-flow img {
         min-width: 100%;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -100px;
     }
 }
 @media screen and (max-width:2749px) {
@@ -71,10 +101,16 @@
         left: 120px;
     }
     .nrt-banner .oil-bottle-flow {
-        min-width: 740px;
+        min-width: 790px;
     }
     .nrt-banner .oil-bottle-flow img {
         min-width: 100%;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -90px;
     }
 }
 @media screen and (max-width:2699px) {
@@ -84,10 +120,16 @@
         left: 120px;
     }
     .nrt-banner .oil-bottle-flow {
-        min-width: 740px;
+        min-width: 780px;
     }
     .nrt-banner .oil-bottle-flow img {
         min-width: 100%;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -70px;
     }
 }
 @media screen and (max-width:2649px) {
@@ -102,6 +144,12 @@
     .nrt-banner .oil-bottle-flow img {
         min-width: 100%;
     }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -58px;
+    }
 }
 @media screen and (max-width:2599px) {
     .oil-swirl .coffee-swirl-image {
@@ -114,6 +162,12 @@
     }
     .nrt-banner .oil-bottle-flow img {
         min-width: 100%;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -42px;
     }
 }
 @media screen and (max-width:2549px) {
@@ -128,6 +182,12 @@
     .nrt-banner .oil-bottle-flow img {
         min-width: 100%;
     }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: -32px;
+    }
 }
 @media screen and (max-width:2499px) {
     .oil-swirl .coffee-swirl-image {
@@ -140,6 +200,12 @@
     }
     .nrt-banner .oil-bottle-flow img {
         min-width: 100%;
+    }
+    .gen-sec-ben .can-image-sec img {
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        margin-left: 50px;
     }
 }
 @media screen and (max-width:2449px) {
