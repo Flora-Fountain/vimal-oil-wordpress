@@ -169,6 +169,9 @@
         margin: 0 auto;
         margin-left: -42px;
     }
+    .pro-sld-main {
+        min-height: 740px;
+    }
 }
 @media screen and (max-width:2549px) {
     .oil-swirl .coffee-swirl-image {
@@ -393,6 +396,9 @@
     }
     .nrt-banner .oil-bottle-flow img {
         min-width: 100%;
+    }
+    .pro-sld-main {
+        min-height: 525px;
     }
 }
 @media screen and (max-width:1749px) {
@@ -2107,6 +2113,7 @@
     }
     .pro-sld-main {
         padding: 30px 10px 30px;
+        min-height: 450px;
     }
     .sub-text {
         padding: 0 15px;
