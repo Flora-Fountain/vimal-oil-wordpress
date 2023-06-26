@@ -307,7 +307,7 @@ echo get_header();
             console.log(z.height);
             var nrt = document.getElementsByClassName('coffee-swirl-image');
             //nrt.style.height = dist;
-            jQuery(".coffee-swirl-image").height(dist - z);
+            jQuery(".coffee-swirl-image").height(dist);
         }
     </script>
 
