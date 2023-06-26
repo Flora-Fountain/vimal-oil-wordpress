@@ -209,7 +209,7 @@ echo get_header();
                             <div class="benefits-content">
                                 <div class="h2-blue">
                                     <h2 class="text-noeffect">
-                                    Benefits of Vimal Oil Nutrition Retention Technology
+                                    Benefits of NRT?
                                     </h2>
                                 </div>
                                 <div class="ben-para">

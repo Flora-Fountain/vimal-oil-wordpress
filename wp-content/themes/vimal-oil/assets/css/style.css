@@ -742,6 +742,7 @@ header.sticky .nav-menu .menu-btn {
 	border-radius: 10px;
     position: relative;
     overflow: hidden;
+	min-height: 525px;
 }
 .pro-sld-main:before {
     position: absolute;
@@ -3351,6 +3352,7 @@ header.sticky .nav-menu .menu-btn {
 }
 .product-section .prod-item .pro-sld-main{
 	padding: 50px 0;
+	min-height: 500px;
 }
 .blue-bg  .h2-white{
 	color: #fff;
@@ -3835,6 +3837,7 @@ header.sticky .nav-menu .menu-btn {
 .nrt-tempe .h2-blue, .nrt-time .h2-white{
 	text-align: start;
 	text-transform: uppercase;
+	font-size: 36px;
 }
 .nrt-temp-left img, .nrt-temp-right img{
     width: 100%;
@@ -5030,3 +5033,6 @@ header.sticky .nav-menu .menu-btn {
 .tinder--buttons button:hover {
 	opacity: 0.7;
 } */
+
+
+

@@ -207,7 +207,7 @@
           });
         });
 
-        // let canImg = document.querySelectorAll(".vimal-oil-can-img");
+        // let canCard = document.querySelectorAll(".vimal-oil-can-img");
 
         let canCard = gsap.utils.toArray(".vimal-oil-can-img");
 
@@ -291,7 +291,7 @@
                                     // }
                                 ?>
                                 <div class="tab-pane fade active" id="v-pills-1993" role="tabpanel" aria-labelledby="v-pills-1993-tab" tabindex="0">
-                                    <div class="row">
+                                    <div class="row align-items-center">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
                                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993-main.jpg" alt="1993-main"/>
