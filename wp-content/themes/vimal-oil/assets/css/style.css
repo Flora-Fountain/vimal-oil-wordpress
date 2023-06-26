@@ -3077,11 +3077,17 @@ header.sticky .nav-menu .menu-btn {
 	color: #fff;
 	margin-bottom: 20px;
 }
-.recipes-sec .max-para, .recipe-section .max-para, .inner-banner .max-para{
+.recipes-sec .max-para, .inner-banner .max-para{
 	display: block;
 	margin: 0 auto;
 	max-width: 500px;
 }
+
+.recipe-section .max-para{
+	display: block;
+	margin: 0 auto;
+}
+
 .recipes-sec .max-para p, .inner-banner .max-para p{
 	color: #ffffff;
 	margin-bottom: 0;
