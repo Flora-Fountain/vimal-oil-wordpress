@@ -2093,6 +2093,9 @@ header.sticky .nav-menu .menu-btn {
 	color: #ffffff;
 	margin: 10px 0 40px;
 }
+.email .form{
+	display: block;;
+}
 .email .form .submit-button {
 	margin-top: 20px;
 }

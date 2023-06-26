@@ -36,7 +36,7 @@ echo get_header();
                 <!-- <div class="oil-swirl-mask"></div> -->
                 <div class="oil-swirl" style="height:0px;" id="oil-swirl">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-1.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image desk" id="oil-swirl" />
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-drop-mobile.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image mob" id="oil-swirl" />
+                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-drop-mobile.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image mob" id="oil-swirl" /> -->
                 </div>
             </div>
             <!-- module-3 what is nrt -->
@@ -296,6 +296,19 @@ echo get_header();
             document.querySelector('.oil-swirl').style.transitionDelay = "0.1s";
             document.querySelector('.oil-swirl').style.transitionTimingFunction = 'ease-in';
         }) 
+    </script>
+    <script>
+        window.onload=function(){/*from  www  .j  a v  a2  s  .c o m*/
+            const x = document.getElementById("can-image-sec")
+            const y = document.getElementById("oil-bottle-flow")
+            const z = document.getElementById("flow-img")
+            var dist = x.getBoundingClientRect().top - y.getBoundingClientRect().top;
+            dist = Math.round(dist);
+            console.log(z.height);
+            var nrt = document.getElementsByClassName('coffee-swirl-image');
+            //nrt.style.height = dist;
+            jQuery(".coffee-swirl-image").height(dist - z);
+        }
     </script>
 
 <?php 
