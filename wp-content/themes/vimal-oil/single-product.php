@@ -203,16 +203,16 @@
                                                     </h4>
                                                     <div id="collapse<?php echo $count;?>2" class="accordion-collapse collapse <?php if ($count == 1) { echo "show";}?>" aria-labelledby="heading<?php echo $count;?>2" data-bs-parent="#accordionExample2">
                                                         <div class="accordion-body">
-                                                            <div class="fat-hd">
+                                                            <!-- <div class="fat-hd">
                                                                 <p class="mb-0">Per Serving*</p>
-                                                            </div>
+                                                            </div> -->
                                                             <?php 
                                                                 if (have_rows('per_serving_accordion')) {
                                                                     while (have_rows('per_serving_accordion')) {
                                                                         the_row();?>
                                                                         <div class="accor-body-cont">
-                                                                            <div class=""><?php echo the_sub_field('per_serving_name');?></div>
-                                                                            <div class=""><?php echo  the_sub_field('per_serving_units'); ?></div>
+                                                                            <div class="product-des"><?php echo the_sub_field('per_serving_name');?></div>
+                                                                            <div class="product-weight"><?php echo  the_sub_field('per_serving_units'); ?></div>
                                                                         </div>
                                                                     <?php }
                                                                 }
