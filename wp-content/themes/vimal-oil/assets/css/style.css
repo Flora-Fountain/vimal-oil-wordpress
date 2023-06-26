@@ -1597,8 +1597,8 @@ header.sticky .nav-menu .menu-btn {
 } */
 
 .jorney-main .nav .nav-link {
-	/* width: 16%; */
-	width: 170px;
+	width: 100%;
+	/* width: 170px; */
 	display: block;
 	margin: 0 auto;
 }
