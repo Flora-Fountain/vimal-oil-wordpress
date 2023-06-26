@@ -212,8 +212,8 @@
                                                                         the_row();?>
                                                                         <div class="accor-body-cont">
                                                                         <div class="row">
-                                                                            <div class="col-6 product-des"><?php echo the_sub_field('per_serving_name');?></div>
-                                                                            <div class=" col-6 product-weight"><?php echo  the_sub_field('per_serving_units'); ?></div>
+                                                                            <div class="col-8 product-des"><?php echo the_sub_field('per_serving_name');?></div>
+                                                                            <div class=" col-4 product-weight"><?php echo  the_sub_field('per_serving_units'); ?></div>
                                                                         </div>
                                                                         </div>
                                                                         <!-- <div class="accor-body-cont">
