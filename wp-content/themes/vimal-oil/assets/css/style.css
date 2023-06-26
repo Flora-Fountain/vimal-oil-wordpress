@@ -3568,8 +3568,8 @@ header.sticky .nav-menu .menu-btn {
     padding: 0 20px 10px;
 }
 .accordion-body .accor-body-cont{
-	display: flex;
-	justify-content: space-between;
+	/* display: flex;
+	justify-content: space-between; */
 	color: #fff;
 	padding:5px 0 5px 10px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);

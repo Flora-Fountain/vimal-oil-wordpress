@@ -210,10 +210,14 @@
                                                                 if (have_rows('per_serving_accordion')) {
                                                                     while (have_rows('per_serving_accordion')) {
                                                                         the_row();?>
-                                                                        <div class="accor-body-cont">
+                                                                        <div class="">
+                                                                            <span class="product-des"><?php echo the_sub_field('per_serving_name');?></span>
+                                                                            <span class="product-weight"><?php echo  the_sub_field('per_serving_units'); ?></span>
+                                                                        </div>
+                                                                        <!-- <div class="accor-body-cont">
                                                                             <div class="product-des"><?php echo the_sub_field('per_serving_name');?></div>
                                                                             <div class="product-weight"><?php echo  the_sub_field('per_serving_units'); ?></div>
-                                                                        </div>
+                                                                        </div> -->
                                                                     <?php }
                                                                 }
                                                             ?>
