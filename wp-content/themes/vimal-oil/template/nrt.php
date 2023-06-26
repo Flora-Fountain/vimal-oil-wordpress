@@ -43,10 +43,10 @@ echo get_header();
             <div class="default-section nrt-content">
                 <div class="container">
                     <div class="h2-white">
-                        <h2 class="text-noeffect">What is NRT?</h2>
+                        <h2 class="text-noeffect">What is Vimal Oil Nutrition Retention Technology (NRT)</h2>
                     </div>
                     <div class="text-center">
-                        <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
+                        <p>The <b>Vimal Oil Nutrition Retention Technology (NRT)</b> is an innovative process that revolutionises the way we preserve the nutritional value of our oils. With NRT, we control essential parameters throughout the refining process to ensure maximum nutrient retention in your cooking oil. </p>
                     </div>
                 </div>
             </div>
@@ -65,9 +65,9 @@ echo get_header();
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="nrt-temp-right">
                                     <div class="h2-blue">
-                                        <h2 class="text-noeffect">Temperature</h2>
+                                        <h2 class="text-noeffect">Controlled Temperature</h2>
                                     </div>
-                                    <p>Our state-of-the-art facilities enable us to process each oil variant at specific temperatures, precisely calibrated to safeguard the delicate balance of nutrients. By avoiding excessive heat, we protect the natural vitamins, antioxidants, and other beneficial compounds present in our oils.</p>
+                                    <p>Our state-of-the-art facilities enable us to process each oil variant at specific temperatures, precisely calibrated to safeguard the delicate balance of nutrients. By avoiding excessive heat, we protect the natural vitamins, antioxidants and other beneficial compounds present in our oils.</p>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ echo get_header();
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="nrt-temp-left">
                                     <div class="h2-white">
-                                            <h2 class="text-noeffect">Time</h2>
+                                            <h2 class="text-noeffect">Controlled Time</h2>
                                     </div>
                                     <p>We adhere to strict time controls during the refining process. This ensures that our oils are refined for the ideal duration, striking the perfect balance between removing impurities and retaining essential nutrients. This meticulous approach optimises the nutrient content without compromising on quality or flavour. </p>
                                 </div>
@@ -137,10 +137,10 @@ echo get_header();
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="nrt-temp-right">
                                     <div class="h2-blue">
-                                        <h2 class="text-noeffect">Pressure</h2>
+                                        <h2 class="text-noeffect">Controlled Pressure</h2>
                                     </div>
                                     <p>
-                                    Vimal Oil's Nutrition Retention Technology uses controlled vacuum conditions to minimize oxidation and preserve vital nutrients like vitamins and healthy fats. This ensures maximum nutritional benefits from their oils by protecting against nutrient degradation caused by oxygen exposure.</p>
+                                    Maintaining precise pressure levels is another crucial aspect of our nutrition retention technology. By carefully controlling the pressure during the refining process, we prevent excessive heat buildup and preserve the delicate nutritional structure of our oils. This approach helps retain the natural antioxidants, fatty acids and micronutrients, making our oils truly nutrient-rich and beneficial for your health.</p>
                                 </div>
                             </div>
                         </div>
@@ -168,9 +168,9 @@ echo get_header();
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="nrt-temp-left">
                                     <div class="h2-white">
-                                            <h2 class="text-noeffect">Vacuum</h2>
+                                            <h2 class="text-noeffect">Controlled Vacuum</h2>
                                     </div>
-                                    <p>Maintaining precise pressure levels is another crucial aspect of our nutrition retention technology. By carefully controlling the pressure during the refining process, we prevent excessive heat buildup and preserve the delicate nutritional structure of our oils. This approach helps retain the natural antioxidants, fatty acids and micronutrients, making our oils truly nutrient-rich and beneficial for your health.</p>
+                                    <p>The <b></b>Vimal Oil Nutrition Retention Technology</b> incorporates controlled vacuum conditions. By subjecting the oils to a carefully regulated vacuum environment, we minimise exposure to oxygen and prevent oxidation, which can lead to nutrient degradation. This controlled vacuum helps maintain the integrity of vitamins, healthy fats and other vital components, ensuring you receive the maximum nutritional benefits from our oils.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -209,11 +209,11 @@ echo get_header();
                             <div class="benefits-content">
                                 <div class="h2-blue">
                                     <h2 class="text-noeffect">
-                                        Benefits of NRT
+                                    Benefits of Vimal Oil Nutrition Retention Technology
                                     </h2>
                                 </div>
                                 <div class="ben-para">
-                                    <p>Unlock maximum nutrition with Vimal Oil Nutrition Retention Technology (NRT) which preserves essential vitamins and antioxidants in your cooking oil. Our advanced NRT safeguards the natural flavour and aroma of the oils, even after refining. Enhancing the nutrient profile, NRT ensures every drop of Vimal Oil delivers maximum nutritional value. Elevate your cooking experience with Vimal Oil and unlock the goodness of nature.</p>
+                                    <p>Unlock maximum nutrition with <b>Vimal Oil Nutrition Retention Technology</b> (NRT) which preserves essential vitamins and antioxidants in your cooking oil. Our advanced NRT safeguards the natural flavour and aroma of the oils, even after refining. Enhancing the nutrient profile, NRT ensures every drop of Vimal Oil delivers maximum nutritional value. Elevate your cooking experience with Vimal Oil and unlock the goodness of nature.</p>
                                 </div>
                             </div>
                         </div>

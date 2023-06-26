@@ -16,10 +16,10 @@ echo get_header();
                         </div>
                     </div>
                     <div class="head-para">
-                        <p class="text-center mt-3 max-wd">simply dummy text of the printing<br/> and typesetting industry. Lorem<br/> Ipsum simply dummy text of the </p>
+                        <p class="text-center mt-3 max-wd">Excellent compensation. <br> Outstanding perks. <br> Continuous career development.</p>
                     </div>
                     <div class="submit-button text-center">
-                        <a href="#" class="btn-effect">Say hi</a>
+                        <a href="#" class="btn-effect">Apply Now</a>
                     </div>
                 </div>
 
@@ -32,16 +32,15 @@ echo get_header();
         <div class="container ">
             <div class="h2-white  text-center">
                 <h2 class="text-noeffect">
-                    Grow with vimal
+                    Working with us
                 </h2>
             </div>
             <div class="grow-para text-center">
                 <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book  and scrambled it to make a type specimen
+                We find exhilaration in surpassing our own achievements. That's why everyone at <b>Vimal Oil Careers</b> approaches every task with purpose. Together, we pioneer uncharted paths, achieve remarkable success, revel in our accomplishments, and then set our sights even higher. Mediocrity is never acceptable to us.
                 </p>
                 <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book unknown printer took a galley of type and scrambled it to make a type specimen book
+                At Vimal Oils, we are not only dedicated to individual excellence but also to the collective strength of our team, bolstering the entire company.
                 </p>
             </div>
         </div>

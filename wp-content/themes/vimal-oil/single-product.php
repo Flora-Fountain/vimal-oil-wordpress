@@ -69,7 +69,7 @@
                         <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="oil-det-right">
                             <div class="h2-white">
-                                <h2 class="text-noeffect"><?php echo $product_name; ?></h2>
+                                <h2 class="text-noeffect"><?php the_field('product_name');?></h2>
                             </div>
                             <div class="oil-para">
                                 <p><?php echo the_field('product_description');?></p>
