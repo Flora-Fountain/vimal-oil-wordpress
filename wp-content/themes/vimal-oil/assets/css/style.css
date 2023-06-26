@@ -813,7 +813,8 @@ header.sticky .nav-menu .menu-btn {
 	font-size: 32px;
 	color: #fff;
 	max-width: 210px;
-	display: inline-block;
+	display: block;
+	margin: 0 auto;
 	line-height: 1.4;
 	margin-top: 45px;
 	font-family: 'Raleway', sans-serif;
