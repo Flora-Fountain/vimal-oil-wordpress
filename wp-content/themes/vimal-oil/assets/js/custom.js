@@ -301,26 +301,26 @@ $(document).ready(function(){
             0: {
                 items: 3,
                 margin: 0, 
-                loop: true,
+                loop: false,
                 autoplay: false,
                 center: true,
             },
             479: {
                 items: 4,
                 margin: 0, 
-                loop: true,
+                loop: false,
                 autoplay: false,
                 center: false,
             },
             576: {
                 items: 5,
                 margin: 0, 
-                loop: true,
+                loop: false,
                 autoplay: false,
             },
             991: {
                 items: 6,
-                loop: true,
+                loop: false,
                 autoplay: false,
             },
             1200: {
@@ -929,3 +929,8 @@ $(document).ready(function() {
     sync1.data('owl.carousel').to(number, 300, true);
   });
 });
+
+
+
+
+
