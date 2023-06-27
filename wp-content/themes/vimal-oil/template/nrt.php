@@ -23,8 +23,8 @@ echo get_header();
                 </div>
             </div>   
         </div>
-        <div class="oil-bottle-flow">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-bottle.png" alt="oil bottle">
+        <div class="oil-bottle-flow" id="oil-bottle-flow">
+            <img id="flow-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-bottle.png" alt="oil bottle">
         </div>
     </div>
 
@@ -36,7 +36,7 @@ echo get_header();
                 <!-- <div class="oil-swirl-mask"></div> -->
                 <div class="oil-swirl" style="height:0px;" id="oil-swirl">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-1.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image desk" id="oil-swirl" />
-                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-drop-mobile.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image mob" id="oil-swirl" /> -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-drop-mobile.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image mob" id="oil-swirl" />
                 </div>
             </div>
             <!-- module-3 what is nrt -->
@@ -203,7 +203,7 @@ echo get_header();
                 <div class="nrt-tempe nrt-benefits">
                     <div class="container">
                         <div class="gen-sec-ben">
-                            <div class="can-image-sec">
+                            <div class="can-image-sec" id="can-image-sec">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nrt-benefits-1.png" alt="">
                             </div>
                             <div class="benefits-content">
@@ -298,17 +298,50 @@ echo get_header();
         }) 
     </script>
     <script>
+        // window.onload=function(){/*from  www  .j  a v  a2  s  .c o m*/
+        //     const x = document.getElementById("can-image-sec")
+        //     const y = document.getElementById("oil-bottle-flow")
+        //     const z = document.getElementById("flow-img")
+        //     var dist = x.getBoundingClientRect().top - y.getBoundingClientRect().top;
+        //     dist = Math.round(dist);
+        //     console.log(z.height);
+        //     var nrt = document.getElementsByClassName('coffee-swirl-image');
+        //     console.log(dist);
+        //     //nrt.style.height = dist;
+        //     jQuery(".coffee-swirl-image").height(dist + z);
+        // }
+
         window.onload=function(){/*from  www  .j  a v  a2  s  .c o m*/
-            const x = document.getElementById("can-image-sec")
-            const y = document.getElementById("oil-bottle-flow")
-            const z = document.getElementById("flow-img")
-            var dist = x.getBoundingClientRect().top - y.getBoundingClientRect().top;
-            dist = Math.round(dist);
-            console.log(z.height);
-            var nrt = document.getElementsByClassName('coffee-swirl-image');
-            //nrt.style.height = dist;
-            jQuery(".coffee-swirl-image").height(dist);
-        }
+        const x = document.getElementById("can-image-sec")
+        const y = document.getElementById("oil-bottle-flow")
+        const z = document.getElementById("flow-img")
+        const zHeight = z.naturalHeight;
+        console.log(zHeight);
+        
+        var dist = x.getBoundingClientRect().top - y.getBoundingClientRect().top;
+        console.log(dist);
+        dist = Math.round(dist);
+        // console.log(z.height);
+        var nrt = document.getElementsByClassName('coffee-swirl-image');
+        //nrt.style.height = dist;
+        jQuery(".coffee-swirl-image").height(dist + zHeight - 500);
+        jQuery(document).ready(function($) {
+            function applyResponsiveStyle() {
+                if ($(window).width() <= 768) {
+                    $('.coffee-swirl-image').css('height', (disc + zHeight));
+                } else {
+                    $('.my-element').css('width', '200px');
+                }
+            }
+
+            $(window).resize(function() {
+                applyResponsiveStyle();
+            });
+
+            applyResponsiveStyle();
+        });
+       }
+       
     </script>
 
 <?php 

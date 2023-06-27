@@ -852,7 +852,7 @@
         font-size: 80px;
     }
     .gen-sec-ben .can-image-sec img {
-        margin-left: 70px;
+        /* margin-left: 70px; */
     }
     .nrt-drop-logo {
         height: 620px;
@@ -1109,7 +1109,7 @@
         height: auto;
     }
     .gen-sec-ben .can-image-sec img {
-        margin-left: 32px;
+        /* margin-left: 32px; */
     }
     .buy-btn a img {
         width: 30px;
@@ -1195,7 +1195,7 @@
         width: 80px;
     }
     .gen-sec-ben .can-image-sec img {
-        margin-left: 63px;
+        /* margin-left: 63px; */
     }
     .nrt-drop-logo {
         min-height: 620px;
@@ -2967,7 +2967,7 @@
     }
     .oil-swirl .coffee-swirl-image.mob {
         display: block;
-        height: 4137px;
+        /* height: 4137px; */
         width: 100%;
         left: -3px;
     }
@@ -3042,7 +3042,7 @@
         bottom: -160px;
     }
     .oil-swirl .coffee-swirl-image.mob {
-        height: 4275px;
+        /* height: 4275px; */
         top: 123px;
         left: 0;
     }
@@ -3175,7 +3175,7 @@
         top: 135px;
         left: 0;
         width: 90%;
-        height: 4365px;
+        /* height: 4365px; */
     }
     .blog-subscribe .email-input-field input[type="email"]{
         width: 100%;
@@ -3213,12 +3213,12 @@
         bottom: -188px;
     }
     .oil-swirl .coffee-swirl-image.mob {
-        height: 4570px;
+        /* height: 4570px; */
     }
 }
 @media screen and (max-width:414px) {
     .oil-swirl .coffee-swirl-image.mob {
-        height: 4580px;
+        /* height: 4580px; */
     }
 }
 @media screen and (max-width:412px) {
@@ -3231,7 +3231,7 @@
         max-width: 280px;
     }
     .oil-swirl .coffee-swirl-image.mob {
-        height: 4475px;
+        /* height: 4475px; */
     }
     .gen-sec-ben .can-image-sec img {
         height: 320px;
@@ -3265,7 +3265,7 @@
         left: -125px;
     }
     .oil-swirl .coffee-swirl-image.mob {
-        height: 4505px;
+        /* height: 4505px; */
     }
     .nrt-temp-left img, .nrt-temp-right img {
         width: 100%;
@@ -3287,7 +3287,7 @@
     .oil-swirl .coffee-swirl-image.mob {
         top: 140px;
         width: 80%;
-        height: 4580px;
+        /* height: 4580px; */
     }
 }
 @media screen and (max-width:375px) {
@@ -3330,7 +3330,7 @@
     .oil-swirl .coffee-swirl-image.mob {
         top: 135px;
         width: 90%;
-        height: 4600px;
+        /* height: 4600px; */
         left: -10px;
     }
     .gen-sec-ben {
@@ -3355,7 +3355,7 @@
 @media screen and (max-width:360px) {
     .oil-swirl .coffee-swirl-image.mob {
         top: 133px;
-        height: 4660px;
+        /* height: 4660px; */
     }
 }
 @media screen and (max-width:359px) {
@@ -3390,7 +3390,7 @@
     /* nrt-page css  */
     .oil-swirl .coffee-swirl-image.mob {
         top: 133px;
-        height: 4950px;
+        /* height: 4950px; */
     }
     .nrt-banner .oil-bottle-flow {
         width: 250px;
