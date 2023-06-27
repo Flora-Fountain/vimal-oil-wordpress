@@ -327,23 +327,19 @@ echo get_header();
         //nrt.style.height = dist;
         jQuery(".coffee-swirl-image.mob").height(dist);
         jQuery(".coffee-swirl-image.desk").height(dist - zHeight + 293);
-    //     jQuery(document).ready(function($) {
-    //         function applyResponsiveStyle() {
-    //             if($(window).width() <= 1599){
-    //                 $(".coffer-swirl-image").css('height', (dist - zHeight))
-    //             }else if($(window).width() <= 1760 ){
-    //                 $(".coffer-swirl-image").css('height', (dist - zHeight + 100))
-    //             } else if  ($(window).width() <= 1920) {
-    //                 $('.coffee-swirl-image').css('height', (dist - zHeight + 50));
-    //             }
-    //         }
+        jQuery(document).ready(function($) {
+            function applyResponsiveStyle() {
+                if($(window).width() <= 991){
+                    $(".coffer-swirl-image.deck").css('height', (dist - zHeight + 550))
+                }
+            }
 
-    //         $(window).resize(function() {
-    //             applyResponsiveStyle();
-    //         });
+            $(window).resize(function() {
+                applyResponsiveStyle();
+            });
 
-    //         applyResponsiveStyle();
-    //     });
+            applyResponsiveStyle();
+        });
        }
        
     </script>
