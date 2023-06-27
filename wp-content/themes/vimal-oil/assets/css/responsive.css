@@ -1474,6 +1474,12 @@
     .nrt-content .text-center p {
         max-width: 550px;
     }
+    .jorney-main .nav .owl-nav button.owl-next {
+        right: -30px;
+    }
+    .jorney-main .nav .owl-nav button.owl-prev {
+        left: -30px;
+    }
 }
 @media screen and (max-width:991px) {
     .menu-float.m-open {
@@ -3012,6 +3018,9 @@
     }
     .jorney-main .owl-carousel::before, .jorney-main .owl-carousel::after {
         display: none;
+    }
+    .jorney-main .nav .owl-stage-outer::before,.jorney-main .nav .owl-stage-outer::after{
+        width: 50px;
     }
 }
 @media screen and (max-width:500px) {

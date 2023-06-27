@@ -30,7 +30,7 @@
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                                 <div class="banner-left">
-                                                    <img src="<?php the_sub_field('banner_image'); ?>" alt="kiara-banner" />
+                                                    <img src="<?php the_sub_field('banner_image'); ?>" alt="kiara-banner" width="776" height="578" />
                                                 </div>
                                             </div>
                                         </div>
@@ -174,7 +174,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-oil-flow.png" alt="temperature oil" class="b-o-drop">
                     </div> -->
                     <div class="nrt-d-logo text-center">
-                        <img src="<?php echo the_field('default_nrt_section_logo');?>" alt="temperature oil" class="nrt-logo-drop">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nrt-logo.png" alt="drop"/>
                     </div>
                 </div>
         </div>
@@ -292,7 +292,7 @@
                                                 <div class="row align-items-center">
                                                     <div class="col-lg-4 col-md-12 col-sm-12">
                                                         <div class="slide-img">
-                                                            <img src="<?php echo the_sub_field('main_jorney_image'); ?>" alt="<?php echo the_sub_field('main_jorney_year'); ?>-main"/>
+                                                            <img src="<?php echo the_sub_field('main_jorney_image'); ?>" alt="<?php echo the_sub_field('main_jorney_year'); ?>-main" width="550" height="550"/>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-8 col-md-12 col-sm-12">
@@ -408,7 +408,7 @@
                                         while (have_rows('jorney_section_image_&_year')) {
                                             the_row(); ?>
                                             <button class="nav-link item <?php if ($counts == 1) {echo "active";} ?> " id="v-pills-<?php the_sub_field('jorney_section_year');?>-tab" data-bs-toggle="pill" data-bs-target="#v-pills-<?php the_sub_field('jorney_section_year');?>" type="button" role="tab" aria-controls="v-pills-<?php the_sub_field('jorney_section_year');?>" aria-selected="<?php if ($counts == 1) { echo "true";} else{echo "false";} ?>">
-                                                <img src="<?php the_sub_field('jorney_section_image'); ?>" alt="<?php the_sub_field('jorney_section_year');?>"/>
+                                                <img src="<?php the_sub_field('jorney_section_image'); ?>" alt="<?php the_sub_field('jorney_section_year');?>" width="80" height="80" />
                                                 <span><?php the_sub_field('jorney_section_year');?></span>
                                             </button>
                                         <?php $counts++; }
