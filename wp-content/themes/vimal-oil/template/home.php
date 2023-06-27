@@ -284,15 +284,31 @@
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="tab-content" id="v-pills-tabContent">
                                 <?php 
-                                    // if (have_rows('main_jorney_section')) {
-                                    //     while (have_rows('main_jorney_section')) {
-                                    //         the_row();
-                                    //     }
-                                    // }
+                                    $count = 1;
+                                    if (have_rows('main_jorney_section')) {
+                                        while (have_rows('main_jorney_section')) {
+                                            the_row(); ?>
+                                            <div class="tab-pane fade <?php if ($count == 1) {echo "active"; } ?> " id="v-pills-<?php echo the_sub_field('main_jorney_year'); ?>" role="tabpanel" aria-labelledby="v-pills-<?php echo the_sub_field('main_jorney_year'); ?>-tab" tabindex="0">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-4 col-md-12 col-sm-12">
+                                                        <div class="slide-img">
+                                                            <img src="<?php echo the_sub_field('main_jorney_image'); ?>" alt="<?php echo the_sub_field('main_jorney_year'); ?>-main"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-12 col-sm-12">
+                                                        <div class="j-para">
+                                                            <span class="j-year"><?php echo the_sub_field('main_jorney_year'); ?></span>
+                                                            <p><?php echo the_sub_field('main_jorney_description'); ?></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php $count++; }
+                                    }
                                 ?>
 
-                                
-                                <div class="tab-pane fade active" id="v-pills-1993" role="tabpanel" aria-labelledby="v-pills-1993-tab" tabindex="0">
+
+                                <!-- <div class="tab-pane fade active" id="v-pills-1993" role="tabpanel" aria-labelledby="v-pills-1993-tab" tabindex="0">
                                     <div class="row align-items-center">
                                         <div class="col-lg-4 col-md-12 col-sm-12">
                                             <div class="slide-img">
@@ -381,12 +397,24 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="nav flex-row nav-pills owl-carousel owl-tabbing-jour owl-theme" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link item active" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
+                                <?php 
+                                    $counts = 1;
+                                    if (have_rows('jorney_section_image_&_year')) {
+                                        while (have_rows('jorney_section_image_&_year')) {
+                                            the_row(); ?>
+                                            <button class="nav-link item <?php if ($counts == 1) {echo "active";} ?> " id="v-pills-<?php the_sub_field('jorney_section_year');?>-tab" data-bs-toggle="pill" data-bs-target="#v-pills-<?php the_sub_field('jorney_section_year');?>" type="button" role="tab" aria-controls="v-pills-<?php the_sub_field('jorney_section_year');?>" aria-selected="<?php if ($counts == 1) { echo "true";} else{echo "false";} ?>">
+                                                <img src="<?php the_sub_field('jorney_section_image'); ?>" alt="<?php the_sub_field('jorney_section_year');?>"/>
+                                                <span><?php the_sub_field('jorney_section_year');?></span>
+                                            </button>
+                                        <?php $counts++; }
+                                    }
+                                ?>
+                                <!-- <button class="nav-link item active" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993.png" alt="1993"/>
                                     <span>1993</span>
                                 </button>
@@ -413,7 +441,7 @@
                                 <button class="nav-link item" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
                                     <span>2022</span>
-                                </button>
+                                </button> -->
                             </div>
                         </div>
                         <!-- <div class="col-lg-12 col-md-12 col-sm-12">
