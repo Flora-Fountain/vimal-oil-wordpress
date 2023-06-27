@@ -325,7 +325,8 @@ echo get_header();
         // console.log(z.height);
         var nrt = document.getElementsByClassName('coffee-swirl-image');
         //nrt.style.height = dist;
-        jQuery(".coffee-swirl-image").height(dist - '2%');
+        jQuery(".coffee-swirl-image.mob").height(dist);
+        jQuery(".coffee-swirl-image.desk").height(dist - zHeight + 293);
     //     jQuery(document).ready(function($) {
     //         function applyResponsiveStyle() {
     //             if($(window).width() <= 1599){
