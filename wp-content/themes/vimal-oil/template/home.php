@@ -367,21 +367,20 @@
                                             </div>
                                         </div>
                                     </div>
+                                <div class="tab-pane fade show active" id="v-pills-1993" role="tabpanel" aria-labelledby="v-pills-1993-tab" tabindex="0">
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-2010" role="tabpanel" aria-labelledby="v-pills-2010-tab" tabindex="0">
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-2015" role="tabpanel" aria-labelledby="v-pills-2015-tab" tabindex="0">
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-2018" role="tabpanel" aria-labelledby="v-pills-2018-tab" tabindex="0">
+                                    
                                 </div>
                                 <div class="tab-pane fade" id="v-pills-2020" role="tabpanel" aria-labelledby="v-pills-2020-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-12 col-sm-12">
-                                            <div class="slide-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tab-img5.jpg" alt="1993-main"/>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8 col-md-12 col-sm-12">
-                                            <div class="j-para">
-                                                <span class="j-year">2020</span>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="tab-pane fade" id="v-pills-2022" role="tabpanel" aria-labelledby="v-pills-2022-tab" tabindex="0">
                                     <div class="row">
@@ -398,6 +397,7 @@
                                         </div>
                                     </div>
                                 </div> -->
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
@@ -441,47 +441,13 @@
                                 <button class="nav-link item" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
                                     <span>2022</span>
-                                </button> -->
-                            </div>
+</button> -->
+
+                                </button>
+                           
                         </div>
-                        <!-- <div class="col-lg-12 col-md-12 col-sm-12">
-                            <nav class="nav flex-row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <div class="btn-tabs">
-                                    <button class="nav-link item active" id="v-pills-1993-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1993" type="button" role="tab" aria-controls="v-pills-1993" aria-selected="true">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1993.png" alt="1993"/>
-                                    <span>1993</span>
-                                    </button>
-                                    <button class="nav-link item" id="v-pills-2010-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2010" type="button" role="tab" aria-controls="v-pills-2010" aria-selected="false">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993"/>
-                                    <span>2010</span>
-                                    </button>
-                                    <button class="nav-link item" id="v-pills-2015-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2015" type="button" role="tab" aria-controls="v-pills-2015" aria-selected="false">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
-                                    <span>2015</span>
-                                    </button>
-                                    <button class="nav-link item" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2018" type="button" role="tab" aria-controls="v-pills-2018" aria-selected="false">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2010.png" alt="1993"/>
-                                    <span>2018</span>
-                                    </button>
-                                    <button class="nav-link item" id="v-pills-2018-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2020" type="button" role="tab" aria-controls="v-pills-2020" aria-selected="false">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
-                                    <span>2020</span>
-                                    </button>
-                                    <button class="nav-link item" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
-                                    <span>2022</span>
-                                    </button>
-                                    <button class="nav-link item" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
-                                    <span>2022</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div> -->
-
-
                     </div>
-                    
+
                 </div>
             </div>
         </div>

@@ -851,34 +851,6 @@ header.sticky .nav-menu .menu-btn {
 .btn-effect:hover{
 	animation: waves 2s infinite linear;
 }
-/* .btn-effect:before{
-	position: absolute;
-	content: "";
-	width: 280px;
-	height: 280px;
-	background: #fff;
-	border-radius: 45% 40% 40% 40% / 40%;
-	z-index: -1;
-	left:-50px;
-	right: 0;
-	animation: btn-rotate 16s infinite ease-in;
-	top: 17%;
-	-webkit-transition: 0.5s;
-	-ms-transition: 0.5s;
-	transition: 0.5s;
-}
-@keyframes btn-rotate{
-	0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.btn-effect.blue-back {
-	color: #fff;
-} */
-/* module-5 nrt-section css code  */
 .nrt-section{
     background-color: #ffffff;
 }
@@ -1190,9 +1162,6 @@ header.sticky .nav-menu .menu-btn {
 	margin-top: -20px;
 	min-height: 700px;
 }
-.nrt-blue-drop .nrt-drop-logo .blue-drop{
-	/* position: absolute; */
-}
 .nrt-blue-drop .nrt-drop-logo .blue-drop img{
 	width: 100%;
 }
@@ -1219,6 +1188,7 @@ header.sticky .nav-menu .menu-btn {
 .nrt-top .h2-title {
 	background: -webkit-linear-gradient(45deg, #e4c57b, #f7e6a9 50%, #e4c57b 90%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 .nrt-section .h1-title {
@@ -1239,25 +1209,6 @@ header.sticky .nav-menu .menu-btn {
 	line-height: 1.4;
     color: #fff;
 }
-/* .nrt-ills::before, .nrt-ills::after {
-	position: absolute;
-    content: '';
-    border-radius: 0 100% 100% 0 / 50%;
-    background: #fff;
-    width: 49.2%;
-    height: calc(100% - 362px);
-    z-index: 0;
-    bottom: auto;
-    left: 0;
-    top: 240px;
-}
-
-.nrt-ills:after{
-	border-radius: 100% 0 0 100% / 50%;
-    left: auto;
-    right: 0;
-}  */
-
 .nrt-logo img {
     max-width: 300px;
     width: 100%;
@@ -5038,5 +4989,6 @@ header.sticky .nav-menu .menu-btn {
 	opacity: 0.7;
 } */
 
-
-
+.slider .item{
+	padding: 100px;
+}
