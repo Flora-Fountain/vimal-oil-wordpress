@@ -287,6 +287,7 @@ header.sticky .nav-menu .menu-btn {
 }
 .hero-banner .banner-left img {
 	max-width: 650px;
+	height: auto;
 }
 .hero-banner .banner-right .h1-title span {
 	display: block;
@@ -848,9 +849,6 @@ header.sticky .nav-menu .menu-btn {
 	text-align: center;
 	animation: waves 4s infinite linear;
 }
-.btn-effect:hover{
-	animation: waves 2s infinite linear;
-}
 .nrt-section{
     background-color: #ffffff;
 }
@@ -1173,6 +1171,7 @@ header.sticky .nav-menu .menu-btn {
 }
 .nrt-drop-logo .nrt-d-logo img{
 	max-width: 190px;
+	height: auto;
 }
 .nrt-logo {
     display: block;
@@ -1385,7 +1384,30 @@ header.sticky .nav-menu .menu-btn {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	z-index: 2;
+	z-index: -1;
+}
+.jorney-main .nav .owl-stage-outer {
+	z-index: 0;
+}
+.jorney-main .nav .owl-stage-outer::before {
+	position: absolute;
+	content: '';
+	background: linear-gradient(90deg, rgb(12, 86, 161) 40%, rgba(255, 255, 255, 0) 100%);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	z-index: 1;
+}
+.jorney-main .nav .owl-stage-outer::after {
+	position: absolute;
+	content: '';
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(12, 88, 165, 1) 70%);
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100px;
+	z-index: 1;
 }
 .jorney-main .nav .owl-nav button {
 	width: 40px;
@@ -1394,9 +1416,13 @@ header.sticky .nav-menu .menu-btn {
 }
 .jorney-main .nav .owl-nav button.owl-prev {
 	float: left;
+	position: relative;
+	left: -40px;
 }
 .jorney-main .nav .owl-nav button.owl-next {
 	float: right;
+	position: relative;
+	right: -40px;
 }
 .jorney-main .nav .owl-nav button span {
 	font-size: 90px;
@@ -1429,6 +1455,7 @@ header.sticky .nav-menu .menu-btn {
 	max-width: 400px;
 	border-radius: 20px;
 	border: 1px solid #fff;
+	height: auto;
 	filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.5));
 	-webkit-transition: 0.3s;
 	-ms-transition: 0.3s;
@@ -2721,6 +2748,8 @@ header.sticky .nav-menu .menu-btn {
 	font-weight: 500;
 	margin-top: 10px;
 	color: #fff;
+	line-height: 1.2;
+	padding: 0 15px;
 }
 .vimal-journey .gen-sec img {
 	width: 100%;
@@ -3027,6 +3056,9 @@ header.sticky .nav-menu .menu-btn {
 	right: 0;
 	animation: up-down 4s infinite linear;
 	animation-delay: 0.7s;
+}
+.blue-bg .floating-ele.after-banner,.help-pg .floating-ele.after-banner {
+	z-index: -1;
 }
 /* Recipes Page */
 .recipes-sec .h1-title{
@@ -4270,7 +4302,7 @@ header.sticky .nav-menu .menu-btn {
 .health-section-wcv.help-pg .floating-ele.after-banner img:nth-child(1) {
 	bottom: -40%;
 	top: auto;
-	left: 40%;
+	left: 30%;
 }
 .health-section-wcv.help-pg .floating-ele.after-banner img:nth-child(2) {
 	left: auto;
