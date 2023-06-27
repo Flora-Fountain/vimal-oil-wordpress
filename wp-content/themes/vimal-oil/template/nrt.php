@@ -321,25 +321,28 @@ echo get_header();
         var dist = x.getBoundingClientRect().top - y.getBoundingClientRect().top;
         console.log(dist);
         dist = Math.round(dist);
+        console.log(dist);
         // console.log(z.height);
         var nrt = document.getElementsByClassName('coffee-swirl-image');
         //nrt.style.height = dist;
-        jQuery(".coffee-swirl-image").height(dist + zHeight - 500);
-        jQuery(document).ready(function($) {
-            function applyResponsiveStyle() {
-                if ($(window).width() <= 768) {
-                    $('.coffee-swirl-image').css('height', (disc + zHeight));
-                } else {
-                    $('.my-element').css('width', '200px');
-                }
-            }
+        jQuery(".coffee-swirl-image").height(dist - '2%');
+    //     jQuery(document).ready(function($) {
+    //         function applyResponsiveStyle() {
+    //             if($(window).width() <= 1599){
+    //                 $(".coffer-swirl-image").css('height', (dist - zHeight))
+    //             }else if($(window).width() <= 1760 ){
+    //                 $(".coffer-swirl-image").css('height', (dist - zHeight + 100))
+    //             } else if  ($(window).width() <= 1920) {
+    //                 $('.coffee-swirl-image').css('height', (dist - zHeight + 50));
+    //             }
+    //         }
 
-            $(window).resize(function() {
-                applyResponsiveStyle();
-            });
+    //         $(window).resize(function() {
+    //             applyResponsiveStyle();
+    //         });
 
-            applyResponsiveStyle();
-        });
+    //         applyResponsiveStyle();
+    //     });
        }
        
     </script>
