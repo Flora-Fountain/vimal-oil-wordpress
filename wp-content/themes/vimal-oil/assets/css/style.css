@@ -4804,6 +4804,20 @@ header.sticky .nav-menu .menu-btn {
 .fa-remove {
 	color: #CDD6DD;
 }
+#dp-prev, #dp-next {
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	left: 0;
+	cursor: pointer;
+}
+#dp-next {
+	left: auto;
+	right: 0;
+}
+#dp-prev svg, #dp-next svg {
+	fill: #fff;
+}
 /* swipe css homepage  */
 .frame {
 	position: relative;
