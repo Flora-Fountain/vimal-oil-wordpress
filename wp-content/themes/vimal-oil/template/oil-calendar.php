@@ -62,69 +62,172 @@ echo get_header();
         // print_r($products);
         // die;
     ?>
+
     <div class="calender-product default-section footer-before">
         <div class="container">
             <div class="h2-white">
                 <h2 class="text-noeffect">Here’s your oil calendar</h2>
             </div>
             <div class="row">
-                <?php 
-                    foreach ($products as $product) {
-                        $image = wp_get_attachment_image_src( get_post_thumbnail_id($product->get_id()));
-                        $color = get_field('product_background_color',$product->get_id()); ?>
-                        <div class="col-lg-4 col-md-4 col-sm-12">
+                
+            <!-- Winter Product -->
+            <?php
+                $winter_custom_field = get_field('winter_product'); // Replace 'your_field_name' with the actual name of your ACF field
+                $id = $winter_custom_field->ID;
+                if ($winter_custom_field) {
+                    $post_object = $winter_custom_field;
+                    $post = $post_object; 
+                    setup_postdata($post); 
+                    $image = wp_get_attachment_image_src( get_post_thumbnail_id($id));
+                    $color = get_field('product_background_color',$id); ?>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="winter-oil season-oil" style="background:<?php echo $color;?>">
-                        <div class="pr-name">
-                            <div class="pro-img">
-                                <img src="<?php print_r($image['0']);?>" alt="oil for winter" width="153px" height="225px">
+                            <div class="pr-name">
+                                <div class="pro-img">
+                                    <img src="<?php print_r($image['0']);?>" alt="oil for winter" width="153px" height="225px">
 
-                                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-tikha-kachi-ghani.png" alt="oil for winter" width="153px" height="225px"> -->
+                                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-tikha-kachi-ghani.png" alt="oil for winter" width="153px" height="225px"> -->
 
-                            </div>
+                                </div>
                             <div class="h3-title">
                                 <h3 class="text-noeffect">
-                                    <span><?php echo the_field('season_name',$product->get_id()); ?></span> <br>
+                                    <span><?php echo the_field('season_name',$id); ?></span> <br>
                                     <?php echo $product->get_title();?>
                                 </h3>
                             </div>
                         </div>
                         <div class="season-benefits">
-                            <?php echo the_field('season_description',$product->get_id());?>
+                            <?php echo the_field('season_description',$id);?>
                             <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quis sunt alias animi, ipsum totam maiores beatae eius voluptatum magnam rem culpa</p> -->
                         </div>
                         <div class="h3-title text-center">
                             <h3 class="text-noeffect">Buy now on</h3>
                         </div>
                         <div class="buy-btn">
-
                             <?php 
-                                if (have_rows('shop_button',$product->get_id())) {
-                                    while (have_rows('shop_button',$product->get_id())) {
+                                if (have_rows('shop_button',$id)) {
+                                    while (have_rows('shop_button',$id)) {
                                         the_row(); ?>
                                         <!-- echo the_sub_field('shop_button_brand_name'); -->
-                                        <a href="<?php echo the_sub_field('shop_brand_link',$product->get_id()); ?>">
+                                        <a href="<?php echo the_sub_field('shop_brand_link',$product->$id); ?>">
                                             <span>
-                                                <img src="<?php echo the_sub_field('shop_button_image',$product->get_id()); ?>" alt="<?php echo the_sub_field('shop_button_brand_name',$product->get_id());?>"><?php echo the_sub_field('shop_button_brand_name',$product->get_id());?>
+                                                <img src="<?php echo the_sub_field('shop_button_image',$id); ?>" alt="<?php echo the_sub_field('shop_button_brand_name',$id);?>"><?php echo the_sub_field('shop_button_brand_name',$id);?>
                                             </span>
                                         </a>
                                     <?php }
                                 }
                             ?>
-                            <!-- <a href="#">
-                                <span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon_logo.png" alt="amazon logo" />Amazon
-                                </span>
-                            </a>
-                            <a href="#">
-                                <span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jiomart_logo.png" alt="jiomart logo" />JioMart
-                                </span>
-                            </a> -->
                         </div>
                     </div>
-                </div>
-                    <?php }
-                ?>
+                    <?php wp_reset_postdata(); // Reset the post data
+                }
+            ?>
+            </div>
+                <!-- Summers Product -->
+                <?php
+                    $summer_custom_field = get_field('summers_product'); // Replace 'your_field_name' with the actual name of your ACF field
+                    $id = $summer_custom_field->ID;
+                    if ($summer_custom_field) {
+                        $post_object = $summer_custom_field;
+                        $post = $post_object; 
+                        setup_postdata($post); 
+                        $image = wp_get_attachment_image_src( get_post_thumbnail_id($id));
+                        $color = get_field('product_background_color',$id); ?>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="winter-oil season-oil" style="background:<?php echo $color;?>">
+                                <div class="pr-name">
+                                    <div class="pro-img">
+                                        <img src="<?php print_r($image['0']);?>" alt="oil for winter" width="153px" height="225px">
+
+                                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-tikha-kachi-ghani.png" alt="oil for winter" width="153px" height="225px"> -->
+
+                                    </div>
+                                <div class="h3-title">
+                                    <h3 class="text-noeffect">
+                                        <span><?php echo the_field('season_name',$id); ?></span> <br>
+                                        <?php echo $product->get_title();?>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="season-benefits">
+                                <?php echo the_field('season_description',$id);?>
+                                <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quis sunt alias animi, ipsum totam maiores beatae eius voluptatum magnam rem culpa</p> -->
+                            </div>
+                            <div class="h3-title text-center">
+                                <h3 class="text-noeffect">Buy now on</h3>
+                            </div>
+                            <div class="buy-btn">
+                                <?php 
+                                    if (have_rows('shop_button',$id)) {
+                                        while (have_rows('shop_button',$id)) {
+                                            the_row(); ?>
+                                            <!-- echo the_sub_field('shop_button_brand_name'); -->
+                                            <a href="<?php echo the_sub_field('shop_brand_link',$product->$id); ?>">
+                                                <span>
+                                                    <img src="<?php echo the_sub_field('shop_button_image',$id); ?>" alt="<?php echo the_sub_field('shop_button_brand_name',$id);?>"><?php echo the_sub_field('shop_button_brand_name',$id);?>
+                                                </span>
+                                            </a>
+                                        <?php }
+                                    }
+                                ?>
+                            </div>
+                        </div>
+                        <?php wp_reset_postdata(); // Reset the post data
+                    }
+                ?>    
+            </div>
+            <!-- monsoon Product -->
+            <?php
+                $monsoon_custom_field = get_field('monsoon_product'); // Replace 'your_field_name' with the actual name of your ACF field
+                $id = $monsoon_custom_field->ID;
+                if ($monsoon_custom_field) {
+                    $post_object = $monsoon_custom_field;
+                    $post = $post_object; 
+                    setup_postdata($post); 
+                    $image = wp_get_attachment_image_src( get_post_thumbnail_id($id));
+                    $color = get_field('product_background_color',$id); ?>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="winter-oil season-oil" style="background:<?php echo $color;?>">
+                            <div class="pr-name">
+                                <div class="pro-img">
+                                    <img src="<?php print_r($image['0']);?>" alt="oil for winter" width="153px" height="225px">
+
+                                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-tikha-kachi-ghani.png" alt="oil for winter" width="153px" height="225px"> -->
+
+                                </div>
+                            <div class="h3-title">
+                                <h3 class="text-noeffect">
+                                    <span><?php echo the_field('season_name',$id); ?></span> <br>
+                                    <?php echo $product->get_title();?>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="season-benefits">
+                            <?php echo the_field('season_description',$id);?>
+                            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quis sunt alias animi, ipsum totam maiores beatae eius voluptatum magnam rem culpa</p> -->
+                        </div>
+                        <div class="h3-title text-center">
+                            <h3 class="text-noeffect">Buy now on</h3>
+                        </div>
+                        <div class="buy-btn">
+                            <?php 
+                                if (have_rows('shop_button',$id)) {
+                                    while (have_rows('shop_button',$id)) {
+                                        the_row(); ?>
+                                        <!-- echo the_sub_field('shop_button_brand_name'); -->
+                                        <a href="<?php echo the_sub_field('shop_brand_link',$product->$id); ?>">
+                                            <span>
+                                                <img src="<?php echo the_sub_field('shop_button_image',$id); ?>" alt="<?php echo the_sub_field('shop_button_brand_name',$id);?>"><?php echo the_sub_field('shop_button_brand_name',$id);?>
+                                            </span>
+                                        </a>
+                                    <?php }
+                                }
+                            ?>
+                        </div>
+                    </div>
+                    <?php wp_reset_postdata(); // Reset the post data
+                }
+            ?>
             </div>
             <div class="row align-items-center justify-content-center mt-5">
                 <div class="h2-white">
