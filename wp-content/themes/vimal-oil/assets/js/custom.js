@@ -270,7 +270,9 @@ $(document).ready(function(){
                 autoplay: false,
             },
             1200: {
-                items: 6
+                items: 6,
+                loop:false,
+                autoplay:false,
             },
         }
     });
