@@ -1123,6 +1123,12 @@
     .health-section .counter-main .count-box .count-name {
         font-size: 23px;
     }
+    .blog-landing .sub-text p {
+        font-size: 32px;
+    }
+    .season-oil .season-benefits {
+        font-size: 19px;
+    }
 }
 @media screen and (max-width:1299px) {
     .nrt-logo {
@@ -1167,9 +1173,6 @@
     .pro-sld-main a,.pro-sld-main p {
         font-size: 22px;
     }
-    .product-single-banner .banner-info{
-        padding: 0;
-    }
     .nrt-section .h2-white {
         font-size: 60px;
     }
@@ -1199,6 +1202,9 @@
     }
     .social-post {
         margin-bottom: 30px;
+    }
+    .banner-left.product-img img {
+        max-width: 280px;
     }
 }
 @media screen and (max-width:1199px) {
@@ -1479,6 +1485,18 @@
     }
     .mt-40 {
         margin-top: 30px;
+    }
+    .blog-landing .sub-text {
+        max-width: 400px;
+    }
+    .blog-landing .sub-text p {
+        font-size: 28px;
+    }
+    .season-oil .season-benefits {
+        font-size: 17px;
+    }
+    .banner-left.product-img img {
+        max-width: 220px;
     }
 }
 @media screen and (max-width:991px) {
@@ -1913,6 +1931,13 @@
     .tvc-owl .tvc-content p {
         font-size: 17px;
     }
+    .season-oil .season-benefits {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .banner-left.product-img img {
+        max-width: 170px;
+    }
 }
 @media screen and (max-width:830px) {
     .nrt-content .text-center p {
@@ -1945,9 +1970,6 @@
     }
     .header, .header.nav-down {
         padding: 10px 0;
-    }
-    .hero-banner .banner-left img {
-        max-width: 400px;
     }
     .hash-sec {
         margin: 20px 0;
@@ -2896,6 +2918,9 @@
     .tvc-section #tvc-carousel .owl-dots {
         display: none;
     }
+    .blog-landing .sub-text p {
+        font-size: 24px;
+    }
 }
 @media screen and (max-width:600px) {
     .nrt-logo {
@@ -3081,6 +3106,9 @@
     }
     .health-section .counter-main .count-box .counter, .health-section .counter-main .count-box .counter + span {
         font-size: 38px;
+    }
+    .blog-landing .sub-text p {
+        font-size: 22px;
     }
 }
 @media screen and (max-width:500px) {
@@ -3304,6 +3332,9 @@
         font-size: 28px;
     }
     .health-section .counter-main .count-box .count-name {
+        font-size: 20px;
+    }
+    .blog-landing .sub-text p {
         font-size: 20px;
     }
 }

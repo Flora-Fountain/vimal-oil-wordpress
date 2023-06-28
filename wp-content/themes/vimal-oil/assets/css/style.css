@@ -4410,6 +4410,17 @@ header.sticky .nav-menu .menu-btn {
 	animation-delay: 0.7s;
 }
 /* Blog Landing */
+.inner-banner.blog-land-banner .text-aside {
+	padding: 0 15px;
+}
+.blog-landing .sub-text {
+	max-width: 500px;
+}
+.blog-landing .sub-text p {
+	font-size: 36px;
+	letter-spacing: 2px;
+	margin: 0;
+}
 .blog-landing {
 	padding: 50px 0 100px;
 }
@@ -4527,6 +4538,9 @@ header.sticky .nav-menu .menu-btn {
 	margin-bottom: 20px;
 	display: inline-block;
 	width: 100%;
+}
+.blog-landing .blog-tab .row > div {
+	margin-bottom: 30px;
 }
 .blog-subscribe .submit-button {
     text-align: center;
