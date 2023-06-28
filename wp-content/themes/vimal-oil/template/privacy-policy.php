@@ -39,42 +39,32 @@ echo get_header();
             </div>
 
             <div class="h2-white">
-                <h2 class="text-noeffect">
-                    TERMS OF USE
-                </h2>
+                <h2 class="text-noeffect">Terms of use</h2>
             </div>
             <div class="pp-para">
                 <p>Your use of this portal is also subject to the Terms of Use posted on this web portal ("Terms of Use").</p>
             </div>
 
             <div class="h2-white">
-                <h2 class="text-noeffect">
-                    INFORMATION COVERED BY THIS PRIVACY POLICY
-                </h2>
+                <h2 class="text-noeffect">Information Covered by This Privacy Policy</h2>
             </div>
             <div class="pp-para">
                 <p>"Personal Information" is information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with you personally, either alone or in combination with other information available to us. Examples of Personal Information include your name, contact details, credit card information, the information you provide when you create an account or a personal profile on one of our Sites, and information about the pages you have viewed and the path you have taken through our Sites.</p>
             </div>
 
             <div class="h2-white">
-                <h2 class="text-noeffect">
-                    INFORMATION WE COLLECT
-                </h2>
+                <h2 class="text-noeffect">Information We Collect</h2>
             </div>
             <div class="pp-para">
-                We may collect Personal information on this Website voluntarily submitted by the user, including information we collect while performing business transactions and information we collect from other sources (as permitted by law) for the performance of a contract with you or where it is necessary for our legitimate interests of operating, protecting, and improving our business.
+                <p>We may collect Personal information on this Website voluntarily submitted by the user, including information we collect while performing business transactions and information we collect from other sources (as permitted by law) for the performance of a contract with you or where it is necessary for our legitimate interests of operating, protecting, and improving our business.</p>
             </div>
 
             <div class="h2-white">
-                <h2 class="text-noeffect">
-                    Information collected directly:
-                </h2>
+                <h2 class="text-noeffect">Information collected directly:</h2>
             </div>
             <div class="pp-para">
-                We may collect information from you directly when you provide us with personal information, e.g., when you register for prize draws or competitions, sign up to receive information, use applications, buy a product or service from us, fill out a survey, or make a comment or inquiry. The following are examples of information we may collect directly:
-            </div>
-            <div class="list">
-                <ul style="list-style-type: lower-alpha;">
+                <p>We may collect information from you directly when you provide us with personal information, e.g., when you register for prize draws or competitions, sign up to receive information, use applications, buy a product or service from us, fill out a survey, or make a comment or inquiry. The following are examples of information we may collect directly:</p>
+                <ul>
                     <li>Name, email address, postal address</li>
                     <li>Username and password</li>
                     <li>Phone number or mobile number</li>
@@ -91,15 +81,11 @@ echo get_header();
             </div>
 
             <div class="h2-white">
-                <h2 class="text-noeffect">
-                    Information collected automatically:
-                </h2>
+                <h2 class="text-noeffect">Information Collected Automatically:</h2>
             </div>
             <div class="pp-para">
-                We (and third-party service providers acting on our behalf) may use cookies and other tools (such as web analytic tools, pixel tags, web beacons, JavaScript, etc.) to automatically collect information about you when you use this website or Vimal Oils sites, subject to the terms of this Privacy Notice and applicable data laws and regulations. The types of information collected automatically may include but are not limited to the following:
-            </div>
-            <div class="list">
-                <ul style="list-style-type: lower-alpha;">
+                <p>We (and third-party service providers acting on our behalf) may use cookies and other tools (such as web analytic tools, pixel tags, web beacons, JavaScript, etc.) to automatically collect information about you when you use this website or Vimal Oils sites, subject to the terms of this Privacy Notice and applicable data laws and regulations. The types of information collected automatically may include but are not limited to the following:</p>
+                <ul>
                     <li>Details of the web pages you have viewed</li>
                     <li>Information about the type of browser you use</li>
                     <li>The hyperlinks you have clicked</li>
@@ -110,15 +96,11 @@ echo get_header();
             </div>
 
             <div class="h2-white">
-                <h2 class="text-noeffect">
-                    HOW WE USE THIS INFORMATIO
-                </h2>
+                <h2 class="text-noeffect">How We Use This Information</h2>
             </div>
             <div class="pp-para">
                 <p>Personal information collected from data subjects listed on this portal will only be kept to conduct the required business and for as long as the requirement was deemed at the time of data collection. The information collected may be used for the following activities:</p>
-            </div>
-            <div class="list">
-                <ul style="list-style-type: lower-alpha;">
+                <ul>
                     <li>To provide the products, information, and services you request</li>
                     <li>To provide you with effective customer service</li>
                     <li>Create and manage information for master maintenance</li>
@@ -145,24 +127,18 @@ echo get_header();
 
 
             <div class="h2-white">
-                <h2 class="text-noeffect">
-                    ACCESS TO INFORMATION BY RELEVANT PERSONS
-                </h2>
+                <h2 class="text-noeffect">Access to Information by Relevent Persons</h2>
             </div>
             <div class="pp-para">
                 <p>All personal information must be accurate, complete, and relevant for the business purposes of the collection of such information and necessary only to facilitate those purposes. Your access to and use of this web portal and its contents (the "Portal") are subject to the terms and conditions of this Privacy Policy and all applicable laws. By accessing and using this Portal, you (the "User" or "you") accept and agree to these without any limitation or qualification.</p>
             </div>
 
             <div class="h2-white">
-                <h2 class="text-noeffect">
-                    INFORMATION SHARING
-                </h2>
+                <h2 class="text-noeffect">Information Sharing</h2>
             </div>
             <div class="pp-para">
-                We share personal information within Vimal Oils and externally only as described below.
-            </div>
-            <div class="list">
-                <ul style="list-style-type: lower-alpha;">
+                <p>We share personal information within Vimal Oils and externally only as described below.</p>
+                <ul>
                     <li>Third-party service providers: We may share your information with outside vendors that we use for a variety of purposes, such as to send you communications via emails, messages, or calls to inform you about our products that may be of interest to you, push notifications to your mobile device on our behalf, provide voice recognition services to process your spoken queries and questions, help us analyze the use of our Services, and process and collect payments. Some of our products, services, and databases are hosted by third-party hosting service providers. We also may use vendors for other projects, such as conducting surveys or organizing sweepstakes for us. We may share information about you with those vendors only to enable them to perform their services.</li>
                     <li>Legal action and obligations: We may disclose Personal information: Where permitted by law, to protect and defend the rights and property of Vimal Oils (including enforcement of valid agreements). When required by law or public authorities.
                     </li>
@@ -173,9 +149,7 @@ echo get_header();
             </div>
 
             <div class="h2-white">
-                <h2 class="text-noeffect">
-                    INFORMATION SECURITY
-                </h2>
+                <h2 class="text-noeffect">Information Security</h2>
             </div>
             <div class="pp-para">
                 <p>We have implemented appropriate physical, electronic, and managerial procedures to safeguard and help prevent unauthorized access to your information and to maintain data security. Those safeguards take into account the sensitivity of the information that we collect, process, and store and the current state of technology. We follow generally accepted industry standards to protect the personal information submitted to us, both during transmission and once we receive it. The third-party service providers concerning the payment gateway and payment processing are all validated as compliant with the payment card industry standard (generally referred to as PCI-compliant service providers).</p>
@@ -184,25 +158,19 @@ echo get_header();
             </div>
 
             <div class="h2-white">
-                <h2 class="text-noeffect">
-                    CHANGES TO OUR PRIVACY NOTICE
-                </h2>
+                <h2 class="text-noeffect">Changes to Our Privacy Policy</h2>
             </div>
             <div class="pp-para">
                 <p>We will post changes to this privacy notice and update the effective date when this Privacy Policy is updated. We may modify this Privacy Policy at any time, in our sole discretion, and all modifications will be effective immediately upon our posting of the modifications. Continued use of the website, following notice of such changes shall indicate your acknowledgement of such changes and agreement to be bound by the terms and conditions of such changes.</p>
             </div>
 
             <div class="h2-white">
-                <h2 class="text-noeffect">
-                    CONSENT
-                </h2>
+                <h2 class="text-noeffect">Consent</h2>
             </div>
             <div class="pp-para">
                 <p>I acknowledge and agree to the terms contained in this data privacy notice, which shall be effective for the entire duration of my relationship with Vimal Oils as a user of this website and until Vimal Oils retains records of the captured Personal information as specified above.</p>
                 <p>By using the Vimal Oils-owned site, you are consenting to the relevant Vimal Oils group companies collecting, using, and disclosing your Personal Information under this Privacy Notice. If you do not agree to the collection, use, and disclosure of your Personal information in this way, you are free not to use this website or otherwise provide Vimal Oils with your Personal Information.</p>
             </div>
-
-
         </div>
     </div>  
 <?php 
