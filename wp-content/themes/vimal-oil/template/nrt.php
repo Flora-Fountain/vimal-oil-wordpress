@@ -326,7 +326,7 @@ echo get_header();
         var nrt = document.getElementsByClassName('coffee-swirl-image');
         //nrt.style.height = dist;
         jQuery(".coffee-swirl-image.mob").height(dist);
-        // jQuery(".coffee-swirl-image.desk").height(dist - zHeight + 180);
+        jQuery(".coffee-swirl-image.desk").height(dist - zHeight + 180);
         // jQuery(document).ready(function($) {
         //     function applyResponsiveStyle() {
         //         if($(window).width() <= 850){
@@ -342,36 +342,36 @@ echo get_header();
         // });
 
 
-        var element = document.getElementById('oil-swirl-desk');
+    //     var element = document.getElementById('oil-swirl-desk');
 
-        function applyResponsiveStyle(){
-            function getWidth(){
-                return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-            }
+    //     function applyResponsiveStyle(){
+    //         function getWidth(){
+    //             return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    //         }
 
-            if(getWidth() <= 930){
-                element.style.height = (dist - zHeight + 510) + 'px'
-            }else if(getWidth() <= 1190){
-                element.style.height = (dist - zHeight + 611) + 'px'
-            }else if(getWidth() <= 1350){
-                element.style.height = (dist - zHeight + 210) + 'px'
-            }else if(getWidth() <= 1400){
-                element.style.height = (dist - zHeight + 90) + 'px'
-            }else if(getWidth() <= 1490){
-                element.style.height = (dist - zHeight + 60) + 'px'
-            }else if(getWidth() <= 1600){
-                element.style.height = (dist - zHeight + 370) + 'px'
-            }
-        }
+    //         if(getWidth() <= 930){
+    //             element.style.height = (dist - zHeight + 510) + 'px'
+    //         }else if(getWidth() <= 1190){
+    //             element.style.height = (dist - zHeight + 611) + 'px'
+    //         }else if(getWidth() <= 1350){
+    //             element.style.height = (dist - zHeight + 210) + 'px'
+    //         }else if(getWidth() <= 1400){
+    //             element.style.height = (dist - zHeight + 90) + 'px'
+    //         }else if(getWidth() <= 1490){
+    //             element.style.height = (dist - zHeight + 60) + 'px'
+    //         }else if(getWidth() <= 1600){
+    //             element.style.height = (dist - zHeight + 370) + 'px'
+    //         }
+    //     }
 
-        function onWindowResize() {
-            applyResponsiveStyle();
-        }
+    //     function onWindowResize() {
+    //         applyResponsiveStyle();
+    //     }
 
-        window.addEventListener('resize', onWindowResize);
+    //     window.addEventListener('resize', onWindowResize);
 
-        applyResponsiveStyle();
-    }
+    //     applyResponsiveStyle();
+    // }
        
     </script>
 
