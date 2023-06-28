@@ -22,7 +22,7 @@ echo get_header();
 							<h1 class="text-noeffect"><?php the_field('banner_section_title');?></h1>
 						</div>
                         <div class="max-para">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                            <p>Take this healthy heart quiz specifically designed to help you pick the right cooking oil in the right season!</p>
                         </div>
 						<div class="submit-button text-center">
                             <a href="#quiz-question" class="btn-effect" type="submit">

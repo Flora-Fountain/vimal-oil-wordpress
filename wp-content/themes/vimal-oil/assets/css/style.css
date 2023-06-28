@@ -1392,7 +1392,7 @@ header.sticky .nav-menu .menu-btn {
 .jorney-main .nav .owl-stage-outer::before {
 	position: absolute;
 	content: '';
-	background: linear-gradient(90deg, rgb(12, 86, 161) 40%, rgba(255, 255, 255, 0) 100%);
+	/* background: linear-gradient(90deg, rgb(12, 86, 161) 40%, rgba(255, 255, 255, 0) 100%); */
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -1402,7 +1402,7 @@ header.sticky .nav-menu .menu-btn {
 .jorney-main .nav .owl-stage-outer::after {
 	position: absolute;
 	content: '';
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(12, 88, 165, 1) 70%);
+	/* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(12, 88, 165, 1) 70%); */
 	top: 0;
 	bottom: 0;
 	right: 0;
@@ -3508,9 +3508,9 @@ header.sticky .nav-menu .menu-btn {
 .oil-details .oil-size .size-icon .size {
     border: 2px solid #0C54A0;
     border-radius: 100%;
-    width: 40px;
+    width: 60px;
     display: flex;
-    height: 40px;
+    height: 60px;
     justify-content: center;
     align-items: center;
     font-size: 18px;

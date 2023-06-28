@@ -60,7 +60,7 @@ echo get_header();
                 </div>
                 <div class="text-center">
                     <p><?php echo the_field('cook_oil_section_description'); ?></p>
-                    <span class="cook-oil-sec-hd">“<?php echo  the_field('cook_oil_section_center_text');?>”</span>
+                    <!-- <span class="cook-oil-sec-hd">“<?php echo  the_field('cook_oil_section_center_text');?>”</span> -->
                 </div>
             </div>
         </div>
