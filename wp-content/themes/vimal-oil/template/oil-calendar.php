@@ -48,16 +48,16 @@ echo get_header();
     </div>
     <!-- Get Product -->
     <?php 
-         $args = array(
-            'post_type' => 'product',
-            'status'    => 'publish',
-            'posts_per_page' => 3,
-            'orderby' => 'date',
-            'order' => 'ASC',
+        //  $args = array(
+        //     'post_type' => 'product',
+        //     'status'    => 'publish',
+        //     'posts_per_page' => 3,
+        //     'orderby' => 'date',
+        //     'order' => 'ASC',
 
-        );
+        // );
     
-        $products = wc_get_products( $args );
+        // $products = wc_get_products( $args );
         // echo "<pre>";
         // print_r($products);
         // die;
