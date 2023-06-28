@@ -17,7 +17,7 @@ echo get_header();
                                 <h1 class="text-noeffect"><span><?php echo the_field('benner_section_title');?></span> <?php the_field('banner_section_sub_title') ?></h1>
                             </div>
                         </div>
-                        <div class="submit-button text-center">
+                        <div class="submit-button text-center mt-40">
                             <a href="<?php echo the_field('banner_button_link') ?>" class="btn-effect"><?php echo the_field('banner_section_button_name');?></a>
                         </div>
                     </div>
