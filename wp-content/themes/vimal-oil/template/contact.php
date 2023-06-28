@@ -37,7 +37,7 @@ echo get_header();
     <!-- module-3 form map section section -->
     <div class="contact-map default-section">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="form-part">
                         <div class="form-inner net-form form-part">
@@ -78,7 +78,7 @@ echo get_header();
                 </div>  
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="map-part">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29256.186645355134!2d72.35055517253537!3d23.56760554288374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c41a2155d3e6b%3A0xe6f63b06e01d4af8!2sVimal%20Oil%20%26%20Foods%20Ltd.!5e0!3m2!1sen!2sin!4v1685008779027!5m2!1sen!2sin" width="800" height="595" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29256.186645355134!2d72.35055517253537!3d23.56760554288374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c41a2155d3e6b%3A0xe6f63b06e01d4af8!2sVimal%20Oil%20%26%20Foods%20Ltd.!5e0!3m2!1sen!2sin!4v1685008779027!5m2!1sen!2sin" width="800" height="570" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>

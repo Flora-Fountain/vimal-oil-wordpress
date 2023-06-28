@@ -1694,7 +1694,7 @@ header.sticky .nav-menu .menu-btn {
 .jorney-main .tab-content .j-para .j-year {
 	font-size: 100px;
 	font-weight: bold;
-	text-align: center;
+	/* text-align: center; */
 	width: 100%;
 	display: inline-block;
 	margin-bottom: 30px;
@@ -3211,6 +3211,7 @@ header.sticky .nav-menu .menu-btn {
 }
 .reci-sec.footer-before .row > div {
 	margin-top: 20px;
+	min-height: 400px;
 }
 .recipe-video .reci-video-des{
 	padding: 20px;
@@ -3636,7 +3637,7 @@ header.sticky .nav-menu .menu-btn {
     align-items: center;
     font-size: 18px;
 }
-.oil-details .oil-size .size-icon .size a{
+.oil-details .oil-size .size-icon .size span{
 	line-height: 1;
 	color: #0C54A0;
 	font-weight: 500;
@@ -4664,7 +4665,8 @@ header.sticky .nav-menu .menu-btn {
 /* social presense css tinder effect */
 .tinder {
 	/* width: 100vw; */
-	height: 70vh;
+	/* height: 70vh; */
+	min-height: 500px;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;

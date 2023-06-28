@@ -298,80 +298,26 @@ echo get_header();
         }) 
     </script>
     <script>
-        // window.onload=function(){/*from  www  .j  a v  a2  s  .c o m*/
-        //     const x = document.getElementById("can-image-sec")
-        //     const y = document.getElementById("oil-bottle-flow")
-        //     const z = document.getElementById("flow-img")
-        //     var dist = x.getBoundingClientRect().top - y.getBoundingClientRect().top;
-        //     dist = Math.round(dist);
-        //     console.log(z.height);
-        //     var nrt = document.getElementsByClassName('coffee-swirl-image');
-        //     console.log(dist);
-        //     //nrt.style.height = dist;
-        //     jQuery(".coffee-swirl-image").height(dist + z);
-        // }
-
         window.onload=function(){/*from  www  .j  a v  a2  s  .c o m*/
-        const x = document.getElementById("can-image-sec")
-        const y = document.getElementById("oil-bottle-flow")
-        const z = document.getElementById("flow-img")
-        const zHeight = z.naturalHeight;
-        console.log(zHeight);
-        
-        var dist = x.getBoundingClientRect().top - y.getBoundingClientRect().top;
-        console.log(dist);
-        dist = Math.round(dist);
-        console.log(dist);
-        // console.log(z.height);
-        var nrt = document.getElementsByClassName('coffee-swirl-image');
-        //nrt.style.height = dist;
-        jQuery(".coffee-swirl-image.mob").height(dist);
-        jQuery(".coffee-swirl-image.desk").height(dist - zHeight + 180);
-        // jQuery(document).ready(function($) {
-        //     function applyResponsiveStyle() {
-        //         if($(window).width() <= 850){
-        //             $(".coffer-swirl-image.deck").css('height', dist - zHeight + 293)
-        //         }
-        //     }
+            const x = document.getElementById("can-image-sec")
+            const y = document.getElementById("oil-bottle-flow")
+            const z = document.getElementById("flow-img")
+            const zHeight = z.naturalHeight;
+            console.log(zHeight);
+            
+            var dist = x.getBoundingClientRect().top - y.getBoundingClientRect().top;
+            console.log(dist);
+            dist = Math.round(dist);
+            console.log(dist);
+            // console.log(z.height);
+            var nrt = document.getElementsByClassName('coffee-swirl-image');
+            //nrt.style.height = dist;
+            jQuery(".coffee-swirl-image.desk").height(dist - zHeight + 290);
+            jQuery(".coffee-swirl-image.mob").height(dist - zHeight + 240);
 
-        //     $(window).resize(function() {
-        //         applyResponsiveStyle();
-        //     });
+            
 
-        //     applyResponsiveStyle();
-        // });
-
-
-    //     var element = document.getElementById('oil-swirl-desk');
-
-    //     function applyResponsiveStyle(){
-    //         function getWidth(){
-    //             return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    //         }
-
-    //         if(getWidth() <= 930){
-    //             element.style.height = (dist - zHeight + 510) + 'px'
-    //         }else if(getWidth() <= 1190){
-    //             element.style.height = (dist - zHeight + 611) + 'px'
-    //         }else if(getWidth() <= 1350){
-    //             element.style.height = (dist - zHeight + 210) + 'px'
-    //         }else if(getWidth() <= 1400){
-    //             element.style.height = (dist - zHeight + 90) + 'px'
-    //         }else if(getWidth() <= 1490){
-    //             element.style.height = (dist - zHeight + 60) + 'px'
-    //         }else if(getWidth() <= 1600){
-    //             element.style.height = (dist - zHeight + 370) + 'px'
-    //         }
-    //     }
-
-    //     function onWindowResize() {
-    //         applyResponsiveStyle();
-    //     }
-
-    //     window.addEventListener('resize', onWindowResize);
-
-    //     applyResponsiveStyle();
-    // }
+        }
        
     </script>
 
