@@ -35,7 +35,7 @@ echo get_header();
         <div class="text-center max-para">
             <p><?php echo the_field('recipe_section_description');?></p>
         </div>
-        <div class="row align-items-center">
+        <div class="row">
             <?php 
                 if (have_rows('recipe_section_videos')) {
                     while (have_rows('recipe_section_videos')) {

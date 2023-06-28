@@ -40,7 +40,7 @@ echo get_header();
             <div class="h2-white">
                 <h2 class="text-noeffect">Explore our series</h2>
             </div>
-            <div class="cont-para text-center">
+            <div class="cont-para text-center sub-text">
                 <p>simply dummy text of the printing and typesetting industry. Lorem</p>
             </div>
             <div class="blog-tab">
@@ -103,7 +103,7 @@ echo get_header();
                                                         <p class="mb-0"><?php echo wp_trim_words( get_the_content(), 17, '...' );?></p>
                                                     </div>
                                                     <div class="submit-button">
-                                                        <a class="btn-effect blue-back" href="<?php the_permalink();?>" title="Test 2">Read More</a>
+                                                        <a class="btn-effect blue-back" href="<?php the_permalink();?>" title="Read More">Read More</a>
                                                     </div>
                                                 </div>
                                             </div>
