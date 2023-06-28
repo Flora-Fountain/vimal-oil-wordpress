@@ -97,7 +97,8 @@ echo get_header();
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="accordion-content-section">
                         <p><?php the_field('quality_section_description');?></p>
-                        <div class="qa-acc">
+                        <p><?php the_field('quality_section_description2');?></p>
+                        <!-- <div class="qa-acc">
                             <div class="accordion" id="accordionExample">
                                 <?php 
                                     $count = 1;
@@ -146,9 +147,9 @@ echo get_header();
                                             Hydrolysis of oil creates Free Fatty Acids in them. Raw oils and fats in their natural form contain a small amount of free fatty acids but they are removed while refining the oil. Hydrolysis of oil creates Free Fatty Acids in them. Raw oils and fats in their natural form contain a small amount of free fatty acids but they are removed while refining the oil.
                                         </div>
                                     </div>
-                                </div> -->
+                                </div> 
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -193,7 +194,7 @@ echo get_header();
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="content-part">
                             <p><?php echo the_field('sourcing_section_description1');?></p>
-                            <p><?php echo the_field('sourcing_section_description2');?></p>
+                            <!-- <p><?php echo the_field('sourcing_section_description2');?></p> -->
                         </div>
                     </div>
                 </div>
