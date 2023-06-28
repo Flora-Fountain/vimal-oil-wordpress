@@ -85,7 +85,7 @@
                                         // $size = implode(",",$size_array);
                                         foreach ($size_array as $size) { ?>
                                             <div class="size">
-                                                <a href="#"><?php echo $size;?></a>
+                                                <span><?php echo $size;?></span>
                                             </div>
                                         <?php }
                                     ?>

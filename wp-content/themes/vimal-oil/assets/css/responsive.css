@@ -1054,7 +1054,7 @@
         width: 70px;
     }
     .counter-main .count-box .counter, .counter-main .count-box .counter + span {
-        font-size: 60px;
+        font-size: 40px;
     }
     .counter-main .count-box .count-name {
         font-size: 26px;
@@ -1365,7 +1365,7 @@
         font-size: 20px;
     }
     .counter-main .count-box .counter, .counter-main .count-box .counter + span {
-        font-size: 50px;
+        font-size: 40px;
     }
     .counter-main .count-box .count-name {
         font-size: 22px;
