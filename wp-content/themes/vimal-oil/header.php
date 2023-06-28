@@ -36,6 +36,16 @@
     <?php wp_head(); ?>
 </head>
 <body>
+<div class="loader-wrapper">
+    <!-- <span class="loader">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-cottonseed-banner.png"/>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-pure-banner.png"/>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vimal-soyahart-banner.png"/>
+        <em>#ChangeForHeath</em>
+    </span> -->
+    <div class="drop"></div>
+    <div class="wave"></div>
+</div>
     <!-- module-1 header html code  -->
     <header class="header" id="header">
         <div class="container-fluid">

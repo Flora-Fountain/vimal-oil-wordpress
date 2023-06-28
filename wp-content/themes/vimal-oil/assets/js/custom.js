@@ -301,26 +301,26 @@ $(document).ready(function(){
             0: {
                 items: 3,
                 margin: 0, 
-                loop: false,
+                loop: true,
                 autoplay: false,
                 center: true,
             },
             479: {
                 items: 4,
                 margin: 0, 
-                loop: false,
+                loop: true,
                 autoplay: false,
                 center: false,
             },
             576: {
                 items: 5,
                 margin: 0, 
-                loop: false,
+                loop: true,
                 autoplay: false,
             },
             991: {
                 items: 6,
-                loop: false,
+                loop: true,
                 autoplay: false,
             },
             1200: {
@@ -930,7 +930,6 @@ $(document).ready(function() {
   });
 });
 
-
-
-
-
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+});
