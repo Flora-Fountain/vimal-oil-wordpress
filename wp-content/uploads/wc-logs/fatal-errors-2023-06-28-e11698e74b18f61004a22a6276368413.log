@@ -30,3 +30,5 @@ Stack trace:
 #3 {main}
   thrown in C:\xampp\htdocs\vimal-oil-wordpress\wp-content\themes\vimal-oil\template\oil-calendar.php on line 70
 
+2023-06-28T11:41:22+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\xammp\htdocs\vimal-oil-wordpress\wp-includes\functions.php on line 4550
+

@@ -253,7 +253,7 @@ echo get_header();
     ?>
 
     <!-- module-9 oil range -->
-    <div class="product-section-1 default-section">
+    <div class="product-section-1 default-section footer-before">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="h2-blue">
@@ -312,13 +312,13 @@ echo get_header();
             // console.log(z.height);
             var nrt = document.getElementsByClassName('coffee-swirl-image');
             //nrt.style.height = dist;
-            jQuery(".coffee-swirl-image.desk").height(dist - zHeight + 290);
+            jQuery(".coffee-swirl-image.desk").height(dist - zHeight + 100);
             jQuery(".coffee-swirl-image.mob").height(dist - zHeight + 240);
-
-            
-
         }
-       
+        window.addEventListener('resize', function () { 
+            "use strict";
+            window.location.reload(); 
+        });
     </script>
 
 <?php 

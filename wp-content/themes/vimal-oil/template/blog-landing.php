@@ -131,19 +131,6 @@ echo get_header();
                     </div>
                 </div>
             </div>
-            <div class="blog-subscribe">
-                <div class="h3-title">
-                    <h3 class="text-noeffect">Subscribe Today</h3>
-                </div>
-                <div class="form">
-                    <div class="email-input-field text-center">
-                        <input type="email" name="email" placeholder="Enter Email" required="">
-                    </div>
-                    <div class="submit-button">
-                        <button class="btn-effect blue-back" type="submit">Send</button>                         
-                    </div>
-                </div>
-            </div>
         </div>
         
         <?php 
