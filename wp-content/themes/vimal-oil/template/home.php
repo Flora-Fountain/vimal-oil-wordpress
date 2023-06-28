@@ -174,7 +174,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blue-oil-flow.png" alt="temperature oil" class="b-o-drop">
                     </div> -->
                     <div class="nrt-d-logo text-center">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nrt-logo.png" alt="drop"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nrt-logo.png" alt="drop"/>
                     </div>
                 </div>
         </div>
@@ -441,9 +441,7 @@
                                 <button class="nav-link item" id="v-pills-2022-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2022" type="button" role="tab" aria-controls="v-pills-2022" aria-selected="false">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2015.png" alt="1993"/>
                                     <span>2022</span>
-</button> -->
-
-                                </button>
+                                </button> -->
                            
                         </div>
                     </div>
