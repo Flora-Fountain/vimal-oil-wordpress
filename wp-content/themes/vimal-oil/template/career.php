@@ -12,11 +12,11 @@ echo get_header();
                 <div class="text-aside">
                     <div class="banner-right">
                         <div class="h1-title">
-                            <h1 class="text-noeffect">Work With <br/>Vimal</h1>
+                            <h1 class="text-noeffect">Careers with Vimal Oils</h1>
                         </div>
                     </div>
                     <div class="head-para">
-                        <p class="text-center mt-3 max-wd">Excellent compensation. <br> Outstanding perks. <br> Continuous career development.</p>
+                        <p class="text-center mt-3 max-wd">Experience excellent compensation, enjoy outstanding perks and benefit from continuous career development opportunities with India's best cooking oil brand</p>
                     </div>
                     <div class="submit-button text-center">
                         <a href="#" class="btn-effect">Apply Now</a>

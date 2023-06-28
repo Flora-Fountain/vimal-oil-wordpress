@@ -35,8 +35,8 @@ echo get_header();
             <div class="oil-spread">
                 <!-- <div class="oil-swirl-mask"></div> -->
                 <div class="oil-swirl" style="height:0px;" id="oil-swirl">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-1.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image desk" id="oil-swirl" />
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-drop-mobile.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image mob" id="oil-swirl" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-1.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image desk" id="oil-swirl-desk" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/oil-drop-mobile.png" sizes="100vw" alt="oil.png" class="coffee-swirl-image mob" id="oil-swirl-mob" />
                 </div>
             </div>
             <!-- module-3 what is nrt -->
@@ -325,25 +325,53 @@ echo get_header();
         // console.log(z.height);
         var nrt = document.getElementsByClassName('coffee-swirl-image');
         //nrt.style.height = dist;
-        jQuery(".coffee-swirl-image").height(dist - '2%');
-    //     jQuery(document).ready(function($) {
-    //         function applyResponsiveStyle() {
-    //             if($(window).width() <= 1599){
-    //                 $(".coffer-swirl-image").css('height', (dist - zHeight))
-    //             }else if($(window).width() <= 1760 ){
-    //                 $(".coffer-swirl-image").css('height', (dist - zHeight + 100))
-    //             } else if  ($(window).width() <= 1920) {
-    //                 $('.coffee-swirl-image').css('height', (dist - zHeight + 50));
-    //             }
+        jQuery(".coffee-swirl-image.mob").height(dist);
+        jQuery(".coffee-swirl-image.desk").height(dist - zHeight + 180);
+        // jQuery(document).ready(function($) {
+        //     function applyResponsiveStyle() {
+        //         if($(window).width() <= 850){
+        //             $(".coffer-swirl-image.deck").css('height', dist - zHeight + 293)
+        //         }
+        //     }
+
+        //     $(window).resize(function() {
+        //         applyResponsiveStyle();
+        //     });
+
+        //     applyResponsiveStyle();
+        // });
+
+
+    //     var element = document.getElementById('oil-swirl-desk');
+
+    //     function applyResponsiveStyle(){
+    //         function getWidth(){
+    //             return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     //         }
 
-    //         $(window).resize(function() {
-    //             applyResponsiveStyle();
-    //         });
+    //         if(getWidth() <= 930){
+    //             element.style.height = (dist - zHeight + 510) + 'px'
+    //         }else if(getWidth() <= 1190){
+    //             element.style.height = (dist - zHeight + 611) + 'px'
+    //         }else if(getWidth() <= 1350){
+    //             element.style.height = (dist - zHeight + 210) + 'px'
+    //         }else if(getWidth() <= 1400){
+    //             element.style.height = (dist - zHeight + 90) + 'px'
+    //         }else if(getWidth() <= 1490){
+    //             element.style.height = (dist - zHeight + 60) + 'px'
+    //         }else if(getWidth() <= 1600){
+    //             element.style.height = (dist - zHeight + 370) + 'px'
+    //         }
+    //     }
 
+    //     function onWindowResize() {
     //         applyResponsiveStyle();
-    //     });
-       }
+    //     }
+
+    //     window.addEventListener('resize', onWindowResize);
+
+    //     applyResponsiveStyle();
+    // }
        
     </script>
 
