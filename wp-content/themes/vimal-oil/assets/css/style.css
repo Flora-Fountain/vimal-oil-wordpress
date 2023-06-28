@@ -1694,7 +1694,7 @@ header.sticky .nav-menu .menu-btn {
 .jorney-main .tab-content .j-para .j-year {
 	font-size: 100px;
 	font-weight: bold;
-	/* text-align: center; */
+	text-align: center;
 	width: 100%;
 	display: inline-block;
 	margin-bottom: 30px;
