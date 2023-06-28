@@ -15,7 +15,7 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: -45px;
+        /* margin-left: -45px; */
     }
 }
 @media screen and (max-width:2949px) {
@@ -34,7 +34,7 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: -140px;
+        /* margin-left: -140px; */
     }
 }
 @media screen and (max-width:2899px) {
@@ -53,7 +53,7 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: -140px;
+        /* margin-left: -140px; */
     }
 }
 @media screen and (max-width:2849px) {
@@ -72,7 +72,7 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: -115px;
+        /* margin-left: -115px; */
     }
 }
 @media screen and (max-width:2799px) {
@@ -91,7 +91,7 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: -100px;
+        /* margin-left: -100px; */
     }
 }
 @media screen and (max-width:2749px) {
@@ -110,7 +110,7 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: -90px;
+        /* margin-left: -90px; */
     }
 }
 @media screen and (max-width:2699px) {
@@ -129,7 +129,7 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: -70px;
+        /* margin-left: -70px; */
     }
 }
 @media screen and (max-width:2649px) {
@@ -148,7 +148,7 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: -58px;
+        /* margin-left: -58px; */
     }
 }
 @media screen and (max-width:2599px) {
@@ -167,7 +167,7 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: -42px;
+        /* margin-left: -42px; */
     }
     .pro-sld-main {
         min-height: 740px;
@@ -189,7 +189,7 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: -32px;
+        /* margin-left: -32px; */
     }
 }
 @media screen and (max-width:2499px) {
@@ -208,7 +208,7 @@
         height: 500px;
         display: block;
         margin: 0 auto;
-        margin-left: 50px;
+        /* margin-left: 50px; */
     }
 }
 @media screen and (max-width:2449px) {
@@ -749,7 +749,7 @@
         max-width: 300px;
     }
     .gen-sec-ben .can-image-sec img {
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
     .gen-sec-ben {
         display: flex;
@@ -1455,7 +1455,7 @@
         margin-right: 5px;
     }
     .gen-sec-ben .can-image-sec img {
-        margin-left: 5px;
+        /* margin-left: 5px; */
     }
     .nrt-drop-logo {
         min-height: 570px;
@@ -2658,8 +2658,9 @@
     .gen-sec-ben .can-image-sec img {
         height: 350px;
         display: block;
-        margin: 45px auto 0;
-        margin-left: 0px;
+        /* margin: 45px auto 0; */
+        margin:0 auto;
+        /* margin-left: 0px; */
     }
     .gen-sec-ben .h2-blue{
         text-align: center;
@@ -2853,8 +2854,9 @@
         top: 20px;
     }
     .gen-sec-ben .can-image-sec img {
-        margin: 50px auto 0;
-        margin-left: 20px;
+        /* margin: 50px auto 0; */
+        margin: 0 auto;
+        /* margin-left: 20px; */
     }
 }
 @media screen and (max-width:575px) {
@@ -2979,8 +2981,9 @@
     }
     .gen-sec-ben .can-image-sec img {
         height: 390px;
-        margin: 20px auto 0;
-        margin-left: 0;
+        /* margin-left: 0; */
+        /* margin: 20px auto 0; */
+        margin: 0 auto;
     }
     .nrt-temp-left img, .nrt-temp-right img {
         width: 100%;
@@ -3032,8 +3035,9 @@
     }
     .gen-sec-ben .can-image-sec img {
         height: 330px;
-        margin: 50px auto 0;
-        margin-left: 30px;
+        margin: 0 auto;
+        /* margin: 50px auto 0; */
+        /* margin-left: 30px; */
     }
     .oil-swirl {
         left: 0;
@@ -3173,7 +3177,7 @@
         bottom: -186px;
     }
     .gen-sec-ben .can-image-sec img {
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
     .oil-swirl {
         left: 0;
@@ -3291,7 +3295,7 @@
         left: -145px;
     }
     .gen-sec-ben .can-image-sec img {
-        margin-left: 0;
+        /* margin-left: 0; */
     }
     .oil-swirl .coffee-swirl-image.mob {
         top: 140px;

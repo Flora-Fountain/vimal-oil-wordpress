@@ -332,7 +332,6 @@ echo get_header();
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <p><?php the_field('change_for_health_section_description1');?></p>
                         <p><?php the_field('change_for_health_section_description2');?></p>
-                        <p><?php the_field('change_for_health_section_description3');?></p>
                     </div>
                 </div>
                 <div class="submit-button text-center">
