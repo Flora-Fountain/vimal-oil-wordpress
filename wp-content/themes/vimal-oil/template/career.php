@@ -19,7 +19,7 @@ echo get_header();
                         <p class="text-center mt-3 max-wd">Experience excellent compensation, enjoy outstanding perks and benefit from continuous career development opportunities with India's best cooking oil brand</p>
                     </div>
                     <div class="submit-button text-center">
-                        <a href="#" class="btn-effect">Apply Now</a>
+                        <a href="#openings" class="btn-effect">Apply Now</a>
                     </div>
                 </div>
 
@@ -47,7 +47,7 @@ echo get_header();
     </div>
 
     <!-- module-4 current openings  -->
-    <div class="current-opening default-section blue-bg">
+    <div class="current-opening default-section blue-bg" id="openings">
         <div class="container">
             <div class="h2-blue">
                 <h2 class="text-noeffect">
