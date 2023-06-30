@@ -17,7 +17,7 @@
     // die;
 ?>
     <!--module-2 hero banner html code  -->
-    <div class="default-section blue-bg-banner product-single-banner hero-banner">
+        <div class="default-section blue-bg-banner product-single-banner hero-banner">
             <div class="container-fluid">
                 <div class="banner-slider owl-carousel owl-theme">
                     <?php 
@@ -45,8 +45,38 @@
                         <?php }?>
                 </div>
             </div> 
-    </div>
+        </div>
 
+<?php 
+    // foreach ($product_gellery_id as $gellery_id) {
+    //     $image_link = wp_get_attachment_url( $gellery_id ); ?>
+    <!-- <div class="default-section blue-bg-banner product-single-banner hero-banner">
+            <div class="container-fluid">
+                <div class="banner-slider owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="banner-info">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="banner-right">
+                                                <div class="h1-title">
+                                                    <h1 class="text-noeffect"><?php echo $product_name;; ?></h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="banner-left product-img">
+                                                <img src="<?php echo $image_link; ?>" alt="kachi ghani oil" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                </div>
+            </div> 
+    </div> -->
+    <?php/* } */?>
     <!-- module-3 oil details -->
 
     <div class="default-section oil-details pro-ani">
